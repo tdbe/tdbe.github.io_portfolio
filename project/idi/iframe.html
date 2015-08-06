@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+		
+        
+<title>link to gallery item</title>
+<meta charset="iso-8859-2">
+        
+
+
+
+<script type="text/javascript">
+
+	var unityUrlToOpen="0";
+	
+	function populateURL(link){
+	
+		unityUrlToOpen = link;
+	
+		var url = document.getElementById('url');
+		url.innerHTML=unityUrlToOpen;
+		url.href=unityUrlToOpen;
+	}
+
+	function openLink(){
+		//var unityUrlToOpen = location.search;
+		//unityUrlToOpen = decodeURIComponent(unityUrlToOpen.substring(1));
+		
+		alert(unityUrlToOpen);
+		if(unityUrlToOpen.length > 2){
+
+			window.open(unityUrlToOpen, '_blank'); 
+				
+			unityUrlToOpen = "0";
+		}
+	}
+	
+	function closeSelf(){
+	
+		parent.hideURL();
+	
+	}
+	
+</script>
+
+<style type="text/css">
+<!--
+	/* hide from ie on mac \*/
+		html {
+		height:100%;
+		margin: 0px;
+		padding: 0px;
+		overflow: hidden;
+		}
+			/* end hide */
+		body {
+		height:100%;
+		font-family: Helvetica, Verdana, Arial, sans-serif;
+			background-color: #cccccc;
+			color: #808080;
+		text-align: center;
+		font-size: medium;
+		border:0;
+		padding: 0;
+		margin: 0;
+		overflow:hidden;
+		}
+		
+		a:link, a:visited {
+			color: #000;
+		}
+		a:active, a:hover {
+			color: #666;
+		}
+		
+		div#content {
+		width: 100%;
+		height: 100%;
+		border:0;
+		padding: 0;
+		margin: 0;
+		overflow:hidden;
+		}
+
+		div.missing {
+			margin: auto;
+			position: relative;
+			top: 50%;
+			width: 193px;
+		}
+		div.missing a {
+			height: 63px;
+			position: relative;
+			top: -31px;
+		}
+		div.missing img {
+			border-width: 0px;
+		}
+		div#unityPlayer {
+			cursor: default;
+			width: 100%;
+			height: 100%;
+		}
+
+		
+		
+	div.footer {
+	width: 100%;
+	height: 16px; /*  must set: var bottomStripHeight = 18;		 */
+	background-color: rgba(0, 0, 0, 0.64);
+	padding: 2px;
+	margin: 0;
+	/*margin-top: 30px;*/
+	color: #FFF;
+	font-size: 12px;
+	}
+		
+-->
+</style>
+
+	<script type="text/javascript" charset="utf-8">
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		  ga('create', 'UA-55237302-1', 'auto');
+		  ga('send', 'pageview');
+	</script>
+
+</head>
+<body style="background-color: rgba(0, 0, 0, 1);" >
+    <div id="content" style="background-color: rgba(142, 236, 232, 0.91);"> <!-- http://www.key-shortcut.com/en/writing-systems/symbols/arrows.html -->
+		<span style="position: absolute; left: 0px; margin-left: -3px;"><span style="font-size: 14px; color: rgba(0, 0, 0, 0.55); font-weight: bold;">&#9744;</span><span style=" color: rgba(0, 0, 0, 0.6); font-size: 16px; margin-left: 8px; margin-top: -23px; display:block;">&#11016;</span></span>
+		<a href="" id="url" target="_blank" onclick="closeSelf()" style="position: absolute; font-size: 14px; left: 18px;">http://www.thiswill.be/the/url</a>
+		<a  href="#" style="border-left: 2px solid rgba(197, 57, 43, 0.90); left: 100%; margin-left: -20px; display: block; overflow:hidden; position: absolute; z-index: 100; width: 20px; height: 19px; background-color: rgba(0, 0, 0, 0.24); text-decoration: none;" onclick="closeSelf()"><span style="position: absolute; display: block; font-family:sans-serif; font-size: 24px; margin-top: -5px; left: 2px; font-weight: bold;">&#xd7;</span></a>
+		
+	</div>
+
+    
+
+</body>
+</html>

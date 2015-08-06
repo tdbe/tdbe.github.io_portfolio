@@ -1,0 +1,176 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" >
+	<head>
+		<meta name="author" content="Tudor"/>
+		<meta name="keywords" content="Design, Mechanics, CG, PCG, Unity, DADIU"/>
+		<meta name="description" content="3 Week solo DADIU project. Shaders, procedural distortions and character mechanics."/> 
+		<meta name="robots" content="all"/>
+		<title>Pendulum: Platformer concept</title>
+		
+		<base target="_parent" /> 
+		
+		<link rel="stylesheet" href="../../css/style.css" type="text/css" title="all purpose css" charset="utf-8">
+		<link rel="stylesheet" href="./css/style.css" type="text/css" title="all purpose css" charset="utf-8">
+		<link rel="stylesheet" href="../../css/navigationStyle.css" type="text/css" title="navigation" charset="utf-8">	
+		<link rel="Shortcut Icon" type="image/x-icon" href="./favicon.ico"/>	
+		
+		
+		<script src="https://code.jquery.com/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/jquery-isvisible.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/easytabs.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/Window.Size.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/mainDef.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script type="text/javascript" charset="utf-8">
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-55237302-1', 'auto');
+		ga('send', 'pageview');
+		  
+		
+		window.parent.makeWheelEvent();
+		//makeWheelEvent(); 
+		var wp = document.getElementById("webplayer");
+		
+		//var activee = false;
+		function handleScroll(h){
+
+			if(wp == null || wp == undefined){
+				wp = document.getElementById("webplayer");
+			}
+			
+			if(h >= 600 && !wp.contentWindow.playerStarted){
+				//activee = true;
+					
+				wp.contentWindow.StartPlayer(); 
+				
+				//alert(h);
+			}
+			
+		}
+		</script>
+	</head>
+
+
+	<body id="zen" class="projZen">
+			<div id="projContainer">
+					
+					<div id="topBar">
+						<a class="backBtn" href="../../">
+							<div class="backBg"></div>
+							<span>Back</span>
+						</a>
+					</div>
+					<div id="topBanner">
+						<img class="soloImg" src="./images/banner.jpg" style="width:100%;"/>
+						<div class="shadBott sLeft shadLeft"></div>
+						<div class="shadBott sRight shadRight"></div> 
+					</div>
+					<div id="topBannerBg">
+						<span id="loading"><div  class="loader"></div><div  class="loader loader2"style=""></div><div  class="loader loader3"style=""></div></span>  
+					</div>
+					
+					<div id="mainColumnProj" style="" >   
+					
+						<div class="article highlight projPadding" >  
+								<p><span id="symbolCnt"><span id="symbol"></span></span><span class="parStart">|</span>A 3 week solo competence project for <a href="http://www.dadiu.dk/" rel="nofollow" target="_blank">DADIU</a> where I designed and implemented a game concept of my own.</p><br/>
+								<p>What is the most interesting way to go about through a game environment? What are the character mechanics and the atmosphere? What is the series of interesting constraints to facilitate fun gameplay? </p><br/>
+								<p><span class="parStart">|</span> <span class="bgHighlight" >The pitch</span>: you're a pebble with a Gish-type blob counterweight / body. You control the shape of the tar to sling yourself, punch, drill, block, stick, jump or ricochet your way through the level. Taking damage == loosing tar == less powers.</p>
+						</div>
+						<div class="imageRegion">
+								<a href="./images/sketch.png" rel="nofollow" target="_blank" class="acro"><acronym class="acro" title="open in new tab"><img class="soloImg" src="./images/sketch.png" style="width:100%;"/></acronym></a>
+								
+						</div>
+						<br/><div class="spacerIR" > </div><br/>
+						
+						
+						<div class="colunaBox projPadding">
+							<div class="colunas leftColuna">
+							<span class="colunaLine" style="-moz-transform:scale(1.4,1); -o-transform:scale(1.4,1); -ms-transform:scale(1.4,1); 	-webkit-transform:scale(1.4,1); transform:scale(1.4,1); margin-left: 20px;">Physics</span>
+							<br/>
+							<span class="colunaLine" style="-moz-transform:scale(1.4,1); -o-transform:scale(1.4,1); -ms-transform:scale(1.4,1); 	-webkit-transform:scale(1.4,1); transform:scale(1.4,1); margin-left: 13px;">Based</span>
+							<br/>
+							<span class="colunaLine" style="-moz-transform:scale(1.1,1); -o-transform:scale(1.1,1); -ms-transform:scale(1.1,1); 	-webkit-transform:scale(1.1,1); transform:scale(1.1,1); margin-left: 5px;">Character</span>
+							</div>
+							<div class="colunas rightColuna">
+							<span class="colunaLine">Procedural</span>
+							<br/>
+							<span class="colunaLine" style="-moz-transform:scale(0.9,1); -o-transform:scale(0.9,1); -ms-transform:scale(0.9,1); 	-webkit-transform:scale(0.9,1); transform:scale(0.9,1); margin-right: -7px;">Distortion &amp;</span>
+							<br/>
+							<span class="colunaLine" style="-moz-transform:scale(1.13,1); -o-transform:scale(1.13,1); -ms-transform:scale(1.13,1); 	-webkit-transform:scale(1.13,1); transform:scale(1.13,1); margin-right: 18px;">Animation</span>
+							</div>
+						</div>
+						
+						<br/><div class="spacer" ></div><br/><br/>
+						
+						<p class="galInfo highlight2 projPadding"><span class="parStart">|</span> Everything here is made of distorted primitives:</p >
+						
+						<div class="imageRegion">
+							<div class="imgContainer">
+								<iframe width="880" height="500" id="webplayer" src="./images/sshowcase.html" frameborder="0" style="margin: none; padding: none;" allowfullscreen></iframe>
+								
+								<span class="shadTop sLeft "></span>
+								<span class="shadTop sRight "></span> 
+								<span class="shadBott sLeft shadLeft"></span>
+								<span class="shadBott sRight shadRight"></span> 
+							</div> 
+						</div>
+						
+						<br/><div class="spacer"></div><br/><br/>
+						
+						<p class="galInfo highlight2 projPadding"><span class="parStart">|</span> Various mesh distortion and blending experiments:</p>
+						<div class="imageRegion">
+								<a href="./images/animatedVertexDisplacement.png" rel="nofollow" target="_blank" class="acro" ><acronym class="acro" title="open in new tab"><img class="soloImg" src="./images/animatedVertexDisplacement.png" style="width:100%;"/></acronym></a>
+								<span class="shadTop sLeft "></span>
+								<span class="shadTop sRight "></span> 
+								<span class="shadBott sLeft shadLeft"></span>
+								<span class="shadBott sRight shadRight"></span> 
+						</div>
+						<br/><div class="spacer"></div><br/>
+						
+						<p class="galInfo highlight2 projPadding" ><span class="parStart">|</span> The demo level, perspective view:</p>
+						<div class="imageRegion">
+							<div class="imgContainer">
+								<!--img class="soloImg" src=""/-->
+								<a href="./images/theLevelPerspective.jpg" rel="nofollow" target="_blank" class="acro"><acronym class="acro" title="open in new tab"><img class="soloImg" src="./images/theLevelPerspective.jpg"/></acronym></a>
+								
+								<span class="shadTop sLeft "></span>
+								<span class="shadTop sRight "></span> 
+								<span class="shadBott sLeft shadLeft"></span>
+								<span class="shadBott sRight shadRight"></span> 
+							</div> 
+						</div>						
+						<br/><div class="spacer"></div><div class="spacer"></div><br/>
+						
+						<p class="galInfo highlight2 projPadding"><span class="parStart">|</span> Very early stage prototype, but here's the gameplay:</p>
+						<div class="imageRegion">
+							<div class="imgContainer">
+								
+								<iframe width="880" height="495" src="//www.youtube.com/embed/yKUDw9_38Bc" frameborder="0" allowfullscreen></iframe>
+								
+								<span class="shadTop sLeft " ></span>
+								<span class="shadTop sRight "></span> 
+								<span class="shadBott sLeft shadLeft"></span>
+								<span class="shadBott sRight shadRight"></span> 
+							</div> 
+						</div>
+						
+						<div class="article highlight projPadding lastParagraph" >  
+								<p></p> 
+
+						</div>
+						
+					</div>
+					
+					
+	
+			</div>
+			<div id="bottomBar">
+				<a class="backBtn" href="../../" style="height: 32px; ">
+					<div class="backBg" style="margin-top: 10px;"></div>
+					<span style="padding-top: 10px;">Back</span>
+				</a>
+			</div>
+</body>
+</html>

@@ -1,0 +1,164 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<meta name="author" content="Tudor"/>
+		<meta name="keywords" content="Gameplay, Physics, Game Design, Level Design"/>
+		<meta name="description" content="Unity. Plane switching and teleportation. 3 month Game Development project."/> 
+		<meta name="robots" content="all"/>
+		<title>Leap, puzzle platformer</title>
+		
+		<base target="_parent" /> 
+		
+		<link rel="stylesheet" href="../../css/style.css" type="text/css" title="all purpose css" charset="utf-8">
+		<link rel="stylesheet" href="./css/style.css" type="text/css" title="all purpose css" charset="utf-8">
+		<link rel="stylesheet" href="../../css/navigationStyle.css" type="text/css" title="navigation" charset="utf-8">	
+		<link rel="Shortcut Icon" type="image/x-icon" href="./favicon.ico"/>	
+		
+		<script src="https://code.jquery.com/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/easytabs.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/Window.Size.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/mainDef.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script type="text/javascript" charset="utf-8">
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		  ga('create', 'UA-55237302-1', 'auto');
+		  ga('send', 'pageview');
+		</script>
+	</head>
+
+
+	<body id="zen" class="projZen">
+			<div id="projContainer">
+					
+					<div id="topBar">
+						<a class="backBtn" href="../../">
+							<div class="backBg"></div>
+							<span>Back</span>
+						</a>
+					</div>
+					<div id="topBanner">
+						<img class="soloImg" src="./images/banner.jpg" style="width:100%;"/>
+						<div class="shadBott sLeft shadLeft"></div>
+						<div class="shadBott sRight shadRight"></div> 
+					</div>
+					<div id="topBannerBg">
+						<span id="loading"><div  class="loader"></div><div  class="loader loader2"style=""></div><div  class="loader loader3"style=""></div></span>  
+					</div>
+					
+					<div id="mainColumnProj" style="" >   
+					
+						<div class="article highlight projPadding">  
+								<p><span id="symbolCnt"><span id="symbol"></span></span><span class="parStart">|</span>A 4-person design and development project during the first semester of my MSc.</p>
+								<p>This project focused on the design process, mechanics, and evaluation, more than production value.</p> 
+								</br/>
+								<p><span class="parStart">|</span> <span class="bgHighlight">The concept</span> revolves around swapping between alternate dimensions.<br/>
+								In a mirage-like state, the character can teleport between the real world and a hallucinated plane. As the game progresses the two worlds (planes) intertwine.</p> 
+								<br/>
+						</div>
+						
+						
+						<p  class="galInfo highlight2 projPadding"><span class="parStart">|</span> My constraints / mechanics proposal:</p>
+						<div class="imageRegion">
+								<a href="./images/sketch.png" rel="nofollow" target="_blank" class="acro"><acronym class="acro" title="open in new tab"><img class="soloImg" src="./images/sketch.png" style="width:100%;"/></acronym></a>
+						</div>
+						
+						<div class="article highlight projPadding">  
+								<p><span class="parStart">|</span> <span class="bgHighlight">The mechanics</span>: Switch planes at will. Fire projectile to teleport target object or enemy to opposite plane. Have the ability to offset opposite plane's position. <br/>
+								Entities are either physically bound to both planes, have different versions of themselves on each plane, or only inhabit one plane. 
+								</p>
+						</div>
+						
+						
+						<div class="colunaBox projPadding">
+							<div class="colunas leftColuna">
+							<span class="colunaLine" style="-moz-transform:scale(1.4032,1); -o-transform:scale(1.4032,1); -ms-transform:scale(1.4032,1); 	-webkit-transform:scale(1.4032,1); transform:scale(1.4032,1); margin-left: 12px;">Fast</span>
+							<br/>
+							<span class="colunaLine" style="-moz-transform:scale(1.4032,1); -o-transform:scale(1.4032,1); -ms-transform:scale(1.4032,1); 	-webkit-transform:scale(1.4032,1); transform:scale(1.4032,1); margin-left: 16px;">Paced</span>
+							<br/>
+							<span class="colunaLine" style="-moz-transform:scale(1.4032,1); -o-transform:scale(1.4032,1); -ms-transform:scale(1.4032,1); 	-webkit-transform:scale(1.4032,1); transform:scale(1.4032,1); margin-left: 22px;">Puzzles</span>
+							</div>
+							<div class="colunas rightColuna">
+							<span class="colunaLine" style="-moz-transform:scale(1.2,1); -o-transform:scale(1.2,1); -ms-transform:scale(1.2,1); 	-webkit-transform:scale(1.2,1); transform:scale(1.2,1); margin-right: 10px;">Switching,</span>
+							<br/>
+							<span class="colunaLine" style="-moz-transform:scale(0.9,1); -o-transform:scale(0.9,1); -ms-transform:scale(0.9,1); 	-webkit-transform:scale(0.9,1); transform:scale(0.9,1); margin-right: -16px;">Teleportation,</span>
+							<br/>
+							<span class="colunaLine" style="margin-right: 10px;">Translation</span>
+							</div>
+						</div>
+
+						<div class="article highlight projPadding" >  
+								<p>My <span class="bgHighlight">responsibilities</span>:<br/>
+									<div class="listBlock">
+										-Player, NPC and platform physics.<br/>
+										-Character controller and input management.<br/>
+										-Pipeline programming, asset integration.<br/>
+										-Gameplay design.<br/>
+										-User testing/evaluation.<br/>
+										-Some texture and level design.<br/>
+										<br/>
+									</div>
+								</p>
+						</div>
+						
+						<!--p class="galInfo highlight2 projPadding"><span class="parStart">|</span> aaaaaaaaaaaaaaaaaaaaaaaaaaa:</p-->
+						<div class="imageRegion">
+
+								<a href="./images/introShot.jpg" rel="nofollow" target="_blank" class="acro"><acronym class="acro" title="open in new tab"><img class="soloImg" src="./images/introShot.jpg" style="width:100%;"/></acronym></a>
+								
+						</div>
+						
+						<br/><div class="spacer"></div><br/>
+						<!--p class="galInfo highlight2 projPadding"><span class="parStart">|</span> aaaaaaaaaaaaaaaaaaaaaaaaaaa:</p-->
+						<div class="imageRegion">
+		
+								<a href="./images/leap4.jpg" rel="nofollow" target="_blank" class="acro"><acronym class="acro" title="open in new tab"><img class="soloImg" src="./images/leap4.jpg" style="width:100%;"/></acronym></a>
+
+						</div>
+						
+						<br/><div class="spacer"></div><br/>
+						<!--p class="galInfo highlight2 projPadding"><span class="parStart">|</span> aaaaaaaaaaaaaaaaaaaaaaaaaaa:</p-->
+						<div class="imageRegion">
+
+								<a href="./images/multishad.jpg" rel="nofollow" target="_blank" class="acro"><acronym class="acro" title="open in new tab"><img class="soloImg" src="./images/multishad.jpg" style="width:100%;"/></acronym></a>
+ 
+						</div>
+						
+						<div class="article highlight projPadding lastParagraph">  
+								<p><span class="parStart">|</span>You can play a WebBuild of Leap here: <!--a href="./leapOnline/leapBuild.html" rel="nofollow" target="_blank">[Leap Web Player]</a>.</p--> 
+								<p><span class="parStart">|</span>You can play a WebBuild of Leap here: <a href="https://4c141b4192a62ba6cbe44c50901b88ad38cd53d4.googledrive.com/host/0B50afmg1TY-eQ2tZX0EtWXR1YWc/leapBuild.html" rel="nofollow" target="_blank">[Leap Web Player]</a>.</p> 
+						</div>
+						
+						<p class="galInfo highlight2 projPadding"><span class="parStart">|</span> You can watch a video playthrough here:</p>
+						<div class="imageRegion">
+							<div class="imgContainer" >
+								<iframe width="880" height="495" src="//www.youtube.com/embed/aArjMSVKFjg" frameborder="0" allowfullscreen></iframe>
+								<span class="shadTop sLeft "></span>
+								<span class="shadTop sRight "></span> 
+								<span class="shadBott sLeft shadLeft"></span>
+								<span class="shadBott sRight shadRight"></span> 
+							</div> 
+						</div>
+						
+						
+						
+						<div class="article highlight projPadding lastParagraph" >  
+								<p></p> 
+
+						</div>
+						
+						
+					</div>
+					
+					
+	
+			</div>
+			<div id="bottomBar">
+				<a class="backBtn" href="../../" style="height: 32px; ">
+					<div class="backBg" style="margin-top: 10px;"></div>
+					<span style="padding-top: 10px;">Back</span>
+				</a>
+			</div>
+</body>
+</html>

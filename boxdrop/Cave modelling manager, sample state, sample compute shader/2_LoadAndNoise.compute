@@ -1,0 +1,208 @@
+#pragma kernel main
+#include "../../ImprovedVoronoiNoise3D.cginc"
+#include "../../SimplexNoise.cginc"
+#define OCTAVES 1
+
+// NOTE: to syntax highlight this stuff, install: http://forum.unity3d.com/threads/164982-MonoDevelop-Syntax-Highlighting-for-compute-shaders?p=1127569
+
+// The same particle data structure used by both the compute shader and the shader.
+struct VoxelParticle
+{
+	float3 position;
+	float3 velocity;
+	float noise;
+	float prevNoise;
+	int flags;
+};
+
+// The buffer holding the particles shared with the regular shader and the other compute shaders.
+// It's just one buffer which resides on the GPU, and is referenced by all our shaders.
+RWStructuredBuffer<VoxelParticle> particleBuffer;
+
+float sprayOrbRadius;
+float sprayOrbOuterRadius;
+float3 lPoint; 
+float4 lNoise; 
+float3 randomSeed;
+float noiseAmp;
+float noiseDistAtten;
+float metaballDistortionFade;
+   
+
+float noise0(half3 myP)
+	{
+	    float output = noise(myP);
+	    return output;
+	}
+
+	float noise1(half3 myP)
+	{
+	    half3 newP = half3(myP.y + 31.416, myP.z - 47.853, myP.x + 12.793);
+	    return noise(newP);
+
+	}
+
+	float noise2(half3 myP)
+	{
+	    half3 newP = half3(myP.z - 233.145, myP.x - 113.408, myP.y + 185.31);
+	    return noise(newP);
+
+	}
+
+
+	half3 potential(float x, float y, float z)
+	{
+	    float roughness = 0.78;//0.4;//0.75;   
+	    half3 psi = 0;
+	    int i;
+	    float valueMult = 1;//1;
+
+	    half3 myP = half3(x,y,z);
+
+	    for (i = 0; i < 3; i++)//floor(octaves)
+	    {
+	        float sx = myP.x / 0.34;//0.4
+	        float sy = myP.y / 0.34;
+	        float sz = myP.z / 0.34;
+	        half3 newP = half3(sx,sy,sz);            
+	        half3 tPsi = half3(noise0(newP), noise1(newP), noise2(newP));
+
+	        psi += tPsi* valueMult;
+	        valueMult = valueMult * roughness;
+	    }
+	    
+	return psi;
+	}
+
+
+	//Curled noise
+	float3 get_Curl(float3 myP)
+	{
+		//myP.x += _Seed.x;
+		//myP.y += _Seed.y;
+		//myP.z += _Seed.z;
+		
+		float deltaX = 0.005;//0.0001;
+
+	    float v0 = ( potential(myP.x,myP.y + deltaX, myP.z).z - potential(myP.x, myP.y - deltaX, myP.z).z )
+	                - ( potential(myP.x, myP.y, myP.z + deltaX).y - potential(myP.x, myP.y, myP.z - deltaX).y ) / (2 * deltaX);
+
+	    float v1 = ( potential(myP.x, myP.y, myP.z + deltaX).x - potential(myP.x, myP.y, myP.z - deltaX).x )
+	                - ( potential(myP.x + deltaX, myP.y, myP.z).z - potential(myP.x - deltaX, myP.y, myP.z).z ) / (2 * deltaX);
+
+	    float v2 = ( potential(myP.x + deltaX, myP.y, myP.z).y - potential(myP.x - deltaX, myP.y, myP.z).y )
+	                - ( potential(myP.x, myP.y + deltaX, myP.z).x - potential(myP.x, myP.y - deltaX, myP.z).x ) / (2 * deltaX);
+
+	    return float3(v0,v1,v2);
+	} 
+ 
+	float get_Curl1D (float3 myP)
+	{
+		//myP.x += _Seed.x;
+		//myP.y += _Seed.y;
+		//myP.z += _Seed.z;
+		
+		float deltaX = 0.5;//0.0001;
+
+	    float v0 = ( potential(myP.x,myP.y + deltaX, myP.z).z - potential(myP.x, myP.y - deltaX, myP.z).z )
+	                - ( potential(myP.x, myP.y, myP.z + deltaX).y - potential(myP.x, myP.y, myP.z - deltaX).y ) / (2 * deltaX);
+
+	    return v0;
+	} 
+	
+	
+
+float customDist(float3 pt1, float3 pt2){
+	
+	pt1+=randomSeed;
+	pt2+=randomSeed;
+	
+
+	float sn = noise(pt2/10)*3;//highest (lowest nr) limit of /freq should be 5, hightst should be 20;
+	
+	//The distance b/w the structural point and the current thread's voxel,
+	//is jumbled up a bit by lNoise which is a Curl noise value stored in each structural point.
+	//This is done for overarching large scale variation reasons, explained in the thesis.
+	float xd = (pt2.x - pt1.x) *lNoise.x;
+	float yd = (pt2.y - pt1.y) *lNoise.y;
+	float zd = (pt2.z - pt1.z) *lNoise.z;
+	
+	//"distance" calculation b/w structural point and voxel
+	float dist = (xd*xd + yd*yd + zd*zd);
+		
+	//Voronoi/Worley noise is great for coarse/stoney features.
+	//We use 3 of them of different frequencies and amplitudes.
+	_Frequency = 0.012;
+	float voronoise = fBm_F1_F0(pt2, OCTAVES)*0.525;
+	
+	_Frequency = 0.025;
+	float voronoise2 = fBm_F1_F0(pt2, OCTAVES)*1.4;
+	
+	_Frequency = 0.009;
+	float voronoise3 = fBm_F1_F0(pt2, OCTAVES)*0.825;
+		
+	//magic
+	float param4 = (lNoise.w * sn + 1)*50;
+	
+	//final warping equation. 
+	//As economical and compacted as possible considering we're not allowed to do 3D Texture lookups 
+	//and must compute them each time.
+	float warpedDist = (dist * (
+									lNoise.w*5 - 
+									sn*(voronoise3) + 
+									(voronoise + voronoise2 + voronoise3) * param4
+								)
+						)/(4+param4/6);
+	//Future work: use lookups, and turn this into a "CSG Tree" style interface for designers.
+	
+	
+	dist = lerp(warpedDist, dist, metaballDistortionFade);
+	
+	return dist;
+}
+
+[numthreads(32,1,1)] 
+void main (uint3 id : SV_DispatchThreadID)
+{
+	//What we do here for one metaball is we fill it with a gradient of -1 to 1
+	//This would create a 3D gradient sphere.
+	//However, we warp the sphere with a custom distance function.
+	//This way we "fool" the voxels into thinking they are closer or further 
+	//to the structural point than they actually are, and we get our rocky shape.
+	//The trick is HOW to warp the metaball as it travels through space, to
+	//make sure there is variation over different scales, and compelling shapes.
+		
+	float distMod = customDist(lPoint, particleBuffer[id.x].position);
+	float smallRad = sprayOrbRadius * sprayOrbRadius;
+	float largeRad = sprayOrbOuterRadius * sprayOrbOuterRadius;
+	if(distMod <= 1){
+		particleBuffer[id.x].flags = -10;//-10 == l-point
+		//Note: this means the centre of each tunnel will be empty.
+		particleBuffer[id.x].noise = 1;
+		particleBuffer[id.x].prevNoise = 1;
+	}						
+	else{
+		float d = noiseAmp * (distMod/noiseDistAtten);
+		
+		if(distMod <= smallRad ){
+
+			particleBuffer[id.x].prevNoise = 1 - (distMod / smallRad);
+			if(particleBuffer[id.x].noise < particleBuffer[id.x].prevNoise){
+				particleBuffer[id.x].noise = particleBuffer[id.x].prevNoise;
+			}
+			
+			particleBuffer[id.x].flags = 20;
+
+		}
+		else if(distMod <= largeRad ){
+			
+			particleBuffer[id.x].prevNoise = -(distMod / smallRad -1);
+			if(particleBuffer[id.x].noise < particleBuffer[id.x].prevNoise){
+				particleBuffer[id.x].noise = particleBuffer[id.x].prevNoise;
+			}
+
+			particleBuffer[id.x].flags = 10;
+		}
+	}
+	
+}

@@ -1,0 +1,236 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<meta name="author" content="Tudor"/>
+		<meta name="keywords" content="PCG, voxels, DX11 Compute, CG, HLSL, Shader, Unity"/>
+		<meta name="description" content="MSc. Thesis Project about real-time Procedural Modelling of Cave Systems on the GPU."/> 
+		<meta name="robots" content="all"/>
+		<title>GPGPU Underground Canyons</title>
+		
+		<base target="_parent" /> 
+		
+		<link rel="stylesheet" href="../../css/style.css" type="text/css" title="all purpose css" charset="utf-8">
+		<link rel="stylesheet" href="./css/style.css" type="text/css" title="all purpose css" charset="utf-8">
+		<link rel="stylesheet" href="../../css/navigationStyle.css" type="text/css" title="navigation" charset="utf-8">	
+		<link rel="Shortcut Icon" type="image/x-icon" href="./favicon.ico"/>	
+		
+		<script src="https://code.jquery.com/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/easytabs.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/Window.Size.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/mainDef.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script type="text/javascript" charset="utf-8">
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		  ga('create', 'UA-55237302-1', 'auto');
+		  ga('send', 'pageview');
+		</script>
+	</head>
+
+
+	<body id="zen" class="projZen" >
+			<div id="projContainer">
+					
+					<div id="topBar">
+						<a class="backBtn" href="../../">
+							<div class="backBg"></div>
+							<span>Back</span>
+						</a>
+					</div>
+					<div id="topBanner">
+						<img class="soloImg" src="./images/banner.jpg" style="width:100%;"/>
+						<div class="shadBott sLeft shadLeft"></div>
+						<div class="shadBott sRight shadRight"></div> 
+					</div>
+					<div id="topBannerBg">
+						<span id="loading"><div  class="loader"></div><div  class="loader loader2"style=""></div><div  class="loader loader3"style=""></div></span>  
+					</div>
+					
+					<div id="mainColumnProj" style="" >   
+					
+						<div class="article highlight projPadding" >  
+								<p><span id="symbolCnt"><span id="symbol"></span></span><span class="parStart">|</span>This 2-man project was about researching ways of simulating believable cave environments at interactive rates using voxels on the GPU.</p><br/>
+								
+								<p>It lasted 6 months and involved PCG research, application development, and user testing.</p> 
+								<p>Our generation pipeline processes GPU voxel volumes with a set of DirectX 11 Compute Shaders. My modelling solution can be thought of as guided intersecting procedural 3D brush strokes of morphing shapes, on a solid voxel volume.</p>
+								
+
+
+						</div>
+						
+						
+						<p id="galInfo" class="highlight2 projPadding"><span class="parStart">|</span>Cave results displayed with my HLSL procedural solid texturing shaders:</p>
+						<div class="imageRegion">
+							<div class="imgContainer">
+								<!--img class="soloImg" src=""/-->
+								<img class="leftImg" src="./images/cShaderGif438.gif"/>
+								<img class="rightImg" src="./images/iceShaderGif438.gif"/> 
+								<span class="shadTop sLeft "></span>
+								<span class="shadTop sRight "></span> 
+								<span class="shadBott sLeft shadLeft"></span>
+								<span class="shadBott sRight shadRight"></span> 
+							</div> 
+						</div>
+						
+						<div class="article highlight projPadding " style="margin-bottom: -16px;">  
+						</div>
+						<div class="colunaBox projPadding" >
+							<div class="colunas leftColuna">
+							<span class="colunaLine">Procedural</span>
+							<br/>
+							<span class="colunaLine">Triplanar</span>
+							<br/>
+							<span class="colunaLine" style="-moz-transform:scale(1.4032,1); -o-transform:scale(1.4032,1); -ms-transform:scale(1.4032,1); 	-webkit-transform:scale(1.4032,1); transform:scale(1.4032,1); margin-left: 25px;">Shaders</span>
+							</div>
+							<div class="colunas rightColuna">
+							<span class="colunaLine">Worldspace</span>
+							<br/>
+							<span class="colunaLine">Curl Noise</span>
+							<br/>
+							<span class="colunaLine" style="-moz-transform:scale(0.768,1); -o-transform:scale(0.768,1); -ms-transform:scale(0.768,1); 	-webkit-transform:scale(0.768,1); transform:scale(0.768,1); margin-right: -20px;">Solid Texturing</span>
+							</div>
+						</div>
+						
+						<div class="article highlight projPadding">  
+
+								<p style="font-size: 14px;"><span class="parStart">|</span>The tool implementation consists of three main parts:
+								</p> 
+
+						</div>
+						
+						<div class="imageRegion">
+							<div class="imgContainer">
+								<!--img class="leftImg" src="./images/lSystem.png"/-->
+								<a href="./images/lSystem.png" rel="nofollow" target="_blank" class="acro leftImg" ><acronym class="acro" title="open in new tab"><img class="soloImg" src="./images/lSystem.png" style="width: 438px;"/></acronym></a>
+								<div class="rightImg"><div class="article highlight rightText"><p> -A controllable <span class="bgHighlight">L-system</span> which generates a set of <span class="bgHighlight">structural points</span>. [partner's focus] <br/><br/>
+								It emulates the expanded cracks and passages which form cave structures in nature.</p></div></div> 
+								<span class="shadTop sLeft "></span>
+								<span class="shadBott sLeft shadLeft"></span>
+							</div> 
+						</div>
+						
+						<br/><div class="spacer"></div><br/>
+						<div class="imageRegion">
+							<div class="imgContainer">
+								<!--img class="leftImg" src="./images/lSystem.png"/-->
+								<a href="./images/metaRange.png" rel="nofollow" target="_blank" class="acro leftImg" ><acronym class="acro" title="open in new tab"><img class="soloImg" src="./images/metaRange.png" style="width: 438px;"/></acronym></a>
+								<div class="rightImg"><div class="article highlight rightText"><p> -A detailing component where I use an array of <span class="bgHighlight">metaball</span>s and <span class="bgHighlight">noise</span> (Voronoi, Simplex, Curl). [my focus]<br/><br/>
+								I carve the voxel volumes along specific structural points (effectively applying <span class="bgHighlight">energy field perturbation</span> to the values of the volume). </p></div></div> 
+								<span class="shadTop sLeft "></span>
+								<span class="shadBott sLeft shadLeft" style="margin-bottom: 4px;"></span>
+							</div> 
+						</div>
+						
+						<br/><div class="spacer"></div><br/>
+						<div class="imageRegion">
+							<div class="imgContainer" >
+								<!--img class="leftImg" src="./images/lSystem.png"/-->
+								<a href="./images/small-texture2.png" rel="nofollow" target="_blank" class="acro leftImg" ><acronym class="acro" title="open in new tab"><img class="soloImg" src="./images/small-texture2.png" style="width: 438px;"/></acronym></a>
+								<div class="rightImg"><div class="article highlight rightText"><p> -A component for isosurface extraction and shading. [my focus]<br/><br/>
+								I did the <span class="bgHighlight">normal calculations</span>, and the procedural materials with a full <span class="bgHighlight">pixel-lit Lambert shader</span> implemented with <span class="bgHighlight">triplanar projection</span>, <span class="bgHighlight">bump mapping</span>, <span class="bgHighlight">Curled Simplex noise</span>, <span class="bgHighlight">solid texturing</span>, animation etc.</p></div></div> 
+								<span class="shadTop sLeft "></span>
+								<span class="shadBott sLeft shadLeft" style="margin-bottom: 20px;"></span>
+							</div> 
+						</div>
+						
+						<div class="article highlight projPadding " style="margin-bottom: -10px;">  
+						</div>
+						
+						<div class="colunaBox projPadding" >
+							<div class="colunas leftColuna">
+							<span class="colunaLine">HLSL</span>
+							<br/>
+							<span class="colunaLine">Direct</span>
+							<br/>
+							<span class="colunaLine" style="-moz-transform:scale(1.38,1); -o-transform:scale(1.38,1); -ms-transform:scale(1.38,1); 	-webkit-transform:scale(1.38,1); transform:scale(1.38,1); margin-left: 23px;">Compute</span>
+							</div>
+							<div class="colunas rightColuna" >
+							<span class="colunaLine">Meta</span>
+							<br/>
+							<span class="colunaLine" style="-moz-transform:scale(1.2,1); -o-transform:scale(1.2,1); -ms-transform:scale(1.2,1); 	-webkit-transform:scale(1.2,1); transform:scale(1.2,1); margin-right: 7px;">Field</span>
+							<br/>
+							<span class="colunaLine" style="-moz-transform:scale(0.85,1); -o-transform:scale(0.85,1); -ms-transform:scale(0.85,1); 	-webkit-transform:scale(0.85,1); transform:scale(0.85,1); margin-right: -8px;">Perturbation</span>
+							</div>
+						</div>
+						
+						<div class="article highlight projPadding ">  
+								<p></p> 
+						
+
+						<p><span class="parStart">|</span> The key is the interesting emergent behaviour from when the two modules interact (structuring and detailing), when they intersect with themselves.
+						</div>
+						<br/><br/>
+						<p class="galInfo highlight2 projPadding"><span class="parStart">|</span>On the left you can see a simple non-intertwined explanatory example:</p>
+						<div class="imageRegion">
+								<!--img class="soloImg" src=""/-->
+								<a href="./images/metaGuideAndVoxels.png" rel="nofollow" target="_blank" class="acro"><acronym class="acro" title="open in new tab"><img class="soloImg" src="./images/metaGuideAndVoxels.png" style="width:100%;"/></acronym></a>
+						</div>
+						
+						<br/><div class="spacer"></div><br/>
+						<br/><div class="spacer"></div><br/>	
+						<p class="galInfo highlight2 projPadding"><span class="parStart">|</span> Results:</p>
+						<div class="imageRegion">
+								<!--img class="soloImg" src=""/-->
+								<a href="./images/results.jpg" rel="nofollow" target="_blank" class="acro"><acronym class="acro" title="open in new tab"><img class="soloImg" src="./images/results.jpg" style="width:100%;"/></acronym></a>
+						</div>
+						
+						<br/><div class="spacer"></div><br/>	
+						<br/><div class="spacer"></div><br/>
+						<!--p  class="galInfo highlight2 projPadding"><span class="parStart">|</span> aaaaaaaaaaaaaaaaaaaaaaaaaaa:</p-->
+						<div class="imageRegion">
+							<div class="imgContainer">
+							
+								<!--a href="./images/gridShot160.jpg" rel="nofollow" target="_blank" class="acro"><acronym class="acro" title="open in new tab"><img class="soloImg" src="./images/gridShot160.jpg"/></acronym></a-->
+								<!--a href="http://i.imgur.com/CIc0vEQ.jpg" rel="nofollow" target="_blank" class="acro"><acronym class="acro" title="open in new tab"><img class="soloImg" src="./images/gridShot160.jpg"/></acronym></a-->
+								<a href="https://8a0cc810b07c35c1ff17d2c503f3ad5c93cbf771.googledrive.com/host/0B50afmg1TY-eSHBtNmtYYVdxOG8/thumbArray.jpg" rel="nofollow" target="_blank" class="acro"><acronym class="acro" title="open in new tab"><img class="soloImg" src="https://8a0cc810b07c35c1ff17d2c503f3ad5c93cbf771.googledrive.com/host/0B50afmg1TY-eSHBtNmtYYVdxOG8/thumbArray.jpg"/></acronym></a>
+								<span class="shadTop sLeft "></span>
+								<span class="shadTop sRight "></span> 
+								<span class="shadBott sLeft shadLeft"></span>
+								<span class="shadBott sRight shadRight"></span> 
+							</div> 
+						</div>
+						
+						<br/><div class="spacer" style="margin-bottom: -16px;"></div><br/>
+						<div class="article highlight projPadding">  
+						<p><span class="parStart">|</span>Remember, this is rushed student work, not a finished product.<br/>
+						It's published with Unity Free's limitations (no 3D texture support), but: 
+						<!--a href="./surveyBuild/alpha.html" rel="nofollow" target="_blank">[Here's a test webBuild]</a-->
+						<a href="https://8a0cc810b07c35c1ff17d2c503f3ad5c93cbf771.googledrive.com/host/0B50afmg1TY-eSHBtNmtYYVdxOG8/alpha.html" rel="nofollow" target="_blank">[Here's a test webBuild]</a>
+						.<br/><br/>Also, since I'm such a nice guy, I'll give you the entire source with the Unity project on Bitbucket: <a href="https://bitbucket.org/tdbe/pcgcave_sandbox_1" rel="nofollow" target="_blank">https://bitbucket.org/tdbe/pcgc...</a>
+						
+						<br/></p><br/>
+						</div>
+						
+						
+						<p class="galInfo highlight2 projPadding"><span class="parStart">|</span> And here's a random test recording:</p>
+						<div class="imageRegion">
+							<div class="imgContainer">
+								
+								<iframe width="880" height="495" src="//www.youtube.com/embed/8g7s-xTTYHQ" frameborder="0" allowfullscreen></iframe>
+								
+								<span class="shadTop sLeft " ></span>
+								<span class="shadTop sRight "></span> 
+								<span class="shadBott sLeft shadLeft"></span>
+								<span class="shadBott sRight shadRight"></span> 
+							</div> 
+						</div>
+						
+						<div class="article highlight projPadding lastParagraph" >  
+								<p></p> 
+
+						</div>
+					</div>
+					
+				
+				
+				
+			</div>
+			<div id="bottomBar">
+				<a class="backBtn" href="../../" style="height: 32px; ">
+					<div class="backBg" style="margin-top: 10px;"></div>
+					<span style="padding-top: 10px;">Back</span>
+				</a>
+			</div>
+</body>
+</html>
