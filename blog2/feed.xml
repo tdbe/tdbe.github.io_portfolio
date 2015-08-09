@@ -4,10 +4,10 @@
     <title>Your awesome title</title>
     <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
 </description>
-    <link>http://yourdomain.com/</link>
-    <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 09 Aug 2015 16:43:16 +0200</pubDate>
-    <lastBuildDate>Sun, 09 Aug 2015 16:43:16 +0200</lastBuildDate>
+    <link>http://deferredreality.com/blog//</link>
+    <atom:link href="http://deferredreality.com/blog//feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 09 Aug 2015 23:44:34 +0200</pubDate>
+    <lastBuildDate>Sun, 09 Aug 2015 23:44:34 +0200</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -28,8 +28,8 @@
 
 </description>
         <pubDate>Thu, 09 Apr 2015 13:23:32 +0200</pubDate>
-        <link>http://yourdomain.com/jekyll/update/2015/04/09/welcome-to-jekyll%20copy.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/jekyll/update/2015/04/09/welcome-to-jekyll%20copy.html</guid>
+        <link>http://deferredreality.com/blog//jekyll/update/2015/04/09/welcome-to-jekyll%20copy.html</link>
+        <guid isPermaLink="true">http://deferredreality.com/blog//jekyll/update/2015/04/09/welcome-to-jekyll%20copy.html</guid>
         
         
         <category>jekyll</category>
