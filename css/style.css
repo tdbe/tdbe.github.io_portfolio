@@ -607,10 +607,10 @@ button {  width: auto; overflow: visible; }
 
 	width: 281px;
 	height: 171px;  
-	background: url("../images/tudor5.png"); 
+	background: url("../images/tudor6.png"); 
 	background-size: 281px 171px;
-	opacity: 0.8;
-    filter: alpha(opacity = 80); /* For IE */ 
+	opacity: 0.79;/*0.8;*/
+    filter: alpha(opacity = 79/*80*/); /* For IE */ 
 	background-repeat: no-repeat;
 	/*
 	border-top: 3px solid #444;
@@ -744,9 +744,9 @@ button {  width: auto; overflow: visible; }
 	
 	
 	/*padding-right: 12px;*/
-	padding-right: 5px;
+	padding-right: 10px;/*5px;*/
 	/*margin-left: -18px;*/
-	margin-left: -8px;
+	margin-left: -12px;/*-8px;*/
 	top: -6px;
 
 	width: 100px;
@@ -1216,7 +1216,8 @@ button {  width: auto; overflow: visible; }
 
 	font-size: 48px;  
 	/*color: rgba(190,0,0,0.83);*/
-	color: rgba(210,0,0,0.85); 
+	/*color: rgba(210,0,0,0.85); */
+	color: rgba(195,50,39,1); 
 }
 .leftColuna{
 	text-align: left;
@@ -2241,7 +2242,7 @@ button {  width: auto; overflow: visible; }
 	position: absolute;
 	margin-top: -0.32em;
 	font-family: "big_noodle_titling";
-	color: rgba(190,0,0,0.83); /* rgba(201,0,0,0.9); */
+	color: rgba(180,64,41,1); /*rgba(190,0,0,0.83); *//* rgba(201,0,0,0.9); */
 	font-size: 1.6em;
 	z-index: 2;
 }
@@ -2538,7 +2539,9 @@ overflow: visible;
 	text-shadow: 0px 0px 8px rgba(255,255,255,0.45);
 }
 
-
+#B {
+	/*border-left: 3px solid rgba(197, 57, 43, 0.64);*/
+}
 
 .tabs li.active div a {
 	overflow: visibile;
