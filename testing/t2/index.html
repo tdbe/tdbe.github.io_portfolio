@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<html>
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!--meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/-->
+	
+	<meta name="author" content="Tudor">
+	<meta name="keywords" content="Tudor, portfolio, videogame development">
+	<meta name="description" content="Tudor's portfolio on game development, simulations, concept design and such.">
+	<meta name="robots" content="all">
+	<title>Tudor/deferredreality</title> 
+
+	<!--link href='http://fonts.googleapis.com/css?family=Days+One' rel='stylesheet' type='text/css'/-->
+	<link rel="stylesheet" href="css/style.css" type="text/css" title="all purpose css" charset="utf-8">
+	<link rel="stylesheet" href="css/navigationStyle.css" type="text/css" title="navigation" charset="utf-8">	
+	<link rel="Shortcut Icon" type="image/x-icon" href="favicon.ico">	
+	
+	
+	<!--script type="text/javascript" charset="utf-8">
+		//document.getElementById('mainContent').style.visibility = "visible";
+		//<![CDATA[
+		//var a = "<style type='text/css'>#mainContent{display: block;}<\/style>";
+		//document.write("<style type='text/css'>#mainContent{display: block;}<\/style>");
+		//alert("aa");
+		//]]>
+		//document.write(a);
+	</script-->
+	
+	
+	<!--script src="http://code.jquery.com/jquery-1.4.4.min.js" type="text/javascript" charset="utf-8"/-->
+	<script src="https://code.jquery.com/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="./js/easytabs.js" type="text/javascript" charset="utf-8"></script>
+	<script src="./js/Window.Size.js" type="text/javascript" charset="utf-8"></script>
+	<script src="./js/main.js" type="text/javascript" charset="utf-8"></script>
+
+	<script type="text/javascript" charset="utf-8">
+		$(document).ready(function() {
+			$('#container').easyTabs({defaultContent:1});
+		});
+	</script>
+
+
+
+
+	
+	<script type="text/javascript" charset="utf-8">
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	  ga('create', 'UA-55237302-1', 'auto');
+	  ga('send', 'pageview');
+	</script>
+</head>
+
+<!--body id="zen" onload="doCenter(window.center({width:1,height:1}))" style="background: #d7dfd4;"-->
+<body id="zen" style="background: #e5ede2;" onload="onMainLoaded()"> 
+<h1 id="hh1">Tudor's portfolio website. Software, games, shaders, design, art.</h1>
+
+<div id="container">	
+
+	<div id="navigation">
+		<span id="navigation2">
+			<ul class="tabs" id="tabs" >
+					<li id="P"><div class="navSpacer" ><a href="#projects" onclick="setTimeout(resizeIframe2, timeoot);" class="noHighlight">Projects</a></div></li>
+					<li id="R"><div class="navSpacer" ><a href="#resume" onclick="" class="noHighlight">Resumé</a></div></li>
+					<li id="B"><div class="navSpacer" ><a href="#blog" onclick="" class="noHighlight">Blog</a></div></li>
+					<!--li><a href="#contact" onclick="normalStyle()">Contact</a></li-->
+			</ul>
+			<span id="porTitle">PORTFOLIO</span>
+		</span>
+
+		
+	</div>
+	
+	<div id="hcloud" >	
+		GPGPU Underground Canyons. MSc. Thesis Project about real-time Procedural Modelling of Cave Systems on the GPU. PCG, Voxels, DX11 Compute Shader, CG, HLSL, Unity
+		<br/>
+		Pendulum: Platformer concept. 3 Week solo DADIU project. Shaders, procedural distortions and character mechanics. Design, Mechanics, CG, PCG, Unity, DADIU
+		<br/> 
+		DADIU Productions. Two shipped tablet game projects. 3 months work, 18 people studio.
+		Gameplay, Effects, Pogramming, CG, OpenGL ES 2.0, Unity
+		<br/> 
+		Broken Shadows, exploration. UDK. Grappling hooks and climbing. 3 month Game Development project.
+		Physics, Gameplay, Concept/Level Design
+		<br/> 
+		Leap, puzzle platformer. Unity. Plane switching and teleportation. 3 month Game Development project.
+		Gameplay, Physics, Game Design, Level Design
+		<br/> 
+		Holosuit Concept. Concept art, game design and art direction project. 2.5D beat-em-up platformer.
+		Concept Art, Game Design
+		<br/> 
+		IDI Interface Beta. An Unity interface project showcasing some of my UID Industrial Design projects.
+		Unity, Interface, Industrial Design
+	</div>
+
+    <div id="mainContent"  >
+	
+	
+        <div id="centerPanel">
+			<span id="ttlCnt"><span id="ttl"><!--h1>Tudor B<span style="font-size: 16px;"> v1.1</span></h1--></span></span>
+			
+			<div id="projects">  
+				<div class="introText introTextPreview" >
+						<!--div class="article-title">
+							<h2></h2>
+						</div-->
+						<div class="article highlight" >
+							
+							<div id="openingWrapper">
+								<span id="openingL"><p><span id="symbolCnt"><span id="symbol"></span></span><span class="parStart">|</span> Welcome, I'm Tudor and I like to express myself through means of escapism. Let's see if we can be best buds.</p>
+								<p>I'm a game developer with degrees in <span class="BoldFont bgHighlightImportant">Computer Science</span>, <span class="BoldFont bgHighlightImportant">Industrial Design</span>, <span class="BoldFont bgHighlightImportant">Game Technology</span>. 
+								<br/>My approach is technical but interdisciplinary. I'm an aficionado of <span class="bgHighlight">gameplay</span> mechanics, <span class="bgHighlight">simulations</span> and <span class="bgHighlight">data oriented programming</span>. I like having fun with <span class="bgHighlight">PCG</span>, <span class="bgHighlight">VFX</span> and physics or mechanics using <span class="bgHighlight">GPGPU</span>.  </p></span>
+								<span id="openingR"><p><span class="parStart">|</span> Interactive software = craft + science. Over the years I picked my studies to learn to come up with the most <span class="bgHighlight">tractable</span> and synergistic solutions by <span class="bgHighlight">leveraging</span> both the <span class="bgHighlight">aesthetics</span>, and the <span class="bgHighlight">technical</span> details.</p>
+								
+								<p><a href="http://www.valvesoftware.com/company/Valve_Handbook_LowRes.pdf" rel="nofollow" target="_blank">Valve's Employee Handbook</a> discusses the need for high breadth developers with deeper expertise in certain fields. My notion is that this isn't only a perk to offer, but a necessity during any production, and the result of a proper understanding of game development.</p></span>
+							</div>
+				
+							
+						</div>
+						<p id="galInfo" class="highlight2"><span class="parStart">|</span> Here are some of the things I've been working on:</p>
+						
+					</div>
+					<span id="loading"><div  class="loader"></div><div  class="loader loader2"style=""></div><div  class="loader loader3"style=""></div></span>  
+			</div>
+			
+			<div id="resume" style="overflow: hidden;">
+				<!--div class="article-title" style="width: 350px;">
+					<h2></h2>
+				</div-->
+				<div class="article cvColumn cvColumnL" >
+					<div class="cvTitle highlight3">Of Senpai and noticing</div>
+					<div class="cvText highlight3">
+						<span class="parStart">|</span>I search for companies of fellow nerds, regardless of titles, as long as they're passionate about making cool things.
+						<!--span class="parStart">|</span>I search for companies of fellow nerds, no matter where on the planet, regardless of offered position, main metric being standard units of Hype.-->
+						<br/><br/>
+						<span class="parStart">|</span>I currently live in Denmark, and you can notice me at:<br/>
+						<b>this.tudor <small>{at}</small> gmail <small>{dot}</small> com</b>
+						<br/><br/>
+						<b>
+						<a href="https://bitbucket.org/tdbe" rel="nofollow" target="_blank">bitbucket.org/TDBE</a>
+						<a href="https://github.com/tdbe" rel="nofollow" target="_blank">github.com/TDBE</a>
+						</b>
+						<br/>
+						<!--br/>
+						Thing: 
+						Steam: urutabi, hit me up shitlords!
+						DeviantArt:
+						-->
+					</div>
+					<div class="cvTitle highlight3">Tools I use</div>
+					<div class="cvText highlight3" style="padding-left: 9px;">
+						<div class="listBlockNP">
+						Unity / C#, Javascript<br/>
+						UDK / C++, uScript<br/>
+						Git & Mercurial, Trello<br/>
+						<br/>
+						<div style="width: 100%;">
+							Agile, Scrum<br/>
+							Latex<br/>
+							<br/>
+						</div>
+						<div class="listBlockNP DezenF" style="width: 100%;">
+						Adobe
+						</div>
+						<div class="listBlock" style="width: 100%;">
+							Photoshop<br/>
+							Premiere, AfterEffects<br/>
+							InDesign<br/>
+							<br/>
+						</div>
+						<div class="listBlockNP DezenF" style="width: 100%;">
+						3D
+						</div>
+						<div class="listBlock" style="width: 100%;">
+							Cinema4D, <br/>
+							Sculptris, ZBrush<br/>
+							 <small>3DS Max, Blender, Rhino</small>
+						
+						</div>
+						
+						</div>
+						
+					</div>
+				</div>
+				
+				<div id="cVarDiv">
+					<div class="article cvColumn cvColumnC">
+							<div class="cvTitle highlight3">Experience and Studies</div>
+							<div class="cvText highlight3">
+								<div class="listBlockNP DezenF" style="width: 100%; 	margin-bottom: -7px;">
+								Work<span class="sFloRight">(02/2015 - )</span> 
+								</div>
+								<div class="listBlock" style="width: 100%;" >
+								<br/>
+								Software / Tech Developer at <a href="http://www.utopiancityscape.com/ucs/" rel="nofollow" target="_blank">UCS3D</a>, Copenhagen.
+								<div class="listBlockEG" >
+									Procedural Content Generation, Point Cloud Data, Lighting Simulation, City Planning.
+									</div>
+								<br/>
+								</div>
+								
+								
+								<div class="listBlockNP DezenF" style="width: 100%; 	margin-bottom: -6px;">
+								<br/>
+								Publication:<br/> 
+								Procedural Generation of 3D Caves for Games <br/> on the GPU. <span class="sFloRight">(FDG 2015)</span> 
+								</div>
+								<div class="listBlock" style="width: 100%;">
+								<br/>
+								Presented at <a href="http://www.foundationsofdigitalgames.org/" rel="nofollow" target="_blank">Foundations of Digital Games 2015</a>.
+								<br/>
+								Paper available <a href="http://julian.togelius.com/Mark2015Procedural.pdf" rel="nofollow" target="_blank">here</a>.
+								<div class="listBlockEG" >
+									L-system for layout, metaball brushes, additive noise. 
+								</div>
+								<br/>
+								</div>
+								
+								<div class="listBlockNP DezenF" style="width: 100%; 	margin-bottom: -6px;">
+								<br/>
+								Masters <span class="sFloRight">(2012-2014)</span> 
+								</div>
+								<div class="listBlock" style="width: 100%;">
+								<br/>
+								MSc. in Game Technology (120 ECTS). IT University of Copenhagen, Denmark.
+									<div class="listBlockEG" >
+									e.g. Engines, Development, Design, Game Graphics, Data Mining, PCG, Graphics Programming 
+									</div>
+								<br/>
+								</div>
+								<div class="listBlockNP DezenF" style="width: 100%; 	margin-bottom: -6px;">
+								<br/>
+								Work/Specialization <span class="sFloRight">(2013)</span>
+								
+								</div>
+								<div class="listBlock" style="width: 100%;" >
+								<br/>
+								DADIU Productions (30 ECTS). (2 tablet titles)<br/>Danish Academy of Digital Interactive Entertainment, Copenhagen.
+								
+								<br/>
+								</div>
+								<div class="listBlockNP DezenF" style="width: 100%; 	margin-bottom: -6px;">
+								<br/>
+								Postgrad <span class="sFloRight">(2011-2012)</span> 
+								</div>
+								<div class="listBlock" style="width: 100%;">
+								<br/>
+								Industrial Design (60 ECTS). Umeå Institute of Design, Sweden.
+									<div class="listBlockEG">
+									e.g. Interaction Design, Visualisation Techniques & Storytelling, Ergonomics, Product Design, Service Design, Transportation Design, Art History
+									</div>
+								<br/>
+								</div>
+								<div class="listBlockNP DezenF" style="width: 100%; 	margin-bottom: -6px;">
+								<br/>
+								CPE <span class="sFloRight">(2011)</span> 
+								</div>
+								<div class="listBlock" style="width: 100%;">
+								<br/>
+								Certificate of Proficiency in English, level C2. Cambridge ESOL Level 3 International.
+								<div class="listBlockEG">
+									got an A (read: toughest language test)
+									</div>
+								<br/>
+								</div>
+								<div class="listBlockNP DezenF" style="width: 100%; 	margin-bottom: -6px;">
+								<br/>
+								Bachelors <span class="sFloRight">(2008-2011)</span> 
+								</div>
+								<div class="listBlock" style="width: 100%;">
+								<br/>
+								BSc. in Computer Science (180 ECTS). A.I. Cuza University, Iași, Romania.
+								<div class="listBlockEG" >
+									e.g. Network Programming, Assembly, Matlab, Graph Algorithms, Compilers, OOP, .NET, Databases, Web Technologies, Information Security, AI, Software Engineering, Computer Graphics, Bioinformatics
+									</div>
+								<br/><br/><br/>
+								<!--span class="buffer"></span--><!--span class="buffer"></span><span class="buffer" style="height: 15px;"></span><span class="buffer" style="height: 15px;"></span><span class="buffer" style="height: 15px;"></span--> 
+								</div>
+
+							</div>
+					</div>
+				</div>
+				
+				<div class="article cvColumn cvColumnR" style="margin: 12px 2.725% 0px 0px; width: 19.318%;">
+					
+					<div class="cvText" >
+						<div id="picMe"></div>
+											
+					</div>
+				</div>
+				<div class="article cvColumn cvColumnR" style="top: 202px;" >
+					
+					<div class="cvTitle highlight3" style="padding-left:8%;">Buzzwords / Skills</div>
+					<div class="cvText highlight3" style="padding-left:8%;">
+						
+						<div class="listBlockNP DezenF" >
+						Languages
+						</div>
+						<div class="listBlock">
+							C# / .NET, <small>WPF, ASP.NET</small><br/>
+							C, C++<br/>
+							Java<br/>
+							<small>CLisp, Assembly</small><br/>
+							...
+							<br/>
+							Javascript, JQuery, PHP<br/>
+							HTML5, Canvas, CSS3<br/>
+							AS 3.0/<small>Stage3D/Flex/MXML</small><br/>
+							Lua<br/>
+							<br/>
+						</div>
+						<div class="listBlockNP DezenF">
+						Technologies
+						</div>
+						<div class="listBlock">
+							WebGL, OpenGL, OpenCL, DirectX, Direct Compute, CUDA<br/>
+							GLSL, HLSL, CG, <small>QT</small>, <small>GLUT</small><br/>
+							SSH, WebSocket, Oracle<br/>
+							<br/>
+						</div>
+						<!--div class="listBlockNP DezenF" style="width: 100%;">
+						Misc
+						</div>
+						<div class="listBlock" style="width: 100%;">
+							Agile, Scrum<br/>
+						</div-->
+					</div>
+				</div>
+				
+
+				
+				<!--div style="clear:both;"></div-->
+			</div>
+			
+			<div id="blog">
+				<div class="article highlight2" style="overflow: hidden;">
+					<!--div class="cvText highlight"-->
+				<div style="padding-left: 1.855%;">
+						<div class="Noodle">SOON...!</div>
+						(working on it)<br/><br/><br/>
+						<span class="DezenF"><span class="parStart">|</span>In the meantime, here are six words:</span> <br/><span class="parStart">&nbsp;</span><span class="bgHighlight">imagination</span>, <span class="bgHighlight">humour</span>, <span class="bgHighlight">creativity</span>, <span class="bgHighlight">equal poise</span>, <span class="bgHighlight">reason</span>.
+						
+						
+						
+				</div>
+				<br/><br/><br/>
+				
+						<span class="DezenF"><span class="parStart" style="padding-left: 16px;">|</span>Here's some of the <span class="bgHighlight">vidya</span> I like:</span><br/>
+						<div class="listBlock">
+						<br/>
+						Shadow of the Colossus, <br/>
+						Guilty Gear, <br/>
+						Katamari Damacy, <br/>
+						Jet Set Radio, <br/>
+						Beyond Good & Evil, <br/>
+						</div>
+						<div class="listBlock">
+						<br/>
+						Psychonauts, <br/>
+						Smash, <br/>
+						Majora's mask, <br/>
+						Metroid, <br/>
+						Jazz Jackrabbit, <br/>
+						</div>
+						<div class="listBlock">
+						<br/>
+						Gish, <br/>
+						Echochrome, <br/>
+						N++, <br/>
+						AVGN Adventures, <br/>
+						Skullgirls, <br/>
+						</div>
+						<div class="listBlock" >
+						<br/>
+						System Shock 2, <br/>
+						Legacy of Kain, <br/>
+						MDK2, <br/>
+						Thief 2, <br/>
+						Gang Beasts,<br/>
+						</div>
+						<div class="listBlock" >
+						<br/>
+						Splatoon, <br/>
+						Lethal League, <br/>
+						Mirror's edge, <br/>
+						 Valve stuff, <br/>
+						Carmack stuff, <br/>
+						</div>
+						
+						<!--div class="listBlock" style="display: block; height: 75px; width: 70px; background:blue;">
+
+						 <br/>
+						</div-->
+						
+						<div class="listBlock" >
+						<br/>
+						Kamyia stuff, <br/>
+						Kojima stuff, <br/>
+						SureAI (eg Skywind)<br/>
+						etc. <br/>
+						Frog Fractions 2.<br/>
+						</div>
+						<br/>
+						
+				
+				<!--span id="openingR" style="vertical-align: bottom; float: right; 
+				display: block; width: 100%; height: 90px;" >
+						<br/><br/>
+						Games which are engrossing, rich, and full of personality; with no clumsy superficial gimmicks, or pseudo-deep pretentious storytelling.
+						<br/>
+						<br/>
+						
+				</span-->
+					<!--/div-->
+					
+					<div class="listBlock" style="vertical-align: bottom; float: left; align: left;">
+						<!--span id="openingL" style="vertical-align: bottom; float: left;"-->
+						<!--Mirror's Edge, Bioshock, -->
+						<br/>
+						Also No Man's Sky and The Last Guardian..<br/>
+						<br/>
+						More generally, I'm a fan of games that have tight, high-bandwidth input, "handle really well", with fun and liberating mechanics.
+						<br/><br/>
+					<!--/span-->
+				
+						<br/>
+						I also play DnD, surprisingly regularly.
+						<br/><br/>
+						<span class="DezenF"><span class="parStart">|</span>And here is a dump of a few (mostly relevant) things I approve of:</span>
+						<br/><br/>
+						<!--a href="http://www.valvesoftware.com/company/Valve_Handbook_LowRes.pdf" rel="nofollow" target="_blank">Valve Employee Handbook</a>
+						<br/-->
+						<a href="https://www.youtube.com/watch?v=tmY4-RMB0YY" rel="nofollow" target="_blank">John Cleese on Creativity</a>
+						<br/>
+						<a href="https://www.youtube.com/watch?v=t8QEOBgLBQU" rel="nofollow" target="_blank">Gabe Newell: Reflections of a video game maker</a>
+						<br/>
+						<a href="https://www.youtube.com/watch?v=EaN4wUii0T0" rel="nofollow" target="_blank">John Carmack and SMU LYLE School of Engineering</a>
+						<br/>
+						<a href="http://blog.selfshadow.com/2014/08/14/siggraph-2014-links/" rel="nofollow" target="_blank">SIGGRAPH</a>
+						<br/>
+						<a href="http://fengzhudesign.com/tutorials.htm" rel="nofollow" target="_blank">Feng Zhu Design Cinema</a>
+						<br/>
+						<a href="http://superbestfriendsplay.com/" rel="nofollow" target="_blank">Super Best Friend Zaibatsu</a>
+						<br/>
+						<a href="http://thebiggestproblemintheuniverse.com/" rel="nofollow" target="_blank">thebiggestproblemintheuniverse</a>
+						<br/>
+						<a href="http://www.jonathancoulton.com/" rel="nofollow" target="_blank">Jonathancoulton.com</a>
+						<br/>
+						<!--a href="http://www.rifftrax.com" rel="nofollow" target="_blank">Rifftrax</a>
+						<br/-->
+						<a href="https://www.youtube.com/user/razethew0rld" rel="nofollow" target="_blank">The Tek</a>
+						<br/>
+						<a href="http://spoonyexperiment.com/" rel="nofollow" target="_blank">Spoony</a>, <a href="http://thatguywiththeglasses.com/" rel="nofollow" target="_blank">thatguywiththeglasses</a>, <a href="https://www.youtube.com/user/JonTronShow" rel="nofollow" target="_blank">JonTron</a>, <a href="http://cinemassacre.com/" rel="nofollow" target="_blank">AVGN</a> etc.
+						<br/>
+						<!--a href="http://www.youtube.com/watch?v=wJMTyK0VfdY" rel="nofollow" target="_blank">The Amazing Randi</a>
+						<br/-->
+						<!--a href="https://www.youtube.com/watch?v=DZLT4DxE1uA" rel="nofollow" target="_blank">Cosmos: A Spacetime Odyssey</a-->
+						
+						<br/><br/>
+						<span class="DezenF"><span class="parStart">|</span>You can notice me further at</span> <a href="http://spectraljump.deviantart.com/" rel="nofollow" target="_blank">spectraljump.deviantart</a>
+						<br/>
+					</div>
+						
+					
+					
+				</div>
+				
+				
+			</div>
+			
+
+		
+
+			
+        </div>
+        
+	
+	</div>
+	
+	<div>
+		<noscript id="noContainer">
+			<div id="noScript" style="width:400px;height:200px;position:absolute;left:50%;top:300px;margin-left:-200px;margin-top:0px;">
+				<p>Your JavaScript is turned off. You'll need to turn it on to navigate my portfolio. Please live dangerously for a bit and pause your noscript.</p>
+			</div>
+		</noscript>
+	</div>
+ 
+</div>	
+	
+	<div id="footer">
+		<span id="footer2">
+			<span class="parStart">|</span> Designed and built by me. Copyright: me, forever. Unless you buy me a beer.
+			<!--div id="CCs">
+				<a rel="license" href="http://creativecommons.org/licenses/by-sa/2.5/"><img id="cclogo" alt="Creative Commons License" style="border-width:0" src="http://creativecommons.org/images/public/somerights20.gif" /></a>
+				<span style="line-height: 200%;">Licensed under <a rel="license" href="http://creativecommons.org/licenses/by-sa/2.5/">CC Attribution-ShareAlike 2.5</a>.</span>
+			</div-->
+		</span>
+		<!--<span class="parStart">|</span> Note: my poor man's webhost may be slow at times; ..a temporary solution.-->
+		</span>
+	</div>
+	
+	<div style="display:block; overflow: visible; position: fixed; z-index:-4; left: 0px; top:0px; width: 100%; height: 100%;">
+		<div id="dynamicBg" >
+		</div>
+	</div>
+
+</body>
+</html>
