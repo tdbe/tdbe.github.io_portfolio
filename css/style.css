@@ -2263,6 +2263,7 @@ overflow: visible;
 	bottom: 0;
 	width: 200%;
 	z-index: 0;
+	color: rgba(200,84,61,0.87);
 	/*color: rgba(226,96.8,69.2,0.09);*/
 	text-shadow: 1px 0px 0px rgba(255,255,255,0.22);
 }
