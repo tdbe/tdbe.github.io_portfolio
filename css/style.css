@@ -1670,7 +1670,7 @@ button {  width: auto; overflow: visible; }
 
 #centerPanel {
 
-overflow: hidden;
+overflow: visible;
 	border: 1px solid rgba(255,255,255,.80);/*#cc332b;*/
 	border-radius: 4px; 
 	-moz-border-radius: 4px; 
