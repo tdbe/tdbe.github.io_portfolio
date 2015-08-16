@@ -196,15 +196,15 @@ pre, code, kbd, samp { font-family: monospace, sans-serif; }
 	font-style: normal;
 }
 */
-
+/*
 @font-face {
 	font-family: 'Roboto-Medium';
 	src: url('fonts/Roboto-Medium.eot');
 	src: local('☺'), 
-	/*url('fonts/Roboto-Medium.otf') format('opentype'), */
+	
 	url('fonts/Roboto-Medium.woff') format('woff'), 
 	url('fonts/Roboto-Medium.ttf') format('truetype');
-	/*url('fonts/Roboto-Medium.svg#webfontuqiQRgYP') format('svg');*/
+	/url('fonts/Roboto-Medium.svg#webfontuqiQRgYP') format('svg');/
 	font-weight: normal;
 	font-style: normal;
 }
@@ -213,10 +213,10 @@ pre, code, kbd, samp { font-family: monospace, sans-serif; }
 	font-family: 'Roboto-Bold';
 	src: url('fonts/Roboto-Bold.eot');
 	src: local('☺'), 
-	/*url('fonts/Roboto-Bold.otf') format('opentype'), */
+	/url('fonts/Roboto-Bold.otf') format('opentype'), /
 	url('fonts/Roboto-Bold.woff') format('woff'), 
 	url('fonts/Roboto-Bold.ttf') format('truetype');
-	/*url('fonts/Roboto-Bold.svg#webfontuqiQRgYP') format('svg');*/
+	/url('fonts/Roboto-Bold.svg#webfontuqiQRgYP') format('svg');/
 	font-weight: normal;
 	font-style: normal;
 }
@@ -226,14 +226,14 @@ pre, code, kbd, samp { font-family: monospace, sans-serif; }
 	font-family: 'Roboto-Regular';
 	src: url('fonts/Roboto-Regular.eot');
 	src: local('☺'), 
-	/*url('fonts/Roboto-Regular.otf') format('opentype'),*/
+	/url('fonts/Roboto-Regular.otf') format('opentype'),/
 	url('fonts/Roboto-Regular.woff') format('woff'), 
 	url('fonts/Roboto-Regular.ttf') format('truetype'); 
-	/*url('fonts/Roboto-Regular.svg#webfontuqiQRgYP') format('svg'); */
+	/url('fonts/Roboto-Regular.svg#webfontuqiQRgYP') format('svg'); /
 	font-weight: normal;
 	font-style: normal; 
 }
-
+*/
 /*
 http://www.font2web.com/
 http://www.fontsquirrel.com/tools/webfont-generator
@@ -311,8 +311,9 @@ http://fontpro.com/days-one-font-16514
 	/*font-size: 1.13em; */
 	font-size: 14px; 
 	color: rgba(0,0,0,0.7);
-	/*font-family: 'Oswald-Regular', 'Arial Black', 'DaysOne-Regular', sans-serif;*/
-	font-family: 'Roboto-Bold', sans-serif;
+	/*font-family: 'Roboto-Bold', 'Oswald-Regular', 'Arial Black', 'DaysOne-Regular', sans-serif;*/
+	font-family: "Raleway",sans-serif;
+	font-weight:600;
 	text-shadow:/*0 0 10px rgba(255,255,255,1),*/ 0 0 12px rgba(255,255,255,0.6), 0 0 18px rgba(255,255,255,0.5), 0 0 24px rgba(255,255,255,0.6);
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale; 
@@ -637,7 +638,7 @@ button {  width: auto; overflow: visible; }
 	
 	left: 0px;
 	top: 0px;
-	font-size: 26px;/*24px;*/
+	font-size: 26px;/*26px;*//*24px;*/
 	z-index: 100;
 	/*max-width: 880px;*/
 	max-width: 880px;
@@ -1681,6 +1682,8 @@ overflow: visible;
 	box-shadow: 0px 4px 4px rgba(76,76,76,.85);
 	border-corner-shape: bevel;
 	
+	border-top:0px;
+	
 	position: relative;
 	display: block;
 	max-width: 880px;
@@ -2263,7 +2266,7 @@ overflow: visible;
 	bottom: 0;
 	width: 200%;
 	z-index: 0;
-	color: rgba(200,84,61,0.87);
+	color: rgba(190,70,52,0.9);
 	/*color: rgba(226,96.8,69.2,0.09);*/
 	text-shadow: 1px 0px 0px rgba(255,255,255,0.22);
 }
@@ -2510,7 +2513,7 @@ overflow: visible;
 	/*background-color: #444;*/
 	display: inline;
 	border-left: 3px solid rgba(197, 57, 43, 0.90);/*<=> #c53935;*/
-	padding-top: 24px;
+	padding-top: 18px;/*24px;*/
 	
 	-webkit-transition: all 1s ease-in;
 	-moz-transition: all 1s ease-in;
@@ -2519,6 +2522,9 @@ overflow: visible;
 	transition: all 1s ease-in;
 }
 .tabs li div a {
+
+	font-size: 28px;
+
 	overflow: visibile;
 	position: relative;
 	display: inline;
@@ -2531,7 +2537,7 @@ overflow: visible;
 	left: -40%;*/
 	padding-right: 2px;
 	left: -50%;
-	top: 38px;
+	top: 40px;/*38px;*/
 	/*padding: 10px 15px;*/
 	/*border-right: 1px solid #fff;*/
 	font-family: ChineseRocksRegular, sans-serif;
@@ -2570,9 +2576,9 @@ overflow: visible;
 	text-shadow: -1px 1px 0px rgba(0,0,0,0.40);
 	/*background-color: #fff;*/
 	
-	top: 43px;
+	top: 48px;/*43px;*/
 	
-	font-size: 32px;
+	font-size: 34px;/*32px;*/
 	margin: -10%;/*-12px;*/
 
 	/*
@@ -2610,7 +2616,7 @@ overflow: visible;
 
 .tabs li.active{
 
-	padding-top:72px;/*75px*/
+	padding-top:60px;/*72px;*//*75px*/
 	
 	border-left: 3px solid rgba(197, 57, 43, 0.64);
 	
