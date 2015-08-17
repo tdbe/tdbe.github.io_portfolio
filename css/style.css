@@ -320,6 +320,12 @@ http://fontpro.com/days-one-font-16514
 	
 	margin-left: -1px;
 	margin-right: -1px;
+	word-spacing: -1px;
+	transform : scale(1,0.95);
+	-webkit-transform:scale(1,0.95); /* Safari and Chrome */
+	-moz-transform:scale(1,0.95); /* Firefox */
+	-ms-transform:scale(1,0.95); /* IE 9+ */
+	-o-transform:scale(1,0.95); /* Opera */
 }
 
 .bgHighlightImportant{ 
