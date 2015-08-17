@@ -2580,7 +2580,7 @@ overflow: visible;
 
 .tabs li a:hover {
 	/*background-color: #00b3ff;*/
-	color: #c53935;
+	color: rgba(190, 57, 43, 1);/*#c53935;*/
 	text-shadow: 0px 0px 8px rgba(255,255,255,0.45);
 }
 
