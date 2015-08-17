@@ -353,18 +353,36 @@ http://fontpro.com/days-one-font-16514
 	/*0 0 10px rgba(255,255,255,1),*/
 	/*
 	text-shadow: 0 0 12px rgba(255,255,255,0.6), 0 0 18px rgba(255,255,255,0.4), 0 0 24px rgba(255,255,255,0.6);*/
-	text-shadow: 0 0 12px rgba(255,255,255,0.7), 0 0 18px rgba(255,255,255,0.4), 0 0 24px rgba(255,255,255,0.6);
+	/*text-shadow: 0 0 12px rgba(255,255,255,0.7), 0 0 18px rgba(255,255,255,0.4), 0 0 24px rgba(255,255,255,0.6);*/
+	text-shadow: 0 0 12px rgba(255,255,255,0.6), 0 0 18px rgba(255,255,255,0.4), 0 0 24px rgba(255,255,255,0.5);
 }
 
 .highlight3{
 
-	text-shadow: 0 0 12px rgba(255,255,255,0.5), 0 0 18px rgba(255,255,255,0.4), 0 0 24px rgba(255,255,255,0.5);
+	text-shadow: 0 0 12px rgba(255,255,255,0.5), 0 0 18px rgba(255,255,255,0.4), 0 0 24px rgba(255,255,255,0.5) !important;
+}
+
+.highlight0{
+	text-shadow: 0px 0px 4px rgba(255,255,255,1), 0px 0px 4px rgba(255,255,255,1), 0px 0px 8px rgba(255,255,255,1), 0px 0px 8px rgba(255,255,255,1);
+}
+ a:hover .highlight0{
+
+	text-shadow: 0px 0px 6px rgba(255,255,255,1), 0px 0px 6px rgba(255,255,255,1), 0px 0px 10px rgba(255,255,255,1), 0px 0px 10px rgba(255,255,255,1) ;
+}
+
+
+.darkerFont{
+	color: rgb(42,42,42) !important;
+}
+
+.lightFont{
+	color: rgb(62,62,62) !important;
 }
 
 a, a:active, a:visited { 
 	color:rgba(0,0,0, .84);  /*.64*/ /*444;*/
 	/*text-shadow: 0px 0px 4px rgba(255,255,255,1), 0px 0px 4px rgba(255,255,255,0.8), 0px 0px 8px rgba(255,255,255,1);*/
-	text-shadow: 0px 0px 4px rgba(255,255,255,1), 0px 0px 4px rgba(255,255,255,1), 0px 0px 8px rgba(255,255,255,1), 0px 0px 8px rgba(255,255,255,1);
+	text-shadow: /*0px 0px 4px rgba(255,255,255,1), */0px 0px 4px rgba(255,255,255,1), 0px 0px 8px rgba(255,255,255,1), 0px 0px 8px rgba(255,255,255,1);
 	
 	/*color: rgba(0,0,0, .8);*//*rgba(96,120,144,1);*//*#607890;*/
 	/*text-shadow: -1px 1px 1px rgba(197,57,53,1);*/
@@ -399,6 +417,9 @@ a:hover {
 	*/
 	border-bottom: none;
 }
+
+
+
 
 ul, ol { margin-left: 1.8em; }
 ol { list-style-type: decimal; }
@@ -516,6 +537,8 @@ button {  width: auto; overflow: visible; }
  /* Primary Styles
     Author: 
  */
+ 
+ 
  
 #porTitle {
 /*
@@ -882,7 +905,7 @@ button {  width: auto; overflow: visible; }
 	/*padding-top: 32px;*/
 	padding-top: 42px;
 	padding-bottom: 32px;
-	color: #292929;
+	color: rgb(62,62,62);/*rgb(41,41,41);*//*#292929;*/
 	/*letter-spacing: 1px;*/
 	/*font-weight: bold;*/
 	font-family: "Raleway",Verdana;/*	font-family: "Trebuchet MS", Verdana; */ /*DezenPro_Regular;*/
@@ -2186,6 +2209,7 @@ overflow: visible;
   100% {		border-color: rgba(255,255,255,255.64) ;
   }
 }
+
 .gridItemActive{
 	position: relative;
 	display: inline-block;
@@ -2244,6 +2268,8 @@ overflow: visible;
 	-moz-box-shadow: 0px 4px 4px rgba(76,76,76,.45);
 	box-shadow: 0px 4px 4px rgba(76,76,76,.45);
 	z-index: 1;
+	
+	
 }
 
 .gridTitle{
@@ -2255,8 +2281,10 @@ overflow: visible;
 	color: rgba(180,64,41,1); /*rgba(190,0,0,0.83); *//* rgba(201,0,0,0.9); */
 	font-size: 1.6em;
 	z-index: 2;
-	text-shadow: 1px 0px 0px rgba(255,255,255,0.32);
+	/*text-shadow: 1px 0px 0px rgba(255,255,255,0.32);*/
 }
+
+
 
 .gridTag{
 	/*can have more tags separated by space*/
@@ -2901,4 +2929,5 @@ overflow: visible;
   p, h2, h3 { orphans: 3; widows: 3; }
   h2, h3{ page-break-after: avoid; }
 }
+
 
