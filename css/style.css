@@ -774,7 +774,7 @@ button {  width: auto; overflow: visible; }
 	top: -6px;
 
 	width: 100px;
-	height: 70px;
+	height: 70px;/*70px;*/
  }
   #symbol{
 	position: relative;
@@ -879,7 +879,7 @@ button {  width: auto; overflow: visible; }
 
 	/*float: right;*/
 	/*max-width: 46.469%;*/
-	max-width: 46.069%;
+	max-width: 46.469%;
 	
 	top: 0px;
 
