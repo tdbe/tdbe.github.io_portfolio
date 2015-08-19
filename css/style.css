@@ -317,10 +317,11 @@ http://fontpro.com/days-one-font-16514
 	text-shadow:/*0 0 10px rgba(255,255,255,1),*/ 0 0 12px rgba(255,255,255,0.6), 0 0 18px rgba(255,255,255,0.5), 0 0 24px rgba(255,255,255,0.6);
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale; 
-	
+	/*
 	margin-left: -1px;
 	margin-right: -1px;
 	word-spacing: -1px;
+	*/
 	/*
 	display: inline-block;
 	transform : scale(0.95,1);
@@ -580,14 +581,20 @@ button {  width: auto; overflow: visible; }
 	width: 900px;
 	
 
-	left: -83px;/*7px;*/ 
+	left: -86px;/*-83px;*//*7px;*/ 
 	top: -10px;
 	/*padding: 10px 15px;*/
 	/*border-right: 1px solid #fff;*/
 	font-family: ChineseRocksRegular, sans-serif;
 	color: rgba(201,0,0,0.15);
 	/*text-shadow: 1px 0px 0px rgba(255,255,255,0.32);*/
-	
+	/*
+	transform : scale(1,1.285);
+	-webkit-transform:scale(1,1.285);
+	-moz-transform:scale(1,1.285);
+	-ms-transform:scale(1,1.285);
+	-o-transform:scale(1,1.285); 
+	*/
 	transform : scale(1,1.285);
 	-webkit-transform:scale(1,1.285); /* Safari and Chrome */
 	-moz-transform:scale(1,1.285); /* Firefox */
@@ -597,6 +604,7 @@ button {  width: auto; overflow: visible; }
 	font-weight: 900;
 	
 	font-size: 162px;
+	
 }
 
 #porTitle:hover {
@@ -604,7 +612,8 @@ button {  width: auto; overflow: visible; }
 	top: -32px;
 	left: -84px;*/
 	
-	left: -84px;
+	/*left: -84px;*/
+	left: -86px;
 	top: -9px; 
 	
 	cursor: default; 
@@ -622,7 +631,9 @@ button {  width: auto; overflow: visible; }
 	position: relative;
 	float: right;
 	
-	padding-right: 2px;
+	/*padding-right: 2px;*/
+	/*padding-right: 75px;*/
+	padding-right: 7.2%;
 	/*top: -167px;*/
 	top: -174px;
 	
@@ -633,6 +644,14 @@ button {  width: auto; overflow: visible; }
  
   #ttl{
 
+	image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
+    image-rendering: -moz-crisp-edges;          /* Firefox                        */
+    image-rendering: -o-crisp-edges;            /* Opera                          */
+    image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
+    image-rendering: pixelated; /* Chrome */
+    image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
+    -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
+	
 	/*
 	position: absolute;
 	left: 615px;
@@ -659,7 +678,9 @@ button {  width: auto; overflow: visible; }
 	z-index: 100;
 	
 	pointer-events: none;
--webkit-font-smoothing: antialiased;
+	/*-webkit-font-smoothing: antialiased;*/
+
+	
  }
  
 
@@ -875,10 +896,12 @@ button {  width: auto; overflow: visible; }
 	/*max-width: 42%;*/
 	/*max-width: 48.2%;*/
 	/*max-width: 46.484%;*/
-	max-width: 46.469%;
+	/*max-width: 46.469%;*/
+	max-width: 45%;
 	top: 0px;
 	/*padding-right: 12px;*/
-	padding-right: 24px;
+	/*padding-right: 24px;*/
+	padding-right: 2.5%;
 	/*padding-left: 10px;*/
 	padding-left: 1.855%;
 	
@@ -891,7 +914,9 @@ button {  width: auto; overflow: visible; }
 
 	/*float: right;*/
 	/*max-width: 46.469%;*/
-	max-width: 46.469%;
+	max-width: 45%;
+	
+	padding-left: 4%;
 	
 	top: 0px;
 
@@ -913,7 +938,7 @@ button {  width: auto; overflow: visible; }
 	display: inline-block;
 
 	font-size: 14px;
-	padding: 32px; /*24px;*/
+	padding: 6%;/*32px;*/ /*24px;*/
 	/*padding-top: 32px;*/
 	padding-top: 42px;
 	padding-bottom: 32px;
@@ -1110,6 +1135,7 @@ button {  width: auto; overflow: visible; }
 	height: auto;
 	/*min-height: 100%;*/
 	/*margin-bottom: -50px;*/
+	
 }
 
 #topBar{
@@ -1721,12 +1747,13 @@ overflow: visible;
 	
 	position: relative;
 	display: block;
-	max-width: 880px;
+	/*max-width: 880px;*/
+	max-width: 1024px;
 	min-width: 617px;/*604px;*//*440*/
 
 	font-size: 16px; 
 	
-	margin: 0 auto;
+	margin-left:auto;
 	margin-top: 0px;
 	margin-right: auto;
 	margin-bottom: 0px;
@@ -1871,6 +1898,10 @@ overflow: visible;
 
 	padding: 16px 14px 16px 14px;
 
+	padding-left: 38px;
+	
+	margin-left: auto;
+	margin-right:auto;
 
 	/*background-color: rgba(0,0,0,.16);*/
 }
@@ -2064,6 +2095,21 @@ overflow: visible;
 	transition: width 0.2s ease, height 0.2s ease, margin 0.2s ease, border 0.2s ease, border-color 0.4s ease-out;
 }
 
+.gridLine{
+/*
+	padding-left:auto; 
+	padding-right:auto; 
+	margin-left:auto; 
+	margin-right:auto;
+	*/
+	/*width: 100%;*/
+	display:inline-block;
+}
+
+.gridMystery{
+
+}
+
 .gridItem {
 	position: relative;
 	display: inline-block;
@@ -2071,6 +2117,11 @@ overflow: visible;
 	/*margin: 14px 10px 14px 10px;*/
 	margin: 0.875em 0.625em 0.875em 0.625em;
 
+	/*
+	margin-left: 0.875em;
+	margin-right: 0.875em;
+	*/
+	
 	border: 1px solid rgba(255,255,255,.80);/*#cc332b;*/
 	border-radius: 4px; 
 	-moz-border-radius: 4px; 
@@ -2112,7 +2163,9 @@ overflow: visible;
 .gridItem:hover, .gridItemAnalog:hover{
 	/*margin: 0.875em 0.625em 0.875em 0.625em;*/
 	overflow: visible;
-	margin: -0.18em;
+	/*margin: -0.18em;*/
+	margin-left: -0.18em;
+	margin-right: -0.18em;
 	margin-top: -2em;
 
 	/*border: 20px solid rgba(255,0,0,0.64);*//*201,0,0,0.7*/
