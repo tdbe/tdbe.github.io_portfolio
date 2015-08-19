@@ -4,7 +4,8 @@
 
 
 
-
+var maxWidth = 920;
+var maxWidth2 = 920;
 
 
 
@@ -126,8 +127,8 @@ function scaleGallery(){
 	var d = document.getElementById("content-to-scale");
 	//alert(w.offsetWidth);
 	if(d != null){
-		if(w.offsetWidth < 880){//883//880
-			var val  = w.offsetWidth/886; 
+		if(w.offsetWidth < maxWidth){//883//880
+			var val  = w.offsetWidth/maxWidth2; 
 
 			d.style.fontSize = +val.toFixed(2)+ "em"; 
 		}

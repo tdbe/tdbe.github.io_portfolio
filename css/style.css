@@ -644,14 +644,7 @@ button {  width: auto; overflow: visible; }
  
   #ttl{
 
-	image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
-    image-rendering: -moz-crisp-edges;          /* Firefox                        */
-    image-rendering: -o-crisp-edges;            /* Opera                          */
-    image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
-    image-rendering: pixelated; /* Chrome */
-    image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
-    -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
-	
+
 	/*
 	position: absolute;
 	left: 615px;
@@ -903,7 +896,8 @@ button {  width: auto; overflow: visible; }
 	/*padding-right: 24px;*/
 	padding-right: 2.5%;
 	/*padding-left: 10px;*/
-	padding-left: 1.855%;
+	/*padding-left: 1.855%;*/
+	padding-left: 2.25%;
 	
 	-webkit-font-smoothing: antialiased;
  }
@@ -916,7 +910,7 @@ button {  width: auto; overflow: visible; }
 	/*max-width: 46.469%;*/
 	max-width: 45%;
 	
-	padding-left: 4%;
+	padding-left: 3%;
 	
 	top: 0px;
 
@@ -1892,14 +1886,16 @@ overflow: visible;
 
 	
 	max-width: 880px;
+	/*max-width: 1024px;*/
 	min-width: 604;
 	
 	margin: -16px -14px 0px -2px;
 
 	padding: 16px 14px 16px 14px;
 
-	padding-left: 38px;
-	
+	/*padding-left: 38px;*/
+	/*padding-left: 15px;*/
+
 	margin-left: auto;
 	margin-right:auto;
 
@@ -2069,8 +2065,9 @@ overflow: visible;
 	display: inline-block;
 	overflow: visible;
 	/*margin: 14px 10px 14px 10px;*/
-	margin: 0.875em 0.625em 0.875em 0.625em;
-
+	/*margin: 0.875em 0.625em 0.875em 0.625em;*/
+	margin: 1em 0.875em 1em 0.875em;
+	
 	border: 1px solid rgba(255,255,255,.80);/*#cc332b;*/
 	border-radius: 4px; 
 	-moz-border-radius: 4px; 
@@ -2106,16 +2103,14 @@ overflow: visible;
 	display:inline-block;
 }
 
-.gridMystery{
-
-}
 
 .gridItem {
 	position: relative;
 	display: inline-block;
 	overflow: visible;
 	/*margin: 14px 10px 14px 10px;*/
-	margin: 0.875em 0.625em 0.875em 0.625em;
+	/*margin: 0.875em 0.625em 0.875em 0.625em;*/
+	margin: 1em 0.875em 1em 0.875em;
 
 	/*
 	margin-left: 0.875em;
@@ -2164,14 +2159,18 @@ overflow: visible;
 	/*margin: 0.875em 0.625em 0.875em 0.625em;*/
 	overflow: visible;
 	/*margin: -0.18em;*/
-	margin-left: -0.18em;
-	margin-right: -0.18em;
+	/*margin-left: -0.18em;
+	margin-right: -0.18em;*/
+	margin-left: -0.8em;
+	margin-right: -0.8em;
 	margin-top: -2em;
+	margin-bottom: -2em;
 
 	/*border: 20px solid rgba(255,0,0,0.64);*//*201,0,0,0.7*/
 	border: 20px solid rgba(255,255,255,0.12);
 	/*border-width: 30px 20px 30px 20px;*/
-	border-width: 1.85em 1.1em 1.85em 1.1em;
+	/*border-width: 1.85em 1.1em 1.85em 1.1em;*/
+	border-width: 1.85em 1.8em 1.85em 1.8em;
 	border-radius: 2px; 
 	-moz-border-radius: 2px; 
 	-webkit-border-radius: 2px; 
@@ -2576,6 +2575,7 @@ overflow: visible;
 	position: absolute;
 	left:220px;
 	z-index: 13;
+	border-left: 3px solid rgba(150, 98, 93, 0.9);/*rgba(197, 57, 43, 0.90);*/
 }
 
 
@@ -2593,6 +2593,7 @@ overflow: visible;
 	
 	display: inline;
 }
+
 
 .tabs li {
 	overflow:visible;
@@ -2832,75 +2833,6 @@ overflow: visible;
 	background: url("../images/active.png");
 }
 
-#swatchB{
-	position:relative;
-	margin-bottom:36px;
-	top:21px;
-	left:-31px;
-	border-radius: 3px; 
-	border-left: 1px solid rgba(0, 0, 0, 0.48);
-	border-bottom: 1px solid rgba(0, 0, 0, 0.48);
-	width: 32px;
-	height: 28px;
-	background-color: #ffffff;/*rgba(255, 255, 255, 0.75);*/
-}
-
-/* @end*/
-
-
-/* @group Users/Stats/Sound */
-#users{
-	position: absolute;
-	width: 118px;/*157px;*/
-	height: 118px;/*145px;*/
-	overflow: visible;
-	left: -2px;
-	top: 62px;/*35px;*/
-	background: url("../images/users3.png") no-repeat;
-	z-index: 3;
-	-moz-transform:rotate(0deg);
-	-o-transform:rotate(0deg);
-	-webkit-transform:rotate(0deg);
-	-webkit-transition: -webkit-transform 0.1s ease-in;
-}
-
-
-#stats{
-	position: absolute;
-	width: 118px;
-	height: 118px;
-	left: -2px;
-	top: 126px;
-	background: url("../images/stats.png") no-repeat;
-	z-index: 2;
-	-moz-transform:rotate(0deg);
-	-o-transform:rotate(0deg);
-	-webkit-transform:rotate(0deg);
-	-webkit-transition: -webkit-transform 0.1s ease-in;
-}
-
-#sound{
-	position: absolute;
-	width: 118px;
-	height: 118px;
-	left: -2px;
-	top: 190px;
-	background: url("../images/sound.png") no-repeat;
-	z-index: 1;
-	-moz-transform:rotate(0deg);
-	-o-transform:rotate(0deg);
-	-webkit-transform:rotate(0deg);
-	-webkit-transition: -webkit-transform 0.1s ease-in;
-}
-
-#users:hover, #stats:hover, #sound:hover {
-	-moz-transform:rotate(-45deg);
-	-o-transform:rotate(-45deg);
-	-webkit-transform:rotate(-45deg);
-	-webkit-transition: -webkit-transform .1s ease-out;
-	left: 2px;
-	z-index: 4;
-}
 
 /* @end */
 
@@ -2949,7 +2881,14 @@ overflow: visible;
 	transition: all 0.5s ease;
 		overflow: visible;
 	*/
-
+	image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
+    image-rendering: -moz-crisp-edges;          /* Firefox                        */
+    image-rendering: -o-crisp-edges;            /* Opera                          */
+    image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
+    image-rendering: pixelated; /* Chrome */
+    image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
+    -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
+	
 }
 
 /*
