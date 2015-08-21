@@ -1471,7 +1471,8 @@ button {  width: auto; overflow: visible; }
 }
 
 #picMe{
-	margin-top: -42px;
+	/*margin-top: -42px;*/
+	margin-top: -32px;
 	/*margin-left: 6px;*/
 	margin-left: 6px;
 	/*width: 240px;*/
