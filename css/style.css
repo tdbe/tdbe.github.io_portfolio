@@ -1129,7 +1129,7 @@ button {  width: auto; overflow: visible; }
 	height: auto;
 	/*min-height: 100%;*/
 	/*margin-bottom: -50px;*/
-	
+	padding-bottom: 20px;
 }
 
 #topBar{
@@ -1472,7 +1472,7 @@ button {  width: auto; overflow: visible; }
 
 #picMe{
 	/*margin-top: -42px;*/
-	margin-top: -32px;
+	margin-top: -34px;
 	/*margin-left: 6px;*/
 	margin-left: 6px;
 	/*width: 240px;*/
@@ -1585,11 +1585,11 @@ button {  width: auto; overflow: visible; }
 	
 	
 	display:inline-block;
-    transform:scale(1.2,1); /* W3C */
-    -webkit-transform:scale(1.2,1); /* Safari and Chrome */
-    -moz-transform:scale(1.2,1); /* Firefox */
-    -ms-transform:scale(1.2,1); /* IE 9 */
-    -o-transform:scale(1.2,1); /* Opera */
+    transform:scale(1.1,1); /* W3C */
+    -webkit-transform:scale(1.1,1); /* Safari and Chrome */
+    -moz-transform:scale(1.1,1); /* Firefox */
+    -ms-transform:scale(1.1,1); /* IE 9 */
+    -o-transform:scale(1.1,1); /* Opera */
 	
 	color: rgb(75,75,75) !important;
 }
@@ -1884,7 +1884,7 @@ overflow: visible;
 
 	position: relative;
 	
-	overflow: hidden;
+	overflow: visible;
 	
 	/*font-size: 16px; */
 	/* apparently ~11.(31) but is actually 16; --no, zoom was on 0.7*/
@@ -2073,13 +2073,65 @@ overflow: visible;
     }
 }
 
+
+.gridText{
+	position: absolute;
+	font-family:"Raleway","Trebuchet MS", Verdana;
+	font-size: 0.9em;
+	padding-left: 0.2em;
+	padding-right: 0.2em;
+	padding-top: 1.35em;
+
+	line-height: 1.1em;
+	
+	/*color: rgba(0,0,0,1);*/
+	-webkit-box-shadow: 0px 4px 4px rgba(76,76,76,.45);/*#4c4c4c;*/
+	-moz-box-shadow: 0px 4px 4px rgba(76,76,76,.45);
+	box-shadow: 0px 4px 4px rgba(76,76,76,.45);
+	z-index: 1;
+	
+	
+}
+
+.gridTitle{
+	padding-left: 0.05em;
+	padding-right: 0.05em;
+	position: absolute;
+	margin-top: -0.32em;
+	font-family: "big_noodle_titling";
+	color: rgba(75,75,75,0.81); /*rgba(180,64,41,1);*/ /*rgba(190,0,0,0.83); *//* rgba(201,0,0,0.9); */
+	font-size: 1.6em;
+	z-index: 2;
+	/*text-shadow: 1px 0px 0px rgba(255,255,255,0.32);*/
+}
+
+
+.gridTag{
+	/*can have more tags separated by space*/
+	font-family: "big_noodle_titling";
+	margin-bottom: -0.25em;
+	font-size: 1.2em;
+	bottom: 0;
+	width: 100%;
+	z-index: 0;
+	color: rgba(75,75,75,0.78); /*rgba(190,70,52,0.9);*/
+	/*color: rgba(226,96.8,69.2,0.09);*/
+	text-shadow: 1px 0px 0px rgba(255,255,255,0.22);
+}
+
+.gridTagSmall{
+
+}
+
+
 .gridItemAnalog {
 	position: relative;
 	display: inline-block;
 	overflow: visible;
 	/*margin: 14px 10px 14px 10px;*/
 	/*margin: 0.875em 0.625em 0.875em 0.625em;*/
-	margin: 1em 0.875em 1em 0.875em;
+	/*margin: 1em 0.875em 1em 0.875em;*/
+	margin: 1.1em 0.875em 1.1em 0.875em;
 	
 	border: 1px solid rgba(255,255,255,.80);/*#cc332b;*/
 	border-radius: 4px; 
@@ -2103,6 +2155,12 @@ overflow: visible;
 	-o-transition: width 0.2s ease, height 0.2s ease, margin 0.2s ease, border 0.2s ease, border-color 0.4s ease-out;
 	-ms-transition: width 0.2s ease, height 0.2s ease, margin 0.2s ease, border 0.2s ease, border-color 0.4s ease-out;
 	transition: width 0.2s ease, height 0.2s ease, margin 0.2s ease, border 0.2s ease, border-color 0.4s ease-out;
+	/*
+	opacity: 0.96;
+    filter: Alpha(opacity=96); */
+	/* IE8 and earlier */
+	
+	/*color: rgb(42,42,42) !important;*/
 }
 
 .gridLine{
@@ -2123,7 +2181,8 @@ overflow: visible;
 	overflow: visible;
 	/*margin: 14px 10px 14px 10px;*/
 	/*margin: 0.875em 0.625em 0.875em 0.625em;*/
-	margin: 1em 0.875em 1em 0.875em;
+	/*margin: 1em 0.875em 1em 0.875em;*/
+	margin: 1.1em 0.875em 1.1em 0.875em;
 
 	/*
 	margin-left: 0.875em;
@@ -2164,6 +2223,13 @@ overflow: visible;
 	-o-transition: width 0.2s ease, height 0.2s ease, margin 0.2s ease, border 0.2s ease, border-color 0.4s ease-out;
 	-ms-transition: width 0.2s ease, height 0.2s ease, margin 0.2s ease, border 0.2s ease, border-color 0.4s ease-out;
 	transition: width 0.2s ease, height 0.2s ease, margin 0.2s ease, border 0.2s ease, border-color 0.4s ease-out;
+	
+	/*
+	opacity: 0.96;
+    filter: Alpha(opacity=96); */
+	/* IE8 and earlier */
+	
+	/*color: rgb(42,42,42) !important;**/
 }
 
 
@@ -2174,24 +2240,39 @@ overflow: visible;
 	/*margin: -0.18em;*/
 	/*margin-left: -0.18em;
 	margin-right: -0.18em;*/
-	margin-left: -0.8em;
-	margin-right: -0.8em;
-	margin-top: -2em;
-	margin-bottom: -2em;
+	margin-left: -1em;/*-0.8em;*/
+	margin-right:-1em; /*-0.8em;*/
+	margin-top: -0.95em;/*-2em*/
+	margin-bottom: -0.95em;
 
 	/*border: 20px solid rgba(255,0,0,0.64);*//*201,0,0,0.7*/
 	border: 20px solid rgba(255,255,255,0.12);
 	/*border-width: 30px 20px 30px 20px;*/
 	/*border-width: 1.85em 1.1em 1.85em 1.1em;*/
-	border-width: 1.85em 1.8em 1.85em 1.8em;
+	/*border-width: 1.85em 1.8em 1.85em 1.8em;*/
+	border-width: 1.6em 1.8em 1.6em 1.8em;
 	border-radius: 2px; 
 	-moz-border-radius: 2px; 
 	-webkit-border-radius: 2px; 
 	
 	cursor: pointer;
 	
-	
+	font-size: 1.05em;
+	/*
 	text-shadow: 0 0 12px rgba(255,255,255,0.8), 0 0 18px rgba(255,255,255,0.6), 0 0 24px rgba(255,255,255,0.8);
+	*/
+	
+	/*
+	opacity: 1;
+    filter: Alpha(opacity=100); 
+	*/
+	/* IE8 and earlier */
+	
+	
+}
+
+.gridItem:hover .gridTitle, .gridItemAnalog:hover .gridTitle{
+	color: rgba(180,64,41,1); /*rgba(190,0,0,0.83); *//* rgba(201,0,0,0.9); */
 }
 
 /*springV*/
@@ -2330,121 +2411,6 @@ overflow: visible;
 	animation: megaMan 0.3s ease-in 1 normal;
 }
 
-.gridText{
-	position: absolute;
-	font-family:"Raleway","Trebuchet MS", Verdana;
-	font-size: 0.9em;
-	padding-left: 0.2em;
-	padding-right: 0.2em;
-	padding-top: 1.35em;
-
-	line-height: 1.1em;
-	
-	/*color: rgba(0,0,0,1);*/
-	-webkit-box-shadow: 0px 4px 4px rgba(76,76,76,.45);/*#4c4c4c;*/
-	-moz-box-shadow: 0px 4px 4px rgba(76,76,76,.45);
-	box-shadow: 0px 4px 4px rgba(76,76,76,.45);
-	z-index: 1;
-	
-	
-}
-
-.gridTitle{
-	padding-left: 0.05em;
-	padding-right: 0.05em;
-	position: absolute;
-	margin-top: -0.32em;
-	font-family: "big_noodle_titling";
-	color: rgba(180,64,41,1); /*rgba(190,0,0,0.83); *//* rgba(201,0,0,0.9); */
-	font-size: 1.6em;
-	z-index: 2;
-	/*text-shadow: 1px 0px 0px rgba(255,255,255,0.32);*/
-}
-
-
-
-.gridTag{
-	/*can have more tags separated by space*/
-	font-family: "big_noodle_titling";
-	margin-bottom: -0.25em;
-	font-size: 1.2em;
-	bottom: 0;
-	width: 200%;
-	z-index: 0;
-	color: rgba(190,70,52,0.9);
-	/*color: rgba(226,96.8,69.2,0.09);*/
-	text-shadow: 1px 0px 0px rgba(255,255,255,0.22);
-}
-
-.gridTagSmall{
-
-}
-
-/*
-#shadCenter {
-	position:absolute;
-	z-index:3; 
-	height: 20px;
-	top:100.40%;/
-	left: -0.5%;
-	width: 101%;
-	background: url("../images/shadCenter.png");
-	background-size: 100% 20px;
-	-webkit-background-size: 100% 20px;
-	-moz-background-size: 100% 20px;
-	background-repeat:no-repeat;
-
-}
-
-#enlargeCanvas{
-	position: absolute;
-	z-index: 4;
-	left: -22px;
-	top: 90%;
-	width: 22px;
-	height: 27px;
-	background: url("../images/enlarge2.png");
-}
-
-#rightPanel {
-	-webkit-box-shadow: none;
-	-moz-box-shadow: none;
-	box-shadow: none;
-	position:absolute;
-	top: 200px;  
-	left: 80%;
-	
-	width: 120px;
-	height: 324px;
-
-	overflow: hidden;
-	
-    background-size: 100%; 
-	-webkit-background-size: 100%;
-	-moz-background-size: 100%;
-    border-radius: 2px; 
-	z-index: 0;
-	-webkit-transition: all 0.5s ease;
-	-moz-transition: all 0.5s ease;
-	-o-transition: all 0.5s ease;
-	transition: all 0.5s ease;
-}
- #shadRight {
-	visibility: hidden;
-	position:absolute; 
-	z-index:0; 
-	width: 100%; 
-	height: 10px;
-	top: 99.9%;
-	left:0%;
-	background: url("../images/shadRight.png");
-	background-size: 100% 12px;
-	-webkit-background-size: 100% 12px;
-	-moz-background-size: 100% 12px;
-	background-repeat: no-repeat;
-
-}
-*/
  /* @end */
 
 
