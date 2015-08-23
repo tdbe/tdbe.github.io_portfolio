@@ -657,8 +657,8 @@ button {  width: auto; overflow: visible; }
 	height: 171px;  
 	background: url("../images/tudor6.png"); 
 	background-size: 281px 171px;
-	opacity: 0.79;/*0.8;*/
-    filter: alpha(opacity = 79/*80*/); /* For IE */ 
+	opacity: 0.95;/*0.8;*/
+    filter: alpha(opacity = 95/*80*/); /* For IE */ 
 	background-repeat: no-repeat;
 	/*
 	border-top: 3px solid #444;
@@ -2131,7 +2131,8 @@ overflow: visible;
 	/*margin: 14px 10px 14px 10px;*/
 	/*margin: 0.875em 0.625em 0.875em 0.625em;*/
 	/*margin: 1em 0.875em 1em 0.875em;*/
-	margin: 1.1em 0.875em 1.1em 0.875em;
+	/*margin: 1.1em 0.875em 1.1em 0.875em;*/
+	margin: 1.25em 0.875em 1em 0.875em;
 	
 	border: 1px solid rgba(255,255,255,.80);/*#cc332b;*/
 	border-radius: 4px; 
@@ -2182,7 +2183,8 @@ overflow: visible;
 	/*margin: 14px 10px 14px 10px;*/
 	/*margin: 0.875em 0.625em 0.875em 0.625em;*/
 	/*margin: 1em 0.875em 1em 0.875em;*/
-	margin: 1.1em 0.875em 1.1em 0.875em;
+	/*margin: 1.1em 0.875em 1.1em 0.875em;*/
+	margin: 1.25em 0.875em 1em 0.875em;
 
 	/*
 	margin-left: 0.875em;
@@ -2236,15 +2238,17 @@ overflow: visible;
 
 .gridItem:hover, .gridItemAnalog:hover{
 	/*margin: 0.875em 0.625em 0.875em 0.625em;*/
-	overflow: visible;
+	/*overflow: visible;*/
 	/*margin: -0.18em;*/
 	/*margin-left: -0.18em;
 	margin-right: -0.18em;*/
 	margin-left: -1em;/*-0.8em;*/
 	margin-right:-1em; /*-0.8em;*/
-	margin-top: -0.95em;/*-2em*/
-	margin-bottom: -0.95em;
-
+	/*margin-top: -2em;*/
+	margin-top: -1em;
+	margin-bottom: -1em;
+	
+	
 	/*border: 20px solid rgba(255,0,0,0.64);*//*201,0,0,0.7*/
 	border: 20px solid rgba(255,255,255,0.12);
 	/*border-width: 30px 20px 30px 20px;*/
