@@ -1263,8 +1263,10 @@ button {  width: auto; overflow: visible; }
 	/*width: 239px;*/
 	height: 100px;
 	margin: 0px auto 0px auto; 
-	padding: 0px 50px 0px 50px;
+	/*padding: 0px 50px 0px 50px;*/
+
 }
+
 .colunas{
 
 	position: relative; 
@@ -1278,18 +1280,22 @@ button {  width: auto; overflow: visible; }
 	/*color: rgba(210,0,0,0.85); */
 	color: rgba(195,50,39,1); 
 }
+
 .leftColuna{
 	text-align: left;
 	float: left;
-	margin-left: -4px;
+	/*margin-left: -4px;*/
+	margin-left: 10px;
 	/*left: 0px;*/
+	padding-left: 5%;
 }
 
 .rightColuna{
 	text-align: right;
 	/*right: 0px;*/
 	float: right;
-	margin-right: -4px;
+	/*margin-right: -4px;*/
+	padding-right: 5%;
 }
 
 .colunaLine{
@@ -1346,6 +1352,13 @@ button {  width: auto; overflow: visible; }
 	
 	margin-left: -138px;/*60*/
 }
+
+.imgContainer iframe{
+	border-bottom: 1px solid rgba(255,255,255,.7);
+	-webkit-box-shadow: 0px 3px 4px rgba(76,76,76,.3);
+	-moz-box-shadow: 0px 3px 4px rgba(76,76,76,.3);
+	box-shadow: 0px 3px 4px rgba(76,76,76,.3);  
+}
  
  .soloImg{ 
 	width: 145.696%; 
@@ -1390,10 +1403,14 @@ button {  width: auto; overflow: visible; }
 }
  
  .rightText{
-	width:240px; 
+	/*width:240px; */
+	width: 290px; 
 	/*height: 241px;*/
-	float: left; margin-left: -440px;
+	float: left; 
+	margin-left: -440px;
 	padding-bottom: 0px;
+	padding-left: 1em;
+	margin-top: -1em;
  }
  
 .acro{
@@ -1614,8 +1631,11 @@ button {  width: auto; overflow: visible; }
 
 .projPadding{
 	/*padding: inherit 74px inherit 74px;*/
-	padding-left: 75px;
-	padding-right: 75px;
+	/*padding-left: 75px;
+	padding-right: 75px;*/
+	
+	padding-left: 80px;
+	padding-right: 80px;
 }
 
 .lastParagraph{
@@ -1871,7 +1891,7 @@ overflow: visible;
 	
 #galInfo{
 	font-family: DezenPro_Regular;
-	padding-left: 24px; 
+	padding-left: 34px; 
 	font-size: 17px; 
 	/*font-weight: 600;*/
 }
