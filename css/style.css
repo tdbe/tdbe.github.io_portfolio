@@ -1150,6 +1150,7 @@ button {  width: auto; overflow: visible; }
 	-moz-border-top-right-radius: 2px; 
 	-webkit-border-top-right-radius: 2px;  
 
+	
 }
 
 #bottomBar{
@@ -2002,6 +2003,7 @@ overflow: visible;
 
 	z-index: -1;
 	overflow: visible;
+	
 }
 
 #loading{
