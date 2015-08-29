@@ -376,12 +376,16 @@ http://fontpro.com/days-one-font-16514
 }
 
 .highlight0{
+	text-shadow: 0px 0px 4px rgba(255,255,255,1), 0px 0px 4px rgba(255,255,255,1), 0px 0px 8px rgba(255,255,255,1);
+	/*
 	text-shadow: 0px 0px 4px rgba(255,255,255,1), 0px 0px 4px rgba(255,255,255,1), 0px 0px 8px rgba(255,255,255,1), 0px 0px 8px rgba(255,255,255,1);
+	*/
 }
+/*
  a:hover .highlight0{
 
 	text-shadow: 0px 0px 6px rgba(255,255,255,1), 0px 0px 6px rgba(255,255,255,1), 0px 0px 10px rgba(255,255,255,1), 0px 0px 10px rgba(255,255,255,1) ;
-}
+}*/
 
 
 .darkerFont{
@@ -1137,7 +1141,8 @@ button {  width: auto; overflow: visible; }
 	/*position: relative;
 	display: inline-block;*/
 	z-index: 2;
-	height: 35px;
+	/*height: 35px;*/
+	height: 40px;
 	width: 100%;
 	top: 0px;
 	background-color: rgb(236,85,84);
@@ -1220,7 +1225,8 @@ button {  width: auto; overflow: visible; }
 	font-size: 12px;
 	color: black;
 	width: 100%;
-	height: 12px;
+	/*height: 12px;*/
+	height: 18px;
 	/*padding-left: 84px;*/
 	padding-top: 11px;
 	padding-bottom: 6px;
@@ -1927,12 +1933,15 @@ overflow: visible;
 	max-width: 880px;
 	min-width: 604px;
 	*/
-	max-width: 894px;
+	/*max-width: 894px;*/
+	max-width: 960px;
 	min-width: 614px;
 	
+	/*margin: -16px -14px 0px -2px;*/
 	margin: -16px -14px 0px -2px;
 	/*padding: 16px 14px 16px 14px;*/
-	padding: 16px 0px 16px 14px;
+	/*padding: 16px 0px 16px 14px;*/
+	padding: 12px 10px 16px 70px;
 
 	/*padding-left: 38px;*/
 	/*padding-left: 15px;*/
@@ -1990,6 +1999,26 @@ overflow: visible;
 
 #icontent::-webkit-scrollbar, .projZen::-webkit-scrollbar{ 
     display: none; 
+}
+
+.topBanner{
+	/*position: absolute;*/
+	/*display: inline-block;*/
+	display: block;
+	height: 297px;
+	width: 880px;
+	/*top: 35px;*/
+
+	margin-top: 47px;
+	/*left: 50%;
+	margin-left: -440px; 
+	*/
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 1;
+	overflow: visible;
+
+
 }
 
 #topBannerBg{
@@ -2119,7 +2148,7 @@ overflow: visible;
 	box-shadow: 0px 4px 4px rgba(76,76,76,.45);
 	z-index: 1;
 	
-	
+	text-shadow: none !important;
 }
 
 .gridTitle{
@@ -2213,17 +2242,26 @@ overflow: visible;
 	/*margin: 0.875em 0.625em 0.875em 0.625em;*/
 	/*margin: 1em 0.875em 1em 0.875em;*/
 	/*margin: 1.1em 0.875em 1.1em 0.875em;*/
-	margin: 1.25em 0.875em 1em 0.875em;
-
+	/*margin: 1.25em 0.875em 1em 0.875em;*/
+	margin: 1.25em 1em 1.1em 1em;
+	/*margin: 1.1em 0.77em 0.85em 0.77em;*/
+	/*margin: 1.15em 0.8em 0.68em 0.8em;*/
+	
 	/*
 	margin-left: 0.875em;
 	margin-right: 0.875em;
 	*/
 	
-	border: 1px solid rgba(255,255,255,.80);/*#cc332b;*/
-	border-radius: 4px; 
+
+	/*border: 1px solid rgba(255,255,255,.80);#cc332b;*/
+	/*border: 0px solid rgba(255,255,255,.10);*//*#cc332b;*/
+	border: 0px solid rgba(255,255,255,.12);
+	border-bottom-width: 0.1em;
+	padding-bottom: 0.05em;
+	
+	/*border-radius: 4px; 
 	-moz-border-radius: 4px; 
-	-webkit-border-radius: 4px; 
+	-webkit-border-radius: 4px; */
 	/*-moz-box-shadow: 0px 4px 4px #cc332b;*/
 	-webkit-box-shadow: 0px 4px 4px rgba(76,76,76,.55);/*#4c4c4c;*/
 	-moz-box-shadow: 0px 4px 4px rgba(76,76,76,.55);
@@ -2249,11 +2287,11 @@ overflow: visible;
 	-webkit-background-size: 100%;
 	-moz-background-size: 100%;
 	
-	-webkit-transition: width 0.2s ease, height 0.2s ease, margin 0.2s ease, border 0.2s ease, border-color 0.4s ease-out;
-	-moz-transition: width 0.2s ease, height 0.2s ease, margin 0.2s ease, border 0.2s ease, border-color 0.4s ease-out;
-	-o-transition: width 0.2s ease, height 0.2s ease, margin 0.2s ease, border 0.2s ease, border-color 0.4s ease-out;
-	-ms-transition: width 0.2s ease, height 0.2s ease, margin 0.2s ease, border 0.2s ease, border-color 0.4s ease-out;
-	transition: width 0.2s ease, height 0.2s ease, margin 0.2s ease, border 0.2s ease, border-color 0.4s ease-out;
+	-webkit-transition: width 0.2s ease-out, height 0.2s ease-out, margin 0.201s ease-out, border 0.2s ease-out, border-color 0.4s ease-out;
+	-moz-transition: width 0.2s ease-out, height 0.2s ease-out, margin 0.201s ease-out, border 0.2s ease-out, border-color 0.4s ease-out;
+	-o-transition: width 0.2s ease-out, height 0.2s ease-out, margin 0.201s ease-out, border 0.2s ease-out, border-color 0.4s ease-out;
+	-ms-transition: width 0.2s ease-out, height 0.2s ease-out, margin 0.2s ease-out, border 0.2s ease-out, border-color 0.201s ease-out;
+	transition: width 0.2s ease-out, height 0.2s ease-out, margin 0.201s ease-out, border 0.2s ease-out, border-color 0.4s ease-out;
 	
 	/*
 	opacity: 0.96;
@@ -2261,6 +2299,8 @@ overflow: visible;
 	/* IE8 and earlier */
 	
 	/*color: rgb(42,42,42) !important;**/
+	
+	
 }
 
 
@@ -2271,11 +2311,11 @@ overflow: visible;
 	/*margin: -0.18em;*/
 	/*margin-left: -0.18em;
 	margin-right: -0.18em;*/
-	margin-left: -1em;/*-0.8em;*/
-	margin-right:-1em; /*-0.8em;*/
+	margin-left: -1em;/*1*//*-0.8em;*/
+	margin-right:-1em;/*1*//*-0.8em;*/
 	/*margin-top: -2em;*/
 	margin-top: -1em;
-	margin-bottom: -1em;
+	margin-bottom: -0.8em;
 	
 	
 	/*border: 20px solid rgba(255,0,0,0.64);*//*201,0,0,0.7*/
@@ -2283,14 +2323,15 @@ overflow: visible;
 	/*border-width: 30px 20px 30px 20px;*/
 	/*border-width: 1.85em 1.1em 1.85em 1.1em;*/
 	/*border-width: 1.85em 1.8em 1.85em 1.8em;*/
-	border-width: 1.6em 1.8em 1.6em 1.8em;
+	/*border-width: 1.6em 1.8em 1.6em 1.8em;*/
+	border-width: 1.95em 2.3em 1.9em 2.3em;
 	border-radius: 2px; 
 	-moz-border-radius: 2px; 
 	-webkit-border-radius: 2px; 
 	
 	cursor: pointer;
 	
-	font-size: 1.05em;
+
 	/*
 	text-shadow: 0 0 12px rgba(255,255,255,0.8), 0 0 18px rgba(255,255,255,0.6), 0 0 24px rgba(255,255,255,0.8);
 	*/
@@ -2306,6 +2347,7 @@ overflow: visible;
 
 .gridItem:hover .gridTitle, .gridItemAnalog:hover .gridTitle{
 	color: rgba(180,64,41,1); /*rgba(190,0,0,0.83); *//* rgba(201,0,0,0.9); */
+
 }
 
 /*springV*/

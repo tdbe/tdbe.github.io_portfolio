@@ -1,13 +1,5 @@
 #topBanner{
-	position: absolute;
-	/*display: inline-block;*/
-	height: 297px;
-	width: 880px;
-	top: 35px;
-	left: 50%;
-	margin-left: -440px; 
-	
+
 	background: url("../images/banner.jpg"), no-repeat;   
-	z-index: 1;
-	overflow: visible;
+
 }
