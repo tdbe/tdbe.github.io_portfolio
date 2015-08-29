@@ -1187,7 +1187,7 @@ button {  width: auto; overflow: visible; }
 	width: 64px;
 	height: 28px;
 	left: 48px;
-	top: 4px;
+	top: 6px;
 	background: url("../images/backA.png"), no-repeat;
 	
 } 
@@ -1228,7 +1228,7 @@ button {  width: auto; overflow: visible; }
 	/*height: 12px;*/
 	height: 18px;
 	/*padding-left: 84px;*/
-	padding-top: 11px;
+	padding-top: 13px;
 	padding-bottom: 6px;
 	text-decoration: none;
 	text-shadow: none;
@@ -2018,7 +2018,7 @@ overflow: visible;
 	z-index: 1;
 	overflow: visible;
 
-	margin-bottom: -297px;
+	margin-bottom: -334px;
 }
 
 #topBannerBg{
