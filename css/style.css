@@ -791,6 +791,12 @@ button {  width: auto; overflow: visible; }
  }*/
  
   #symbolCnt{
+
+ }
+  #symbol{
+
+ }
+   #symbolCntMain{
 	overflow: visible;
 	position: relative;
 	display: inline-block;
@@ -806,7 +812,7 @@ button {  width: auto; overflow: visible; }
 	width: 100px;
 	height: 70px;/*70px;*/
  }
-  #symbol{
+   #symbolMain{
 	position: relative;
 	display: inline-block;
 
@@ -823,6 +829,7 @@ button {  width: auto; overflow: visible; }
 	pointer-events: none;
 	-webkit-font-smoothing: antialiased;
  }
+
 
  
 
