@@ -585,8 +585,10 @@ button {  width: auto; overflow: visible; }
 	width: 900px;
 	
 
+	/*left: -86px;*//*-83px;*//*7px;*/ 
 	left: -86px;/*-83px;*//*7px;*/ 
-	top: -10px;
+	/*top: -10px;*/
+	top: -12px;
 	/*padding: 10px 15px;*/
 	/*border-right: 1px solid #fff;*/
 	font-family: ChineseRocksRegular, sans-serif;
@@ -605,10 +607,33 @@ button {  width: auto; overflow: visible; }
 	-ms-transform:scale(1,1.285); /* IE 9+ */
 	-o-transform:scale(1,1.285); /* Opera */
 	
-	font-weight: 900;
+	/*font-weight: 900;*/
 	
+	/*font-size: 162px;*/
 	font-size: 162px;
+
+	/*-webkit-font-smoothing: antialiased;*/
+    /*text-shadow: 1px 1px 1px rgba(0,0,0,0.004);*/
+	/*speak: none;*/
+	/*font-style: normal;*/
+	font-weight: normal;
+	/*font-variant: normal;*/
+	/*text-transform: none;*/
+	/*line-height: 1;*/
+	/*-webkit-font-smoothing: antialiased;*/
+	/*-webkit-transform: translate3d(0px, 0px, 0px); */ /* Force hardware acceleration to fix safari opacity bugg*/ 
+		
+	text-shadow: 5px 5px 5px rgba(201,0,0,0.15);
+	text-shadow:
+	2px 2px 0 rgb(201,0,0), 
+	-2px -2px 0 rgb(201,0,0),
+	2px -2px 0 rgb(201,0,0),
+	-2px 2px 0 rgb(201,0,0),
+	0px 0px 0px rgb(201,0,0);
 	
+	opacity: 0.15;
+	
+	letter-spacing: 0.005em;
 }
 
 #porTitle:hover {
@@ -618,6 +643,7 @@ button {  width: auto; overflow: visible; }
 	
 	/*left: -84px;*/
 	left: -86px;
+	/*top: -9px; */
 	top: -9px; 
 	
 	cursor: default; 
@@ -654,12 +680,14 @@ button {  width: auto; overflow: visible; }
 	left: 615px;
 	top: 4px;
 	*/
-	margin-left:-273px;
+	/*margin-left:-273px;*/
+	/*margin-left:-250px;*/
+	margin-left:-240px;
 	display:block;
 
 	width: 281px;
 	height: 171px;  
-	background: url("../images/tudor6.png"); 
+	background: url("../images/tudor0.png"); 
 	background-size: 281px 171px;
 	opacity: 0.95;/*0.8;*/
     filter: alpha(opacity = 95/*80*/); /* For IE */ 
@@ -1511,7 +1539,8 @@ button {  width: auto; overflow: visible; }
 	/*margin-top: -42px;*/
 	margin-top: -34px;
 	/*margin-left: 6px;*/
-	margin-left: 6px;
+	/*margin-left: 6px;*/
+	margin-left: 34px;
 	/*width: 240px;*/
 	/*width: 114.117647%; */
 	width: 114.117647%; 
@@ -1705,7 +1734,8 @@ button {  width: auto; overflow: visible; }
 	-webkit-border-bottom-left-radius: 0px; 
 	
 	/*background-color: rgba(255,255,255,.4);*//*fgAlpha 82*/
-	background-color: rgba(255,255,255,.3); 
+	/*background-color: rgba(255,255,255,.3); */
+	background-color: rgba(255,255,255,.5); 
     background-size: 100%;  /*this can be set to scale X or Y separately*/
 	-webkit-background-size: 100%;
 	-moz-background-size: 100%;
@@ -1753,7 +1783,8 @@ button {  width: auto; overflow: visible; }
 	-moz-border-bottom-left-radius: 3px; 
 	-webkit-border-bottom-left-radius: 3px; 
 	
-	background-color: rgba(255,255,255,.4);/*fgAlpha 82*/
+	/*background-color: rgba(255,255,255,.4);*//*fgAlpha 82*/
+	background-color: rgba(255,255,255,.5);/*fgAlpha 82*/
     background-size: 100%;  /*this can be set to scale X or Y separately*/
 	-webkit-background-size: 100%;
 	-moz-background-size: 100%;
@@ -1863,7 +1894,8 @@ overflow: visible;
 	-webkit-border-bottom-left-radius: 3px; 
 	
 	/*background-color: rgba(255,255,255,.4);*//*fgAlpha 82*/
-	background-color: rgba(255,255,255,.3);/*fgAlpha 82*/
+	/*background-color: rgba(255,255,255,.3);*//*fgAlpha 82*/
+	background-color: rgba(255,255,255,.4);/*fgAlpha 82*/
     background-size: 100%;  /*this can be set to scale X or Y separately*/
 	-webkit-background-size: 100%;
 	-moz-background-size: 100%;
@@ -1983,14 +2015,16 @@ overflow: visible;
 	min-height: 600px;
 	/*background-color: rgba(255,255,255,.66);*//*82*/
 	/*background-color: rgba(255,255,255,.7);*/
-	background-color: rgba(255,255,255,.75);
+	/*background-color: rgba(255,255,255,.75);*/
+	background-color: rgba(255,255,255,.88);
 }
 
 
 
 #projects{
 
-	background-color: rgba(255,255,255,.65);/*82*/
+	/*background-color: rgba(255,255,255,.65)*/;/*82*/
+	background-color: rgba(255,255,255,.80);
 	overflow: hidden;
 }
 
@@ -2153,8 +2187,12 @@ overflow: visible;
 	position: absolute;
 	font-family:"Raleway","Trebuchet MS", Verdana;
 	font-size: 0.9em;
+	/*
 	padding-left: 0.2em;
 	padding-right: 0.2em;
+	*/
+	padding-left: 0.4em;
+	padding-right: 0.4em;
 	padding-top: 1.35em;
 
 	line-height: 1.1em;
@@ -2169,8 +2207,13 @@ overflow: visible;
 }
 
 .gridTitle{
+	/*
 	padding-left: 0.05em;
 	padding-right: 0.05em;
+	*/
+	padding-left: 0.2em;
+	padding-right: 0.2em;
+	
 	position: absolute;
 	margin-top: -0.32em;
 	font-family: "big_noodle_titling";
@@ -2192,6 +2235,8 @@ overflow: visible;
 	color: rgba(75,75,75,0.78); /*rgba(190,70,52,0.9);*/
 	/*color: rgba(226,96.8,69.2,0.09);*/
 	text-shadow: 1px 0px 0px rgba(255,255,255,0.22);
+	
+	padding-left: 0.3em;
 }
 
 .gridTagSmall{
@@ -2235,6 +2280,7 @@ overflow: visible;
 	/*border: 0px solid rgba(255,255,255,.10);*//*#cc332b;*/
 	border: 0px solid rgba(255,255,255,.12);
 	border-bottom-width: 0.1em;
+	
 	padding-bottom: 0.05em;
 	
 	/*border-radius: 4px; 
@@ -2328,6 +2374,11 @@ overflow: visible;
 
 }
 
+.gridItem:hover .gridTag, .gridItemAnalog:hover .gridTag{
+	margin-bottom: -0.4em;
+	/*padding-left: 0.3em;*/
+	
+}
 
 .gridItemAnalog {
 	position: relative;
