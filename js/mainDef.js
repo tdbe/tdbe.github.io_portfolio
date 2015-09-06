@@ -4,8 +4,8 @@
 
 
 
-var maxWidth = 920;
-var maxWidth2 = 920;
+var maxWidth = 1024;//920;
+var maxWidth2 = 1024;//920;
 
 
 
