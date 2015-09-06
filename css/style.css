@@ -342,23 +342,7 @@ http://fontpro.com/days-one-font-16514
 }
 
 .highlight{
-	/*color: #c53935;*/
-	/*text-shadow: 0px 6px 8px rgba(0,0,0,.16);*/
-	/*
-	color: black;
-	-webkit-text-fill-color: black; 
-    -webkit-text-stroke-width: 14px;
-    -webkit-text-stroke-color: rgba(255,255,255,.074);
-	*/
 
-	/*text-shadow: 0px 0px 14px rgba(255,255,255,1);*/
-	/*text-shadow:0 0 10px #fff, 0 0 20px #00d2ff, 0 0 30px #00d2ff, 0 0 40px #00d2ff, 0 0 50px #00d2ff, 0 0 60px #00d2ff, 0 0 70px #00d2ff;*/
-	/*0 0 10px rgba(255,255,255,1),*/
-	/*
-	text-shadow: 0 0 12px rgba(255,255,255,0.8), 0 0 18px rgba(255,255,255,0.6), 0 0 24px rgba(255,255,255,0.8) 0 0 24px rgba(255,255,255,1) 
-	0 0 24px rgba(255,255,255,1) 0 0 24px rgba(255,255,255,1) 0 0 24px rgba(255,255,255,1) 0 0 24px rgba(255,255,255,1);*/
-	/*text-shadow: 0 0 12px rgba(255,255,255,0.8), 0 0 18px rgba(255,255,255,0.6), 0 0 24px rgba(255,255,255,0.8), 0 0 12px*/
-	/*
 	text-shadow: 0 0 12px rgba(255,255,255,1), 0 0 18px rgba(255,255,255,1), 0 0 24px rgba(255,255,255,1), 0 0 12px rgba(255,255,255,.25), 0 0 18px rgba(255,255,255,.25), 0 0 24px rgba(255,255,255,.25);*/
 	text-shadow: 0 0 12px rgba(255,255,255,.7), 0 0 18px rgba(255,255,255,.8), 0 0 24px rgba(255,255,255,.7);  
 }
@@ -644,7 +628,7 @@ button {  width: auto; overflow: visible; }
 	/*left: -84px;*/
 	left: -86px;
 	/*top: -9px; */
-	top: -9px; 
+	top: -10px; 
 	
 	cursor: default; 
 	
@@ -689,7 +673,7 @@ button {  width: auto; overflow: visible; }
 	height: 171px;  
 	background: url("../images/tudor0.png"); 
 	background-size: 281px 171px;
-	opacity: 0.95;/*0.8;*/
+	opacity: 0.92;/*0.95;*//*0.8;*/
     filter: alpha(opacity = 95/*80*/); /* For IE */ 
 	background-repeat: no-repeat;
 	/*
@@ -832,24 +816,31 @@ button {  width: auto; overflow: visible; }
 	
 	
 	/*padding-right: 12px;*/
-	padding-right: 10px;/*5px;*/
+	padding-right: 13px;/*5px;*/
 	/*margin-left: -18px;*/
-	margin-left: -12px;/*-8px;*/
+	/*margin-left: -12px;*//*-8px;*/
+	margin-left: 1px;/*-8px;*/
 	top: -6px;
 
-	width: 100px;
-	height: 70px;/*70px;*/
+	/*width: 100px;*/
+	width: 78px;
+	/*height: 64px;*//*70px;*/
+	height: 50px;
  }
    #symbolMain{
 	position: relative;
 	display: inline-block;
 
-	margin-top: 15px;
-	width: 100px;
-	height: 70px;
+	/*margin-top: 15px;*/
+	margin-top: 13px;
+	/*width: 100px;*/
+	width: 80px;
+	/*height: 70px;*/
+	height: 64px;
 	background: url("../images/symbol.png");
 	/*background-size: 400px 280px;*/
-	background-size: 100px 70px;
+	/*background-size: 100px 70px;*/
+	background-size: auto 56px;
 	opacity: 0.74;
     filter: alpha(opacity = 74);  /* For IE */
 	background-repeat: no-repeat;
@@ -990,7 +981,7 @@ button {  width: auto; overflow: visible; }
 	-o-box-shadow: 0px 0px 8px rgba(255,255,255,0.56);
 	box-shadow: 0px 0px 8px rgba(255,255,255,0.56);
 	
-	background-color: rgba(255,255,255,0.75);
+	background-color: rgba(257,254,255,0.75);
 	
 	-webkit-transition: all 1s;
 	-moz-transition: all 1s;
@@ -1046,7 +1037,7 @@ button {  width: auto; overflow: visible; }
 	*/
 	
 	/*color: #fff;#c53935;*/
-	color: rgba(255,255,255,0.75);
+	color: rgba(257,254,255,0.75);
 	
 	-moz-transform:rotate(0deg);
 	-o-transform:rotate(0deg);
@@ -1735,7 +1726,7 @@ button {  width: auto; overflow: visible; }
 	
 	/*background-color: rgba(255,255,255,.4);*//*fgAlpha 82*/
 	/*background-color: rgba(255,255,255,.3); */
-	background-color: rgba(255,255,255,.5); 
+	background-color: rgba(257,254,255,.5); 
     background-size: 100%;  /*this can be set to scale X or Y separately*/
 	-webkit-background-size: 100%;
 	-moz-background-size: 100%;
@@ -1784,7 +1775,7 @@ button {  width: auto; overflow: visible; }
 	-webkit-border-bottom-left-radius: 3px; 
 	
 	/*background-color: rgba(255,255,255,.4);*//*fgAlpha 82*/
-	background-color: rgba(255,255,255,.5);/*fgAlpha 82*/
+	background-color: rgba(257,254,255,.5);/*fgAlpha 82*/
     background-size: 100%;  /*this can be set to scale X or Y separately*/
 	-webkit-background-size: 100%;
 	-moz-background-size: 100%;
@@ -1895,7 +1886,7 @@ overflow: visible;
 	
 	/*background-color: rgba(255,255,255,.4);*//*fgAlpha 82*/
 	/*background-color: rgba(255,255,255,.3);*//*fgAlpha 82*/
-	background-color: rgba(255,255,255,.4);/*fgAlpha 82*/
+	background-color: rgba(257,254,255,.4);/*fgAlpha 82*/
     background-size: 100%;  /*this can be set to scale X or Y separately*/
 	-webkit-background-size: 100%;
 	-moz-background-size: 100%;
@@ -2016,7 +2007,7 @@ overflow: visible;
 	/*background-color: rgba(255,255,255,.66);*//*82*/
 	/*background-color: rgba(255,255,255,.7);*/
 	/*background-color: rgba(255,255,255,.75);*/
-	background-color: rgba(255,255,255,.88);
+	background-color: rgba(257,254,255,.88);
 }
 
 
@@ -2024,7 +2015,7 @@ overflow: visible;
 #projects{
 
 	/*background-color: rgba(255,255,255,.65)*/;/*82*/
-	background-color: rgba(255,255,255,.80);
+	background-color: rgba(257,254,255,.80);
 	overflow: hidden;
 }
 
@@ -2306,7 +2297,7 @@ overflow: visible;
 	margin-bottom: 0px;
 	margin-left: auto;*/
 
-	background-color: rgba(255,255,255,.4);/fgAlpha *82*/
+	background-color: rgba(257,254,255,.4);/fgAlpha *82*/
     background-size: 100%;  /*this can be set to scale X or Y separately*/
 	-webkit-background-size: 100%;
 	-moz-background-size: 100%;
@@ -2343,7 +2334,7 @@ overflow: visible;
 	
 	
 	/*border: 20px solid rgba(255,0,0,0.64);*//*201,0,0,0.7*/
-	border: 20px solid rgba(255,255,255,0.12);
+	border: 20px solid rgba(257,254,255,0.12);
 	/*border-width: 30px 20px 30px 20px;*/
 	/*border-width: 1.85em 1.1em 1.85em 1.1em;*/
 	/*border-width: 1.85em 1.8em 1.85em 1.8em;*/
@@ -2402,7 +2393,7 @@ overflow: visible;
 	width: 16.25em;
 	height: 16.25em;
 
-	background-color: rgba(255,255,255,.4);/fgAlpha *82*/
+	background-color: rgba(257,254,255,.4);/fgAlpha *82*/
     background-size: 100%;
 	-webkit-background-size: 100%;
 	-moz-background-size: 100%;
@@ -2527,7 +2518,7 @@ overflow: visible;
 
 
 	/*background-color: rgba(255,255,255,.4);*//*fgAlpha *82*/
-	background-color: rgba(255,255,255,.4);
+	background-color: rgba(257,254,255,.4);
     background-size: 100%;  /*this can be set to scale X or Y separately*/
 	-webkit-background-size: 100%;
 	-moz-background-size: 100%;
