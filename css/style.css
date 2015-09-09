@@ -893,7 +893,7 @@ button {  width: auto; overflow: visible; }
 .buffer{ 
 	display: inline-block; 
 	float: left;
-	height: 40px;
+	height: 14px;
 	/*width: 84px;*/
 	width: 75px;
 
@@ -1181,7 +1181,10 @@ button {  width: auto; overflow: visible; }
 	-moz-border-top-right-radius: 2px; 
 	-webkit-border-top-right-radius: 2px;  
 
-	
+	border-bottom: 1px solid rgba(255,255,255,.6);
+	-webkit-box-shadow: 0px 1px 2px rgba(76,76,76,.3);
+	-moz-box-shadow: 0px 1px 2px rgba(76,76,76,.3);
+	box-shadow: 0px 1px 2px rgba(76,76,76,.3);  
 }
 
 #bottomBar{
@@ -1387,7 +1390,7 @@ button {  width: auto; overflow: visible; }
 }
 
 .imgContainer iframe{
-	border-bottom: 1px solid rgba(255,255,255,.7);
+	border-bottom: 1px solid rgba(255,255,255,.5);
 	-webkit-box-shadow: 0px 3px 4px rgba(76,76,76,.3);
 	-moz-box-shadow: 0px 3px 4px rgba(76,76,76,.3);
 	box-shadow: 0px 3px 4px rgba(76,76,76,.3);  
@@ -1402,7 +1405,7 @@ button {  width: auto; overflow: visible; }
     image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
     -ms-interpolation-mode: nearest-neighbor;   /* IE8+  */
 	
-	border-bottom: 1px solid rgba(255,255,255,.7);
+	border-bottom: 1px solid rgba(255,255,255,.5);
 	-webkit-box-shadow: 0px 3px 4px rgba(76,76,76,.3);
 	-moz-box-shadow: 0px 3px 4px rgba(76,76,76,.3);
 	box-shadow: 0px 3px 4px rgba(76,76,76,.3);  
@@ -1415,7 +1418,7 @@ button {  width: auto; overflow: visible; }
 	left:0px;
 	float: left; 
 	
-	border-bottom: 1px solid rgba(255,255,255,.7);
+	border-bottom: 1px solid rgba(255,255,255,.5);
 	-webkit-box-shadow: 0px 3px 4px rgba(76,76,76,.3);
 	-moz-box-shadow: 0px 3px 4px rgba(76,76,76,.3);
 	box-shadow: 0px 3px 4px rgba(76,76,76,.3);  
@@ -1429,7 +1432,7 @@ button {  width: auto; overflow: visible; }
 	/*margin-right: -401px;*/
 	margin-right: -275px;
 	
-	border-bottom: 1px solid rgba(255,255,255,.7);
+	border-bottom: 1px solid rgba(255,255,255,.5);
 	-webkit-box-shadow: 0px 3px 4px rgba(76,76,76,.3);
 	-moz-box-shadow: 0px 3px 4px rgba(76,76,76,.3);
 	box-shadow: 0px 3px 4px rgba(76,76,76,.3);  
@@ -1460,11 +1463,11 @@ button {  width: auto; overflow: visible; }
 	width: 137px;
 	height: 10px;
 	/*
-	border-bottom: 1px solid rgba(255,255,255,.7);
+	border-bottom: 1px solid rgba(255,255,255,.5);
 	*/
 	/*width: 200px;*/
 	/*
-	border-bottom: 1px solid rgba(255,255,255,.7);
+	border-bottom: 1px solid rgba(255,255,255,.5);
 	-webkit-box-shadow: 0px 3px 4px rgba(76,76,76,.3);
 	-moz-box-shadow: 0px 3px 4px rgba(76,76,76,.3);
 	box-shadow: 0px 3px 4px rgba(76,76,76,.3);  
@@ -1638,7 +1641,8 @@ button {  width: auto; overflow: visible; }
 
 	/*border-bottom: 4px solid rgba(155,155,155,0.14); */
 	/*border-bottom: 8px solid rgba(255,255,255,0.24); */
-	border-bottom: 4px solid rgba(255,255,255,0.4);
+	/*border-bottom: 4px solid rgba(255,255,255,0.4);*/
+	border-bottom: 4px solid rgba(255,255,255,0.8);
 	
 	
 	display:inline-block;
@@ -2075,6 +2079,8 @@ overflow: visible;
 	box-shadow: 0px -80px 0px -65px rgba(236,255,252,.9);
 	*/
 	pointer-events: none;
+	
+
 }
 
 #topBannerBg{
@@ -2089,6 +2095,7 @@ overflow: visible;
 	z-index: -1;
 	overflow: visible;
 	
+
 }
 
 #loading{
@@ -2209,6 +2216,8 @@ overflow: visible;
 	z-index: 1;
 	
 	text-shadow: none !important;
+	
+	text-rendering: optimizeSpeed; /*geometricPrecision; optimizeSpeed; optimizeLegibility ;*/
 }
 
 .gridTitle{
@@ -2349,7 +2358,8 @@ overflow: visible;
 	margin-top: -1em;
 	margin-bottom: -0.7em;*/
 	margin-top: -1.2em;
-	margin-bottom: -0.9em;
+	/*margin-bottom: -0.9em;*/
+	margin-bottom: -0.75em;
 	
 	
 	/*border: 20px solid rgba(255,0,0,0.64);*//*201,0,0,0.7*/
