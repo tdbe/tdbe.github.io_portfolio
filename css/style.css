@@ -1314,7 +1314,8 @@ button {  width: auto; overflow: visible; }
 	font-size: 48px;  
 	/*color: rgba(190,0,0,0.83);*/
 	/*color: rgba(210,0,0,0.85); */
-	color: rgba(195,50,39,1); 
+	/*color: rgba(195,50,39,1); */
+	color: rgba(195,50,39,0.9); 
 }
 
 .leftColuna{

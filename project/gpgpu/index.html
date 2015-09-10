@@ -53,7 +53,10 @@
 								<p><span id="symbolCnt"><span id="symbol"></span></span><span class="parStart">|</span>This 2-man project was about researching ways of simulating believable cave environments at interactive rates using voxels on the GPU.</p><br/>
 								
 								<p>It lasted 6 months and involved PCG research, application development, and user testing.</p> 
-								<p>Our generation pipeline processes GPU voxel volumes with a set of DirectX 11 Compute Shaders. My modelling solution can be thought of as guided intersecting procedural 3D brush strokes of morphing shapes, on a solid voxel volume.</p>
+								<p>Our generation pipeline processes GPU voxel volumes with a set of DirectX 11 Compute Shaders. My modelling solution can be thought of as guided intersecting procedural 3D brush strokes of morphing shapes, on a solid voxel volume.
+								<br/>
+								<br/>
+								</p>
 								
 
 
@@ -93,7 +96,7 @@
 						</div>
 						
 						<br/>
-						<div class="article highlight projPadding" style="margin-bottom: -20px;">  
+						<div class="article highlight projPadding" style="margin-bottom: -20px; margin-top:1em;">  
 
 								<p style="font-size: 14px;"><span class="parStart">|</span>The tool implementation consists of three main parts:
 								</p> 
@@ -101,45 +104,44 @@
 						</div>
 						
 						<div class="imageRegion">
-							<div class="imgContainer">
-								<!--img class="leftImg" src="./images/lSystem.png"/-->
-								<a href="./images/lSystem.png" rel="nofollow" target="_blank" class="acro leftImg" ><acronym class="acro" title="open in new tab"><img class="soloImg" src="./images/lSystem.png" style="width: 438px;"/></acronym></a>
-								<div class="rightImg"><div class="article highlight rightText"><p> -A controllable <span class="bgHighlight">L-system</span> which generates a set of <span class="bgHighlight">structural points</span>. <br/>
-								[partner's focus] <br/><br/>
-								It emulates the expanded cracks and passages which form cave structures in nature.</p></div></div> 
-								<span class="shadTop sLeft "></span>
-								<span class="shadBott sLeft shadLeft"></span>
-							</div> 
+								<!--img class="soloImg" src=""/-->
+								<a href="./images/lSystem.png" rel="nofollow" target="_blank" class="acro"><acronym class="acro" title="open in new tab"><img class="soloImg" src="./images/lSystem.png" style="width:100%;"/></acronym></a>
 						</div>
+						<div class="article highlight projPadding" style="margin-top: -2em;">  
+							<p>1 - A controllable <span class="bgHighlight">L-system</span> which generates a set of <span class="bgHighlight">structural points</span>. [partner's focus] 
+							<br/>
+							It emulates the expanded cracks and passages which form cave structures in nature. <br/><br/>
+							We evolved it and tried to apply a "human fitness function".</p>
+						</div>
+						<div class="spacer" style="margin-top: -1em;"></div><br/>
 						
-						<br/><div class="spacer"></div><br/>
 						<div class="imageRegion">
-							<div class="imgContainer">
-								<!--img class="leftImg" src="./images/lSystem.png"/-->
-								<a href="./images/metaRange.png" rel="nofollow" target="_blank" class="acro leftImg" ><acronym class="acro" title="open in new tab"><img class="soloImg" src="./images/metaRange.png" style="width: 438px;"/></acronym></a>
-								<div class="rightImg">
-								<div class="article highlight rightText"><p> -A detailing component where I use an array of <span class="bgHighlight">metaball</span>s and <span class="bgHighlight">noise</span> (<span class="bgHighlight">Voronoi</span>, <span class="bgHighlight">Simplex</span>, <span class="bgHighlight">Curl</span>). [my focus]<br/><br/>
-								I carve the voxel volumes along specific structural points (effectively applying <span class="bgHighlight">energy field perturbation</span> to the values of the volume). </p></div></div> 
-								<span class="shadTop sLeft "></span>
-								<span class="shadBott sLeft shadLeft" style="margin-bottom: 4px;"></span>
-							</div> 
+								<!--img class="soloImg" src=""/-->
+								<a href="./images/metaRange.png" rel="nofollow" target="_blank" class="acro"><acronym class="acro" title="open in new tab"><img class="soloImg" src="./images/metaRange.png" style="width:100%;"/></acronym></a>
 						</div>
+						<div class="article highlight projPadding" style="margin-top: -2em;">  
+							<p>2 - A detailing component where I use an array of <span class="bgHighlight">metaball</span>s and <span class="bgHighlight">noise</span> (<span class="bgHighlight">Voronoi</span>, <span class="bgHighlight">Simplex</span>, <span class="bgHighlight">Curl</span>). [my focus]<br/><br/>
+							I carve the voxel volumes along specific structural points (applying additive-noise <span class="bgHighlight">energy field perturbation</span> to the values of the volume). </p>
+						</div>
+						<div class="spacer"  style="margin-top: -1em;"></div><br/>
+
 						
-						<br/><div class="spacer"></div><br/>
 						<div class="imageRegion">
-							<div class="imgContainer" >
-								<!--img class="leftImg" src="./images/lSystem.png"/-->
-								<a href="./images/small-texture2.jpg" rel="nofollow" target="_blank" class="acro leftImg" ><acronym class="acro" title="open in new tab"><img class="soloImg" src="./images/small-texture2.png" style="width: 438px;"/></acronym></a>
-								<div class="rightImg"><div class="article highlight rightText"><p> -A component for isosurface extraction and for shading. [my focus]<br/><br/>
-								I did mesh <span class="bgHighlight">normals</span>, procedural materials with a <span class="bgHighlight">pixel-lit Lambert shader</span> implemented with <span class="bgHighlight">triplanar projection</span>, <span class="bgHighlight">bump mapping</span>, <span class="bgHighlight">Curled Simplex noise</span>, <span class="bgHighlight">solid texturing</span>, animation etc.</p></div></div> 
-								<span class="shadTop sLeft "></span>
-								<span class="shadBott sLeft shadLeft" style="margin-bottom: 20px;"></span>
-							</div> 
+								<!--img class="soloImg" src=""/-->
+								<a href="./images/small-texture2.jpg" rel="nofollow" target="_blank" class="acro"><acronym class="acro" title="open in new tab"><img class="soloImg" src="./images/small-texture2.jpg" style="width:100%;"/></acronym></a>
 						</div>
+						<div class="article highlight projPadding" style="margin-top: -2em;">  
+							<p>3 - A component for isosurface extraction and for shading. [my focus]<br/><br/>
+								I calculated mesh <span class="bgHighlight">normals</span>, wrote procedural materials with a <span class="bgHighlight">pixel-lit Lambert shader</span> with <span class="bgHighlight">triplanar projection</span>, <span class="bgHighlight">bump mapping</span>, <span class="bgHighlight">Curled Simplex noise</span>, <span class="bgHighlight">solid texturing</span>, procedural details, animation etc.</p>
+						</div>
+					
+
 						
-						<br/><div class="spacer"></div><br/>
-						<br/><div class="spacer"></div><br/>
-						<div class="article highlight projPadding " style="margin-bottom: -10px;">  
+
+						
+					
+						
+						<div class="article highlight projPadding " style="margin-bottom: -10px; margin-top:-2em;">  
 						</div>
 						
 						
