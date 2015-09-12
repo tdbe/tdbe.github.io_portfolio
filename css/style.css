@@ -1546,6 +1546,7 @@ button {  width: auto; overflow: visible; }
 	
 }
 
+
 .cvColumn{
 	position: absolute; 
 	top: -10px;
@@ -1614,8 +1615,12 @@ button {  width: auto; overflow: visible; }
 	/*margin: 0px 2.725% 0px 1.3636%;*/
 	
 	/*margin: 0px 2.725% 0px 0px; */
-	margin: 0px 1.825% 0px 0px; 
-	width: 17.318%; 
+	/*margin: 0px 1.825% 0px 0px; */
+	margin: 0px 0px 0px 0px; 
+	/*margin-left:9%; */
+	/*width: 17.318%; */
+	width: 15%; 
+	
 	
 	top: 0px;
 	
@@ -1682,6 +1687,15 @@ button {  width: auto; overflow: visible; }
 	padding-bottom: -70px;
 	margin-bottom: 40px;*/
 	margin-bottom: 50px;
+}
+
+.picMeContainer{
+	/*margin: 12px 2.725% 0px 0px; */
+	margin: 12px 0px 0px 0px;
+	padding-right: 8.6%;
+	/*width: 19.318%;*/
+	width: 19.318%;
+	overflow: hidden;
 }
 
 
@@ -2027,6 +2041,7 @@ overflow: visible;
 	/*background-color: rgba(255,255,255,.7);*/
 	/*background-color: rgba(255,255,255,.75);*/
 	background-color: rgba(257,254,255,.88);
+	
 }
 
 
@@ -2037,6 +2052,13 @@ overflow: visible;
 	background-color: rgba(257,254,255,.80);
 	overflow: hidden;
 }
+
+#resume{
+	 width: 100%;
+	overflow: hidden;
+
+}
+
 
 
 
