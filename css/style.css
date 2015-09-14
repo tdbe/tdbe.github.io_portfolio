@@ -1751,14 +1751,14 @@ button {  width: auto; overflow: visible; }
 	
 	/*background-color: rgba(255,255,255,.4);*//*fgAlpha 82*/
 	/*background-color: rgba(255,255,255,.3); */
-	background-color: rgba(257,254,255,.5); 
+	background-color: rgba(257,254,255,.7); 
     background-size: 100%;  /*this can be set to scale X or Y separately*/
 	-webkit-background-size: 100%;
 	-moz-background-size: 100%;
 	
-	-webkit-box-shadow: 0px 0px 120px 100px rgba(257,254,255,0.5); 
-	-moz-box-shadow: 0px 0px 120px 100px rgba(257,254,255,0.5); 
-	box-shadow: 0px 0px 120px 100px rgba(257,254,255,0.5); 
+	-webkit-box-shadow: 0px 0px 120px 100px rgba(257,254,255,0.7); 
+	-moz-box-shadow: 0px 0px 120px 100px rgba(257,254,255,0.7); 
+	box-shadow: 0px 0px 120px 100px rgba(257,254,255,0.7); 
 }
 
 
@@ -2058,7 +2058,8 @@ overflow: visible;
 #projects{
 
 	/*background-color: rgba(255,255,255,.65)*/;/*82*/
-	background-color: rgba(257,254,255,.80);
+	/*background-color: rgba(257,254,255,.80);*/
+	background-color: rgba(257,254,255,.60);
 	overflow: hidden;
 }
 
