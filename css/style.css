@@ -615,7 +615,8 @@ button {  width: auto; overflow: visible; }
 	-2px 2px 0 rgb(201,0,0),
 	0px 0px 0px rgb(201,0,0);
 	
-	opacity: 0.15;
+	/*opacity: 0.15;*/
+	opacity: 0.1;
 	
 	letter-spacing: 0.005em;
 }
@@ -1315,7 +1316,7 @@ button {  width: auto; overflow: visible; }
 	/*color: rgba(190,0,0,0.83);*/
 	/*color: rgba(210,0,0,0.85); */
 	/*color: rgba(195,50,39,1); */
-	color: rgba(184,47,37,0.95); 
+	color: rgba(184,47,37,0.92); 
 }
 
 .leftColuna{
@@ -1750,10 +1751,11 @@ button {  width: auto; overflow: visible; }
 	-webkit-background-size: 100%;
 	-moz-background-size: 100%;
 	
-	-webkit-box-shadow: 0px 0px 136px 10px rgba(257,254,255,.5); 
-	-moz-box-shadow: 0px 0px 136px 10px rgba(257,254,255,.5); 
-	box-shadow: 0px 0px 136px 10px rgba(257,254,255,.5); 
+	-webkit-box-shadow: 0px 0px 120px 100px rgba(257,254,255,0.5); 
+	-moz-box-shadow: 0px 0px 120px 100px rgba(257,254,255,0.5); 
+	box-shadow: 0px 0px 120px 100px rgba(257,254,255,0.5); 
 }
+
 
 #mainColumn{
 	position: relative;
@@ -2366,6 +2368,8 @@ overflow: visible;
 	
 	/*color: rgb(42,42,42) !important;**/
 	
+		
+		transition-delay: 0.2s;
 	
 }
 
@@ -2401,7 +2405,11 @@ overflow: visible;
 	
 	cursor: pointer;
 	
-
+		
+		transition-delay: 0s;
+	
+		
+	
 	/*
 	text-shadow: 0 0 12px rgba(255,255,255,0.8), 0 0 18px rgba(255,255,255,0.6), 0 0 24px rgba(255,255,255,0.8);
 	*/
@@ -2949,9 +2957,7 @@ overflow: visible;
 	-o-transition: border 1s ease-in, padding 1s ease-in;
 	-webkit-transition: border 1s ease-in, padding 1s ease-in;
 	transition: border 1s ease-in, padding 1s ease-in;
-	
 
-	
 }
 /* @end */
 
