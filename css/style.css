@@ -574,9 +574,11 @@ button {  width: auto; overflow: visible; }
 	/*top: -10px;*/
 	top: -12px;
 	/*padding: 10px 15px;*/
+	padding-left:5px;
 	/*border-right: 1px solid #fff;*/
 	font-family: ChineseRocksRegular, sans-serif;
-	color: rgba(201,0,0,0.15);
+	/*color: rgba(201,0,0,0.15);*/
+	color: rgba(192,245,233,0.07);
 	/*text-shadow: 1px 0px 0px rgba(255,255,255,0.32);*/
 	/*
 	transform : scale(1,1.285);
@@ -627,17 +629,19 @@ button {  width: auto; overflow: visible; }
 	left: -84px;*/
 	
 	/*left: -84px;*/
-	left: -86px;
+	/*left: -86px;*/
+	left: -85px;
 	/*top: -9px; */
-	top: -10px; 
+	/*top: -10px; */
+	top: -11px; 
 	
 	cursor: default; 
-	
-	transform : scale(1.005,1.27);
-	-webkit-transform:scale(1.005,1.27); /* Safari and Chrome */
-	-moz-transform:scale(1.005,1.27); /* Firefox */
-	-ms-transform:scale(1.005,1.27); /* IE 9+ */
-	-o-transform:scale(1.005,1.27); /* Opera */
+	/*transform : scale(1.005,1.27);*/
+	transform : scale(1.005,1.28);
+	-webkit-transform:scale(1.005,1.28); /* Safari and Chrome */
+	-moz-transform:scale(1.005,1.28); /* Firefox */
+	-ms-transform:scale(1.005,1.28); /* IE 9+ */
+	-o-transform:scale(1.005,1.28); /* Opera */
 
 }
  
@@ -674,7 +678,8 @@ button {  width: auto; overflow: visible; }
 	height: 171px;  
 	background: url("../images/tudor0.png"); 
 	background-size: 281px 171px;
-	opacity: 0.92;/*0.95;*//*0.8;*/
+	/*opacity: 0.92;*//*0.95;0.8;*/
+	opacity: 0.9;/*0.95;*//*0.8;*/
     filter: alpha(opacity = 95/*80*/); /* For IE */ 
 	background-repeat: no-repeat;
 	/*
@@ -1316,7 +1321,7 @@ button {  width: auto; overflow: visible; }
 	/*color: rgba(190,0,0,0.83);*/
 	/*color: rgba(210,0,0,0.85); */
 	/*color: rgba(195,50,39,1); */
-	color: rgba(184,47,37,0.92); 
+	color: rgba(184,47,37,0.9); 
 }
 
 .leftColuna{
@@ -2883,7 +2888,8 @@ overflow: visible;
 	
 	top: 48px;/*43px;*/
 	
-	font-size: 34px;/*32px;*/
+	/*font-size: 34px;*//*32px;*/
+	font-size: 33px;/*32px;*/
 	margin: -10%;/*-12px;*/
 
 	/*
