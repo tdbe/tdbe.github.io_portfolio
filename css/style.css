@@ -854,7 +854,7 @@ button {  width: auto; overflow: visible; }
 
 #openingWrapper{
 	/*overflow:hidden;*/
-	
+	padding-top: 14px;
 }
 
 
@@ -1315,7 +1315,7 @@ button {  width: auto; overflow: visible; }
 	/*color: rgba(190,0,0,0.83);*/
 	/*color: rgba(210,0,0,0.85); */
 	/*color: rgba(195,50,39,1); */
-	color: rgba(195,50,39,0.9); 
+	color: rgba(184,47,37,0.95); 
 }
 
 .leftColuna{
@@ -1750,7 +1750,9 @@ button {  width: auto; overflow: visible; }
 	-webkit-background-size: 100%;
 	-moz-background-size: 100%;
 	
-		
+	-webkit-box-shadow: 0px 0px 92px 0px rgba(257,254,255,.5); 
+	-moz-box-shadow: 0px 0px 92px 0px rgba(257,254,255,.5); 
+	box-shadow: 0px 0px 92px 0px rgba(257,254,255,.5); 
 }
 
 #mainColumn{
