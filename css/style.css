@@ -2242,8 +2242,10 @@ overflow: visible;
 	*/
 	padding-left: 0.4em;
 	padding-right: 0.4em;
-	padding-top: 1.35em;
-
+	/*padding-top: 1.35em;*/
+	padding-top: 1.45em;
+	padding-bottom: 0.2em;
+	
 	line-height: 1.1em;
 	
 	/*color: rgba(0,0,0,1);*/
@@ -2278,7 +2280,8 @@ overflow: visible;
 .gridTag{
 	/*can have more tags separated by space*/
 	font-family: "big_noodle_titling";
-	margin-bottom: -0.25em;
+	/*margin-bottom: -0.25em;*/
+	margin-bottom: -0.2em;
 	font-size: 1.2em;
 	bottom: 0;
 	width: 100%;
@@ -2288,6 +2291,7 @@ overflow: visible;
 	text-shadow: 1px 0px 0px rgba(255,255,255,0.22);
 	
 	padding-left: 0.3em;
+	
 }
 
 .gridTagSmall{
@@ -2335,7 +2339,7 @@ overflow: visible;
 	border-bottom-width: 0.1em;
 	
 	/*padding-bottom: 0.05em;*/
-	padding-bottom: 0.05em;
+	padding-bottom: 0.55em;
 	
 	/*border-radius: 4px; 
 	-moz-border-radius: 4px; 
@@ -2439,7 +2443,7 @@ overflow: visible;
 }
 
 .gridItem:hover .gridTag, .gridItemAnalog:hover .gridTag{
-	margin-bottom: -0.4em;
+	margin-bottom: -0.3em;
 	/*padding-left: 0.3em;*/
 	
 }
