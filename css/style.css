@@ -684,7 +684,7 @@ button {  width: auto; overflow: visible; }
 	background: url("../images/tudor0.png"); 
 	background-size: 281px 171px;
 	/*opacity: 0.92;*//*0.95;0.8;*/
-	opacity: 0.9;/*0.95;*//*0.8;*/
+	opacity: 0.83;/*0.9;*//*0.8;*/
     filter: alpha(opacity = 95/*80*/); /* For IE */ 
 	background-repeat: no-repeat;
 	/*
@@ -1554,7 +1554,7 @@ button {  width: auto; overflow: visible; }
 	background:  url('../images/resMe2.png'); 
 	background-repeat: no-repeat;
 	background-size: 222px 232px;
-	
+	opacity: 0.93;
 }
 
 
