@@ -1358,7 +1358,8 @@ button {  width: auto; overflow: visible; }
 	height: 40px;
 	width: 100%;
 	top: 0px;
-	background-color: rgb(236,85,84);
+	/*background-color: rgb(236,85,84);*/
+	background-color: rgb(180,105,105);
 	
 	/*border: 1px solid rgba(255,255,255,.80);*/ 
 	border-top-left-radius: 2px; 
@@ -1384,7 +1385,8 @@ button {  width: auto; overflow: visible; }
 	width: 100%;
 	bottom: 4px;
 
-	background-color: rgb(236,85,84);
+	/*background-color: rgb(236,85,84);*/
+	color: rgb(180,105,105);
 	
 	/*border: 1px solid rgba(255,255,255,.80);*/ 
 	border-bottom-left-radius: 2px; 
@@ -1467,7 +1469,8 @@ button {  width: auto; overflow: visible; }
 	padding-left: 6px;
 	opacity: 0.5;
     filter: alpha(opacity = 50); /* For IE */ 
-	background-color: rgb(246,95,94);
+	background-color: rgba(246,95,94,0.25);
+	/*color: rgb(180,105,105);*/
 	border-top-left-radius: 2px; 
 	-moz-border-top-left-radius: 2px; 
 	-webkit-border-top-left-radius: 2px;  
@@ -3007,7 +3010,7 @@ overflow: visible;
 	left:220px;
 	z-index: 13;
 	/*border-left: 3px solid rgba(150, 98, 93, 0.9);*//*rgba(197, 57, 43, 0.90);*/
-	border-left: 3px solid rgba(150, 98, 93, 0.9);/*rgba(197, 57, 43, 0.90);*/
+	border-left: 3px solid rgba(165, 100, 94,1);/*rgba(197, 57, 43, 0.90);*/
 }
 
 
