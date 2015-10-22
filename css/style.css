@@ -1359,7 +1359,7 @@ button {  width: auto; overflow: visible; }
 	width: 100%;
 	top: 0px;
 	/*background-color: rgb(236,85,84);*/
-	background-color: rgb(180,105,105);
+	background-color: rgb(190,105,105);
 	
 	/*border: 1px solid rgba(255,255,255,.80);*/ 
 	border-top-left-radius: 2px; 
@@ -1386,7 +1386,7 @@ button {  width: auto; overflow: visible; }
 	bottom: 4px;
 
 	/*background-color: rgb(236,85,84);*/
-	color: rgb(180,105,105);
+	background-color: rgb(190,105,105);
 	
 	/*border: 1px solid rgba(255,255,255,.80);*/ 
 	border-bottom-left-radius: 2px; 
@@ -1469,7 +1469,7 @@ button {  width: auto; overflow: visible; }
 	padding-left: 6px;
 	opacity: 0.5;
     filter: alpha(opacity = 50); /* For IE */ 
-	background-color: rgba(246,95,94,0.25);
+	background-color: rgba(246,95,94,0.28);
 	/*color: rgb(180,105,105);*/
 	border-top-left-radius: 2px; 
 	-moz-border-top-left-radius: 2px; 
