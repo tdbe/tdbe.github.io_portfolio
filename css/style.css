@@ -2028,14 +2028,15 @@ button {  width: auto; overflow: visible; }
  
 	margin-bottom: 20px;
 
-	/*
-	border: 1px solid rgba(255,255,255,.80);
+	
+	border: 1px solid rgba(255,255,255,.80);/*#cc332b;*/
 	border-radius: 4px; 
 	-moz-border-radius: 4px; 
 	-webkit-border-radius: 4px; 
-	-webkit-box-shadow: 0px 5px 5px -1px rgba(76,76,76,.4); 
+	/*-moz-box-shadow: 0px 4px 4px #cc332b;*/
+	-webkit-box-shadow: 0px 5px 5px -1px rgba(76,76,76,.4);   /*#4c4c4c;*/
 	-moz-box-shadow: 0px 5px 5px -1px rgba(76,76,76,.4);
-	box-shadow: 0px 5px 5px -1px rgba(76,76,76,.4);*/
+	box-shadow: 0px 5px 5px -1px rgba(76,76,76,.4);
 
 	border-bottom: 1px solid rgba(0,0,0,.4);
 	border-bottom-right-radius: 3px; 
@@ -2098,25 +2099,23 @@ button {  width: auto; overflow: visible; }
 
 #centerPanel {
 
-	overflow: visible;
-	/*
-	border: 1px solid rgba(255,255,255,.80);
-	border-radius: 1px;
+overflow: visible;
+	border: 1px solid rgba(255,255,255,.80);/*#cc332b;*/
+	border-radius: 1px; /*4px; */
 	-moz-border-radius: 1px; 
 	-webkit-border-radius: 1px;   
-	
-	-webkit-box-shadow: 0px 5px 18px rgba(0,0,0,.36);
+	/*-moz-box-shadow: 0px 4px 4px #cc332b;*/
+	-webkit-box-shadow: 0px 5px 18px rgba(0,0,0,.36);/*#4c4c4c;*/
 	-moz-box-shadow: 0px 5px 18px rgba(0,0,0,.36);
 	box-shadow: 0px 5px 18px rgba(0,0,0,.36);
-	border-corner-shape: bevel;*/
+	border-corner-shape: bevel;
 	
 	border-top:0px;
 	
 	position: relative;
 	display: block;
 	/*max-width: 880px;*/
-	/*max-width: 1024px;*/
-	max-width: 1064px;
+	max-width: 1024px;
 	min-width: 617px;/*604px;*//*440*/
 
 	font-size: 16px; 
@@ -2158,10 +2157,10 @@ button {  width: auto; overflow: visible; }
 	z-index: 3;
 
     }
-/*
+	
 .centerPanelBG1{
 	background-color: rgba(255,255,255,.66)!important;
-}*/
+}
 	
 /*$pad: 20px;  DECLARE SASS VARS*/
 /*$fg Alpha: .5;*/
@@ -2325,8 +2324,6 @@ button {  width: auto; overflow: visible; }
 	/*background-color: rgba(255,255,255,.75);*/
 	/*background-color: rgba(257,254,255,.88);*/
 	background-color: white;
-	
-	
 }
 
 
@@ -2335,9 +2332,8 @@ button {  width: auto; overflow: visible; }
 
 	/*background-color: rgba(255,255,255,.65)*/;/*82*/
 	/*background-color: rgba(257,254,255,.80);*/
-	background: transparent;
+	background-color: white;
 	overflow: hidden;
-	
 }
 
 #resume{
@@ -2354,13 +2350,7 @@ button {  width: auto; overflow: visible; }
 	height: 900px;
 	overflow: hidden;
 	visibility: hidden;
-	margin: auto;
-	padding: auto;
-	
 	margin-bottom: -8px; 
-	
-	max-width: 1024px;
-	
 }
 
 #icontent::-webkit-scrollbar, .projZen::-webkit-scrollbar{ 
