@@ -1404,7 +1404,20 @@ button {  width: auto; overflow: visible; }
 	border-radius-bottom-right-radius: 2px; 
 	-moz-border-bottom-right-radius: 2px; 
 	-webkit-border-bottom-right-radius: 2px;  
+	
 
+
+	box-shadow:
+
+	0px 8px 15px rgba(0,0,0,.18);
+	
+	-webkit-box-shadow:
+
+	0px 8px 15px rgba(0,0,0,.18);
+	
+	-moz-box-box-shadow:
+
+	0px 8px 15px rgba(0,0,0,.18);
 }
 
 .backBg{
@@ -1968,7 +1981,7 @@ button {  width: auto; overflow: visible; }
 	
 	/*max-width: 478px;*/
 	/*max-width: 604px;  */
-	max-width: 760px;  
+	/*max-width: 760px;  */
 
 	line-height: 1.25em;
 
@@ -2010,12 +2023,15 @@ button {  width: auto; overflow: visible; }
 	-moz-box-shadow: 0px 0px 10px 200px rgba(257,254,255,0.5039); 
 	box-shadow: 0px 0px 10px 200px rgba(257,254,255,0.5039); */
 	
-	max-width: 1024px;
-
+	/*width: 1024px;*/
+	width: 760px;
+	border-left: 132px solid white;
+	border-right: 132px solid white;
+	
 	-webkit-box-shadow: 0px 5px 24px rgba(0,0,0,.38);
 	-moz-box-shadow: 0px 5px 24px rgba(0,0,0,.38);
 	box-shadow: 0px 5px 24px rgba(0,0,0,.38);
-	border-corner-shape: bevel;
+
 }
 
 
@@ -2225,7 +2241,7 @@ button {  width: auto; overflow: visible; }
 	-webkit-box-shadow: 0px 5px 24px rgba(0,0,0,.38);
 	-moz-box-shadow: 0px 5px 24px rgba(0,0,0,.38);
 	box-shadow: 0px 5px 24px rgba(0,0,0,.38);
-	border-corner-shape: bevel;
+
 
 }
 
@@ -2375,7 +2391,7 @@ button {  width: auto; overflow: visible; }
 	-webkit-box-shadow: 0px 5px 24px rgba(0,0,0,.38);
 	-moz-box-shadow: 0px 5px 24px rgba(0,0,0,.38);
 	box-shadow: 0px 5px 24px rgba(0,0,0,.38);
-	border-corner-shape: bevel;
+
 }
 
 #blog{
@@ -2393,7 +2409,7 @@ button {  width: auto; overflow: visible; }
 	-webkit-box-shadow: 0px 5px 24px rgba(0,0,0,.38);
 	-moz-box-shadow: 0px 5px 24px rgba(0,0,0,.38);
 	box-shadow: 0px 5px 24px rgba(0,0,0,.38);
-	border-corner-shape: bevel;
+
 }
 
 
@@ -3135,19 +3151,20 @@ overflow: visible;
 }
 
 #P{
-	overflow: visibile;
+	overflow: visible !important;
 	position: absolute;
 	left:0px;
 	z-index: 11;
+
 }
 #R{
-	overflow: visibile;
+	overflow: visible !important;
 	position: absolute;
 	left:122px;
 	z-index: 12;
 }
 #B{
-	overflow: visibile;
+	overflow: visible !important;
 	position: absolute;
 	left:220px;
 	z-index: 13;
@@ -3167,6 +3184,7 @@ overflow: visible;
 	height: 40px;
 	
 	display: inline;
+	overflow: visible !important;
 }
 
 
@@ -3212,11 +3230,11 @@ overflow: visible;
 	-2px -2px 2px rgba(0,0,0,0.2)
 }
 .tabs li div a {
-
+	
 	/*font-size: 28px;*/
 	font-size: 26px;
 
-	overflow: visibile;
+	overflow: visible !important;
 	position: relative;
 	display: inline;
 	/*color: #444;*/
@@ -3252,7 +3270,9 @@ overflow: visible;
 	;
 	
 	
-	
+	border-right: 10px solid transparent;
+	padding-right: 10px;
+
 }
 
 .tabs li a:hover {
@@ -3273,7 +3293,7 @@ overflow: visible;
 }*/
 
 .tabs li.active div a {
-	overflow: visibile;
+	overflow: visible !important;
 	color:  #fff;/*
 	-webkit-transition: all 0.25s ease;
 	-moz-transition: all 0.25s ease;
