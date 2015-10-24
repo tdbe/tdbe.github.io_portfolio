@@ -2005,9 +2005,17 @@ button {  width: auto; overflow: visible; }
 	-webkit-box-shadow: 0px 0px 110px 80px rgba(257,254,255,0.5039); 
 	-moz-box-shadow: 0px 0px 110px 80px rgba(257,254,255,0.5039); 
 	box-shadow: 0px 0px 110px 80px rgba(257,254,255,0.5039); */
+	/*
 	-webkit-box-shadow: 0px 0px 10px 200px rgba(257,254,255,0.5039); 
 	-moz-box-shadow: 0px 0px 10px 200px rgba(257,254,255,0.5039); 
-	box-shadow: 0px 0px 10px 200px rgba(257,254,255,0.5039); 
+	box-shadow: 0px 0px 10px 200px rgba(257,254,255,0.5039); */
+	
+	max-width: 1024px;
+
+	-webkit-box-shadow: 0px 5px 24px rgba(0,0,0,.38);
+	-moz-box-shadow: 0px 5px 24px rgba(0,0,0,.38);
+	box-shadow: 0px 5px 24px rgba(0,0,0,.38);
+	border-corner-shape: bevel;
 }
 
 
@@ -2155,7 +2163,8 @@ button {  width: auto; overflow: visible; }
 	/*background-color: rgba(255,255,255,.66);*//*82*/
 
 	
-	background-color: rgba(255,255,255,0);
+	/*background-color: rgba(255,255,255,0);*/
+	background:transparent;
 	-webkit-transition: background-color 0.15s ease-out;
 	-moz-transition: background-color 0.15s ease-out;
 	-o-transition: background-color 0.15s ease-out;
