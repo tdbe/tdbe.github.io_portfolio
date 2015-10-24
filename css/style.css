@@ -2076,8 +2076,8 @@ button {  width: auto; overflow: visible; }
 		position: absolute;
 		height: 0px;
 		border-bottom: 5px solid rgba(180,105,105,1);
-		width: 105%;
-		margin-left:-2.5%;
+		width: 100%;
+		/*margin-left:-2.5%;*/
 
 
 		box-shadow:
