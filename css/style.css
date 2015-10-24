@@ -1442,14 +1442,20 @@ button {  width: auto; overflow: visible; }
 	position: absolute;
 	/*display: inline;*/
 	/*display: inline-block;*/
-	font-family: "Museo700";
-	font-size: 12px;
+	font-family: "DinBold", "big_noodle_titling", sans-serif;
+	font-weight: bold;
+	letter-spacing: -0.06em;
+
+	
+	/*font-family: "Museo700";*/
+	/*font-size: 12px;*/
+	font-size: 16px;
 	color: black;
 	width: 100%;
 	/*height: 12px;*/
 	height: 18px;
 	/*padding-left: 84px;*/
-	padding-top: 13px;
+	padding-top: 11px;
 	padding-bottom: 6px;
 	text-decoration: none;
 	text-shadow: none;
@@ -1474,6 +1480,8 @@ button {  width: auto; overflow: visible; }
     filter: alpha(opacity = 50); /* For IE */ 
 	background-color: rgba(246,95,94,0.28);
 	/*color: rgb(180,105,105);*/
+	
+	color: rgba(0,0,0,0.75);
 	border-top-left-radius: 2px; 
 	-moz-border-top-left-radius: 2px; 
 	-webkit-border-top-left-radius: 2px;  
@@ -1857,7 +1865,7 @@ button {  width: auto; overflow: visible; }
 
 	
 	font-size: 24px;/*24*/
-	text-transform: uppercase;
+
 
 	/*border-bottom: 4px solid rgba(155,155,155,0.14); */
 	/*border-bottom: 8px solid rgba(255,255,255,0.24); */
@@ -1878,11 +1886,11 @@ button {  width: auto; overflow: visible; }
     -moz-transform:scale(0.85,1); 
     -ms-transform:scale(0.85,1); 
     -o-transform:scale(0.85,1);*/
-	transform : scale(0.81,1);
-	-webkit-transform:scale(0.81,1); 
-	-moz-transform:scale(0.81,1); 
-	-ms-transform:scale(0.81,1); 
-	-o-transform:scale(0.81,1); 
+	transform : scale(0.85,1);
+	-webkit-transform:scale(0.85,1); 
+	-moz-transform:scale(0.85,1); 
+	-ms-transform:scale(0.85,1); 
+	-o-transform:scale(0.85,1); 
 	
 	color: rgba(75,75,75,0.94) !important;
 }
@@ -1891,14 +1899,14 @@ button {  width: auto; overflow: visible; }
 	font-family: "DinBold", "big_noodle_titling", sans-serif;
 	font-weight: bold;
 	font-size: 24px;
-	transform : scale(0.81,1);
-	-webkit-transform:scale(0.81,1); 
-	-moz-transform:scale(0.81,1); 
-	-ms-transform:scale(0.81,1); 
-	-o-transform:scale(0.81,1); 
+	transform : scale(0.85,1);
+	-webkit-transform:scale(0.85,1); 
+	-moz-transform:scale(0.85,1); 
+	-ms-transform:scale(0.85,1); 
+	-o-transform:scale(0.85,1); 
 	letter-spacing: -0.06em;
 	text-transform: uppercase;
-	margin-left: -82px;
+	margin-left: -64px;
 	
 }
 
@@ -2066,24 +2074,26 @@ button {  width: auto; overflow: visible; }
 #decoBar{
 		top: -9px;
 		position: absolute;
-		height: 5px;
-		width: 100%;
-		background-color: rgba(180,105,105,1);
-		display:block;
+		height: 0px;
+		border-bottom: 5px solid rgba(180,105,105,1);
+		width: 105%;
+		margin-left:-2.5%;
+
+
 		box-shadow:
 		0px 2px 2px rgba(0,0,0,0.1), 
 		-2px 2px 2px rgba(0,0,0,0.1), 
-		2px 2px 2px rgba(0,0,0,0.1), 
+		2px 2px 2px rgba(0,0,0,0.1)
 		;
 		-webkit-box-shadow:
 		0px 2px 2px rgba(0,0,0,0.1), 
 		-2px 2px 2px rgba(0,0,0,0.1), 
-		2px 2px 2px rgba(0,0,0,0.1), 
+		2px 2px 2px rgba(0,0,0,0.1)
 		;
 		-moz-box-shadow:
 		0px 2px 2px rgba(0,0,0,0.1), 
 		-2px 2px 2px rgba(0,0,0,0.1), 
-		2px 2px 2px rgba(0,0,0,0.1), 
+		2px 2px 2px rgba(0,0,0,0.1)
 		;
 }
 
@@ -2119,7 +2129,7 @@ overflow: visible;
 	width: 100%;
 
 	/*top: 171px;  */
-	top: 165px;  
+	top: 166px;  
     /*
 	top: 138px;  
 	
