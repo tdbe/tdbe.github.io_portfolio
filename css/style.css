@@ -1411,17 +1411,19 @@ button {  width: auto; overflow: visible; }
 
 	box-shadow:
 
-	0px 5px 5px rgba(0,0,0,.18);
+	-4px 4px 6px rgba(0,0,0,.18),
+	4px 4px 6px rgba(0,0,0,.18);
 	
 	-webkit-box-shadow:
 
-	0px 5px 5px rgba(0,0,0,.18);
+	-4px 4px 6px rgba(0,0,0,.18),
+	4px 4px 6px rgba(0,0,0,.18);
 	
 	-moz-box-box-shadow:
 
-	0px 5px 5px rgba(0,0,0,.18);
+	-4px 4px 6px rgba(0,0,0,.18),
+	4px 4px 6px rgba(0,0,0,.18);
 	
-
 	margin-bottom: 30px;
 }
 
