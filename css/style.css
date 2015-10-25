@@ -1418,6 +1418,10 @@ button {  width: auto; overflow: visible; }
 	-moz-box-box-shadow:
 
 	0px 8px 15px rgba(0,0,0,.18);
+	
+	padding-left: 3px;
+	padding-right: 3px;
+	padding-bottom: 30px;
 }
 
 .backBg{
@@ -2238,9 +2242,9 @@ button {  width: auto; overflow: visible; }
 	-webkit-background-size: 100%;
 	-moz-background-size: 100%;
 	
-	-webkit-box-shadow: 0px 5px 24px rgba(0,0,0,.38);
-	-moz-box-shadow: 0px 5px 24px rgba(0,0,0,.38);
-	box-shadow: 0px 5px 24px rgba(0,0,0,.38);
+	-webkit-box-shadow: 0px 4px 24px rgba(0,0,0,.38);
+	-moz-box-shadow: 0px 4px 24px rgba(0,0,0,.38);
+	box-shadow: 0px 4px 24px rgba(0,0,0,.38);
 
 
 }
