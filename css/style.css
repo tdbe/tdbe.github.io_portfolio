@@ -787,7 +787,8 @@ button {  width: auto; overflow: visible; }
  #ttlText{
 	 /*15 x 35 or 16 x 36*/
 	margin-top: 33px;
-	margin-right: -72px;
+	/*margin-right: -72px;*/
+	margin-right: -67px;
 
 	 font-family: "DinBold", "big_noodle_titling", sans-serif;
 	 font-weight: bold;
@@ -2112,7 +2113,7 @@ button {  width: auto; overflow: visible; }
 		position: absolute;
 		height: 0px;
 		border-bottom: 5px solid rgba(180,105,105,1);
-		width: 100%;
+		width: 95%;
 		/*margin-left:-2.5%;*/
 
 
@@ -2133,7 +2134,7 @@ button {  width: auto; overflow: visible; }
 		;
 		
 		max-width: 1024px;
-		margin-left: 20px;
+		margin-left: 27px;
 
 }
 
