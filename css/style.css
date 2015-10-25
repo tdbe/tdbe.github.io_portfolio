@@ -2119,18 +2119,24 @@ button {  width: auto; overflow: visible; }
 
 		box-shadow:
 		/*0px 2px 2px rgba(0,0,0,0.1), */
-		-4px 2px 5px rgba(0,0,0,0.15), 
-		4px 2px 5px rgba(0,0,0,0.15)
+		-4px 2px 4px rgba(0,0,0,0.11), 
+		4px 2px 4px rgba(0,0,0,0.11),
+		-14px 4px 5px rgba(0,0,0,0.07), 
+		14px 4px 5px rgba(0,0,0,0.07)
 		;
 		-webkit-box-shadow:
 		/*0px 2px 2px rgba(0,0,0,0.1), */
-		-4px 2px 5px rgba(0,0,0,0.15), 
-		4px 2px 5px rgba(0,0,0,0.15)
+		-4px 2px 4px rgba(0,0,0,0.11), 
+		4px 2px 4px rgba(0,0,0,0.11),
+		-14px 4px 5px rgba(0,0,0,0.07), 
+		14px 4px 5px rgba(0,0,0,0.07)
 		;
 		-moz-box-shadow:
 		/*0px 2px 2px rgba(0,0,0,0.1), */
-		-4px 2px 5px rgba(0,0,0,0.15), 
-		4px 2px 5px rgba(0,0,0,0.15)
+		-4px 2px 4px rgba(0,0,0,0.18), 
+		4px 2px 4px rgba(0,0,0,0.18),
+		-14px 4px 5px rgba(0,0,0,0.07), 
+		14px 4px 5px rgba(0,0,0,0.07)
 		;
 		
 		max-width: 1024px;
@@ -2434,9 +2440,9 @@ button {  width: auto; overflow: visible; }
 	padding: auto;
 
 
-	
-	
+
 }
+
 
 #icontent::-webkit-scrollbar, .projZen::-webkit-scrollbar{ 
     display: none; 
@@ -2699,9 +2705,9 @@ button {  width: auto; overflow: visible; }
 	/*border: 0px solid rgba(255,255,255,.10);*//*#cc332b;*/
 	border: 15px solid rgba(255,255,255,.12);
 	border-bottom-width: 10px;/*0.1em;*/
-	border-radius: 2px; 
-	-moz-border-radius: 2px; 
-	-webkit-border-radius: 2px; 
+	border-radius: 1px; 
+	-moz-border-radius: 1px; 
+	-webkit-border-radius: 1px; 
 	
 	/*padding-bottom: 0.05em;*/
 	padding-bottom: 0.55em;
