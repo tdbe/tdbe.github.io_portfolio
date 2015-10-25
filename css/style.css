@@ -295,7 +295,7 @@ http://www.fontsquirrel.com/tools/webfont-generator
 /* FONTS GO HERE! */
 
 .projZen{
-	overflow: hidden;
+	overflow: visible;
 	/*height: 100%; */
 	width: 100%; 
 	font-size: 16px;									
@@ -1078,6 +1078,8 @@ button {  width: auto; overflow: visible; }
 .dPadSmall{
 	margin-top: 3px;
 	margin-bottom: 6px;
+	margin-left: -17px;
+	width: 100%;
 }
 
 .buffer{ 
@@ -1346,17 +1348,26 @@ button {  width: auto; overflow: visible; }
 	position: absolute; 
 	top: 0px;
 	left: 0px;
-	width: 100%;
+	
 	height: auto;
 	/*min-height: 100%;*/
 	/*margin-bottom: -50px;*/
 	padding-bottom: 50px;/*20*/
+
+	width: 95%;
+	max-width: 1024px;
+
+	padding-left: 20px;
 }
 
+
 .boxShadPadding{ 
-	
+/*
+	width: 100%;
 	max-width: 1024px;
 	margin-left: 20px;
+	padding-left: 20px;
+	*/
 }
 
 #topBar{
@@ -1771,26 +1782,59 @@ button {  width: auto; overflow: visible; }
 #picMe{
 	/*margin-top: -42px;*/
 	/*margin-top: -34px;*/
-	margin-top: 0px;
+	/*margin-top: 0px;*/
 	/*margin-left: 6px;*/
 	/*margin-left: 6px;*/
 	/*margin-left: 34px;*/
-	margin-left: 85px;
+	/*margin-left: 85px;*/
 	/*width: 240px;*/
 	/*width: 114.117647%; */
-	width: 114.117647%; 
-	height: 232px;  
+	/*width: 114.117647%; */
+	height: 155px;  
+	width: 155px;
+	padding: 0px;
+	margin: 0px;
 	background:  url('../images/resMe2.png'); 
 	background-repeat: no-repeat;
 	/*background-size: 222px 232px;*/
 	background-size: 148px 155px;
 	opacity: 0.93;
 	filter: alpha(opacity = 93);
+	
+	-moz-transform: scaleX(-1);
+	-o-transform: scaleX(-1);
+	-webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
+	filter: FlipH;
+	-ms-filter: "FlipH";
 }
 
+.cvContact{
+	position: absolute;
+	top: 20px;
+	left: 20%;
+	
+	margin: 0px;
+	padding: 0px;
+	/*padding-right: 100px;*/
+	padding-right: 8%;
+	padding-left: 120px;
+}
+
+.cvRow{
+	position: relative;
+	margin-top: 16px;
+	padding-left: 100px;
+	display: inline-block; 
+	float: left;
+	
+	width: 100%;
+	/*min-height: 500px;*/
+	
+}
 
 .cvColumn{
-	position: absolute; 
+	/*position: absolute; */
 	top: -10px;
 	display: inline-block; 
 	/*width: 234px;*/
@@ -1819,6 +1863,7 @@ button {  width: auto; overflow: visible; }
 	left: 0px;
 	/*float: left;*/ 
 }
+
 .cvColumnC{ 
 	/*margin: 0px 12px 0px 12px; */
 	/*margin: 0px 1.363% 0px 1.363%; */
@@ -1837,18 +1882,21 @@ button {  width: auto; overflow: visible; }
 	/*width: 252px; */
 	/*width: 28.636%; */
 	/*width: 28.636%;*/
-	width: 29.036%;
+	/*width: 29.036%;*/
+	width: 40%;
 	/*background-color: rgba(0,255,0,.70);*/
 	
 	position: relative;
 	display:inline-block;
 	text-align:left;
 	
-	padding-left: 6%;
+	padding-left: 0px;
+	/*margin-left: 140px;*/
+	margin-left: 13%;
 }
 #cVarDiv{
 	padding-left: 1.25%;
-	text-align:center;
+	text-align:left;
 }
 
 .cvColumnR{
@@ -1858,20 +1906,24 @@ button {  width: auto; overflow: visible; }
 	
 	/*margin: 0px 2.725% 0px 0px; */
 	/*margin: 0px 1.825% 0px 0px; */
-	margin: 0px 0px 0px 0px; 
+	margin: -10px 0px 0px 0px; 
 	/*margin-left:9%; */
 	/*width: 17.318%; */
-	width: 15%; 
+	/*width: 15%*/; 
+	width: 20%; 
 	
 	
 	top: 0px;
 	
 	/*margin: 0px auto 0px auto;*/
 	/*background-color: rgba(0,0,255,.70);*/
-	right: 0px;
-	/*float: right;*/
+	/*right: 0px;*/
+	/*padding-right: 86px;*/
+	padding-right: 8%;
+	float: right;
 	
 }
+
 
 .cvTitle{
 	/*display: block;*/
@@ -1882,7 +1934,7 @@ button {  width: auto; overflow: visible; }
 	margin-right: -24px;
 	*/
 	/*margin: 24px -24px 12px -40px;*/
-	margin: 24px -24px 10px -25%;
+	margin: 24px -24px 10px -96px;
 
 	
 	font-family: "DinBold", "big_noodle_titling", sans-serif;
@@ -1893,14 +1945,13 @@ button {  width: auto; overflow: visible; }
 	
 	font-size: 24px;/*24*/
 
-
 	/*border-bottom: 4px solid rgba(155,155,155,0.14); */
 	/*border-bottom: 8px solid rgba(255,255,255,0.24); */
 	/*border-bottom: 4px solid rgba(255,255,255,0.8);*/
 	/*border-bottom: 4px solid rgba(0,0,0,0.025);
 	padding-right: 1em;*/
 	
-	display:inline-block;
+	display:block;
 	/*
     transform:scale(1.3,1);
     -webkit-transform:scale(1.2,1); 
@@ -1913,6 +1964,32 @@ button {  width: auto; overflow: visible; }
     -moz-transform:scale(0.85,1); 
     -ms-transform:scale(0.85,1); 
     -o-transform:scale(0.85,1);*/
+	transform : scale(0.85,1);
+	-webkit-transform:scale(0.85,1); 
+	-moz-transform:scale(0.85,1); 
+	-ms-transform:scale(0.85,1); 
+	-o-transform:scale(0.85,1); 
+	
+	color: rgba(75,75,75,0.94) !important;
+}
+
+.cvTitleRow{
+	
+	/*margin: 24px 0px 10px -54px;*/
+	margin: 24px 0px 10px -72px;
+	width: 200px;
+	padding: 0px;
+
+
+	font-family: "DinBold", "big_noodle_titling", sans-serif;
+	font-weight: bold;
+	letter-spacing: -0.06em;
+	text-transform: uppercase;
+
+	font-size: 24px;/
+	
+	display:inline-block;
+	
 	transform : scale(0.85,1);
 	-webkit-transform:scale(0.85,1); 
 	-moz-transform:scale(0.85,1); 
@@ -1961,12 +2038,13 @@ button {  width: auto; overflow: visible; }
 }
 
 .picMeContainer{
-	/*margin: 12px 2.725% 0px 0px; */
-	margin: 12px 0px 0px 0px;
-	padding-right: 8.6%;
-	/*width: 19.318%;*/
-	width: 19.318%;
-	overflow: hidden;
+	margin: 0px;
+	padding: 0px;
+	
+	/*margin-left: 74px;*/
+	margin-top: 40px;
+	
+	margin-left: 7%;
 }
 
 
@@ -2104,7 +2182,7 @@ button {  width: auto; overflow: visible; }
 	padding: 1.075%;
 	padding-top: 0px;
 
-	
+	overflow: visible;
 	padding-bottom: 3em;
 }
 
@@ -2113,6 +2191,7 @@ button {  width: auto; overflow: visible; }
 		position: absolute;
 		height: 0px;
 		border-bottom: 5px solid rgba(180,105,105,1);
+		/*width: 95%*/;
 		width: 95%;
 		/*margin-left:-2.5%;*/
 
@@ -2149,29 +2228,29 @@ button {  width: auto; overflow: visible; }
 		top: -9px;
 		position: absolute;
 		height: 0px;
-		border-bottom: 5px solid rgba(180,105,105,1);
+		border-bottom: 3px solid rgba(180,105,105,1);
 		
 
 		box-shadow:
 		/*0px 2px 2px rgba(0,0,0,0.1), */
-		-4px 2px 4px rgba(0,0,0,0.11), 
-		4px 2px 4px rgba(0,0,0,0.11),
-		-8px 4px 5px rgba(0,0,0,0.07), 
-		8px 4px 5px rgba(0,0,0,0.07)
+		-4px 1px 3px rgba(0,0,0,0.11), 
+		4px 1px 3px rgba(0,0,0,0.11),
+		-8px 2px 4px rgba(0,0,0,0.07), 
+		8px 2px 4px rgba(0,0,0,0.07)
 		;
 		-webkit-box-shadow:
 		/*0px 2px 2px rgba(0,0,0,0.1), */
-		-4px 2px 4px rgba(0,0,0,0.11), 
-		4px 2px 4px rgba(0,0,0,0.11),
-		-8px 4px 5px rgba(0,0,0,0.07), 
-		8px 4px 5px rgba(0,0,0,0.07)
+		-4px 1px 3px rgba(0,0,0,0.11), 
+		4px 1px 3px rgba(0,0,0,0.11),
+		-8px 2px 4px rgba(0,0,0,0.07), 
+		8px 2px 4px rgba(0,0,0,0.07)
 		;
 		-moz-box-shadow:
 		/*0px 2px 2px rgba(0,0,0,0.1), */
-		-4px 2px 4px rgba(0,0,0,0.18), 
-		4px 2px 4px rgba(0,0,0,0.18),
-		-8px 4px 5px rgba(0,0,0,0.07), 
-		8px 4px 5px rgba(0,0,0,0.07)
+		-4px 1px 3px rgba(0,0,0,0.18), 
+		4px 1px 3px rgba(0,0,0,0.18),
+		-8px 2px 4px rgba(0,0,0,0.07), 
+		8px 2px 4px rgba(0,0,0,0.07)
 		;
 		
 		margin-left: -32%;
@@ -2209,9 +2288,10 @@ button {  width: auto; overflow: visible; }
 	margin-right: auto;
 	margin-bottom: 0px;
 
-	margin-left: auto;
 	width: 100%;
 
+
+	
 	/*top: 171px;  */
 	top: 166px;  
     /*
@@ -2371,8 +2451,8 @@ button {  width: auto; overflow: visible; }
 	margin: -16px -14px 0px -2px;
 	/*padding: 16px 14px 16px 14px;*/
 	/*padding: 16px 0px 16px 14px;*/
-	/*padding: 12px 10px 16px 70px;*/
-	padding: 15px 10px 24px 1.5em;/*3em*/
+	/*padding: 15px 10px 24px 70px;*/
+	padding: 15px 10px 14px 1.5em;/*3em*/
 
 	/*padding-left: 38px;*/
 	/*padding-left: 15px;*/
@@ -2391,7 +2471,7 @@ button {  width: auto; overflow: visible; }
 	height: auto;
 	min-width: 100%;
 	max-width: 100%;
-	overflow: hidden;
+	overflow: visible;
 }
 .scalableImg {
 	width: auto;
@@ -2421,7 +2501,8 @@ button {  width: auto; overflow: visible; }
 	/*background-color: rgba(255,255,255,.65)*/;/*82*/
 	/*background-color: rgba(257,254,255,.80);*/
 	background: transparent;
-	overflow: hidden;
+	overflow: visible;
+	
 	
 }
 
@@ -2440,6 +2521,7 @@ button {  width: auto; overflow: visible; }
 	-webkit-box-shadow: 0px 5px 24px rgba(0,0,0,.38);
 	-moz-box-shadow: 0px 5px 24px rgba(0,0,0,.38);
 	box-shadow: 0px 5px 24px rgba(0,0,0,.38);
+
 
 }
 
@@ -2463,9 +2545,9 @@ button {  width: auto; overflow: visible; }
 
 
 #icontent{
-	width: 100%;
+	width: 101.5%;
 	height: 900px;
-	overflow: hidden;
+	overflow: visible;
 	visibility: hidden;
 
 	
@@ -2473,7 +2555,6 @@ button {  width: auto; overflow: visible; }
 	
 	margin: auto;
 	padding: auto;
-
 
 
 }
