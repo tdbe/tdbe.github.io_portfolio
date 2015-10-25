@@ -1349,7 +1349,7 @@ button {  width: auto; overflow: visible; }
 	height: auto;
 	/*min-height: 100%;*/
 	/*margin-bottom: -50px;*/
-	padding-bottom: 20px;
+	padding-bottom: 0px;/*20*/
 }
 
 .boxShadPadding{ 
@@ -1365,7 +1365,7 @@ button {  width: auto; overflow: visible; }
 	z-index: 2;
 	/*height: 35px;*/
 	height: 40px;
-	width: 100%;
+	width: 98%;
 	top: 0px;
 	/*background-color: rgb(236,85,84);*/
 	background-color: rgb(190,105,105);
@@ -1383,8 +1383,7 @@ button {  width: auto; overflow: visible; }
 	-moz-box-shadow: 0px 1px 2px rgba(76,76,76,.3);
 	box-shadow: 0px 1px 2px rgba(76,76,76,.3);  
 	
-	margin-left: 3px;
-	margin-right: 3px;
+
 }
 
 #bottomBar{
@@ -1394,7 +1393,7 @@ button {  width: auto; overflow: visible; }
 	z-index: 2;
 	/*height: 35px;*/
 	height: 55px;
-	width: 100%;
+	width: 98%;
 	bottom: 4px;
 
 	/*background-color: rgb(236,85,84);*/
@@ -1422,6 +1421,7 @@ button {  width: auto; overflow: visible; }
 
 	0px 8px 15px rgba(0,0,0,.18);
 	
+
 	margin-left: 3px;
 	margin-right: 3px;
 	margin-bottom: 30px;
