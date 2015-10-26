@@ -676,10 +676,10 @@ button {  width: auto; overflow: visible; }
 	0px 0px 0px rgb(201,100,100);
 	*/
 	text-shadow:
-	0px 0.01em 0.02em rgba(0,0,0,0.09), 
-	-1px 0px 0.02em rgba(0,0,0,0.09),
-	0px 0px 0.02em rgba(0,0,0,0.09),
-	-1px 0.01em 0.02em rgba(0,0,0,0.09)
+	0px 0.01em 0.01em rgba(0,0,0,0.09), 
+	-1px 0px 0.01em rgba(0,0,0,0.09),
+	0px 0px 0.01em rgba(0,0,0,0.09),
+	-1px 0.01em 0.01em rgba(0,0,0,0.09)
 	;
 	
 	/*opacity: 0.15;*/
