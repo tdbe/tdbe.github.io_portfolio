@@ -780,17 +780,22 @@ button {  width: auto; overflow: visible; }
 	position: relative;
 	float: right;
 
-
+	display:block;
+	top: 0px;
+	
 	width: 0px;
 	height: 0px;
  }
  
  #ttlText{
+	 position: absolute;
+	 
 	 /*15 x 35 or 16 x 36*/
 	margin-top: 33px;
 	/*margin-right: -72px;*/
-	margin-right: -67px;
-
+	/*margin-right: -67px;*/
+	left:-239px;
+	
 	 font-family: "DinBold", "big_noodle_titling", sans-serif;
 	 font-weight: bold;
 	 font-size: 68px;/*75px;*/
@@ -1834,7 +1839,8 @@ button {  width: auto; overflow: visible; }
 	padding: 0px;
 	/*padding-right: 100px;*/
 	padding-right: 8%;
-	padding-left: 120px;
+	padding-left: 104px;/*120*/
+	z-index: 10;7
 }
 
 .cvRow{
