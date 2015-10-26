@@ -1352,9 +1352,9 @@ button {  width: auto; overflow: visible; }
 	
 	height: auto;
 	/*min-height: 100%;*/
-	/*margin-bottom: 50px;*/
-	padding-bottom: 10px;/*50*/
-	border-bottom: 20px solid transparent;
+	margin-bottom: 40px;
+	/*padding-bottom: 10px;*//*50*/
+	/*border-bottom: 50px solid transparent;*/
 
 	/*width: 97%;95*/
 	width: 93%;/*95*/
@@ -1418,7 +1418,7 @@ button {  width: auto; overflow: visible; }
 	/*height: 35px;*/
 	height: 55px;
 	width: 94.8%;
-	bottom: 4px;
+	bottom: 8px;
 
 	/*background-color: rgb(236,85,84);*/
 	background-color: rgb(190,105,105);
@@ -1449,7 +1449,7 @@ button {  width: auto; overflow: visible; }
 	4px 4px 6px rgba(0,0,0,.18);
 	
 	/*margin-bottom: 30px;*/
-	margin-bottom: -10px;
+	margin-bottom: 0px;
 	margin-left: 10px;
 
 	padding-bottom:0px;
@@ -2566,7 +2566,7 @@ button {  width: auto; overflow: visible; }
 	/*width: 101.5%;*/
 	width: 103.5%;
 	height: 900px;
-	overflow: visible;
+	overflow: hidden;
 	visibility: hidden;
 
 	
@@ -2951,7 +2951,7 @@ button {  width: auto; overflow: visible; }
 	
 }
 
-.gridItem:hover .gridText{
+.gridItem:hover .gridText, gridItem:active .gridText{
 	color: rgb(62,62,62);
 }
 
