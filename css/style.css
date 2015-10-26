@@ -1353,7 +1353,7 @@ button {  width: auto; overflow: visible; }
 	height: auto;
 	/*min-height: 100%;*/
 	/*margin-bottom: -50px;*/
-	padding-bottom: -50px;/*20*/
+	padding-bottom: -100px;/*20*/
 
 	/*width: 97%;95*/
 	width: 93%;/*95*/
