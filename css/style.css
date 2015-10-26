@@ -2208,6 +2208,10 @@ button {  width: auto; overflow: visible; }
 
 	overflow: visible;
 	padding-bottom: 3em;
+	
+	position:absolute;
+	z-index: 12;
+	
 }
 
 #decoBar{
