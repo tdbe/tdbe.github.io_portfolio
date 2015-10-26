@@ -1371,25 +1371,6 @@ button {  width: auto; overflow: visible; }
 
 }
 
-#projContainerDefault{
-	position: absolute; 
-	top: 0px;
-	left: 0px;
-	
-	height: auto;
-	/*min-height: 100%;*/
-	/*margin-bottom: -50px;*/
-	padding-bottom: -50px;/*20*/
-
-	/*width: 97%;95*/
-	width: 93%;/*95*/
-	max-width: 1024px;
-
-	/*padding-left: 20px;*/
-	margin-left: 20px;
-
-}
-
 
 .boxShadPadding{ 
 /*

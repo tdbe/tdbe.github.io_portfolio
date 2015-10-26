@@ -56,7 +56,7 @@ function onMainLoaded(){
 	//onload='resizeIframe(this); swap();'
 	var me = "'  id='icontent' scrolling='no'  frameborder='0' allowTransparency='true' seamless></iframe>"; 
 	
-	$("#icontent").css("overflow", "visible");
+	//$("#icontent").css("overflow", "visible");
 	
 	switch (project) {//wanted to do something else here..
 	case "gpgpu":
