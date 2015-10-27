@@ -926,16 +926,16 @@ button {  width: auto; overflow: visible; }
 	
 	-webkit-font-smoothing: antialiased;
 	
-	/*padding: 1.075%;
+	padding: 1.075%;
 	padding-top: 0px;
-	padding-bottom: 0px;*/
-	padding:0;
-	margin:0;
+	padding-bottom: 0px;
+
 
 /*
 	margin-bottom: 7.5em;
 	padding-bottom: 7.5em;*/
 	
+	/*margin-bottom: 10em;*/
 	margin-bottom: 10em;
 	padding-bottom: 10em;
 	
@@ -1381,6 +1381,8 @@ button {  width: auto; overflow: visible; }
 	-moz-box-shadow: 0px 5px 24px rgba(0,0,0,.38);
 	box-shadow: 0px 5px 24px rgba(0,0,0,.38);
 	
+	
+
 
 }
 
@@ -1430,7 +1432,8 @@ button {  width: auto; overflow: visible; }
 	/*height: 35px;*/
 	height: 55px;
 	width: 94.8%;
-	bottom: 8px;
+	/*bottom: 8px;*/
+	bottom: 0.2%;
 
 	/*background-color: rgb(236,85,84);*/
 	background-color: rgb(190,105,105);
@@ -2146,7 +2149,6 @@ button {  width: auto; overflow: visible; }
 	/*border-left: 132px solid white;*/
 	/*border-right: 20% solid white;*/
 	
-	
 
 
 }
@@ -2217,8 +2219,7 @@ button {  width: auto; overflow: visible; }
 	overflow: visible;
 	padding-bottom: 3em;
 	
-	position:absolute;
-	z-index: 12;
+
 	
 }
 
@@ -2357,6 +2358,7 @@ button {  width: auto; overflow: visible; }
 	-moz-background-size: 100%;*/
 	z-index: 3;
 
+	
     }
 /*
 .centerPanelBG1{
@@ -3682,9 +3684,9 @@ overflow: visible;
 	 z-index: 10;
 	 height: 3em;
 	 /*margin-top: -2.86em;*/
-	 /*margin-top: -7em;*/
+	 margin-top: -3em;
 
-
+	padding-bottom: 4em;
 
 }
 

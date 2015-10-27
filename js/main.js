@@ -119,6 +119,7 @@ var debounce = function (func, threshold, execAsap)
 	};
 }
 
+var extraHeight = 1.005;
 function resizeIframe(obj){
     //obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
 	obj.style.height = obj.contentWindow.window.size.h + 'px';
@@ -127,9 +128,10 @@ function resizeIframe(obj){
 	obj.style.width = w.style.width + "px";  
 }
 
+
 function resizeIframe2() {
 	var obj = document.getElementById("icontent");
-    obj.style.height = obj.contentWindow.document.getElementById('projContainer').scrollHeight + 'px';
+    obj.style.height = obj.contentWindow.document.getElementById('projContainer').scrollHeight * extraHeight + 'px';
 	//obj.style.height = obj.contentWindow.window.size.h + 'px'; 
 	//var w = window.parent.document.getElementById("centerPanel");
 	var w = document.getElementById("centerPanel");
