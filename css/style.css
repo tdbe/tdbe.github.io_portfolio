@@ -623,7 +623,7 @@ button {  width: auto; overflow: visible; }
 	overflow: hidden;
 	height: 168px;
 	/*width: 920px;*/
-	width: 730px;
+	width: 750px;
 	
 
 	/*left: -86px;*//*-83px;*//*7px;*/ 
@@ -2916,7 +2916,8 @@ button {  width: auto; overflow: visible; }
 	-webkit-box-shadow: 0px 5px 14px rgba(0,0,0,.38);
 	-moz-box-shadow: 0px 5px 14px rgba(0,0,0,.38);
 	box-shadow: 0px 5px 14px rgba(0,0,0,.38);
-	
+
+	text-decoration:none;
 }
 
 
@@ -2968,7 +2969,7 @@ button {  width: auto; overflow: visible; }
 	*/
 	/* IE8 and earlier */
 	
-	
+	text-decoration:none;
 }
 
 .gridItem:hover .gridText, gridItem:active .gridText{
@@ -3185,6 +3186,8 @@ a:hover div .scalableImg{
 	-o-animation: megaMan 0.3s ease-in 1 normal;
 	-webkit-animation: megaMan 0.3s ease-in 1 normal;
 	animation: megaMan 0.3s ease-in 1 normal;
+	
+	text-decoration:none;
 }
 
  /* @end */
