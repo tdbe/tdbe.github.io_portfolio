@@ -388,11 +388,11 @@ http://fontpro.com/days-one-font-16514
 
 .bgHighlightImportant{ 
 	/*background-color: rgba(255,235,235,0.56);*/
-	background-color: rgba(245,240,235,0.8);
+	background-color: rgba(245,240,235,1);
 }
 .bgHighlight{
 	/*background-color: rgba(255,235,235,0.6);*/
-	background-color: rgba(235,240,245,0.8);
+	background-color: rgba(235,240,245,0.9);
 }
 
 .highlight{
@@ -812,8 +812,7 @@ button {  width: auto; overflow: visible; }
 	 
 	 text-align: right;
 	 direction:rtl;
-	 text-align:justify;
-	 
+	 /*text-align:justify;*/
 	 text-transform: uppercase;
 	 
 	 color: rgb(180,105,105);
