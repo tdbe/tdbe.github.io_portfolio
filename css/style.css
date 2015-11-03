@@ -388,11 +388,11 @@ http://fontpro.com/days-one-font-16514
 
 .bgHighlightImportant{ 
 	/*background-color: rgba(255,235,235,0.56);*/
-	background-color: rgba(245,240,235,1);
+	background-color: rgba(240,235,230,1);
 }
 .bgHighlight{
 	/*background-color: rgba(255,235,235,0.6);*/
-	background-color: rgba(235,240,245,0.9);
+	background-color: rgba(235,240,245,1);
 }
 
 .highlight{
@@ -637,7 +637,8 @@ button {  width: auto; overflow: visible; }
 	font-weight: bold;
 	/*color: rgba(201,0,0,0.15);*/
 	/*color: rgba(192,245,233,0.07);*/
-	color: rgba(180,131,105,1);
+	/*color: rgba(180,131,105,1);*/
+	color: rgba(187,165,139,1);
 	/*text-shadow: 1px 0px 0px rgba(255,255,255,0.32);*/
 	/*
 	transform : scale(1,1.285);
@@ -684,9 +685,10 @@ button {  width: auto; overflow: visible; }
 	
 	/*opacity: 0.15;*/
 	/*opacity: 0.1;*/
+	/*
 	opacity: 0.72;
 	filter: alpha(opacity = 72);
-	
+	*/
 	
 	
 	/*letter-spacing: 0.005em;*/
@@ -815,15 +817,18 @@ button {  width: auto; overflow: visible; }
 	 /*text-align:justify;*/
 	 text-transform: uppercase;
 	 
-	 color: rgb(180,105,105);
+	 /*color: rgb(180,105,105);*/
+	 color: rgb(190,77,54);
 
 	 /*
 	 text-shadow: #000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px,
              #000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px;*/
 			 	
 	text-shadow:
-	-1px 0px 0px rgb(180,105,105),
-	0px 1px 0px rgb(180,105,105),
+	/*-1px 0px 0px rgb(180,105,105),
+	0px 1px 0px rgb(180,105,105),*/
+	-1px 0px 0px rgb(190,77,54),
+	0px 1px 0px rgb(190,77,54),
 	
     0.025em 0.03em 0 rgba(255,255,255,0.5), 
     -0.0355em 0.03em 0 rgba(255,255,255,0.5), /*-0.021em*/
@@ -2226,7 +2231,8 @@ button {  width: auto; overflow: visible; }
 		top: -9px;
 		position: absolute;
 		height: 0px;
-		border-bottom: 5px solid rgba(180,105,105,1);
+		/*border-bottom: 5px solid rgba(180,105,105,1);*/
+		border-bottom: 5px solid rgba(190,77,54,1);
 		/*width: 95%*/;
 		width: 95%;
 		/*margin-left:-2.5%;*/
