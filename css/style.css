@@ -325,7 +325,7 @@ html, body, #container { height: 100%; }
 body > #container { height: auto; min-height: 100%; }
  
 /* Accessible focus treatment: people.opera.com/patrickl/experiments/keyboard/test */
-a:hover, a:active { outline: none; }
+a:hover, a:active { outline: none; 	text-decoration: none;}
 
 .Bold{
 	display: inline-block;
@@ -437,7 +437,9 @@ http://fontpro.com/days-one-font-16514
 a, a:active, a:visited { 
 	color:rgba(0,0,0, .84);  /*.64*/ /*444;*/
 	/*text-shadow: 0px 0px 4px rgba(255,255,255,1), 0px 0px 4px rgba(255,255,255,0.8), 0px 0px 8px rgba(255,255,255,1);*/
-	text-shadow: /*0px 0px 4px rgba(255,255,255,1), */0px 0px 4px rgba(255,255,255,1), 0px 0px 8px rgba(255,255,255,1), 0px 0px 8px rgba(255,255,255,1);
+	
+	/*0px 0px 4px rgba(255,255,255,1), */
+	/*text-shadow: 0px 0px 4px rgba(255,255,255,1), 0px 0px 8px rgba(255,255,255,1), 0px 0px 8px rgba(255,255,255,1);*/
 	
 	/*color: rgba(0,0,0, .8);*//*rgba(96,120,144,1);*//*#607890;*/
 	/*text-shadow: -1px 1px 1px rgba(197,57,53,1);*/
@@ -458,7 +460,9 @@ a, a:active, a:visited {
 a:hover { 
 	/*color: #607890;*/
 	/*color:rgba(0,0,0, .75);*/
-	color: rgba(190,64,41,1); 
+	/*color: rgba(180,64,41,1); */
+	/*color: rgba(167,28,0,1); */
+
 	/*text-shadow: 0px 0px 6px rgba(255,255,255,1);*/
 	/*text-shadow: 0px 0px 8px rgba(0,0,0,0.15);*/
 	text-shadow: 0px 0px 8px rgba(0,0,0,0.15);
@@ -697,6 +701,7 @@ button {  width: auto; overflow: visible; }
 	/*letter-spacing: 0.07em;*/
 	/*letter-spacing: -0.05em;*/
 	letter-spacing: -0.0336em;
+
 }
 
 #porTitleBak:hover {
@@ -3459,6 +3464,7 @@ overflow: visible;
 	/*color: rgba(190, 57, 43, 1);#c53935;*/
 	/*color: rgba(190, 105, 105, 1);*/
 	color: rgba(180,64,41,1); 
+
 	/*text-shadow: 0px 0px 8px rgba(255,255,255,0.35);*/
 	/*text-shadow: 
 	0px 0px 2px rgba(255,255,255,0.5),
