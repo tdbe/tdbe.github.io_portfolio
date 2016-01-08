@@ -238,6 +238,14 @@ http://www.fontsquirrel.com/tools/webfont-generator
 */
 
 
+@font-face {
+	font-family: 'BebasNeuewebfont';
+	src: url('fonts/BebasNeuewebfont.eot');
+	src: local('BebasNeuewebfont'), url('fonts/BebasNeuewebfont.woff') format('woff'), url('fonts/BebasNeuewebfont.ttf') format('truetype');
+	font-weight: normal;
+    font-style: normal;
+}
+
 
 @font-face {
 	font-family: 'DinBold';
@@ -625,26 +633,42 @@ button {  width: auto; overflow: visible; }
 	top: -33px;
 	*/
 	overflow: hidden;
-	height: 168px;
+	/*height: 168px;*/
+	height: 151px;
 	/*width: 920px;*/
-	width: 750px;
+	/*width: 750px;*/
+	width: 525px;
 	
 
 	/*left: -86px;*//*-83px;*//*7px;*/ 
-	left: -144px;/*-83px;*//*7px;*/ 
+	left: -175px;/*-83px;*//*7px;*/ 
 	/*top: -11px;*/ 
 	top: 0 px;
 	/*padding: 10px 15px;*/
-	margin-top: -22px;
+	padding-left:24px;
+	
+	margin-top: -25px;
 	/*border-right: 1px solid #fff;*/
-	font-family: DinBold, ChineseRocksRegular, sans-serif;
+	font-family: BebasNeuewebfont, DinBold, ChineseRocksRegular, sans-serif;
 	font-weight: bold;
 	/*color: rgba(201,0,0,0.15);*/
 	/*color: rgba(192,245,233,0.07);*/
 	/*color: rgba(180,131,105,1);*/
 	/*color: rgba(187,165,139,1);*/
 	/*color: rgba(178,139,105,1);*/
-	color: rgba(180,139,105,1);
+	/*color: rgba(180,139,105,1);*/
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#dee2e1+0,f7e8e8+100 */
+background: #dee2e1; /* Old browsers */
+background: -moz-linear-gradient(top,  #dee2e1 0%, #f7e8e8 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #dee2e1 0%,#f7e8e8 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #dee2e1 0%,#f7e8e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dee2e1', endColorstr='#f7e8e8',GradientType=0 ); /* IE6-9 */
+/*
+	-webkit-background-clip: text;
+	 -webkit-text-fill-color: transparent;
+*/
+	color: rgba(255,255,255,0.98);
+	
 	/*text-shadow: 1px 0px 0px rgba(255,255,255,0.32);*/
 	/*
 	transform : scale(1,1.285);
@@ -682,25 +706,37 @@ button {  width: auto; overflow: visible; }
 	-2px 2px 0 rgb(201,100,100),
 	0px 0px 0px rgb(201,100,100);
 	*/
+	/*
 	text-shadow:
-	0px 0.01em 0.01em rgba(0,0,0,0.13), /*0.09*/
+	0px 0.01em 0.01em rgba(0,0,0,0.13), 
 	-1px 0px 0.01em rgba(0,0,0,0.13),
 	0px 0px 0.01em rgba(0,0,0,0.13),
 	-1px 0.01em 0.01em rgba(0,0,0,0.13)
+	;*/
+	
+	text-shadow:
+	/*0px 1px 2px rgba(0,0,0,0.15), */
+	-1px 1px 4px rgba(0,0,0,0.12),
+	0px 1px 2px rgba(0,0,0,0.12),
+	-2px 1px 5px rgba(0,0,0,0.15),
+	-2px 2px 7px rgba(0,0,0,0.25)
 	;
 	
 	/*opacity: 0.15;*/
 	/*opacity: 0.1;*/
 	
+	/*
 	opacity: 0.72;
 	filter: alpha(opacity = 72);
-	
+	*/
 	
 	
 	/*letter-spacing: 0.005em;*/
 	/*letter-spacing: 0.07em;*/
 	/*letter-spacing: -0.05em;*/
-	letter-spacing: -0.0336em;
+	/*letter-spacing: -0.0336em;*/
+	/*letter-spacing: -0.02em;*/
+	letter-spacing: 0em;
 
 }
 
@@ -733,13 +769,14 @@ button {  width: auto; overflow: visible; }
  #ttlCnt{
 	overflow: visible;
 	position: relative;
-	float: right;
+	float: left;
 	
 	/*padding-right: 2px;*/
 	/*padding-right: 75px;*/
 	padding-right: 7.2%;
 	/*top: -167px;*/
-	top: -174px;
+	/*top: -174px;*/
+	top: -184px;
 	
 
 	width: 0px;
@@ -787,7 +824,7 @@ button {  width: auto; overflow: visible; }
  #ttlTextCnt{
 	overflow: visible;
 	position: relative;
-	float: right;
+	float: left;
 
 	display:block;
 	top: 0px;
@@ -797,37 +834,47 @@ button {  width: auto; overflow: visible; }
  }
  
  #ttlText{
-	 position: absolute;
+	position: absolute;
 	 
 	 /*15 x 35 or 16 x 36*/
 	margin-top: 33px;
 	/*margin-right: -72px;*/
 	/*margin-right: -67px;*/
-	left:-239px;
+	/*left:-264px;*/
+	left:27px;
+	top: -18px;
 	
-	 font-family: "DinBold", "big_noodle_titling", sans-serif;
+	 font-family: BebasNeuewebfont, "DinBold", "big_noodle_titling", sans-serif;
 	 font-weight: bold;
-	 font-size: 68px;/*75px;*/
+	 /*font-size: 68px;75px;*/
+	 font-size: 82px;/*75px;*/
 	 /*letter-spacing: 0.01em;*/
+	 /*letter-spacing: 0.015em;*/
 	 letter-spacing: 0.015em;
 	 line-height: 90%;
-	 transform:scale(0.7,1); /* W3C */
-    -webkit-transform:scale(0.7,1); /* Safari and Chrome */
-    -moz-transform:scale(0.7,1); /* Firefox */
-    -ms-transform:scale(0.7,1); /* IE 9 */
-    -o-transform:scale(0.7,1); /* Opera */
+	 /*
+	 transform:scale(0.7,1); 
+    -webkit-transform:scale(0.7,1); 
+    -moz-transform:scale(0.7,1); 
+    -ms-transform:scale(0.7,1); 
+    -o-transform:scale(0.7,1); */
 	 
 
-	 
+	 /*text-align:justify;*/
+	 /*
 	 text-align: right;
 	 direction:rtl;
-	 /*text-align:justify;*/
+	 */
 	 text-transform: uppercase;
 	 
 	 /*color: rgb(180,105,105);*/
 	 /*color: rgb(190,77,54);*/
-	 color: rgb(184,112,97);
-
+	 /*color: rgb(184,112,97);*/
+	/*color: rgb(121,242,201);*/
+	/*color: rgb(240,240,240);*/
+	color: rgb(255,255,255);
+	
+	
 	 /*
 	 text-shadow: #000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px,
              #000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px;*/
@@ -835,21 +882,25 @@ button {  width: auto; overflow: visible; }
 	text-shadow:
 	/*-1px 0px 0px rgb(180,105,105),
 	0px 1px 0px rgb(180,105,105),*/
-	-1px 0px 0px rgb(190,77,54),
-	0px 1px 0px rgb(190,77,54),
+	/*-1px 0px 0px rgb(190,77,54),
+	0px 1px 0px rgb(190,77,54)*/
 	
+	-1px 0px 0px rgba(0,0,0,0.7),
+	0px 1px 0px rgba(0,0,0,0.7)
+	
+	/*
     0.025em 0.03em 0 rgba(255,255,255,0.5), 
-    -0.0355em 0.03em 0 rgba(255,255,255,0.5), /*-0.021em*/
+    -0.0355em 0.03em 0 rgba(255,255,255,0.5), 
     -0.0355em -0.01em 0 rgba(255,255,255,0.5), 
     0.025em -0.01em 0 rgba(255,255,255,0.5), 
 
 	0.025em 0.03em 0 rgba(255,255,255,0.5), 
     -0.0355em 0.03em 0 rgba(255,255,255,0.5), 
     -0.0355em -0.01em 0 rgba(255,255,255,0.5), 
-    0.025em -0.01em 0 rgba(255,255,255,0.5), 
+    0.025em -0.01em 0 rgba(255,255,255,0.5)*/
 	
 
-    -0.046em 1px 4px rgba(0,0,0,0.5)
+    ,-0.046em 2px 7px rgba(0,0,0,0.7)
 	;
 	/*-0.03em 1px 3px rgba(0,0,0,0.58);*/
 /*
@@ -864,6 +915,17 @@ button {  width: auto; overflow: visible; }
 	-webkit-font-smoothing: none;
 	-moz-osx-font-smoothing: grayscale;
 	font-smoothing: grayscale;
+ }
+ 
+ .whiteTextBg{
+	display: inline-block;
+	 background-color: rgba(255,255,255,0.98);
+	 overflow: hidden;
+	 height: 1em;
+	 padding: 0.2em;
+	 padding-top:0px;
+	 padding-bottom:0px;
+	 margin-top: -8px;
  }
  
 /*
@@ -895,7 +957,9 @@ button {  width: auto; overflow: visible; }
 	padding-top: 0px;
 	padding-bottom: 0px;
 	
-	left: 0px;
+	/*left: 0px;*/
+	/*left: 40%;*/
+	float:right;
 	top: 0px;
 	font-size: 26px;/*26px;*//*24px;*/
 	z-index: 100;
@@ -909,7 +973,9 @@ button {  width: auto; overflow: visible; }
 	transition: all 0.5s ease;
 	
 	margin: 0 auto;
-	margin-top: 1px;
+	/*margin-top: -6.4em;*/
+	/*margin-top: -166px;*/
+	margin-top: -176px;
 	margin-right: auto;
 	margin-bottom: 0px;
 	margin-left: auto;
@@ -922,8 +988,10 @@ button {  width: auto; overflow: visible; }
 	position: relative;
 	display:block;
 	width: 385px;
-	left: 85px;
-
+	/*left: 85px;*/
+	/*float:right;*/
+	left: 0px;
+	margin-top: -10px;
  }
 
 #container{
@@ -1523,7 +1591,7 @@ button {  width: auto; overflow: visible; }
 	position: absolute;
 	/*display: inline;*/
 	/*display: inline-block;*/
-	font-family: "DinBold", "big_noodle_titling", sans-serif;
+	font-family: BebasNeuewebfont, "DinBold", "big_noodle_titling", sans-serif;
 	font-weight: bold;
 	letter-spacing: -0.06em;
 
@@ -1862,7 +1930,7 @@ button {  width: auto; overflow: visible; }
 	/*padding-right: 100px;*/
 	padding-right: 8%;
 	padding-left: 104px;/*120*/
-	z-index: 10;7
+	z-index: 10;
 }
 
 .cvRow{
@@ -1981,9 +2049,10 @@ button {  width: auto; overflow: visible; }
 	margin: 24px -24px 10px -96px;
 
 	
-	font-family: "DinBold", "big_noodle_titling", sans-serif;
+	font-family: BebasNeuewebfont, "DinBold", "big_noodle_titling", sans-serif;
 	font-weight: bold;
-	letter-spacing: -0.06em;
+	/*letter-spacing: -0.06em;*/
+
 	text-transform: uppercase;
 
 	
@@ -2025,9 +2094,9 @@ button {  width: auto; overflow: visible; }
 	padding: 0px;
 
 
-	font-family: "DinBold", "big_noodle_titling", sans-serif;
+	font-family: BebasNeuewebfont, "DinBold", "big_noodle_titling", sans-serif;
 	font-weight: bold;
-	letter-spacing: -0.06em;
+	/*letter-spacing: -0.06em;*/
 	text-transform: uppercase;
 
 	font-size: 24px;/
@@ -2044,7 +2113,7 @@ button {  width: auto; overflow: visible; }
 }
 
 .Noodle{
-	font-family: "DinBold", "big_noodle_titling", sans-serif;
+	font-family: BebasNeuewebfont, "DinBold", "big_noodle_titling", sans-serif;
 	font-weight: bold;
 	font-size: 24px;
 	transform : scale(0.85,1);
@@ -2052,7 +2121,7 @@ button {  width: auto; overflow: visible; }
 	-moz-transform:scale(0.85,1); 
 	-ms-transform:scale(0.85,1); 
 	-o-transform:scale(0.85,1); 
-	letter-spacing: -0.06em;
+	/*letter-spacing: -0.06em;*/
 	text-transform: uppercase;
 	margin-left: -64px;
 	
@@ -2086,7 +2155,7 @@ button {  width: auto; overflow: visible; }
 	padding: 0px;
 	
 	/*margin-left: 74px;*/
-	margin-top: 40px;
+	margin-top: 45px;
 	
 	margin-left: 7%;
 }
@@ -2236,12 +2305,15 @@ button {  width: auto; overflow: visible; }
 }
 
 #decoBar{
-		top: -9px;
+		/*top: -9px;*/
+		top: -12px;
 		position: absolute;
+		z-index: 100;
 		height: 0px;
 		/*border-bottom: 5px solid rgba(180,105,105,1);*/
 		/*border-bottom: 5px solid rgba(190,77,54,1);*/
-		border-bottom: 5px solid rgb(184,112,97);
+		/*border-bottom: 5px solid rgb(184,112,97);*/
+		border-bottom: 5px solid rgb(182,59,59);
 		/*width: 95%*/;
 		width: 95%;
 		/*margin-left:-2.5%;*/
@@ -2335,7 +2407,7 @@ button {  width: auto; overflow: visible; }
 	font-size: 16px; 
 	
 	margin-left:auto;
-	margin-top: 0px;
+	margin-top: 20px;
 	margin-right: auto;
 	margin-bottom: 0px;
 
@@ -2542,8 +2614,7 @@ button {  width: auto; overflow: visible; }
 	/*background-color: rgba(255,255,255,.75);*/
 	/*background-color: rgba(257,254,255,.88);*/
 	background-color: white;
-	
-	
+
 }
 
 
@@ -2803,7 +2874,7 @@ button {  width: auto; overflow: visible; }
 	
 	position: absolute;
 	margin-top: -0.32em;
-	font-family: "big_noodle_titling", "DinBold", sans-serif;
+	font-family: "big_noodle_titling", BebasNeuewebfont, "DinBold", sans-serif;
 	
 	color: rgba(75,75,75,0.81); /*rgba(180,64,41,1);*/ /*rgba(190,0,0,0.83); *//* rgba(201,0,0,0.9); */
 	font-size: 1.6em;
@@ -2815,7 +2886,7 @@ button {  width: auto; overflow: visible; }
 
 .gridTag{
 	/*can have more tags separated by space*/
-	font-family: "big_noodle_titling", "DinBold", sans-serif;
+	font-family: "big_noodle_titling", BebasNeuewebfont, "DinBold", sans-serif;
 	/*margin-bottom: -0.25em;*/
 	margin-bottom: -0.2em;
 	font-size: 1.2em;
@@ -3355,7 +3426,8 @@ overflow: visible;
 	left:220px;
 	z-index: 13;
 	/*border-left: 3px solid rgba(150, 98, 93, 0.9);*//*rgba(197, 57, 43, 0.90);*/
-	border-left: 3px solid rgba(165, 100, 94,1);/*rgba(197, 57, 43, 0.90);*/
+	/*border-left: 3px solid rgba(165, 100, 94,1);*/
+	border-left: 3px solid rgb(255, 184, 127);
 }
 
 
@@ -3389,7 +3461,8 @@ overflow: visible;
 	display: inline;
 	/*border-left: 3px solid rgba(197, 57, 43, 0.90);*//*<=> #c53935;*/
 	/*border-left: 3px solid rgba(180, 105, 105, 1);*/
-	border-left: 3px solid rgba(180,64,41,1); 
+	/*border-left: 3px solid rgba(180,64,41,1); */
+	border-left: 4px solid rgb(255,159,78); 
 	padding-top: 18px;/*24px;*/
 	
 	-webkit-transition: all 1s ease-in;
@@ -3418,13 +3491,15 @@ overflow: visible;
 .tabs li div a {
 	
 	/*font-size: 28px;*/
-	font-size: 26px;
+	/*font-size: 26px;*/
+	font-size: 30px;
 
 	overflow: visible !important;
 	position: relative;
 	display: inline-block;
 	/*color: #444;*/
-	color: rgb(79,79,79);
+	/*color: rgb(79,79,79);*/
+	color: rgb(255,255,255);
 	text-decoration: none;
 	/*text-transform: uppercase;*/
 	/*
@@ -3436,10 +3511,11 @@ overflow: visible;
 	top: 40px;/*38px;*/
 	/*padding: 10px 15px;*/
 	/*border-right: 1px solid #fff;*/
-	font-family: DinBold, ChineseRocksRegular, sans-serif;
+	font-family: BebasNeuewebfont, DinBold, ChineseRocksRegular, sans-serif;
 	font-weight: bold;
 	text-transform: uppercase;
-	letter-spacing: -0.015em;
+	/*letter-spacing: -0.015em;*/
+	letter-spacing: 0.05em;
 	
 	text-shadow: 1px 0px 0px rgba(255,255,255,0.32);
 	
@@ -3450,9 +3526,10 @@ overflow: visible;
 	
 	text-shadow:
 	/*0px 1px 2px rgba(0,0,0,0.15), */
-	-1px 1px 4px rgba(0,0,0,0.12),
-	0px 1px 2px rgba(0,0,0,0.12),
-	-2px 1px 5px rgba(0,0,0,0.15)
+	-1px 1px 4px rgba(0,0,0,0.24),
+	0px 1px 2px rgba(0,0,0,0.24),
+	-2px 1px 5px rgba(0,0,0,0.30),
+	-2px 2px 7px rgba(0,0,0,0.50)
 	;
 	
 	
@@ -3463,12 +3540,15 @@ overflow: visible;
 	/*background-color: #00b3ff;*/
 	/*color: rgba(190, 57, 43, 1);#c53935;*/
 	/*color: rgba(190, 105, 105, 1);*/
-	color: rgba(180,64,41,1); 
+	/*color: rgba(180,64,41,1); */
+	
+	letter-spacing: 0.08em;
 
 	/*text-shadow: 0px 0px 8px rgba(255,255,255,0.35);*/
 	/*text-shadow: 
 	0px 0px 2px rgba(255,255,255,0.5),
 	-1px 1px 4px rgba(0,0,0,0.5);*/
+
 }
 
 /*
@@ -3491,13 +3571,16 @@ overflow: visible;
 	transition: color 0.25s ease, font-size 0.25s ease, margin 0.25s ease;
 	
 	
+	letter-spacing: 0.05em;
+	
 	/*background-color: #fff;*/
 	
 	top: 48px;/*48; 43px;*/
 	
 	/*font-size: 34px;*//*32px;*/
 	/*font-size: 33px;32px;*/
-	font-size: 34px;
+	/*font-size: 34px;*/
+	font-size: 38px;
 	/*margin: -10%;-12px;*/
 	margin: -18%;
 
@@ -3538,13 +3621,16 @@ overflow: visible;
 	/*text-shadow: -1px 1px 0px rgba(0,0,0,0.40);*/
 	
 	text-shadow:
-	0px 1px 2px rgba(0,0,0,0.2), 
-	-2px 1px 4px rgba(0,0,0,0.15),
-	0px 1px 4px rgba(0,0,0,0.15),
-	-3px 1px 5px rgba(0,0,0,0.18)
+	0px 1px 2px rgba(0,0,0,0.4), 
+	-2px 1px 4px rgba(0,0,0,0.30),
+	0px 1px 4px rgba(0,0,0,0.30),
+	-3px 1px 5px rgba(0,0,0,0.36)
 	;
 	
-
+	-webkit-transition: all 0.25s ease;
+	-moz-transition: all 0.25s ease; 
+	-o-transition: all 0.25s ease;
+	transition: all 0.25s ease;
 }
 
 .tabs li.active{
@@ -3553,7 +3639,8 @@ overflow: visible;
 	
 	
 	/*border-left: 3px solid rgba(197, 57, 43, 0.64);*/
-	border-left: 3px solid rgba(255, 255, 255, 1);
+	/*border-left: 3px solid rgba(255, 255, 255, 1);*/
+	border-left: 4px solid rgb(164, 255, 196);
 	
 	;
 	/*
@@ -3734,6 +3821,73 @@ overflow: visible;
     -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
 	
 }
+
+#bgdebug{
+	border-left: 4px solid red;
+	border-top: 4px solid red;
+	margin-left: 50%;
+	margin-top: 50%;
+	position: absolute;
+}
+
+#dynamicBgCnt{ 
+	position:absolute;
+	left: 50%;
+	top: 50%;
+	
+	width: 130%;
+	height: 180%;
+	
+	min-width: 1200px;
+	min-height: 1000px;
+
+	/*min-width: 1324px;
+	min-height: 1000px;*/
+	
+
+	/* IE 9 */ /* Chrome, Safari, Opera */
+	/*
+	-ms-transform: translateX(-50%) translateY(-50%)  rotate(-21deg); 
+    -webkit-transform: translateX(-50%) translateY(-50%)  rotate(-21deg); 
+	*/
+    /*transform: rotate(-21deg) scale(1, 1) translateX(0px) translateY(0px) ;*/
+    transform: translate(-50%, -50%);
+	
+	overflow: visible;
+	background-color:  rgb(240,217,192);
+}
+
+.bgGradient{
+	position:absolute;
+	transform: rotate(-21deg);
+	width: 100%;
+	height: 100%;
+
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f0d9c0+0,cbfae7+35,ccffe8+50,cbfae7+65,fdddc2+100 */
+	background: rgb(240,217,192); /* Old browsers */
+	background: -moz-linear-gradient(left, rgb(240,217,192) 0%, rgb(203,250,231) 35%, rgb(204,255,232) 50%, rgb(203,250,231) 65%, rgb(253,221,194) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, rgb(240,217,192) 0%,rgb(203,250,231) 35%,rgb(204,255,232) 50%,rgb(203,250,231) 65%,rgb(253,221,194) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, rgb(240,217,192) 0%,rgb(203,250,231) 35%,rgb(204,255,232) 50%,rgb(203,250,231) 65%,rgb(253,221,194) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0d9c0', endColorstr='#fdddc2',GradientType=1 ); /* IE6-9 */
+	
+	z-index: 1;
+	
+	-webkit-box-shadow: 250px 0px 150px rgb(253,221,194) ,
+						-250px 0px 150px rgb(240,217,192);
+	-moz-box-shadow: 250px 0px 150px rgb(253,221,194) ,
+						-250px 0px 150px rgb(240,217,192);
+	-o-box-shadow: 250px 0px 150px rgb(253,221,194) ,
+						-250px 0px 150px rgb(240,217,192);
+	box-shadow: 250px 0px 150px rgb(253,221,194) ,
+						0px 250px 150px rgb(203,250,231) ,
+						0px -250px 150px rgb(203,250,231) ,
+						-250px 0px 150px rgb(240,217,192);
+}
+
+.rot21H{
+	position:absolute;
+	 transform: rotate(21deg);
+	 z-index: 0;
 
 /*
  * Media queries for responsive design

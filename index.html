@@ -67,19 +67,7 @@ background: #e5ede2; #d7dfd4;"-->
 
 <div id="container">	
 	
-	<div id="navigation">
-		<span id="navigation2">
-			<ul class="tabs" id="tabs" >
-					<li id="P"><div class="navSpacer" ><a href="#projects" onclick="setTimeout(resizeIframe2, timeoot);" class="noHighlight">Projects</a></div></li>
-					<li id="R"><div class="navSpacer" ><a href="#resume" onclick="" class="noHighlight">Resumé</a></div></li>
-					<li id="B"><div class="navSpacer" ><a href="#blog" onclick="" class="noHighlight">Blog</a></div></li>
-					<!--li><a href="#contact" onclick="normalStyle()">Contact</a></li-->
-			</ul>
-			<span id="porTitle">PORTFOLIO</span>
-		</span>
 
-		
-	</div>
 	
 	<div id="hcloud" >	
 		GPGPU Underground Canyons. MSc. Thesis Project about real-time Procedural Modelling of Cave Systems on the GPU. PCG, Voxels, DX11 Compute Shader, CG, HLSL, Unity
@@ -111,7 +99,20 @@ background: #e5ede2; #d7dfd4;"-->
 			
 		
 			<!--span id="ttlCnt"><span id="ttl"></span></span-->
-			<span id="ttlCnt" ><p id="ttlText" class="depth" title="Tudor Berechet">Tudor Berechet</p></span>
+			<span id="ttlCnt" ><p id="ttlText" class="depth" title="Tudor Berechet"><span class="whiteTextBg">Tudor</span> <span class="whiteTextBg">Berechet</span></p></span>
+			
+			<div id="navigation">
+				<span id="navigation2">
+					<ul class="tabs" id="tabs" >
+							<li id="P"><div class="navSpacer" ><a href="#projects" onclick="setTimeout(resizeIframe2, timeoot);" class="noHighlight">Projects</a></div></li>
+							<li id="R"><div class="navSpacer" ><a href="#resume" onclick="" class="noHighlight">Resumé</a></div></li>
+							<li id="B"><div class="navSpacer" ><a href="#blog" onclick="" class="noHighlight">Blog</a></div></li>
+							<!--li><a href="#contact" onclick="normalStyle()">Contact</a></li-->
+					</ul>
+					
+				</span>
+				<span id="porTitle">PORTFOLIO</span>
+			</div>
 			
 			<div id="projects">  
 				<!--iframe src="./project/gpgpu/index.html" id="icontent" scrolling="no" frameborder="0" allowtransparency="true" seamless="" style="visibility: visible; height: 6147px;  "></iframe-->
@@ -128,7 +129,7 @@ background: #e5ede2; #d7dfd4;"-->
 								<br/>
 								I'm an aficionado of <span class="bgHighlight">simulations</span>, <span class="bgHighlight">gameplay</span>,  <span class="bgHighlight">data oriented programming</span>, and like researching <span class="bgHighlight">PCG</span>, <span class="bgHighlight">VFX</span>, and physics or mechanics using <span class="bgHighlight">GPGPU</span>.  </p></span>
 								
-								<span id="openingR"><p><span class="parStart"></span> Science makes the art. I deconstruct and study the layers of techniques behind the state of the art.  I strive to come up with the most <span class="bgHighlight">tractable</span> solutions, and to research new tech which <span class="bgHighlight">leverage</span>s emerging <span class="bgHighlight">affordances</span>.</p>
+								<span id="openingR"><p><span class="parStart"></span> Science makes the art. I deconstruct and study the layers of techniques behind the state of the art.  I'm learning to come up with the most tractable solutions, and to research new tech which leverages emerging affordances.</p>
 								
 								<p><span class="parStart"></span><a href="http://www.valvesoftware.com/company/Valve_Handbook_LowRes.pdf" rel="nofollow" target="_blank">Valve's handbook</a> discusses the need for devs with deep expertise as well as a high breadth of skills, and that an interest in different parts of the spectrum brings all sorts of totally <span class="bgHighlight">rad things</span>.
 								</p></span>
@@ -329,7 +330,7 @@ background: #e5ede2; #d7dfd4;"-->
 								<div class="listBlock" >
 									WebGL, OpenGL, OpenCL, DirectX, Direct Compute, CUDA<br/>
 									GLSL, HLSL, CG, QT, <small>GLUT</small><br/>
-									SSH, WebSocket, Oracle<br/>
+									WebSockets, Oracle, SSH<br/>
 									<br/>
 								</div>
 								
@@ -529,6 +530,12 @@ background: #e5ede2; #d7dfd4;"-->
 			<br/>
 			<br/>
 			<br/>
+			
+			
+			
+			
+			
+			
 			<!--div id="CCs">
 				<a rel="license" href="http://creativecommons.org/licenses/by-sa/2.5/"><img id="cclogo" alt="Creative Commons License" style="border-width:0" src="http://creativecommons.org/images/public/somerights20.gif" /></a>
 				<span style="line-height: 200%;">Licensed under <a rel="license" href="http://creativecommons.org/licenses/by-sa/2.5/">CC Attribution-ShareAlike 2.5</a>.</span>
@@ -538,8 +545,12 @@ background: #e5ede2; #d7dfd4;"-->
 		</span>
 	</div>
 	
-	<div style="display:block; overflow: visible; position: fixed; z-index:-4; left: 0px; top:0px; width: 100%; height: 100%;">
-		<div id="dynamicBg" >
+	<div style="display:block; overflow: visible; position: fixed; z-index:-4; left: 0px; top:0px; width: 100%; height: 100%; background: blue;">
+		<!--div id="dynamicBg" >
+		</div-->
+		<div id="dynamicBgCnt" >
+			<div class="bgGradient"></div>
+			<div class="bgGradient rot21H"></div>
 		</div>
 	</div>
 
