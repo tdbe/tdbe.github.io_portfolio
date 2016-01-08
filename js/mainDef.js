@@ -162,7 +162,7 @@ window.onload =
 function onLoaded(){
 	
 	//window.parent.swapB(); 
-	$('#topBannerBg').remove();
+	$('#toptitleBg').remove();
 	
 	scaleGallery();
 
