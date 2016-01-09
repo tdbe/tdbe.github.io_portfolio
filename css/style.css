@@ -237,11 +237,19 @@ http://www.font2web.com/
 http://www.fontsquirrel.com/tools/webfont-generator
 */
 
-
+/*
 @font-face {
 	font-family: 'BebasNeuewebfont';
 	src: url('fonts/BebasNeuewebfont.eot');
 	src: local('BebasNeuewebfont'), url('fonts/BebasNeuewebfont.woff') format('woff'), url('fonts/BebasNeuewebfont.ttf') format('truetype');
+	font-weight: normal;
+    font-style: normal;
+}*/
+
+@font-face {
+	font-family: 'BebasNeuewebfont';
+	/*src: url('fonts/BebasNeuewebfont.eot');*/
+	src: local('BebasNeuewebfont'), url('fonts/BEBASNEUE BOLD.woff') format('woff'), url('fonts/BEBASNEUE BOLD.ttf') format('truetype');
 	font-weight: normal;
     font-style: normal;
 }
@@ -634,23 +642,35 @@ button {  width: auto; overflow: visible; }
 	*/
 	overflow: hidden;
 	/*height: 168px;*/
-	height: 151px;
+	/*height: 165px;*/
+	height: 127px;
 	/*width: 920px;*/
 	/*width: 750px;*/
-	width: 525px;
+	width: 522px;
 	
+	line-height: 120px;
 
 	/*left: -86px;*//*-83px;*//*7px;*/ 
-	left: -175px;/*-83px;*//*7px;*/ 
+	left: -183px;/*-83px;*//*7px;*/ 
 	/*top: -11px;*/ 
 	top: 0 px;
 	/*padding: 10px 15px;*/
-	padding-left:24px;
+	padding-left:34px;
+	padding-bottom: 0px;
+	padding-top: 7px;
 	
-	margin-top: -25px;
+	/*margin-top: -25px;*/
+	/*margin-top: -47px;*/
+	margin-top: -13px;
+	
 	/*border-right: 1px solid #fff;*/
 	font-family: BebasNeuewebfont, DinBold, ChineseRocksRegular, sans-serif;
-	font-weight: bold;
+	/*font-weight: bold;*/
+	
+	/*font-size: 162px;*/
+	/*font-size: 147px;*/
+	font-size: 154px;
+	
 	/*color: rgba(201,0,0,0.15);*/
 	/*color: rgba(192,245,233,0.07);*/
 	/*color: rgba(180,131,105,1);*/
@@ -684,8 +704,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dee2e1', end
 	-o-transform:scale(1.03,1.285); 
 	
 
-	/*font-size: 162px;*/
-	font-size: 147px;
+
 
 	/*-webkit-font-smoothing: antialiased;*/
     /*text-shadow: 1px 1px 1px rgba(0,0,0,0.004);*/
@@ -740,7 +759,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dee2e1', end
 
 }
 
-#porTitleBak:hover {
+#por-TitleBak:hover {
 /*
 	top: -32px;
 	left: -84px;*/
@@ -926,6 +945,26 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dee2e1', end
 	 padding-top:0px;
 	 padding-bottom:0px;
 	 margin-top: -8px;
+ }
+ 
+ .gradientNameBg0{
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f4efef+0,f9eaea+100 */
+background: #f4efef; /* Old browsers */
+background: -moz-linear-gradient(top,  #f4efef 0%, #f9eaea 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #f4efef 0%,#f9eaea 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #f4efef 0%,#f9eaea 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4efef', endColorstr='#f9eaea',GradientType=0 ); /* IE6-9 */
+
+ }
+ 
+ .gradientNameBg1{
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f7f7f7+0,f4efef+100 */
+background: #f7f7f7; /* Old browsers */
+background: -moz-linear-gradient(-45deg,  #f7f7f7 0%, #f4efef 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg,  #f7f7f7 0%,#f4efef 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg,  #f7f7f7 0%,#f4efef 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', endColorstr='#f4efef',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
  }
  
 /*
@@ -3547,9 +3586,10 @@ overflow: visible;
 	color: rgb(79, 79, 79);
 	text-shadow:
 	/*0px 1px 2px rgba(0,0,0,0.15), */
-	-1px 1px 4px rgba(0,0,0,0.24),
-	0px 1px 2px rgba(0,0,0,0.24)
-
+	-1px 1px 4px rgba(0,0,0,0.6),
+	0px 1px 2px rgba(0,0,0,0.6)
+	-2px 1px 5px rgba(0,0,0,0.8),
+	-2px 2px 7px rgba(0,0,0,0.12)
 	;
 
 	/*text-shadow: 0px 0px 8px rgba(255,255,255,0.35);*/
@@ -3558,6 +3598,17 @@ overflow: visible;
 	-1px 1px 4px rgba(0,0,0,0.5);*/
 
 }
+/*
+.tabs li.active a:hover {
+	color: rgb(79, 79, 79);
+	text-shadow:
+
+	-1px 1px 4px rgba(0,0,0,0.6),
+	0px 1px 2px rgba(0,0,0,0.6)
+	-2px 1px 5px rgba(0,0,0,0.8),
+	-2px 2px 7px rgba(0,0,0,0.12)
+	;
+}*/
 
 /*
 #B { 
@@ -3797,7 +3848,8 @@ overflow: visible;
 	 z-index: 10;
 	 height: 3em;
 	 /*margin-top: -2.86em;*/
-	 margin-top: -3em;
+	 /*margin-top: -3em;*/
+	 margin-top: -5em;
 
 	padding-bottom: 4em;
 
