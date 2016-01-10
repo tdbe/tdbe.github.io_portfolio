@@ -1539,9 +1539,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', end
 	-moz-border-top-right-radius: 2px; 
 	-webkit-border-top-right-radius: 2px;  
 
-	border-bottom: 1px solid rgba(255,255,255,.3);
-	-webkit-box-shadow: 0px 1px 2px rgba(76,76,76,.3);
-	-moz-box-shadow: 0px 1px 2px rgba(76,76,76,.3);
+	border-bottom: 1px solid rgba(255,255,255,.25);
+	-webkit-box-shadow: 0px 1px 2px rgba(76,76,76,.25);
+	-moz-box-shadow: 0px 1px 2px rgba(76,76,76,.25);
 	
 	box-shadow: 0px 1px 2px rgba(76,76,76,.65);  
 	
@@ -1634,10 +1634,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', end
 	/*font-family: "Museo700";*/
 	/*font-size: 12px;*/
 	font-size: 16px;
-	color: #597064;
+	
+	color: rgb(89,112,100);
+	
 	width: 99.5%;
 	/*height: 12px;*/
-	height: 18px;
+	height: 20px;
 	/*padding-left: 84px;*/
 	padding-top: 11px;
 	padding-bottom: 6px;
@@ -1653,7 +1655,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', end
 	/*position: absolute;*/ 
 	/*left: 84px;*/
 	display: inline-block; 
-	padding-left: 84px;
+	padding-left: 86px;
 }
 
 .backBg{
@@ -1677,9 +1679,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', end
 	background-color: rgba(246,95,94,0.28);
 	/*color: rgb(180,105,105);*/
 	
-	color: black;
 	
-	color: rgba(0,0,0,0.75);
+	color: rgba(0,0,0,0.85);
+	
 	border-top-left-radius: 2px; 
 	-moz-border-top-left-radius: 2px; 
 	-webkit-border-top-left-radius: 2px;  
@@ -1715,7 +1717,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', end
 	position: relative; 
 	
 	/*display: inline-block;*/
-	font-family: BebasNeuewebfont, "ColunaRounded", Impact, sans-serif;
+	font-family: "ColunaRounded", Impact, sans-serif;
 	line-height: 40px; 
 	
 	/*letter-spacing: -0.06em;
@@ -2413,7 +2415,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', end
 		top: -17px;
 		position: absolute;
 		z-index: 100;
-		height: 6px;
+		height: 5px;
 
 		/*width: 95%*/;
 		width: 95%;
