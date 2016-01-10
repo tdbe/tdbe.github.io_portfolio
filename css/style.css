@@ -1635,7 +1635,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', end
 	/*font-size: 12px;*/
 	font-size: 16px;
 	
-	color: rgb(89,112,100);
+	color: rgb(89,112,100)!important;
 	
 	width: 99.5%;
 	/*height: 12px;*/
@@ -1660,6 +1660,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', end
 
 .backBg{
 	position: absolute;
+	z-index: 100;
 	/*display: inline-block;*/
 	/*display: inline;*/
 	width: 34px;
@@ -1668,6 +1669,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', end
 	top: 6px;
 	background: url("../images/backA.png"), no-repeat;
 	
+	opacity: 0.6;
+    filter: alpha(opacity = 6); /* For IE */ 
 } 
 
 .backBtn:hover{
@@ -1680,7 +1683,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', end
 	/*color: rgb(180,105,105);*/
 	
 	
-	color: rgba(0,0,0,0.85);
+	color: rgba(0,0,0,0.85)!important;
 	
 	border-top-left-radius: 2px; 
 	-moz-border-top-left-radius: 2px; 
@@ -1696,6 +1699,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', end
 
 .backBtn:hover .backBg{
 	width: 64px;
+	opacity: 1!important;
+    filter: alpha(opacity = 100)!important; /* For IE */ 
 }
 
 
