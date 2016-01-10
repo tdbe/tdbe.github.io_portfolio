@@ -649,7 +649,7 @@ button {  width: auto; overflow: visible; }
 	width: 522px;
 	
 	/*line-height: 120px;*/
-	line-height: 100px;
+	line-height: 98px;
 
 	/*left: -86px;*//*-83px;*//*7px;*/ 
 	left: -183px;/*-83px;*//*7px;*/ 
@@ -849,7 +849,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dee2e1', end
 
 	display:block;
 	top: 0px;
-	m
+	
 	
 	width: 0px;
 	height: 0px;
@@ -864,7 +864,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dee2e1', end
 	/*margin-right: -67px;*/
 	/*left:-264px;*/
 	left:27px;
-	top: -28px;
+	top: -26px;
 	height: 110px;
 	
 	 font-family: BebasNeuewebfont, "DinBold", "big_noodle_titling", sans-serif;
@@ -874,7 +874,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dee2e1', end
 	 /*letter-spacing: 0.01em;*/
 	 /*letter-spacing: 0.015em;*/
 	 letter-spacing: 0.015em;
-	 line-height: 90%;
+	 /*line-height: 90%;*/
+	 line-height: 75px;
 	 /*
 	 transform:scale(0.7,1); 
     -webkit-transform:scale(0.7,1); 
@@ -954,6 +955,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dee2e1', end
  }
  
  .gradientNameBg0{
+	 
+
+	 
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f4efef+0,f9eaea+100 */
 background: #f4efef; /* Old browsers */
 background: -moz-linear-gradient(top,  #f4efef 0%, #f9eaea 100%); /* FF3.6-15 */
@@ -961,9 +965,13 @@ background: -webkit-linear-gradient(top,  #f4efef 0%,#f9eaea 100%); /* Chrome10-
 background: linear-gradient(to bottom,  #f4efef 0%,#f9eaea 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4efef', endColorstr='#f9eaea',GradientType=0 ); /* IE6-9 */
 
+
  }
  
  .gradientNameBg1{
+
+	 	 margin-bottom:-1px;
+	 
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f7f7f7+0,f4efef+100 */
 background: #f7f7f7; /* Old browsers */
 background: -moz-linear-gradient(-45deg,  #f7f7f7 0%, #f4efef 100%); /* FF3.6-15 */
