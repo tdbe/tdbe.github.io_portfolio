@@ -643,12 +643,13 @@ button {  width: auto; overflow: visible; }
 	overflow: hidden;
 	/*height: 168px;*/
 	/*height: 165px;*/
-	height: 127px;
+	height: 117px;
 	/*width: 920px;*/
 	/*width: 750px;*/
 	width: 522px;
 	
-	line-height: 120px;
+	/*line-height: 120px;*/
+	line-height: 100px;
 
 	/*left: -86px;*//*-83px;*//*7px;*/ 
 	left: -183px;/*-83px;*//*7px;*/ 
@@ -657,11 +658,12 @@ button {  width: auto; overflow: visible; }
 	/*padding: 10px 15px;*/
 	padding-left:34px;
 	padding-bottom: 0px;
-	padding-top: 7px;
+	padding-top: 10px;
 	
 	/*margin-top: -25px;*/
 	/*margin-top: -47px;*/
-	margin-top: -13px;
+	/*margin-top: -13px;*/
+	margin-top: -5px;
 	
 	/*border-right: 1px solid #fff;*/
 	font-family: BebasNeuewebfont, DinBold, ChineseRocksRegular, sans-serif;
@@ -734,7 +736,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dee2e1', end
 	;*/
 	
 	text-shadow:
-	/*0px 1px 2px rgba(0,0,0,0.15), */
+	-1px 1px 1px rgba(0,0,0,0.35), 
 	-1px 1px 4px rgba(0,0,0,0.12),
 	0px 1px 2px rgba(0,0,0,0.12),
 	-2px 1px 5px rgba(0,0,0,0.15),
@@ -862,9 +864,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dee2e1', end
 	/*left:-264px;*/
 	left:27px;
 	top: -18px;
+	height: 110px;
 	
 	 font-family: BebasNeuewebfont, "DinBold", "big_noodle_titling", sans-serif;
-	 font-weight: bold;
+	 /*font-weight: bold;*/
 	 /*font-size: 68px;75px;*/
 	 font-size: 82px;/*75px;*/
 	 /*letter-spacing: 0.01em;*/
@@ -1525,7 +1528,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', end
 	width: 102%;
 	top: 0px;
 	/*background-color: rgb(236,85,84);*/
-	background-color: rgb(190,105,105);
+	/*background-color: rgb(190,105,105);*/
+	background-color: #8ee9ae;
 	
 	/*border: 1px solid rgba(255,255,255,.80);*/ 
 	border-top-left-radius: 2px; 
@@ -1538,7 +1542,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', end
 	border-bottom: 1px solid rgba(255,255,255,.6);
 	-webkit-box-shadow: 0px 1px 2px rgba(76,76,76,.3);
 	-moz-box-shadow: 0px 1px 2px rgba(76,76,76,.3);
-	box-shadow: 0px 1px 2px rgba(76,76,76,.3);  
+	
+	box-shadow: 0px 1px 2px rgba(76,76,76,.5);  
 	
 	margin-left: -10px;
 }
@@ -1555,7 +1560,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', end
 	bottom: 0.2%;
 
 	/*background-color: rgb(236,85,84);*/
-	background-color: rgb(190,105,105);
+	/*background-color: rgb(190,105,105);*/
+	background-color: #8ee9ae;
 	
 	/*border: 1px solid rgba(255,255,255,.80);*/ 
 	border-bottom-left-radius: 2px; 
@@ -1631,7 +1637,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', end
 	/*display: inline;*/
 	/*display: inline-block;*/
 	font-family: BebasNeuewebfont, "DinBold", "big_noodle_titling", sans-serif;
-	font-weight: bold;
+	/*font-weight: bold;*/
 	letter-spacing: -0.06em;
 
 	
@@ -1697,7 +1703,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', end
 	position: relative; 
 	
 	/*display: inline-block;*/
-	font-family: "ColunaRounded", Impact, sans-serif;
+	font-family: BebasNeuewebfont, "ColunaRounded", Impact, sans-serif;
 	line-height: 40px; 
 	
 	/*letter-spacing: -0.06em;
@@ -2085,11 +2091,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', end
 	margin-right: -24px;
 	*/
 	/*margin: 24px -24px 12px -40px;*/
-	margin: 24px -24px 10px -96px;
+	margin: 24px -24px 10px -56px;
 
 	
 	font-family: BebasNeuewebfont, "DinBold", "big_noodle_titling", sans-serif;
-	font-weight: bold;
+	/*font-weight: bold;*/
 	/*letter-spacing: -0.06em;*/
 
 	text-transform: uppercase;
@@ -2116,11 +2122,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', end
     -moz-transform:scale(0.85,1); 
     -ms-transform:scale(0.85,1); 
     -o-transform:scale(0.85,1);*/
+	/*
 	transform : scale(0.85,1);
 	-webkit-transform:scale(0.85,1); 
 	-moz-transform:scale(0.85,1); 
 	-ms-transform:scale(0.85,1); 
 	-o-transform:scale(0.85,1); 
+	*/
 	
 	color: rgba(75,75,75,0.94) !important;
 }
@@ -2128,26 +2136,26 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', end
 .cvTitleRow{
 	
 	/*margin: 24px 0px 10px -54px;*/
-	margin: 24px 0px 10px -72px;
+	margin: 24px 0px 10px -56px;
 	width: 200px;
 	padding: 0px;
 
 
 	font-family: BebasNeuewebfont, "DinBold", "big_noodle_titling", sans-serif;
-	font-weight: bold;
+	/*font-weight: bold;*/
 	/*letter-spacing: -0.06em;*/
 	text-transform: uppercase;
 
 	font-size: 24px;/
 	
 	display:inline-block;
-	
+	/*
 	transform : scale(0.85,1);
 	-webkit-transform:scale(0.85,1); 
 	-moz-transform:scale(0.85,1); 
 	-ms-transform:scale(0.85,1); 
 	-o-transform:scale(0.85,1); 
-	
+	*/
 	color: rgba(75,75,75,0.94) !important;
 }
 
@@ -2385,6 +2393,26 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', end
 
 }
 
+
+
+
+#decoBar2{
+		/*top: -9px;*/
+		top: -18px;
+		position: absolute;
+		z-index: 100;
+		height: 6px;
+
+		/*width: 95%*/;
+		width: 95%;
+		/*margin-left:-2.5%;*/
+
+
+		max-width: 1024px;
+		margin-left: 27px;
+
+		background: url("../images/decoBarTop.png"), no-repeat;
+}
 
 #decoBarBottom{
 		top: -9px;
@@ -3466,9 +3494,29 @@ overflow: visible;
 	z-index: 13;
 	/*border-left: 3px solid rgba(150, 98, 93, 0.9);*//*rgba(197, 57, 43, 0.90);*/
 	/*border-left: 3px solid rgba(165, 100, 94,1);*/
-	border-left: 3px solid rgb(255, 184, 127);
+	border-left: 4px solid rgb(255, 184, 127);
 }
 
+.decoBorderBase{
+	border-right: 4px solid #dee0df;
+	width:0px;
+	height: 10px;
+	position:absolute;
+	z-index: -10;
+	top:0px;
+}
+
+.decoBorder1{
+	left: -1px;
+}
+
+.decoBorder2{
+	left: 122px;	
+}
+
+.decoBorder3{
+	left: 98px;
+}
 
 .tabs {
 	/*
@@ -3564,7 +3612,7 @@ overflow: visible;
 	transition: all 0.25s ease;
 	
 	text-shadow:
-	/*0px 1px 2px rgba(0,0,0,0.15), */
+	0px 2px 14px rgba(0,0,0,0.25), 
 	-1px 1px 4px rgba(0,0,0,0.24),
 	0px 1px 2px rgba(0,0,0,0.24),
 	-2px 1px 5px rgba(0,0,0,0.30),
@@ -3680,6 +3728,7 @@ overflow: visible;
 	/*text-shadow: -1px 1px 0px rgba(0,0,0,0.40);*/
 	
 	text-shadow:
+	0px 2px 14px rgba(0,0,0,0.25), 
 	0px 1px 2px rgba(0,0,0,0.4), 
 	-2px 1px 4px rgba(0,0,0,0.30),
 	0px 1px 4px rgba(0,0,0,0.30),
