@@ -2914,7 +2914,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eadcdc', end
 	-moz-box-shadow: 0px -80px 0px -65px rgba(236,255,252,.9);
 	box-shadow: 0px -80px 0px -65px rgba(236,255,252,.9);
 	*/
-	pointer-events: none;
+	/*pointer-events: none;*/
 	
 
 }
