@@ -1539,11 +1539,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', end
 	-moz-border-top-right-radius: 2px; 
 	-webkit-border-top-right-radius: 2px;  
 
-	border-bottom: 1px solid rgba(255,255,255,.6);
+	border-bottom: 1px solid rgba(255,255,255,.3);
 	-webkit-box-shadow: 0px 1px 2px rgba(76,76,76,.3);
 	-moz-box-shadow: 0px 1px 2px rgba(76,76,76,.3);
 	
-	box-shadow: 0px 1px 2px rgba(76,76,76,.5);  
+	box-shadow: 0px 1px 2px rgba(76,76,76,.65);  
 	
 	margin-left: -10px;
 }
@@ -1595,17 +1595,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', end
 	padding-bottom:0px;
 }
 
-.backBg{
-	position: absolute;
-	/*display: inline-block;*/
-	/*display: inline;*/
-	width: 64px;
-	height: 28px;
-	left: 48px;
-	top: 6px;
-	background: url("../images/backA.png"), no-repeat;
-	
-} 
+
 
 .spacer{
 	display: inline-block;
@@ -1638,13 +1628,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', end
 	/*display: inline-block;*/
 	font-family: BebasNeuewebfont, "DinBold", "big_noodle_titling", sans-serif;
 	/*font-weight: bold;*/
-	letter-spacing: -0.06em;
+	/*letter-spacing: -0.06em;*/
 
 	
 	/*font-family: "Museo700";*/
 	/*font-size: 12px;*/
 	font-size: 16px;
-	color: black;
+	color: #597064;
 	width: 99.5%;
 	/*height: 12px;*/
 	height: 18px;
@@ -1654,8 +1644,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', end
 	text-decoration: none;
 	text-shadow: none;
 	
-	opacity: 0.35;
-    filter: alpha(opacity = 35); /* For IE */ 
+	/*opacity: 0.35;
+    filter: alpha(opacity = 35); *//* For IE */ 
 	background: none;
 }
 
@@ -1666,6 +1656,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', end
 	padding-left: 84px;
 }
 
+.backBg{
+	position: absolute;
+	/*display: inline-block;*/
+	/*display: inline;*/
+	width: 34px;
+	height: 28px;
+	left: 48px;
+	top: 6px;
+	background: url("../images/backA.png"), no-repeat;
+	
+} 
+
 .backBtn:hover{
 	
 	/*padding-left: 90px;*/
@@ -1675,6 +1677,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', end
 	background-color: rgba(246,95,94,0.28);
 	/*color: rgb(180,105,105);*/
 	
+	color: black;
+	
 	color: rgba(0,0,0,0.75);
 	border-top-left-radius: 2px; 
 	-moz-border-top-left-radius: 2px; 
@@ -1682,6 +1686,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', end
 	border-radius-top-right-radius: 2px; 
 	-moz-border-top-right-radius: 2px; 
 	-webkit-border-top-right-radius: 2px;  
+}
+
+.backBtn:hover span{
+	padding-left: 88px;
+}
+
+.backBtn:hover .backBg{
+	width: 64px;
 }
 
 
@@ -2398,7 +2410,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', end
 
 #decoBar2{
 		/*top: -9px;*/
-		top: -18px;
+		top: -17px;
 		position: absolute;
 		z-index: 100;
 		height: 6px;
@@ -3599,7 +3611,7 @@ overflow: visible;
 	/*padding: 10px 15px;*/
 	/*border-right: 1px solid #fff;*/
 	font-family: BebasNeuewebfont, DinBold, ChineseRocksRegular, sans-serif;
-	font-weight: bold;
+	/*font-weight: bold;*/
 	text-transform: uppercase;
 	/*letter-spacing: -0.015em;*/
 	letter-spacing: 0.05em;
@@ -3632,15 +3644,16 @@ overflow: visible;
 	/*letter-spacing: 0.08em;*/
 	/*color: rgb(79, 79, 79);*/
 	color: rgb(79, 79, 79);
+	/*
 	text-shadow:
-	/*0px 1px 2px rgba(0,0,0,0.15), */
 	-1px 1px 4px rgba(0,0,0,0.6),
-	0px 1px 2px rgba(0,0,0,0.6)
+	0px 1px 2px rgba(0,0,0,0.6),
 	-2px 1px 5px rgba(0,0,0,0.8),
 	-2px 2px 7px rgba(0,0,0,0.12)
-	;
+	;*/
 
-	/*text-shadow: 0px 0px 8px rgba(255,255,255,0.35);*/
+	text-shadow: 0px 0px 3px rgba(255,255,255,0.9);
+
 	/*text-shadow: 
 	0px 0px 2px rgba(255,255,255,0.5),
 	-1px 1px 4px rgba(0,0,0,0.5);*/
