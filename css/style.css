@@ -819,16 +819,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dfe7ff', end
 	/*-12px 12px 16px rgba(0,0,0,0.25),*/
 	/*-16px 16px 4px rgba(0,0,0,0.35),*/
 	
-	-1px 1px 1px rgba(129,160,169,1),
-	-2px 2px 1px rgba(129,160,169,.85),
-	-4px 4px 1px rgba(129,160,169,.75),
-	-6px 6px 1px rgba(129,160,169,.65),
-	-8px 8px 1px rgba(139,160,169,.55),
-	-10px 10px 1px rgba(139,160,169,.50),
-	-12px 12px 1px rgba(149,160,169,.43),
-	-14px 14px 1px rgba(149,160,169,.34),
-	-16px 16px 1px rgba(159,160,169,.25),
-	-18px 18px 1px rgba(159,160,169,.15)
+	-1px 1px 1px rgba(132,163,172,1),
+	-2px 2px 1px rgba(132,163,172,.85),
+	-4px 4px 1px rgba(132,163,172,.75),
+	-6px 6px 1px rgba(132,163,172,.65),
+	-8px 8px 1px rgba(142,163,172,.55),
+	-10px 10px 1px rgba(142,163,172,.50),
+	-12px 12px 1px rgba(152,163,172,.43),
+	-14px 14px 1px rgba(152,163,172,.34),
+	-16px 16px 1px rgba(162,163,172,.25),
+	-18px 18px 1px rgba(162,163,172,.15)
 	;
 	
 	
@@ -3096,19 +3096,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eadcdc', end
 .projHeader1{
 	
 	padding-top: 20px;
-	padding-left: 20px;
-	padding-right: 20px;
+	padding-left: 40px;
+	padding-right: 40px;
 	
-	background-color: rgba(255,255,255,0.2);
+	background-color: rgba(255,255,255,0.25);
 	font-size: 72px;
 	text-shadow:
-	-1px 0px 0px rgba(0,0,0,0.5),
-	0px 1px 0px rgba(0,0,0,0.5),
-	-1px 1px 1px rgba(0,0,0,0.10), 
-	-1px 1px 4px rgba(0,0,0,0.12),
-	0px 1px 2px rgba(0,0,0,0.12),
-	-2px 1px 5px rgba(0,0,0,0.15),
-	-2px 2px 7px rgba(0,0,0,0.25)
+	-1px 0px 0px rgba(0,0,0,0.55),
+	0px 1px 0px rgba(0,0,0,0.55),
+	-1px 1px 1px rgba(0,0,0,0.15), 
+	-1px 1px 4px rgba(0,0,0,0.17),
+	0px 1px 2px rgba(0,0,0,0.17),
+	-2px 1px 5px rgba(0,0,0,0.2),
+	-2px 2px 7px rgba(0,0,0,0.3)
 	;
 	
 	line-height: 66px;
@@ -3116,19 +3116,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eadcdc', end
 
 .projHeader2{
 	padding-top: 5px;
-	padding-left: 20px;
-	padding-right: 20px;
+	padding-left: 40px;
+	padding-right: 40px;
 		
-	background-color: rgba(255,255,255,0.2);
+	background-color: rgba(255,255,255,0.25);
 	font-size: 54px;
 	text-shadow:
-	-1px 0px 0px rgba(0,0,0,0.5),
-	0px 1px 0px rgba(0,0,0,0.5),
-	-1px 1px 1px rgba(0,0,0,0.10), 
-	-1px 1px 4px rgba(0,0,0,0.12),
-	0px 1px 2px rgba(0,0,0,0.12),
-	-2px 1px 5px rgba(0,0,0,0.15),
-	-2px 2px 7px rgba(0,0,0,0.25)
+	-1px 0px 0px rgba(0,0,0,0.55),
+	0px 1px 0px rgba(0,0,0,0.55),
+	-1px 1px 1px rgba(0,0,0,0.15), 
+	-1px 1px 4px rgba(0,0,0,0.17),
+	0px 1px 2px rgba(0,0,0,0.17),
+	-2px 1px 5px rgba(0,0,0,0.2),
+	-2px 2px 7px rgba(0,0,0,0.3)
 	;
 	
 	text-align: right;
