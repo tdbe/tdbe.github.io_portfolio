@@ -825,10 +825,36 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dfe7ff', end
 	-6px 6px 1px rgba(132,163,172,.65),
 	-8px 8px 1px rgba(142,163,172,.55),
 	-10px 10px 1px rgba(142,163,172,.50),
-	-12px 12px 1px rgba(152,163,172,.43),
-	-14px 14px 1px rgba(152,163,172,.34),
-	-16px 16px 1px rgba(162,163,172,.25),
-	-18px 18px 1px rgba(162,163,172,.15)
+	-12px 12px 1px rgba(152,163,172,.45),
+	
+	-14px 14px 1px rgba(152,163,172,.35),
+	-16px 16px 1px rgba(152,163,172,.25),
+	-18px 18px 1px rgba(152,163,172,.15),
+	
+	-20px 20px 1px rgba(152,163,172,.05)
+	
+	/*
+	-1px 1px 1px rgba(132,163,172,1),
+	-2px 2px 1px rgba(132,163,172,.85),
+	-4px 3px 1px rgba(132,163,172,.75),
+	-6px 4px 1px rgba(132,163,172,.65),
+	-8px 5px 1px rgba(135,163,172,.55),
+	-10px 7px 1px rgba(138,163,172,.50),
+	-12px 8px 1px rgba(142,163,172,.45),
+	
+	-14px 9px 1px rgba(145,163,172,.38),
+	-16px 11px 1px rgba(148,163,172,.32),
+	-18px 12px 1px rgba(151,163,172,.27),
+	
+	-20px 13px 1px rgba(154,163,172,.23),
+	-22px 15px 1px rgba(156,163,172,.19),
+	-24px 16px 1px rgba(159,163,172,.16),
+	-26px 19px 1px rgba(162,163,172,.14),
+	-28px 20px 1px rgba(162,163,172,.09),
+	-30px 22px 1px rgba(162,163,172,.06),
+	-32px 23px 1px rgba(162,163,172,.03)
+	*/
+	
 	;
 	
 	
@@ -1051,14 +1077,23 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dfe7ff', end
 	
 	-1px 1px 1px rgba(112,143,152,1),
 	-2px 2px 1px rgba(112,143,152,.85),
-	-4px 4px 1px rgba(112,143,152,.75),
-	-6px 6px 1px rgba(112,143,152,.65),
-	-8px 8px 1px rgba(122,143,152,.55),
-	-10px 10px 1px rgba(122,143,152,.50),
-	-12px 12px 1px rgba(132,143,152,.43),
-	-14px 14px 1px rgba(132,143,152,.34),
-	-16px 16px 1px rgba(142,143,152,.25),
-	-18px 18px 1px rgba(142,143,152,.15)
+	-4px 3px 1px rgba(112,143,152,.75),
+	-6px 4px 1px rgba(112,143,152,.65),
+	-8px 5px 1px rgba(122,143,152,.55),
+	-10px 6px 1px rgba(122,143,152,.50),
+	-12px 7px 1px rgba(125,143,152,.43),
+
+	-14px 9px 1px rgba(128,143,172,.38),
+	-16px 10px 1px rgba(131,143,172,.32),
+	-18px 12px 1px rgba(134,143,172,.27),
+	
+	-20px 13px 1px rgba(136,143,172,.23),
+	-22px 14px 1px rgba(139,143,172,.19),
+	-24px 16px 1px rgba(142,143,172,.16),
+	-26px 17px 1px rgba(142,143,172,.14),
+	-28px 19px 1px rgba(142,143,172,.09),
+	-30px 20px 1px rgba(142,143,172,.06),
+	-32px 22px 1px rgba(142,143,172,.03)
 	
 	/*
     0.025em 0.03em 0 rgba(255,255,255,0.5), 
@@ -3139,16 +3174,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eadcdc', end
 	padding-left: 20px;
 	padding-right: 20px;
 	
-	background-color: rgba(255,255,255,0.2);
+	background-color: rgba(255,255,255,0.25);
 	font-size: 54px;
 	text-shadow:
-	-1px 0px 0px rgba(0,0,0,0.5),
-	0px 1px 0px rgba(0,0,0,0.5),
-	-1px 1px 1px rgba(0,0,0,0.10), 
-	-1px 1px 4px rgba(0,0,0,0.12),
-	0px 1px 2px rgba(0,0,0,0.12),
-	-2px 1px 5px rgba(0,0,0,0.15),
-	-2px 2px 7px rgba(0,0,0,0.25)
+	-1px 0px 0px rgba(0,0,0,0.55),
+	0px 1px 0px rgba(0,0,0,0.55),
+	-1px 1px 1px rgba(0,0,0,0.15), 
+	-1px 1px 4px rgba(0,0,0,0.17),
+	0px 1px 2px rgba(0,0,0,0.17),
+	-2px 1px 5px rgba(0,0,0,0.2),
+	-2px 2px 7px rgba(0,0,0,0.3)
 	;
 	
 	padding-bottom: 16px;
