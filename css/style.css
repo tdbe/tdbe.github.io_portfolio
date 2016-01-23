@@ -830,7 +830,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dfe7ff', end
 	
 	-14px 14px 1px rgba(152,163,172,.25),
 	-16px 16px 1px rgba(152,163,172,.18),
-	-18px 18px 1px rgba(152,163,172,.13)
+	-18px 18px 1px rgba(152,163,172,.13),
+	
+	
+	
+	40px 40px 100px rgba(255,255,255,1),
+	0px -40px 100px rgba(255,255,255,1)
 	
 
 	
@@ -1836,7 +1841,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eadcdc', end
 	top: 0px;
 	/*background-color: rgb(236,85,84);*/
 	/*background-color: rgb(190,105,105);*/
-	background-color: #8ee9ae;
+	/*background-color: #8ee9ae;*/
+	background-color: rgb(164,255,196);
 	
 	/*border: 1px solid rgba(255,255,255,.80);*/ 
 	border-top-left-radius: 2px; 
