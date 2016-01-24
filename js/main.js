@@ -197,9 +197,12 @@ function scrollTest(e){
 	//alert($('#webplayer').visible());
 		
 	//alert(document.getScroll()[1]); 
-	//if(ifr == null || ifr == undefined )
-	//	ifr = document.getElementById("icontent");
+	if(ifr == null || ifr == undefined )
+		ifr = document.getElementById("icontent");
 
+	if(ifr == null || ifr == undefined )
+		return;
+	
 	//if(window.scrollHeight - window.scrollTop === window.clientHeight)
 	/*
 	if (navigator.userAgent.toLowerCase().indexOf("msie") > -1) {
