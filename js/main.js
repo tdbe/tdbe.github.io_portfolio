@@ -193,6 +193,8 @@ document.getScroll= function(){
 
 var ifr;// = document.getElementById("icontent"); 
 function scrollTest(e){
+}
+function scrollTestRemoved(e){
 	//If you'd like to check for ANY PART of the element, use (true)
 	//alert($('#webplayer').visible());
 		
