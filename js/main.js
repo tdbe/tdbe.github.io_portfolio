@@ -135,7 +135,11 @@ function resizeIframe(obj){
 function resizeIframe2() {
 	var obj = document.getElementById("icontent");
 	//obj.contentWindow.document.getElementById('projContainer').scrollHeight
-    obj.style.height = $("#icontent").contents().find('body').find("div").height() + extraHeight + 'px';
+	var newHeight = $("#icontent").contents().find('body').find("div").height() + extraHeight;
+	if(newHeight<900){
+		newHeight = 900;
+	}
+    obj.style.height = newHeight + 'px';
 		//obj.style.height = obj.contentWindow.window.size.h + 'px'; 
 		//var w = window.parent.document.getElementById("centerPanel");
 	var cp = document.getElementById("centerPanel");
