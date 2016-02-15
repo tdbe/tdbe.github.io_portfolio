@@ -56,6 +56,8 @@ function onMainLoaded(){
 	//onload='resizeIframe(this); swap();'
 	var me = "'  id='icontent' scrolling='no'  frameborder='0' allowTransparency='true' seamless></iframe>"; 
 	
+	
+	
 	//$("#icontent").css("overflow", "visible");
 	
 	switch (project) {//wanted to do something else here..
@@ -95,6 +97,7 @@ function onMainLoaded(){
 
 	$("#projects").append(ifr+a+me); 
 	swap();
+	resizeIframe2();
 };
 
 
@@ -119,7 +122,7 @@ var debounce = function (func, threshold, execAsap)
 	};
 }
 
-var extraHeight = 1.005;
+var extraHeight = 80;//1.005;
 function resizeIframe(obj){
     //obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
 	obj.style.height = obj.contentWindow.window.size.h + 'px';
@@ -131,12 +134,20 @@ function resizeIframe(obj){
 
 function resizeIframe2() {
 	var obj = document.getElementById("icontent");
-    obj.style.height = obj.contentWindow.document.getElementById('projContainer').scrollHeight * extraHeight + 'px';
-	//obj.style.height = obj.contentWindow.window.size.h + 'px'; 
-	//var w = window.parent.document.getElementById("centerPanel");
-	var w = document.getElementById("centerPanel");
-	obj.style.width = w.style.width + "px"; 
-	//alert();
+	//obj.contentWindow.document.getElementById('projContainer').scrollHeight
+    obj.style.height = $("#icontent").contents().find('body').find("div").height() + extraHeight + 'px';
+		//obj.style.height = obj.contentWindow.window.size.h + 'px'; 
+		//var w = window.parent.document.getElementById("centerPanel");
+	var cp = document.getElementById("centerPanel");
+	//var w = document.getElementById("zen");
+	//obj.style.width = w.style.width + "px";
+	obj.style.width = $(window).width()+1 + "px"; 
+	
+	
+	//$(cp).position().left
+	obj.style.marginLeft = -$(cp).offset().left+ "px"; 
+	//alert(obj.style.marginLeft);
+		//alert();
 }
 
 var timeoot = 250;

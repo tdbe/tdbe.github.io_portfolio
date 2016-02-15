@@ -63,7 +63,7 @@
 
 <!--body id="zen" onload="doCenter(window.center({width:1,height:1}))" style="
 background: #e5ede2; #d7dfd4;"    style="background: rgb(255,251,237);"-->
-<body id="zen" style="pointer-events: none;" onload="onMainLoaded()"> 
+<body id="zen" class="zen" style="pointer-events: none;" onload="onMainLoaded()"> 
 <h1 id="hh1">Tudor's portfolio website. Software, games, pcg, voxel, shaders, vfx, design, art.</h1>
 
 <div id="container">	
@@ -94,17 +94,30 @@ background: #e5ede2; #d7dfd4;"    style="background: rgb(255,251,237);"-->
 	</div>
 
 	
-	
+				
     <div id="mainContent"  >
-	
 		
-        <div id="centerPanel" class="centerPanelBG1">
+		
+        <div id="centerPanel" >
 			
 			
 			<!--span id="ttlCnt"><span id="ttl"></span></span  title="Tudor Berechet" -->
-			<span id="ttlCnt" ><p id="ttlText" class="depth" ><span class="whiteTextBg gradientNameBg1">Tudor</span> <span class="whiteTextBg gradientNameBg0">Berechet</span><!--span class="gradNameMask"></span--></p>
-			<span id="nameBG"></span>
-			
+			<span id="ttlCnt" >
+				<p id="ttlText" class="depth" >
+					<span class="whiteTextBg gradientNameBg1">Tudor</span> 
+					<span class="whiteTextBg gradientNameBg0">Berechet</span><!--span class="gradNameMask"></span-->
+				</p>
+				<!--span id="nameBG"></span-->
+				<div class="nameBgGradCont" >
+					<div class="nameBgGrad" >
+
+						<div class="nameBgGrad_all nameBgGrad_00 noPointerEvents"></div>
+						<div class="nameBgGrad_all nameBgGrad_01 noPointerEvents"></div>
+						<div class="nameBgGrad_all nameBgGrad_05 noPointerEvents"></div>
+						<div class="nameBgGrad_all nameBgGrad_06 noPointerEvents"></div>
+						<div class="nameBgGrad_all nameBgGrad_07 noPointerEvents"></div>
+					</div>
+				</div>
 			</span>
 			
 			<div id="navigation">
@@ -120,14 +133,15 @@ background: #e5ede2; #d7dfd4;"    style="background: rgb(255,251,237);"-->
 					
 				</span>
 				<span id="porTitle">PORTFOLIO</span>
-				<span class="decoBand">
-					<span class="decoBandBg"></span>
-				</span> 
+				
 				<!--span class="decoBorderBase decoBorder2"/>
 				<span class="decoBorderBase decoBorder3"/-->
 			</div>
 			
-			<div id="projects">  
+
+			
+			<div id="projects"> 
+				
 				<!--iframe src="./project/gpgpu/index.html" id="icontent" scrolling="no" frameborder="0" allowtransparency="true" seamless="" style="visibility: visible; height: 6147px;  "></iframe-->
 				<!--div class="article-title">
 					<h2></h2>
@@ -156,7 +170,7 @@ background: #e5ede2; #d7dfd4;"    style="background: rgb(255,251,237);"-->
 						</div>
 					</div>
 					
-					<span id="loading"><div  class="loader"></div><div  class="loader loader2"style=""></div><div  class="loader loader3"style=""></div></span>  
+					<span id="loading"><div  class="loader"></div><div  class="loader loader2"style=""></div><div  class="loader loader3"style=""></div></span>  						
 			</div>
 			
 			<div id="resume" >
@@ -199,9 +213,12 @@ background: #e5ede2; #d7dfd4;"    style="background: rgb(255,251,237);"-->
 						
 					
 					<!--div id="cVarDiv"-->
-						<div class="article cvColumn cvColumnC darkerFont" style="min-height: 100px; height:100px;">
+				
+					<div class="article cvColumn cvColumnC darkerFont cvColumnContact" style="">
 						<div class="cvTitle cvTitleRow lightFont highlight3">Contact </div>
 						<div class="cvText highlight3">
+							LFG
+							<br/>
 							<!--span class="parStart">|</span-->I search for passionate fellow nerds, regardles of titles. Relocation is possible.
 
 							<br/>
@@ -218,8 +235,9 @@ background: #e5ede2; #d7dfd4;"    style="background: rgb(255,251,237);"-->
 							-->
 						</div>
 					</div>
-						
-					<div class="article cvColumn cvColumnR darkerFont" style=" " >
+					
+				<div class="contentWrapper">
+					<div class="article cvColumn cvColumnR darkerFont" style="margin-top:-40px;" >
 						<div class="cvTitle lightFont highlight3" style="margin-left: -62px; padding-top: 44px;">Tools, Skills, Buzzwords</div>
 						<div class="cvText highlight3" style="padding-left: 9px;">
 							<div class="listBlockNP">
@@ -227,7 +245,7 @@ background: #e5ede2; #d7dfd4;"    style="background: rgb(255,251,237);"-->
 								UE4, UDK3 / C++<br/>
 								Oculus VR<br/>
 								<br/>
-								Git & Mercurial, Trello<br/>
+								Git, Mercurial, Trello<br/>
 								<div style="width: 100%;">
 									Agile, Scrum<br/>
 									Latex<br/>
@@ -243,9 +261,9 @@ background: #e5ede2; #d7dfd4;"    style="background: rgb(255,251,237);"-->
 									
 									<div class="listBlock">
 										C, C++<br/>
-										C# / .NET, <small>WPF, ASP.NET</small><br/>
+										C# / .NET, WPF<br/>
 										Java<br/>
-										<small>CLisp, Assembly</small><br/>
+										CLisp, Assembly<br/>
 										...
 										<br/>
 										Lua<br/>
@@ -261,9 +279,10 @@ background: #e5ede2; #d7dfd4;"    style="background: rgb(255,251,237);"-->
 									</div>
 									
 									<div class="listBlock" >
-										WebGL, OpenGL, OpenCL, DirectX, Direct Compute, CUDA<br/>
+										WebGL, OpenGL, DirectX,<br/>
+										Direct Compute / GPGPU<br/>
 										GLSL, HLSL, CG, QT, <small>GLUT</small><br/>
-										WebSockets, Oracle, SSH<br/>
+										WebSockets, SQL, SSH<br/>
 										<br/>
 									</div>
 									
@@ -281,8 +300,8 @@ background: #e5ede2; #d7dfd4;"    style="background: rgb(255,251,237);"-->
 									</div>
 									<div class="listBlock" style="width: 100%;">
 										Cinema4D, <br/>
-										Sculptris, ZBrush<br/>
-										 <small>3DS Max, Blender, Rhino</small>
+										Sculptris, <small>ZBrush</small><br/>
+										3DS Max, <small>Blender, Rhino</small>
 									
 									</div>
 								
@@ -299,11 +318,12 @@ background: #e5ede2; #d7dfd4;"    style="background: rgb(255,251,237);"-->
 						</div>
 					</div>	
 					
-						<div class="article cvColumn cvColumnC darkerFont">
-								<div class="cvTitle lightFont highlight3" style="padding-top: 44px;">Experience and Studies</div>
+					
+						<div class="article cvColumn cvColumnC darkerFont" style="">
+								<div class="cvTitle lightFont highlight3" style="padding-top: 44px; margin-top:-20px; ">Experience and Studies</div>
 								<div class="cvText highlight3">
 									<div class="listBlockNP DezenF dPadLarge" >
-									Work<span class="sFloRight">(02/2015 - )</span> 
+									Work<span class="sFloRight">( 02/2015 - )</span> 
 									</div>
 									<div class="listBlock" >
 									<br/>
@@ -318,7 +338,7 @@ background: #e5ede2; #d7dfd4;"    style="background: rgb(255,251,237);"-->
 									<div class="listBlockNP DezenF dPadLarge" s>
 									<br/>
 									Publication:
-									<span class="sFloRight">(FDG 2015)</span> 
+									<span class="sFloRight">( FDG 2015 )</span> 
 									</div>
 									<div class="listBlock" style="width: 100%;">
 									<br/>
@@ -334,7 +354,7 @@ background: #e5ede2; #d7dfd4;"    style="background: rgb(255,251,237);"-->
 									
 									<div class="listBlockNP DezenF dPadLarge" >
 									<br/>
-									Masters <span class="sFloRight">(2012-2014)</span> 
+									Masters <span class="sFloRight">( 2012 - 2014 )</span> 
 									</div>
 									<div class="listBlock" style="width: 100%;">
 									<br/>
@@ -346,7 +366,7 @@ background: #e5ede2; #d7dfd4;"    style="background: rgb(255,251,237);"-->
 									</div>
 									<div class="listBlockNP DezenF dPadLarge" >
 									<br/>
-									Work/Specialization <span class="sFloRight">(2013)</span>
+									Work/Specialization <span class="sFloRight">( 2013 - 2013 )</span>
 									
 									</div>
 									<div class="listBlock" style="width: 100%;" >
@@ -357,7 +377,7 @@ background: #e5ede2; #d7dfd4;"    style="background: rgb(255,251,237);"-->
 									</div>
 									<div class="listBlockNP DezenF dPadLarge" >
 									<br/>
-									Postgrad in FA<span class="sFloRight">(2011-2012)</span> 
+									Postgrad in FA<span class="sFloRight">( 2011 - 2012 )</span> 
 									</div>
 									<div class="listBlock" style="width: 100%;">
 									<br/>
@@ -369,7 +389,7 @@ background: #e5ede2; #d7dfd4;"    style="background: rgb(255,251,237);"-->
 									</div>
 									<div class="listBlockNP DezenF dPadLarge" >
 									<br/>
-									CPE <span class="sFloRight">(2011)</span> 
+									CPE <span class="sFloRight">( 2011 )</span> 
 									</div>
 									<div class="listBlock" style="width: 100%;">
 									<br/>
@@ -381,7 +401,7 @@ background: #e5ede2; #d7dfd4;"    style="background: rgb(255,251,237);"-->
 									</div>
 									<div class="listBlockNP DezenF dPadLarge">
 									<br/>
-									Bachelors <span class="sFloRight">(2008-2011)</span> 
+									Bachelors <span class="sFloRight">( 2008 - 2011 )</span> 
 									</div>
 									<div class="listBlock" style="width: 100%;">
 									<br/>
@@ -395,6 +415,7 @@ background: #e5ede2; #d7dfd4;"    style="background: rgb(255,251,237);"-->
 
 								</div>
 						</div>
+					</div>
 					<!--/div-->
 					
 
@@ -448,11 +469,12 @@ background: #e5ede2; #d7dfd4;"    style="background: rgb(255,251,237);"-->
 							</div>
 							<div class="listBlock" >
 							<br/>
+							
 							System Shock 2, <br/>
 							Legacy of Kain, <br/>
-							MDK2, <br/>
 							Thief 2, <br/>
 							Gang Beasts,<br/>
+							Lethal League, <br/>
 							</div>
 							<div class="listBlock" >
 							<br/>
@@ -460,8 +482,9 @@ background: #e5ede2; #d7dfd4;"    style="background: rgb(255,251,237);"-->
 							Mirror's edge, <br/>
 							SureAI (eg Skywind)<br/>
 							Splatoon, <br/>
-							Lethal League, <br/>
-							Frog Fractions 2,<br/>
+							Kamyia stuff, <br/>
+							Kojima stuff, <br/>
+							
 							</div>
 							
 							<!--div class="listBlock" style="display: block; height: 75px; width: 70px; background:blue;">
@@ -473,10 +496,9 @@ background: #e5ede2; #d7dfd4;"    style="background: rgb(255,251,237);"-->
 							<br/>
 							Valve stuff, <br/>
 							Carmack stuff, <br/>
-							Kamyia stuff, <br/>
-							Kojima stuff, <br/>
-							Warren Spector, <br/>
-							
+							Jonathan Blow, <br/>
+							Warren Spector <br/>
+							etc.
 							</div>
 							<br/>
 							
@@ -495,7 +517,7 @@ background: #e5ede2; #d7dfd4;"    style="background: rgb(255,251,237);"-->
 							<!--span id="openingL" style="vertical-align: bottom; float: left;"-->
 							<!--Mirror's Edge, Bioshock, -->
 							<br/>
-							Also No Man's Sky and The Last Guardian..<br/>
+							Also No Man's Sky, The Last Guardian, and Frog Fractions 2..<br/>
 							<br/>
 							More generally, I'm a fan of games that have tight, high-bandwidth input, "handle really well", with fun and liberating mechanics.
 							<br/>
@@ -554,8 +576,13 @@ background: #e5ede2; #d7dfd4;"    style="background: rgb(255,251,237);"-->
 					</div>
 				</div>
 			</div>
+			</div>
 
+			<span class="decoBand">
+				<span class="decoBandBg"></span>
+				<span class="decoBandBgU"></span>
 
+			</span> 
 			
 			<!--span id="decoBar"></span--> 
 			<!--span id="decoBar2"></span--> 
@@ -571,7 +598,7 @@ background: #e5ede2; #d7dfd4;"    style="background: rgb(255,251,237);"-->
 	<div>
 		<noscript id="noContainer">
 			<div id="noScript" style="width:400px;height:200px;position:absolute;left:50%;top:300px;margin-left:-200px;margin-top:0px;">
-				<p>Your JavaScript is turned off. You'll need to turn it on to navigate my portfolio. Please live dangerously for a bit and pause your noscript.</p>
+				<p>Your JavaScript is turned off. You'll need to turn it on to switch content in my portfolio. Please live dangerously for a bit and pause your noscript.</p>
 			</div>
 		</noscript>
 	</div>
@@ -579,16 +606,21 @@ background: #e5ede2; #d7dfd4;"    style="background: rgb(255,251,237);"-->
 </div>	
 	
 	<div id="footer">
-		<span class="decoBand decoBandBott">
+		<!--span class="decoBand decoBandBott">
 			<span class="decoBandBgBott"></span>
+		</span--> 
+		<span class="decoBand decoBandBott">
+			<span class="decoBandBg"></span>
+			<span class="decoBandBgU"></span>
 		</span> 
 		<!--span id="decoBarBottom"></span--> 
 
 		<span id="footer2">
 				
 				<br/>
-				<span class="parStart" style="">|</span> Designed by me. Copyright: me, forever. Unless you buy me a beer.
+				<!--span class="parStart" style="">|</span--> Designed by me. Copyright: me, forever. Unless you buy me a beer.
 				<br/>
+				<p style="margin-top: 5px; text-align: center;">Too bad you can't write PBR shaders isntead of CSS.</p>
 				<br/>
 				<br/>
 				<br/>
@@ -603,51 +635,113 @@ background: #e5ede2; #d7dfd4;"    style="background: rgb(255,251,237);"-->
 		</div-->
 		<div id="dynamicBgCnt" >
 			<div id="bgGradCont" >
-				<div class="bgGrad_all bgGrad_00 flipV"></div>
-				<div class="bgGrad_all bgGrad_00 flipV"></div>
-				<div class="bgGrad_all bgGrad_00 flipV"></div>
-				<div class="bgGrad_all bgGrad_01 flipV shadSide1"></div>
+				<div class="bgGrad_all bgGrad_00 noPointerEvents flipV "></div>
+				<div class="bgGrad_all bgGrad_00 noPointerEvents flipV"></div>
+				<div class="bgGrad_all bgGrad_00 noPointerEvents flipV"></div>
+				<div class="bgGrad_all bgGrad_01 noPointerEvents flipV shadSide2"></div>
 				
-				<div class="bgGrad_all bgGrad_02 flipV shadSide1"></div>
-				<div class="bgGrad_all bgGrad_03 flipV shadSide1"></div>
-				<div class="bgGrad_all bgGrad_04 noPointerEvents "></div>
-				<div class="bgGrad_all bgGrad_05 noPointerEvents thinOutlineR"></div>
+				<div class="bgGrad_all bgGrad_02 noPointerEvents flipV shadSide2" style="opacity: 0.85; transform:translate(0px, -100px);"></div>
+				<div class="bgGrad_all bgGrad_03 noPointerEvents flipV shadSide2" ></div>
+				<div class="bgGrad_all bgGrad_04 noPointerEvents thinOutline"></div>
+				<div class="bgGrad_all bgGrad_05 noPointerEvents thinOutlineNL"></div>
 				<div class="bgGrad_all bgGrad_06 noPointerEvents thinOutlineL"></div>
 				
-				<div class="bgGrad_all bgGrad_06 noPointerEvents thinOutlineR"></div>
-				<div class="bgGrad_all bgGrad_05 noPointerEvents thinOutlineL"></div>
-				<div class="bgGrad_all bgGrad_04 noPointerEvents thinOutlineL"></div>
-				<div class="bgGrad_all bgGrad_03 flipV shadSide1"></div>
-				<div class="bgGrad_all bgGrad_02 flipV shadSide1"></div>
-				<div class="bgGrad_all bgGrad_01 flipV shadSide1"></div>
-				<div class="bgGrad_all bgGrad_00 flipV"></div>
-				<div class="bgGrad_all bgGrad_00 flipV"></div>
-				<div class="bgGrad_all bgGrad_00 flipV"></div>
+				<div class="bgGrad_all bgGrad_06 noPointerEvents thinOutline"></div>
+				<div class="bgGrad_all bgGrad_05 noPointerEvents thinOutlineLL"></div>
+				<div class="bgGrad_all bgGrad_04 noPointerEvents thinOutline"></div>
+				<div class="bgGrad_all bgGrad_03 noPointerEvents flipV shadSide2"></div>
+				<div class="bgGrad_all bgGrad_02 noPointerEvents flipV shadSide2"></div>
+				<div class="bgGrad_all bgGrad_01 noPointerEvents flipV shadSide2"></div>
+				<div class="bgGrad_all bgGrad_00 noPointerEvents flipV"></div>
+				<div class="bgGrad_all bgGrad_00 noPointerEvents flipV"></div>
+				<div class="bgGrad_all bgGrad_00 noPointerEvents flipV"></div>
 				
 				<!--div class="bgGradient"></div>
 				<div class="bgGradient rot21H"></div-->
 			</div>
 			<div id="bgGradContMirror" >
-				<div class="bgGrad_all bgGrad_00 flipV "></div>
-				<div class="bgGrad_all bgGrad_00 flipV"></div>
-				<div class="bgGrad_all bgGrad_00 flipV"></div>
-				<div class="bgGrad_all bgGrad_01 flipV shadSide2"></div>
+				<div class="bgGrad_all bgGrad_00 noPointerEvents flipV "></div>
+				<div class="bgGrad_all bgGrad_00 noPointerEvents flipV"></div>
+				<div class="bgGrad_all bgGrad_00 noPointerEvents flipV"></div>
+				<div class="bgGrad_all bgGrad_01 noPointerEvents flipV shadSide2"></div>
 				
-				<div class="bgGrad_all bgGrad_02 flipV shadSide2"></div>
-				<div class="bgGrad_all bgGrad_03 flipV shadSide2"></div>
+				<div class="bgGrad_all bgGrad_02 noPointerEvents flipV shadSide2"></div>
+				<div class="bgGrad_all bgGrad_03 noPointerEvents  shadSide2"></div>
 				<div class="bgGrad_all bgGrad_04 noPointerEvents thinOutline"></div>
-				<div class="bgGrad_all bgGrad_05 noPointerEvents thinOutlineL"></div>
-				<div class="bgGrad_all bgGrad_06 noPointerEvents thinOutlineL"></div>
+				<div class="bgGrad_all bgGrad_05 noPointerEvents thinOutline"></div>
+				<div class="bgGrad_all bgGrad_06 noPointerEvents thinOutlineLL"></div>
 				
-				<div class="bgGrad_all bgGrad_06 noPointerEvents thinOutlineR"></div>
+				<div class="bgGrad_all bgGrad_06 noPointerEvents thinOutline"></div>
 				<div class="bgGrad_all bgGrad_05 noPointerEvents thinOutlineL"></div>
-				<div class="bgGrad_all bgGrad_04 noPointerEvents thinOutlineR"></div>
-				<div class="bgGrad_all bgGrad_03 flipV shadSide2"></div>
-				<div class="bgGrad_all bgGrad_02 flipV shadSide2"></div>
-				<div class="bgGrad_all bgGrad_01 flipV shadSide2"></div>
-				<div class="bgGrad_all bgGrad_00 flipV"></div>
-				<div class="bgGrad_all bgGrad_00 flipV"></div>
-				<div class="bgGrad_all bgGrad_00 flipV"></div>
+				<div class="bgGrad_all bgGrad_04 noPointerEvents thinOutlineNL"></div>
+				<div class="bgGrad_all bgGrad_03 noPointerEvents flipV shadSide2"></div>
+				<div class="bgGrad_all bgGrad_02 noPointerEvents flipV shadSide2"></div>
+				<div class="bgGrad_all bgGrad_01 noPointerEvents flipV shadSide2"></div>
+				<div class="bgGrad_all bgGrad_00 noPointerEvents flipV"></div>
+				<div class="bgGrad_all bgGrad_00 noPointerEvents flipV"></div>
+				<div class="bgGrad_all bgGrad_00 noPointerEvents flipV"></div>
+				
+				<!--div class="bgGradient"></div>
+				<div class="bgGradient rot21H"></div-->
+			</div>
+			
+			<div id="bgGradCont3rd" >
+				<div class="bgGrad_all hide"></div>
+				<div class="bgGrad_all hide"></div>
+				<div class="bgGrad_all hide"></div>
+				<div class="bgGrad_all hide"></div>
+				<div class="bgGrad_all hide"></div>
+				<div class="bgGrad_all hide"></div>
+				<div class="bgGrad_all hide"></div>
+				<div class="bgGrad_all hide"></div>
+				<div class="bgGrad_all hide"></div>
+				<div class="bgGrad_all hide"></div>
+				<div class="bgGrad_all hide"></div>
+				<div class="bgGrad_all hide"></div>
+				<div class="bgGrad_all hide"></div>
+				<div class="bgGrad_all hide"></div>
+				<div class="bgGrad_all hide"></div>
+
+	
+				
+				<div class="bgGrad_all bgGrad_06 noPointerEvents " style="opacity: 0.80; filter: alpha(opacity = 80);"></div>
+				<div class="bgGrad_all bgGrad_05 noPointerEvents "></div>
+				<div class="bgGrad_all bgGrad_04 noPointerEvents "></div>
+				<div class="bgGrad_all bgGrad_03 noPointerEvents flipV "></div>
+				<div class="bgGrad_all bgGrad_02 noPointerEvents flipV shadSide2"></div>
+				<div class="bgGrad_all bgGrad_01 noPointerEvents flipV shadSide2"></div>
+				<div class="bgGrad_all bgGrad_00 noPointerEvents flipV"></div>
+				<div class="bgGrad_all bgGrad_00 noPointerEvents flipV"></div>
+				<div class="bgGrad_all bgGrad_00 noPointerEvents flipV"></div>
+				
+				<!--div class="bgGradient"></div>
+				<div class="bgGradient rot21H"></div-->
+			</div>
+			
+			<div id="bgGradCont4th" >
+
+				
+				
+				<div class="bgGrad_all bgGrad_01 noPointerEvents flipV shadSide2"></div>
+				<div class="bgGrad_all bgGrad_01 noPointerEvents flipV shadSide2"></div>
+				<div class="bgGrad_all bgGrad_01 noPointerEvents flipV shadSide2"></div>
+				
+				<div class="bgGrad_all bgGrad_02 noPointerEvents flipV shadSide2"></div>
+				
+				<div class="bgGrad_all bgGrad_02 noPointerEvents  shadSide2" style="transform:translate(0px, 100px) ;"></div>
+				<div class="bgGrad_all bgGrad_03 noPointerEvents flipV shadSide2" style="transform:translate(0px, -50px) scale(1, -1);"></div>
+				<div class="bgGrad_all bgGrad_04 noPointerEvents "></div>
+				<div class="bgGrad_all bgGrad_05 noPointerEvents "></div>
+				<div class="bgGrad_all bgGrad_06 noPointerEvents "></div>
+				<div class="bgGrad_all bgGrad_06 noPointerEvents " style="margin-left: -280px;"></div>
+				
+				
+				<div class="bgGrad_all hide"></div>
+				<div class="bgGrad_all hide"></div>
+				<div class="bgGrad_all hide"></div>
+				<div class="bgGrad_all hide"></div>
+				<div class="bgGrad_all hide"></div>
+				<div class="bgGrad_all hide"></div>
 				
 				<!--div class="bgGradient"></div>
 				<div class="bgGradient rot21H"></div-->
