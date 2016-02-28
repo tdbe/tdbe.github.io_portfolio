@@ -122,7 +122,7 @@ var debounce = function (func, threshold, execAsap)
 	};
 }
 
-var extraHeight = 80;//1.005;
+var extraHeight = 86;//1.005;
 function resizeIframe(obj){
     //obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
 	obj.style.height = obj.contentWindow.window.size.h + 'px';
@@ -136,7 +136,7 @@ function resizeIframe2() {
 	var obj = document.getElementById("icontent");
 	//obj.contentWindow.document.getElementById('projContainer').scrollHeight
 	var newHeight = $("#icontent").contents().find('body').find("div").height() + extraHeight;
-	if(newHeight<900){
+	if(newHeight<900){//this is prototype code, shut up!
 		newHeight = 900;
 	}
     obj.style.height = newHeight + 'px';
