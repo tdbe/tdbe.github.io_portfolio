@@ -122,7 +122,7 @@ var debounce = function (func, threshold, execAsap)
 	};
 }
 
-var extraHeight = 86;//1.005;
+var extraHeight = 120;//1.005;
 function resizeIframe(obj){
     //obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
 	obj.style.height = obj.contentWindow.window.size.h + 'px';
