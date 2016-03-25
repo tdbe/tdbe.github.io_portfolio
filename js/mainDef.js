@@ -61,11 +61,12 @@ bindReady();
 	var called = false
 
 	function ready() { 
-		if (called) return
-		called = true
+		if (called) return;
+		called = true;
 		//handler()
 	
-		window.parent.onDomContentLoad()
+		//window.parent.onDomContentLoad()
+		load2();
 	}
 
 	//obj.contentWindow.document

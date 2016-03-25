@@ -1,787 +1,266 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-<html>
-<head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<!--meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/-->
-	
-	<meta name="viewport" content="width=1080, initial-scale=1">
-	
-	<meta name="author" content="Tudor">
-	<meta name="keywords" content="Tudor, portfolio, pcg research, game developer">
-	<meta name="description" content="Tudor's portfolio on game development, simulations, PCG, vfx, concept design and such.">
-	
-	<meta name="robots" content="all">
-	<title>Tudor's Portfolio</title> 
-
-	<!--link href='http://fonts.googleapis.com/css?family=Days+One' rel='stylesheet' type='text/css'/-->
-	<link rel="stylesheet" href="css/style.css" type="text/css" title="all purpose css" charset="utf-8">
-	<link rel="stylesheet" href="css/navigationStyle.css" type="text/css" title="navigation" charset="utf-8">	
-	<link type="text/css" rel="stylesheet" href="css/fonts/socialIcons/css/font-awesome.min.css">
-	<link rel="Shortcut Icon" type="image/x-icon" href="favicon.ico">	
-	<!--link href='http://fonts.googleapis.com/css?family=Raleway:400,500,600' rel='stylesheet' type='text/css'-->
-	<link href='http://fonts.googleapis.com/css?family=Raleway:500,600' rel='stylesheet' type='text/css'>
-	
-	<!--script type="text/javascript" charset="utf-8">
-		//document.getElementById('mainContent').style.visibility = "visible";
-		//<![CDATA[
-		//var a = "<style type='text/css'>#mainContent{display: block;}<\/style>";
-		//document.write("<style type='text/css'>#mainContent{display: block;}<\/style>");
-		//alert("aa");
-		//]]>
-		//document.write(a);
-	</script-->
-	
-	
-	<!--script src="http://code.jquery.com/jquery-1.4.4.min.js" type="text/javascript" charset="utf-8"/-->
-	<!--script src="https://code.jquery.com/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script-->
-	<script src="./js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
-	<script src="./js/easytabs.js" type="text/javascript" charset="utf-8"></script>
-	<script src="./js/Window.Size.js" type="text/javascript" charset="utf-8"></script>
-	<script src="./js/main.js" type="text/javascript" charset="utf-8"></script>
-
-	<script type="text/javascript" charset="utf-8">
-		$(document).ready(function() {
-			$('#container').easyTabs({defaultContent:1});
-		});
-	</script>
-
-
-
-
-	
-	<script type="text/javascript" charset="utf-8">
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-	  ga('create', 'UA-55237302-1', 'auto');
-	  ga('send', 'pageview');
-	</script>
-</head>
-
-<!--body id="zen" onload="doCenter(window.center({width:1,height:1}))" style="
-background: #e5ede2; #d7dfd4;"    style="background: rgb(255,251,237);"-->
-<body id="zen" class="zen" style="pointer-events: none;" onload="onMainLoaded()"> 
-<h1 id="hh1">Tudor's portfolio website. Software, games, pcg, voxel, shaders, vfx, design, art.</h1>
-
-<div id="container">	
-	
-
-	
-	<div id="hcloud" >	
-		GPGPU Underground Canyons. MSc. Thesis Project about real-time Procedural Modelling of Cave Systems on the GPU. PCG, Voxels, DX11 Compute Shader, CG, HLSL, Unity
-		<br/>
-		Pendulum: Platformer concept. 3 Week solo DADIU project. Shaders, procedural distortions and character mechanics. Design, Mechanics, CG, PCG, Unity, DADIU
-		<br/> 
-		DADIU Productions. Two shipped tablet game projects. 3 months work, 18 people studio.
-		Gameplay, Effects, Pogramming, CG, OpenGL ES 2.0, Unity
-		<br/> 
-		Broken Shadows, exploration. UDK. Grappling hooks and climbing. 3 month Game Development project.
-		Physics, Gameplay, Concept/Level Design
-		<br/> 
-		Leap, puzzle platformer. Unity. Plane switching and teleportation. 3 month Game Development project.
-		Gameplay, Physics, Game Design, Level Design
-		<br/> 
-		Holosuit Concept. Concept art, game design and art direction project. 2.5D beat-em-up platformer.
-		Concept Art, Game Design
-		<br/> 
-		IDI Interface Beta. An Unity interface project showcasing some of my UID Industrial Design projects.
-		Unity, Interface, Industrial Design
-		<br/>
-		NGJ15: SoundBound. A 2-player rhythm arcade bullethell fighting game prototype made from scratch in 41h at NGJ2015.
-	</div>
-
-	
-	
-				
-    <div id="mainContent"  >
-	
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<meta name="author" content="Tudor"/>
+		<meta name="keywords" content="PCG, voxels, DX11 Compute, CG, HLSL, Shader, Unity"/>
+		<meta name="description" content="MSc. Thesis Project about real-time Procedural Modelling of Cave Systems on the GPU."/> 
+		<meta name="robots" content="all"/>
+		<title>GPGPU Underground Canyons</title>
 		
-	
-		<div id="navigation">
-				<span id="porTitle">PORTFOLIO</span>
-				<span id="navigation2">
-					<ul class="tabs" id="tabs" >
-							<li id="P"><div class="navSpacer" ><a href="#projects" onclick="setTimeout(resizeIframe2, timeoot);" class="noHighlight">Projects</a></div></li>
-							<li id="R"><div class="navSpacer" ><a href="#resume" onclick="" class="noHighlight">Resumé</a></div></li>
-							<li id="B"><div class="navSpacer" ><a href="#blog" onclick="" class="noHighlight">Blog</a></div></li>
-							<!--li><a href="#contact" onclick="normalStyle()">Contact</a></li-->
-							
-					</ul>
-					
-					
-				</span>
-				
-				
-				<!--span id="ttlCnt"><span id="ttl"></span></span  title="Tudor Berechet" -->
-				<span id="ttlCnt" >
-					
-					
-					
-					<!--span id="nameBG"></span-->
-					<div class="nameBgGradCont" >
-						<div class="nameBgGrad" >
-							
-							<div class="nameBgGrad_all nameBgGrad_00 noPointerEvents"></div>
-							<div class="nameBgGrad_all nameBgGrad_01 noPointerEvents"></div>
-							<div class="nameBgGrad_all nameBgGrad_05 noPointerEvents"></div>
-							<div class="nameBgGrad_all nameBgGrad_06 noPointerEvents"></div>
-							<div class="nameBgGrad_all nameBgGrad_07 noPointerEvents">
-							</div>
-							
-						</div>
-					</div>
-					
-					<p id="ttlText" class="depth" >
-						<span class="whiteTextBg gradientNameBg1">Tudor</span> 
-						<span class="whiteTextBg gradientNameBg0">Berechet</span><!--span class="gradNameMask"></span-->
-					</p>
-				</span>
-				
-				
-				
-				<!--span class="decoBorderBase decoBorder2"/>
-				<span class="decoBorderBase decoBorder3"/-->
-			</div>
+		<base target="_parent" /> 
 		
-        <div id="centerPanel" >
-			
-			
-			
-			
-			
+		<link rel="stylesheet" href="../../css/style.css" type="text/css" title="all purpose css" charset="utf-8">
+		<link rel="stylesheet" href="./css/style.css" type="text/css" title="all purpose css" charset="utf-8">
+		<link rel="stylesheet" href="../../css/navigationStyle.css" type="text/css" title="navigation" charset="utf-8">	
+		<link rel="Shortcut Icon" type="image/x-icon" href="./favicon.ico"/>	
+		
+		<script src="https://code.jquery.com/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/easytabs.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/Window.Size.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/mainDef.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script type="text/javascript" charset="utf-8">
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		  ga('create', 'UA-55237302-1', 'auto');
+		  ga('send', 'pageview');
+		</script>
+	</head>
 
-			
-			<div id="projects"> 
-				
-				<!--iframe src="./project/gpgpu/index.html" id="icontent" scrolling="no" frameborder="0" allowtransparency="true" seamless="" style="visibility: visible; height: 6147px;  "></iframe-->
-				<!--div class="article-title">
-					<h2></h2>
-				</div-->
-				<div class="introText introTextPreview" >
 
-						<div class="article highlight" >
-							
-							<div id="Welcome">Welcome.</div>
-							
-							<div id="openingWrapper">
-								<span id="openingL"><p><span id="symbolCntMain"><span id="symbolMain"></span></span><span class="parStart"></span>I'm Tudor and I enjoy developing interactive escapism.<br/>
-								<span class="parStart"></span>Let's see if we can be best buds.</p>
+	<body id="zen" class="projZen" >
+			<div id="projContainer">
+					
+					<div id="topBar">
+						<a class="backBtn" href="../../">
+							<div class="backBg"></div>
+							<span>Back</span>
+						</a>
+					</div>
+					<div class="toptitle" id="toptitle">
+						<img class="soloImg" src="./images/titleBg.jpg" style="width:100%;"/>
+						<div class="shadBott sLeft shadLeft"></div>
+						<div class="shadBott sRight shadRight"></div> 
+						
+						<div id="projHeaderRoot">
+							<div id="projHeaderPivot">
+								<div class="projHeader1">GPGPU Cave Modeling</div>
+								<div class="projHeader2">ITU MSc. Thesis</div>
+								<div class="projHeader3">Sept 2014</div>
+						</div>
+						</div>
+					</div>
+					<div id="toptitleBg">
+						<span id="loading"><div  class="loader"></div><div  class="loader loader2"style=""></div><div  class="loader loader3"style=""></div></span>  
+					</div>
+					
+					<div id="mainColumnProj" style="" >   
+					
+						<div class="article highlight projPadding" >  
+								<p><span id="symbolCnt"><span id="symbol"></span></span><span class="parStart">|</span>This 2-man project was about researching ways of simulating believable cave environments at interactive rates using voxels on the GPU.</p><br/>
 								
-								<p><span class="parStart"></span> I have degrees in <span class="BoldFont bgHighlightImportant">Computer Science</span>, <span class="BoldFont bgHighlightImportant">Industrial Design</span>, and <span class="BoldFont bgHighlightImportant">Game Technology</span>.
+								<p>It lasted 6 months and involved PCG research, application development, and user testing.</p> 
+								<p>Our generation pipeline processes GPU voxel volumes with a set of DirectX 11 Compute Shaders. The modelling solution can be thought of as guided intersecting procedural 3D brush strokes of morphing shapes (warped distance fields), on a solid voxel volume.
 								<br/>
-								I'm an aficionado of <span class="bgHighlight">simulations</span>, <span class="bgHighlight">gameplay</span>,  <span class="bgHighlight">data oriented programming</span>, and like researching <span class="bgHighlight">PCG</span>, <span class="bgHighlight">VFX</span>, and physics or mechanics using <span class="bgHighlight">GPGPU</span>.  </p></span>
+								<br/>
+								</p>
 								
-								<span id="openingR"><p><span class="parStart"></span> Science makes the art. I deconstruct the techniques behind the state of the art. I learn to come up with the most tractable solutions, and to research new layers of tech that leverage emerging affordances.</p>
-								
-								<p><span class="parStart"></span><a href="http://www.valvesoftware.com/company/Valve_Handbook_LowRes.pdf" rel="nofollow" target="_blank">Valve's handbook</a> discusses the need for devs with deep expertise as well as a high breadth of skills, and that an interest in different parts of the spectrum brings all sorts of totally <span class="bgHighlight">rad things</span>.
-								</p></span>
+
+
+						</div>
+						
+						
+						<p id="galInfo" class="highlight2 projPadding"><span class="parStart">|</span>Cave results rendered with my HLSL procedural solid texturing shaders:</p>
+						<div class="imageRegion">
+							<div class="imgContainer">
+								<!--img class="soloImg" src=""/-->
+								<img class="leftImg" src="./images/cShaderGif438.gif"/>
+								<img class="rightImg" src="./images/iceShaderGif438.gif"/> 
+								<span class="shadTop sLeft "></span>
+								<span class="shadTop sRight "></span> 
+								<span class="shadBott sLeft shadLeft"></span>
+								<span class="shadBott sRight shadRight"></span> 
+							</div> 
+						</div>
+						
+						<div class="article highlight projPadding " style="margin-bottom: -16px;">  
+						</div>
+						<div class="colunaBox projPadding" >
+							<div class="colunas leftColuna">
+							<span class="colunaLine">Evolved</span>
+							<br/>
+							<span class="colunaLine">Grammar</span>
+							<br/>
+							<span class="colunaLine" style="-moz-transform:scale(1.4032,1); -o-transform:scale(1.4032,1); -ms-transform:scale(1.4032,1); 	-webkit-transform:scale(1.4032,1); transform:scale(1.4032,1); margin-left: 25px;">System</span>
 							</div>
-				
-							
-						</div>
-					</div>
-					
-					<span id="loading"><div  class="loader"></div><div  class="loader loader2"style=""></div><div  class="loader loader3"style=""></div></span>  						
-			</div>
-			
-			<div id="resume" >
-				<div class="pageContainer" >
-					<!--div class="article-title" style="width: 350px;">
-						<h2></h2>
-					</div-->
-					
-					
-					<!--div class="cvContact">
-						
-					</div-->
-				
-				
-					
-					<div class="article cvColumn cvColumnR darkerFont" style="top: 160px; float: left; min-height: 100px; height: 100px;" >
-					
-						<div class="cvRow picMeContainer">
-							<div id="picMe"></div>
-							<span class="socialbtns">
-								<acronym class="acro padBott" title="bitbucket.com/TDBE"><a href="https://bitbucket.org/tdbe" rel="nofollow" target="_blank" class="fa fa-2x fa-bitbucket socIconUrl" alt="bitbucket.com/TDBE"></a></acronym>
-							
-								<br/>
-							
-								<!--a href="https://github.com/tdbe" rel="nofollow" target="_blank" class="BoldFont">github.com/TDBE</a-->
-								<acronym class="acro padBott" title="github.com/TDBE"><a href="https://github.com/tdbe" rel="nofollow" target="_blank" class="fa fa-2x fa-github socIconUrl" alt="github.com/TDBE"></a></acronym>
-								<br/>
-							
-							
-								<acronym class="acro" title="Linkedin"><a href="https://www.linkedin.com/in/tudorberechet" rel="nofollow" target="_blank"  class="fa fa-2x fa-linkedin socIconUrl" alt="Linkedin"></a></acronym>
-								
-								<!--acronym class="acro" title="spectraljump.deviantart"><a href="http://spectraljump.deviantart.com/" rel="nofollow" target="_blank"  class="fa fa-2x fa-deviantart socIconUrl" alt="spectraljump.deviantart"></a></acronym-->
-								
-								
-						</span>
-						</div>
-					</div>
-						
-						
-						
-					
-					<!--div id="cVarDiv"-->
-				
-					<div class="article cvColumn cvColumnC darkerFont cvColumnContact" style="">
-						<div class="cvTitle cvTitleRow lightFont highlight3">Contact </div>
-						<div class="cvText highlight3">
-							LFG
+							<div class="colunas rightColuna">
+							<span class="colunaLine">Worldspace</span>
 							<br/>
-							<!--span class="parStart">|</span-->I search for passionate fellow nerds, regardles of titles. Relocation is possible.
-
+							<span class="colunaLine">Curl Noise</span>
 							<br/>
-							<br/>
-							<!--span class="parStart">|</span-->I currently live in Denmark, and you can notice me at:
-							<br/>
-							<b>this.tudor</b>|<small>at</small>|<b>gmail</b>|<small>dot</small>|<b>com</b>
-							<br/>
-							
-							<!--br/>
-							Thing: 
-							Steam: urutabi, hit me up shitlords!
-							DeviantArt:
-							-->
-						</div>
-					</div>
-					
-				<div class="contentWrapper">
-					<div class="article cvColumn cvColumnR darkerFont" style="margin-top:-40px;" >
-						<div class="cvTitle lightFont highlight3" style="margin-left: -62px; padding-top: 44px;">Tools, Skills, Buzzwords</div>
-						<div class="cvText highlight3" style="padding-left: 9px;">
-							<div class="listBlockNP">
-								Unity 5 / C#<br/>
-								UE4, UDK3 / C++<br/>
-								Oculus VR<br/>
-								<br/>
-								Git, Mercurial, Trello<br/>
-								<div style="width: 100%;">
-									Agile, Scrum<br/>
-									Latex<br/>
-									<br/>
-								</div>
-								
-								
-								
-								<div class="listBlockNP DezenF dPadSmall" >
-									Languages
-									</div>
-									<br/><br/>
-									
-									<div class="listBlock">
-										C, C++<br/>
-										C# / .NET, WPF<br/>
-										Java<br/>
-										CLisp, Assembly<br/>
-										...
-										<br/>
-										Lua<br/>
-										Javascript, JQuery, PHP<br/>
-										HTML5, Canvas, CSS3<br/>
-										AS 3.0,<small> Stage3D, Flex</small><br/>
-										
-										<br/>
-									</div>
-
-									<div class="listBlockNP DezenF dPadSmall" >
-									Technologies
-									</div>
-									
-									<div class="listBlock" >
-										WebGL, OpenGL, DirectX,<br/>
-										Direct Compute / GPGPU<br/>
-										GLSL, HLSL, CG, QT, <small>GLUT</small><br/>
-										WebSockets, SQL, SSH<br/>
-										<br/>
-									</div>
-									
-									<div class="listBlockNP DezenF dPadSmall" style="width: 100%;">
-									Adobe
-									</div>
-									<div class="listBlock" style="width: 100%;">
-										Photoshop<br/>
-										Premiere, AfterEffects<br/>
-										InDesign<br/>
-										<br/>
-									</div>
-									<div class="listBlockNP DezenF dPadSmall" style="width: 100%;">
-									3D
-									</div>
-									<div class="listBlock" style="width: 100%;">
-										Cinema4D, <br/>
-										Sculptris, <small>ZBrush</small><br/>
-										3DS Max, <small>Blender, Rhino</small>
-									
-									</div>
-								
+							<span class="colunaLine" style="-moz-transform:scale(0.768,1); -o-transform:scale(0.768,1); -ms-transform:scale(0.768,1); 	-webkit-transform:scale(0.768,1); transform:scale(0.768,1); margin-right: -20px;">Solid Texturing</span>
 							</div>
 						</div>
 						
 						<br/>
-						
-						
-						<div class="cvText highlight3" >
-							
-							
-							
+						<div class="article highlight projPadding" style="margin-bottom: -20px; margin-top:1em;">  
+
+								<p style="font-size: 14px;"><span class="parStart">|</span>The tool implementation consists of three main parts:
+								</p> 
+
 						</div>
-					</div>	
-					
-					
-						<div class="article cvColumn cvColumnC darkerFont" style="">
-								<div class="cvTitle lightFont highlight3" style="padding-top: 44px; margin-top:-20px; ">Experience and Studies</div>
-								<div class="cvText highlight3">
-									<div class="listBlockNP DezenF dPadLarge" >
-									Work<span class="sFloRight">( 02/2015 - )</span> 
-									</div>
-									<div class="listBlock" >
-									<br/>
-									Software / Tech Developer at <a href="http://www.utopiancityscape.com/ucs/" rel="nofollow" target="_blank">UCS3D</a>, Copenhagen.
-									<br/>
-									VR Architectural design validation.
-									<div class="listBlockEG" >
-										Research, Procedural Content Generation, Custom Lighting Simulation, Point Cloud Data, City Planning, Gameplay, VFX, VR headsets.
-										</div>
-									<br/>
-									</div>
-									
-									
-									<div class="listBlockNP DezenF dPadLarge" s>
-									<br/>
-									Publication:
-									<span class="sFloRight">( FDG 2015 )</span> 
-									</div>
-									<div class="listBlock" style="width: 100%;">
-									<br/>
-									Paper: <a href="http://julian.togelius.com/Mark2015Procedural.pdf" rel="nofollow" target="_blank">Procedural Generation of 3D Caves for Games on the GPU</a>. 
-									<br/>
-									Presented at <a href="http://www.foundationsofdigitalgames.org/" rel="nofollow" target="_blank">Foundations of Digital Games 2015</a>.
-									<br/>
-									<div class="listBlockEG" >
-										L-system for layout, metaball brushes, additive noise. 
-									</div>
-									<br/>
-									</div>
-									
-									<div class="listBlockNP DezenF dPadLarge" >
-									<br/>
-									Masters <span class="sFloRight">( 2012 - 2014 )</span> 
-									</div>
-									<div class="listBlock" style="width: 100%;">
-									<br/>
-									MSc. in Game Technology (120 ECTS). IT University of Copenhagen, Denmark.
-										<div class="listBlockEG" >
-										e.g. Engines, Development, Design, Game Graphics, Data Mining, PCG, Graphics Programming 
-										</div>
-									<br/>
-									</div>
-									<div class="listBlockNP DezenF dPadLarge" >
-									<br/>
-									Work / Specialization <span class="sFloRight">( 2013 - 2013 )</span>
-									
-									</div>
-									<div class="listBlock" style="width: 100%;" >
-									<br/>
-									DADIU Productions (30 ECTS). (2 tablet titles)<br/>Danish Academy of Digital Interactive Entertainment, Copenhagen.
-									
-									<br/>
-									</div>
-									<div class="listBlockNP DezenF dPadLarge" >
-									<br/>
-									Postgrad in FA<span class="sFloRight">( 2011 - 2012 )</span> 
-									</div>
-									<div class="listBlock" style="width: 100%;">
-									<br/>
-									Industrial Design (60 ECTS). Umeå Institute of Design, Sweden.
-										<div class="listBlockEG">
-										e.g. Interaction Design, Color Theory, Visualisation Techniques & Storytelling, Ergonomics, Product Design, Service Design, Transportation Design, Art History
-										</div>
-									<br/>
-									</div>
-									<div class="listBlockNP DezenF dPadLarge" >
-									<br/>
-									CPE <span class="sFloRight">( 2011 )</span> 
-									</div>
-									<div class="listBlock" style="width: 100%;">
-									<br/>
-									Certificate of Proficiency in English, level C2. Cambridge ESOL Level 3 International.
-									<div class="listBlockEG">
-										passed with an A (read: toughest language test)
-										</div>
-									<br/>
-									</div>
-									<div class="listBlockNP DezenF dPadLarge">
-									<br/>
-									Bachelors <span class="sFloRight">( 2008 - 2011 )</span> 
-									</div>
-									<div class="listBlock" style="width: 100%;">
-									<br/>
-									BSc. in Computer Science (180 ECTS). A.I. Cuza University, Iași, Romania.
-									<div class="listBlockEG" >
-										e.g. Network Programming, Assembly, Matlab, Graph Algorithms, Compilers, OOP, .NET, Databases, Web Technologies, Information Security, AI, Software Engineering, Computer Graphics, Bioinformatics
-										</div>
-									
-									<span class="buffer"></span><!--span class="buffer"></span><span class="buffer" style="height: 15px;"></span><span class="buffer" style="height: 15px;"></span><span class="buffer" style="height: 15px;"></span--> 
-									</div>
-
-								</div>
+						
+						<div class="imageRegion">
+								<!--img class="soloImg" src=""/-->
+								<a href="./images/lSystem.png" rel="nofollow" target="_blank" class="acro"><acronym class="acro" title="open in new tab"><img class="soloImg" src="./images/lSystem.png" style="width:100%;"/></acronym></a>
 						</div>
-					</div>
-					<!--/div-->
+						<div class="article highlight projPadding" style="margin-top: -2em;">  
+							<p>1 - A controllable <span class="bgHighlight">L-system</span> which generates a set of <span class="bgHighlight">structural points</span>. [partner's focus] 
+							<br/>
+							It emulates the expanded cracks and passages which form cave structures in nature. <br/><br/>
+							We evolved it and tried to apply a "human fitness function".</p>
+						</div>
+						<div class="spacer" style="margin-top: -1em;"></div><br/>
+						
+						<div class="imageRegion">
+								<!--img class="soloImg" src=""/-->
+								<a href="./images/metaRange.png" rel="nofollow" target="_blank" class="acro"><acronym class="acro" title="open in new tab"><img class="soloImg" src="./images/metaRange.png" style="width:100%;"/></acronym></a>
+						</div>
+						<div class="article highlight projPadding" style="margin-top: -2em;">  
+							<p>2 - A detailing component where I use an array of <span class="bgHighlight">metaball</span>s and <span class="bgHighlight">noise</span> (<span class="bgHighlight">Voronoi</span>, <span class="bgHighlight">Simplex</span>, <span class="bgHighlight">Curl</span>). [my focus]<br/><br/>
+							I carve the voxel volumes along specific structural points (applying additive-noise <span class="bgHighlight">energy field perturbation</span> to the values of the volume). </p>
+						</div>
+						<div class="spacer"  style="margin-top: -1em;"></div><br/>
+
+						
+						<div class="imageRegion">
+								<!--img class="soloImg" src=""/-->
+								<a href="./images/small-texture2.jpg" rel="nofollow" target="_blank" class="acro"><acronym class="acro" title="open in new tab"><img class="soloImg" src="./images/small-texture2.jpg" style="width:100%;"/></acronym></a>
+						</div>
+						<div class="article highlight projPadding" style="margin-top: -2em;">  
+							<p>3 - A component for isosurface extraction and for shading. [my focus]<br/><br/>
+								I calculated fast <span class="bgHighlight">smooth mesh normals</span>, made procedural materials with a pixel-lit forward Lambert shader with <span class="bgHighlight">triplanar projection</span>, bump mapping, <span class="bgHighlight">Curled Simplex noise</span>, <span class="bgHighlight">solid texturing</span>, procedural details etc.</p>
+						</div>
 					
 
-					
+						
 
-					
-					<!--div style="clear:both;"></div-->
-				</div>
-			</div>
-			
-			<div id="blog">
-				<div class="pageContainer" >
-					<div class="article highlight2" style="overflow: hidden; margin-left: 23px; pointer-events: all; width: 100%;">
-						<!--div class="cvText highlight"-->
-					<div style="padding-left: 1.855%;">
-						<div class="cvTitle Noodle ">SOON...!</div>
-						(working on it)<br/><br/><br/>
-						<span class="DezenF"><span class="parStart">|</span>Here are six words I like:</span> <br/>
 						
-						<span class="parStart">&nbsp;</span><span class="bgHighlight">reason</span>, <span class="bgHighlight">humour</span>, <span class="bgHighlight">imagination</span>, <span class="bgHighlight">talent</span>, <span class="bgHighlight">equal poise</span>.	
-						
-							
-							
-					</div>
-					<br/><br/><br/>
 					
-							<span class="DezenF"><span class="parStart" style="padding-left: 16px;">|</span>Here's some of the vidya I like:</span><br/>
-							
-							<div class="listBlock" style="margin-left: 6%;">
-							<br/>
-							Valve stuff, <br/>
-							Carmack stuff, <br/>
-							Kojima stuff, <br/>
-							Jonathan Blow, <br/>
-							Warren Spector, <br/>
-							<br/>
-							</div>
-							
-							
-							<div class="listBlock" >
-							<br/>
-							Kamyia stuff, <br/>
-							Mirror's edge, <br/>
-							SureAI (eg Skywind)<br/>
-							Riot stuff,<br/>
-							Splatoon, <br/>
-							
-							 <br/>
-							
-							</div>
-							
-	
-							
-							
-							<div class="listBlock" >
-							<br/>
-							Shadow of the Colossus, <br/>
-							Guilty Gear, <br/>
-							Katamari Damacy, <br/>
-							Jet Set Radio, <br/>
-							Beyond Good & Evil, <br/>
-							</div>
-							<div class="listBlock">
-							<br/>
-							Psychonauts, <br/>
-							Smash, <br/>
-							Majora's mask, <br/>
-							Metroid, <br/>
-							Jazz Jackrabbit, <br/>
-							</div>
-							
-							<div class="listBlock" >
-							<br/>
-							
-							System Shock 2, <br/>
-							Legacy of Kain, <br/>
-							Thief 2, <br/>
-							Gang Beasts,<br/>
-							Lethal League, <br/>
-							</div>
-
-							<div class="listBlock">
-							<br/>
-							Gish, <br/>
-							Echochrome, <br/>
-							N++, <br/>
-							AVGN Adventures, <br/>
-							Skullgirls, <br/>
-							</div>
-					
-					<!--span id="openingR" style="vertical-align: bottom; float: right; 
-					display: block; width: 100%; height: 90px;" >
-							<br/><br/>
-							Games which are engrossing, rich, and full of personality; with no clumsy superficial gimmicks, or pseudo-deep pretentious storytelling.
-							<br/>
-							<br/>
-							
-					</span-->
-						<!--/div-->
 						
-						<div class="listBlock" style="vertical-align: bottom; float: left; align: left;">
-							<!--span id="openingL" style="vertical-align: bottom; float: left;"-->
-							<!--Mirror's Edge, Bioshock, -->
-							<br/>
-							Also No Man's Sky, The Last Guardian, and Frog Fractions 2..<br/>
-							<br/>
-							More generally, I'm a fan of games that have tight, high-bandwidth input, "handle really well", with fun and liberating mechanics.
-							<br/>
-						<!--/span-->
-					
-							<br/>
-							I also play DnD, surprisingly regularly.
+						<div class="article highlight projPadding " style="margin-bottom: -10px; margin-top:-2em;">  
+						</div>
 						
-							<br/><br/>
-							<span class="DezenF"><span class="parStart">|</span>And here is a dump of a few things I approve of:</span>
-							<br/><br/>
-							<div class="centrify">
-								<!--a href="http://www.valvesoftware.com/company/Valve_Handbook_LowRes.pdf" rel="nofollow" target="_blank">Valve Employee Handbook</a>
-								<br/-->
-								<a href="https://github.com/tjluoma/John-Cleese-on-Creativity" rel="nofollow" target="_blank">John Cleese on Creativity</a>
-								<br/>
-								<a href="https://www.youtube.com/watch?v=d0m0jIzJfiQ" rel="nofollow" target="_blank">Jonathan Blow on deep creativity</a>
-								<br/>
-								<a href="https://www.youtube.com/watch?v=t8QEOBgLBQU" rel="nofollow" target="_blank">Gabe Newell: Reflections of a video game maker</a>
-								<br/>
-								<a href="https://www.youtube.com/watch?v=EaN4wUii0T0" rel="nofollow" target="_blank">John Carmack and SMU LYLE School of Engineering</a>
-								<br/>
-								<a href="http://blog.selfshadow.com/2014/08/14/siggraph-2014-links/" rel="nofollow" target="_blank">SIGGRAPH</a>
-								<br/>
-								<a href="http://graphics.pixar.com/library/" rel="nofollow" target="_blank">Art and Technology at Pixar</a>
-								<br/>
-								<a href="http://fengzhudesign.com/tutorials.htm" rel="nofollow" target="_blank">Feng Zhu Design Cinema</a>
-								<br/>
-								
-								<a href="https://twitter.com/elonmusk" rel="nofollow" target="_blank">Elon Musk</a>, <a href="http://www.kurzweilai.net/" rel="nofollow" target="_blank">Ray Kurzweil</a>, <a href="http://rna.berkeley.edu/" rel="nofollow" target="_blank">Jennifer Doudna</a>
-								<br/>
-
-								
-								<a href="http://thebiggestproblemintheuniverse.com/" rel="nofollow" target="_blank">thebiggestproblemintheuniverse</a>
-								<br/>
-								
-								<!--a href="http://www.rifftrax.com" rel="nofollow" target="_blank">Rifftrax</a>
-								<br/-->
-								<a href="https://www.youtube.com/user/razethew0rld" rel="nofollow" target="_blank">The Tek</a>
-								<br/>
-								<a href="http://www.jonathancoulton.com/" rel="nofollow" target="_blank">Jonathancoulton.com</a>
-								<br/>
-								<a href="http://superbestfriendsplay.com/" rel="nofollow" target="_blank">Super Best Friend Zaibatsu</a>, <a href="http://teamfourstar.com/" rel="nofollow" target="_blank">Team FourStar</a>
-								<br/>
-								<a href="http://spoonyexperiment.com/" rel="nofollow" target="_blank">Spoony</a>, <a href="http://thatguywiththeglasses.com/" rel="nofollow" target="_blank">thatguywiththeglasses</a>, <a href="https://www.youtube.com/user/JonTronShow" rel="nofollow" target="_blank">JonTron</a>, <a href="http://cinemassacre.com/" rel="nofollow" target="_blank">AVGN</a> etc.
-								<br/>
-								<!--a href="http://www.youtube.com/watch?v=wJMTyK0VfdY" rel="nofollow" target="_blank">The Amazing Randi</a>
-								<br/-->
-								<!--a href="https://www.youtube.com/watch?v=DZLT4DxE1uA" rel="nofollow" target="_blank">Cosmos: A Spacetime Odyssey</a-->
-							</div>
-							<br/><br/>
-							<span class="DezenF"><span class="parStart">|</span>You can notice me further at: &nbsp; </span> 
-							<div class="centrify">
-							<a href="http://spectraljump.deviantart.com/" rel="nofollow" target="_blank" style="font-size: 16px;">spectraljump.deviantart</a>
+						
+						<div class="colunaBox projPadding" >
+							<div class="colunas leftColuna">
+							<span class="colunaLine">HLSL</span>
 							<br/>
+							<span class="colunaLine">Direct</span>
+							<br/>
+							<span class="colunaLine" style="-moz-transform:scale(1.38,1); -o-transform:scale(1.38,1); -ms-transform:scale(1.38,1); 	-webkit-transform:scale(1.38,1); transform:scale(1.38,1); margin-left: 23px;">Compute</span>
+							</div>
+							<div class="colunas rightColuna" >
+							<!--span class="colunaLine">Meta</span-->
+							
+							<span class="colunaLine" style="-moz-transform:scale(1.2,1); -o-transform:scale(1.2,1); -ms-transform:scale(1.2,1); 	-webkit-transform:scale(1.2,1); transform:scale(1.2,1); margin-right: 7px;">Distance</span>
+							<br/>
+							<span class="colunaLine" style="-moz-transform:scale(1.2,1); -o-transform:scale(1.2,1); -ms-transform:scale(1.2,1); 	-webkit-transform:scale(1.2,1); transform:scale(1.2,1); margin-right: 7px;">Field</span>
+							<br/>
+							<span class="colunaLine" style="-moz-transform:scale(0.85,1); -o-transform:scale(0.85,1); -ms-transform:scale(0.85,1); 	-webkit-transform:scale(0.85,1); transform:scale(0.85,1); margin-right: -8px;">Perturbation</span>
 							</div>
 						</div>
+						
+						
+						<div class="article highlight projPadding " style="width: 100%; margin-bottom: -4.5em;">  
+						</div>
+	
+				
+						
+						<div class="article highlight projPadding ">  
+							
+							
+
+						<p><span class="parStart">|</span>The key is the interesting emergent behaviour from when the two main modules interact (structuring and detailing), when both the l-system and the distance fields intersect with themselves in semi-controlled ways.
+						</div>
+						<br/><br/><br/>
+						<p class="galInfo highlight2 projPadding"><span class="parStart">|</span>Below you can see a simple example of the procedural "carving":</p>
+						<div class="imageRegion">
+								<!--img class="soloImg" src=""/-->
+								<a href="./images/metaGuideAndVoxels.png" rel="nofollow" target="_blank" class="acro"><acronym class="acro" title="open in new tab"><img class="soloImg" src="./images/metaGuideAndVoxels.png" style="width:100%;"/></acronym></a>
+						</div>
+						
+						<br/><div class="spacer"></div><br/>
+
+						<br/>
+						<p class="galInfo highlight2 projPadding"><span class="parStart">|</span> Results:</p>
+						<div class="imageRegion">
+								<!--img class="soloImg" src=""/-->
+								<a href="./images/results.jpg" rel="nofollow" target="_blank" class="acro"><acronym class="acro" title="open in new tab"><img class="soloImg" src="./images/results.jpg" style="width:100%;"/></acronym></a>
+						</div>
+						
+						<br/><div class="spacer"></div><br/>	
+						<br/><div class="spacer"></div><br/>
+						<!--p  class="galInfo highlight2 projPadding"><span class="parStart">|</span> aaaaaaaaaaaaaaaaaaaaaaaaaaa:</p-->
+						<div class="imageRegion">
+							<div class="imgContainer">
+							
+								<!--a href="./images/gridShot160.jpg" rel="nofollow" target="_blank" class="acro"><acronym class="acro" title="open in new tab"><img class="soloImg" src="./images/gridShot160.jpg"/></acronym></a-->
+								<!--a href="http://i.imgur.com/CIc0vEQ.jpg" rel="nofollow" target="_blank" class="acro"><acronym class="acro" title="open in new tab"><img class="soloImg" src="./images/gridShot160.jpg"/></acronym></a-->
+								<a href="https://8a0cc810b07c35c1ff17d2c503f3ad5c93cbf771.googledrive.com/host/0B50afmg1TY-eSHBtNmtYYVdxOG8/thumbArray.jpg" rel="nofollow" target="_blank" class="acro"><acronym class="acro" title="open in new tab"><img class="soloImg" src="https://8a0cc810b07c35c1ff17d2c503f3ad5c93cbf771.googledrive.com/host/0B50afmg1TY-eSHBtNmtYYVdxOG8/thumbArray.jpg"/></acronym></a>
+								<span class="shadTop sLeft "></span>
+								<span class="shadTop sRight "></span> 
+								<span class="shadBott sLeft shadLeft"></span>
+								<span class="shadBott sRight shadRight"></span> 
+							</div> 
+						</div>
+						
+						<br/><div class="spacer" style="margin-bottom: -16px;"></div><br/>
+						<div class="article highlight projPadding">  
+						
+						<p><span class="parStart">|</span>Paper presented at <a href="http://julian.togelius.com/Mark2015Procedural.pdf" rel="nofollow" target="_blank">Foundations of Digital Games 2015</a>.</p> 
+						<br/>
+						<p><span class="parStart">|</span>This was proof-of-concept student work in Unity Free, not a finished product.
+						<br/>
+						<br/>
+						But
+						<!--a href="./surveyBuild/alpha.html" rel="nofollow" target="_blank">[Here's a test webBuild]</a-->
+						<a href="https://8a0cc810b07c35c1ff17d2c503f3ad5c93cbf771.googledrive.com/host/0B50afmg1TY-eSHBtNmtYYVdxOG8/alpha.html" rel="nofollow" target="_blank">here's a test Web Build</a>.<br/>
+						<br/>And also, here's the entire source with the Unity project on Bitbucket: <a href="https://bitbucket.org/tdbe/pcgcave_sandbox_1" rel="nofollow" target="_blank">https://bitbucket.org/tdbe/pcgc...</a>
+						
+						<br/></p><br/><br/>
+						</div>
+						
+						
+						<p class="galInfo highlight2 projPadding"><span class="parStart">|</span> Here is a video of a test run:</p>
+						<div class="imageRegion">
+							<div class="imgContainer">
+								
+								<iframe width="880" height="495" src="//www.youtube.com/embed/8g7s-xTTYHQ" frameborder="0" allowfullscreen></iframe>
+								
+								<span class="shadTop sLeft " ></span>
+								<span class="shadTop sRight "></span> 
+								<span class="shadBott sLeft shadLeft"></span>
+								<span class="shadBott sRight shadRight"></span> 
+							</div> 
+						</div>
+						
+						<div class="article highlight projPadding lastParagraph" >  
+								<p></p> 
+
+						</div>
 					</div>
-				</div>
-			</div>
-			</div>
-
-			
-			<span class="dknCnt">
-					<span class="dkning"></span>
-			</span>
-			
-			<span class="decoBand">
-				<span class="decoBandBg">
-				
-				</span>
-				<span class="decoBandBgU"></span>
-
-			</span> 
-			
-			<!--span id="decoBar"></span--> 
-			<!--span id="decoBar2"></span--> 
-			<!--span id="decoBar3"-->
-			<!--span class="decoBorderBase decoBorder1"/-->
-
-			</span> 
-        </div>
-        
-		
-	</div>
-	
-	<div>
-		<noscript id="noContainer">
-			<div id="noScript" style="width:400px;height:200px;position:absolute;left:50%;top:300px;margin-left:-200px;margin-top:0px;">
-				<p>Your JavaScript is turned off. You'll need to turn it on to switch content in my portfolio. Please live dangerously for a bit and pause your noscript.</p>
-			</div>
-		</noscript>
-	</div>
- 
-</div>	
-	
-	<div id="footer">
-		<!--span class="decoBand decoBandBott">
-			<span class="decoBandBgBott"></span>
-		</span--> 
-		<span class="decoBand decoBandBott">
-			<span class="decoBandBg"></span>
-			<span class="decoBandBgU"></span>
-		</span> 
-		<!--span id="decoBarBottom"></span--> 
-
-		<span id="footer2">
-				
-				<br/>
-				<p style="text-align:center;"><!--span class="parStart" style="">|</span--> Designed by me. Because learning and ownership.
-				</p>
-				
-				<p style="margin-top: -1px; text-align: center;">It'd be so much better to write GLSL isntead of CSS...</p>
-				<br/>
-				<br/>
-				<br/>
-
-		</span>
-		<!--<span class="parStart">|</span> Note: my poor man's webhost may be slow at times; ..a temporary solution.-->
-		</span>
-	</div>
-	
-	<div id="Background" >
-		<!--div id="dynamicBg" >
-		</div-->
-		<div id="dynamicBgCnt" >
-			<div id="bgGradCont" >
-			
-				<div class="bgGrad_all bgGrad_00 bggra_x3   flipV "></div>
-	
-				<div class="bgGrad_all bgGrad_01   flipV shadSide2" style="width:5%;"></div>
-				
-				<div class="bgGrad_all bgGrad_02   flipV shadSide2" style="opacity: 0.85; transform:translate(0px, -100px);"></div>
-				<div class="bgGrad_all bgGrad_03   flipV shadSide2" style="opacity: 0.8;"></div>
-				<div class="bgGrad_all bgGrad_04   " style="width:5%;"></div>
-				<div class="bgGrad_all bgGrad_05   " ></div>
-				<div class="bgGrad_all bgGrad_06   " style="box-shadow: -20px -550px 20px white;"></div>
-
-				<div class="bgGrad_all bgGrad_06   " style=""></div>
-				<div class="bgGrad_all bgGrad_05mf   " ></div>
-				
-				<!--div class="bgGrad_all bgGrad_05 bgGrad_05ms   "></div-->
-				
-				<div class="bgGrad_all bgGrad_05   " style="  transform: translate(0px,0px) scale(1.3,1.038); "></div>
-
-				<div class="bgGrad_all bgGrad_03 " style="/*transform:  scale(1,-1) rotate(31deg) translate(190px,43px); opacity: 0.85;*/ "></div>
-				
-				
-				<div class="bgGrad_all bgGrad_02 shadSide1"></div>
-				<!--div class="bgGrad_all bggra_x3 hide"></div-->
-
-				<!--div class="bgGrad_all bgGrad_00   " style="transform: translate(-90px,0px) scale(4.8,1); opacity: 0.80; filter: alpha(opacity = 80);"></div-->
-
-			</div>
-			<div id="bgGradContMirror" >
-				<div class="bgGrad_all bgGrad_00 bggra_x3   flipV mvD1"></div>
-				<div class="bgGrad_all bgGrad_01   flipV shadSide2 mvD1"></div>
-				<div class="bgGrad_all bgGrad_02   flipV shadSide2 mvD1"></div>
-				
-				<div class="bgGrad_all bgGrad_03    shadSide2" style="transform: translate(0px, 140px) scale(1,1.2);"></div>
-				
-				<div class="bgGrad_all bgGrad_04   " style="transform: translate(0px, 140px) scale(1,1.2); "></div>
-				
-				<div class="bgGrad_all bgGrad_05   " style="transform: translate(65px, 140px) scale(1.8,1.2);"></div>
-				
-				<div class="bgGrad_all bgGrad_06    " style="transform: scale(1.6, 1) translate(0px, 200px); box-shadow: 0px -30px 10px rgba(255,255,255,.75); "></div>
-				
-				<div class="bgGrad_all bgGrad_06   " style="opacity: 0.85; transform:translate(0px, 200px);"></div>
-				
-				<div class="bgGrad_all bgGrad_05f   " style="opacity: 0.85; transform:translate(0, 200px);"></div>
-				
-				<div class="bgGrad_all bgGrad_04f   " style="opacity: 0.85; transform:translate(0px, 230px); width: 7%;">
 					
-				</div>
-			
-				<div class="bgGrad_all bgGrad_03 shadSide2" style="transform: scale(1,-1.1); ">
-				</div>
-				<div class="bgGrad_all bgGrad_02   flipV shadSide2"></div>
-				<div class="bgGrad_all bgGrad_01   flipV shadSide2"></div>
-				<div class="bgGrad_all bgGrad_00 bggra_x3   flipV"></div>
-
-			</div>
-			
-			<div id="bgGradCont3rd" >
-				<div class="bgGrad_all bggra_x6 hide"></div>
-				<div class="bgGrad_all bgGrad_06f " ></div>
-				<div class="bgGrad_all bggra_x3 hide"></div>
 				
-				<div class="bgGrad_all bgGrad_06" style="width:3%; transform: scale(1,1.55); opacity: 0.35; filter: alpha(opacity = 35);"></div>
-				
-				<div class="bgGrad_all bggra_x3c hide" ></div>
-				
-				<div class="bgGrad_all bgGrad_05   " style="opacity: 0.50; filter: alpha(opacity = 50); width:6%;"></div>
-				
-				<div class="bgGrad_all bgGrad_06   " style="opacity: 0.80; filter: alpha(opacity = 80); transform: scale(1, 1.1); width:3%;"></div>
-				<div class="bgGrad_all bgGrad_00" style="width:3%; transform: scale(1,2); opacity: 0.045; filter: alpha(opacity = 4);"></div>
-				<div class="bgGrad_all bgGrad_06   " style="opacity: 0.80; filter: alpha(opacity = 80); transform: scale(1.5, 1.1) translate(40px,0px); width:5%;"></div>
-				
-				<div class="bgGrad_all bgGrad_05   " style="transform: scale(1.3,1) translate(72px,-60px);"></div>
-				<div class="bgGrad_all bgGrad_04   " style="transform: scale(0.72,1) translate(141px, 100px);"></div>
-				
-				
-				<!--div class="bgGrad_all bggra_x4 hide"></div-->
-				
-				<div class="bgGrad_all hide   " ></div>
-				
-				
-				<div class="bgGrad_all bgGrad_00  " style="background: rgba(44,0,58,.7); transform: scale(1, 1.2) translate(0px, 38px);"></div>
-				
-				<div class="bgGrad_all bgGrad_07   " style="transform: scale(1, 1.2) translate(0px, 30px);"></div>
-				
-	
-				<div class="bgGrad_all bgGrad_00   " style="transform: scale(1, 1.2) translate(0px, 22px); background: rgba(44,0,58,.8);"></div>
-				
-				
-				
-				
-				<div class="bgGrad_all bgGrad_07   " style="transform:translate(0px,271px);"></div>
-				<div class="bgGrad_all bgGrad_00  " style="background: rgb(44,0,58); transform: translate(0px,262px);"></div>
-				
-				<div class="bgGrad_all bgGrad_07   " style="transform: translate(0px,253px);"></div>
-				
-				<!--div class="bgGrad_all bgGrad_00  " style="transform: scale(1, 1.2);"></div-->
 				
 				
 			</div>
-			
-			<div id="bgGradCont4th" >
-
-				<div class="bgGrad_all bggra_x4 hide"></div>
-				<div class="bgGrad_all bgGrad_04   offUp2"></div>
-				<div class="bgGrad_all bgGrad_05   offUp1"></div>
-				<div class="bgGrad_all bgGrad_06   offUp0">
-					
-				</div>
-				
-				<div class="bgGrad_all bgGrad_06   " style="margin-left: -170px; transform:scale(0.7,1); background:transparent;"></div>
-				<div class="bgGrad_all bggra_x6 hide"></div>
-
+			<div id="bottomBar">
+				<a class="backBtn" href="../../" style="height:32px;">
+					<div class="backBg" style="margin-top: 10px;"></div>
+					<span style="padding-top: 10px;">Back</span>
+				</a>
 			</div>
-		</div>
-	</div>
-
 </body>
 </html>
