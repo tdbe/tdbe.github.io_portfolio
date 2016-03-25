@@ -153,8 +153,9 @@ function resizeIframe2() {
 		//$icontObj.style.width = w.style.width + "px";
 		$icontObj.width($(window).width()+1 + "px");// + "px"; 
 		
-		$icontObj.css("margin-left", -$("#centerPanel").offset().left+ "px");
-
+		//$icontObj.css("margin-left", -$("#centerPanel").offset().left+ "px");
+		$icontObj.css("margin-left", -$("#centerPanel").offset().left-$(window).scrollLeft()+ "px");
+		
 		once = false;
 	}
 	
