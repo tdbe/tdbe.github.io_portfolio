@@ -135,32 +135,37 @@ var once = true;
 
 function resizeIframe2() {
 	var $icontObj = $("#icontent");
-	//icontObj.contentWindow.document.getElementById('projContainer').scrollHeight
+
 	var newHeight = $icontObj.contents().find('body').find("div").height() + extraHeight;
 	if(newHeight<900){//figure something proper out
 		newHeight = 900;
 	}
     $icontObj.height(newHeight + "px");// + 'px';
-		//$icontObj.style.height = $icontObj.contentWindow.window.size.h + 'px'; 
-		//var w = window.parent.document.getElementById("centerPanel");
 	
-	
-	
-	////$(cp).position().left
 	if(once == true){
-		//var cp = document.getElementById("centerPanel");
-		//var w = document.getElementById("zen");
-		//$icontObj.style.width = w.style.width + "px";
-		$icontObj.width($(window).width()+1 + "px");// + "px"; 
-		
-		//$icontObj.css("margin-left", -$("#centerPanel").offset().left+ "px");
-		$icontObj.css("margin-left", -$("#centerPanel").offset().left+$(window).scrollLeft()+ "px");
+	
+		resizeIframe3()
 		
 		once = false;
 	}
+}
+
+
+function resizeIframe3() {
+	var $icontObj = $("#icontent");
 	
-	////alert($icontObj.style.marginLeft);
-		////alert();
+	var newHeight = $icontObj.contents().find('body').find("div").height() + extraHeight;
+	if(newHeight<900){//figure something proper out
+		newHeight = 900;
+	}
+    $icontObj.height(newHeight + "px");// + 'px';
+
+	
+	$icontObj.width($(window).width()+1 + "px");// + "px"; 
+	
+	//$icontObj.css("margin-left", -$("#centerPanel").offset().left+ "px");
+	$icontObj.css("margin-left", -$("#centerPanel").offset().left+$(window).scrollLeft()+ "px");
+
 }
 
 var timeoot = 250;
@@ -172,7 +177,7 @@ window.onresize = debounce(function (e) {
 	var ifr = document.getElementById("icontent");
 
 	ifr.contentWindow.scaleGallery();
-	setTimeout(resizeIframe2, timeoot);  
+	setTimeout(resizeIframe3, timeoot);  
 	//resizeIframe(ifr);   
 	
 // do something here, but only once after mouse cursor stops 
