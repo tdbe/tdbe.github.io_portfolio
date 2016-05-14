@@ -122,7 +122,7 @@ var debounce = function (func, threshold, execAsap)
 	};
 }
 
-var extraHeight = 98;//1.005;
+var extraHeight = 100;//1.005;
 function resizeIframe(obj){
     //obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
 	obj.style.height = obj.contentWindow.window.size.h + 'px';
@@ -137,8 +137,8 @@ function resizeIframe2() {
 	var $icontObj = $("#icontent");
 	//icontObj.contentWindow.document.getElementById('projContainer').scrollHeight
 	var newHeight = $icontObj.contents().find('body').find("div").height() + extraHeight;
-	if(newHeight<1430){//figure something proper out
-		newHeight = 1430;
+	if(newHeight<900){//figure something proper out
+		newHeight = 900;
 	}
     $icontObj.height(newHeight + "px");// + 'px';
 		//$icontObj.style.height = $icontObj.contentWindow.window.size.h + 'px'; 
@@ -147,7 +147,7 @@ function resizeIframe2() {
 	
 	
 	////$(cp).position().left
-	//if(once == true){
+	if(once == true){
 		//var cp = document.getElementById("centerPanel");
 		//var w = document.getElementById("zen");
 		//$icontObj.style.width = w.style.width + "px";
@@ -156,8 +156,8 @@ function resizeIframe2() {
 		//$icontObj.css("margin-left", -$("#centerPanel").offset().left+ "px");
 		$icontObj.css("margin-left", -$("#centerPanel").offset().left+$(window).scrollLeft()+ "px");
 		
-	//	once = false;
-	//}
+		once = false;
+	}
 	
 	////alert($icontObj.style.marginLeft);
 		////alert();
