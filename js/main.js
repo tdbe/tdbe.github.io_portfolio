@@ -30,7 +30,7 @@ var myVar;
 function stopLoadInterval() {
     clearInterval(myVar);
 }
-
+/*
 var isNotAtBottom = true;
 $(window).scroll(function() {
    if(isNotAtBottom && $(window).scrollTop() + $(window).height() == $(document).height()) {
@@ -42,6 +42,10 @@ $(window).scroll(function() {
 	   isNotAtBottom = true;
    }
 });
+*/
+$(document).ready(function() {
+	myVar = setInterval(function(){resizeIframe2()}, 1250);
+});
 
 //myVar = setInterval(function(){resizeIframe2()}, 1250);
 function onDomContentLoad(){
@@ -51,7 +55,7 @@ function onDomContentLoad(){
 	ifr.contentWindow.scaleGallery();
 	setTimeout(resizeIframe2, timeoot);  
 
-	myVar = setInterval(function(){resizeIframe2()}, 1250);
+	//myVar = setInterval(function(){resizeIframe2()}, 1250);
 
 	//resizeIframe(ifr);
 	
@@ -166,7 +170,7 @@ function resizeIframe(obj){
 var once = true;
 
 function resizeIframe2() {
-	
+	console.log("tick");
 	var $icontObj = $("#icontent");
 	//icontObj.contentWindow.document.getElementById('projContainer').scrollHeight
 	var newHeight = $icontObj.contents().find('body').find("div").height() + extraHeight;
