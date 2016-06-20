@@ -59,9 +59,13 @@ function onMainLoaded(){
 	
 	
 	//$("#icontent").css("overflow", "visible");
-	
-	switch (project) {//wanted to do something else here..
-	case "gpgpu":
+	/*
+	switch (project) {//no longer needed since I decided to name the folders the same as the url parameter
+		
+		case "gpuMedley":
+			a="project/"+project+"/index.html"; 
+			break;
+		case "gpgpu":
 			a="project/"+project+"/index.html"; 
 			break;
 		case "pendulum":
@@ -82,10 +86,11 @@ function onMainLoaded(){
 		case "particles":
 			a="project/"+project+"/index.html"; 
 			break;
+			
 		case "idi":
-			return;/*
-			a="project/"+project+"/index.html"; 
-			window.location.href = "./"+a; */
+			return;
+			//a="project/"+project+"/index.html"; 
+			//window.location.href = "./"+a; 
 			break;
 		default:
 			a="default.html";  
@@ -93,6 +98,18 @@ function onMainLoaded(){
 			$(intro).css("visibility", "visible");
 			$(intro).css("position", "relative");
 			//alert('default');
+		
+	}
+	*/
+	if(project != null){
+		a="project/"+project+"/index.html"; 
+	}
+	else{
+		a="default.html";  
+		var intro = $('.introTextPreview');
+		$(intro).css("visibility", "visible");
+		$(intro).css("position", "relative");
+		//alert('default');
 	}
 
 	$("#projects").append(ifr+a+me); 

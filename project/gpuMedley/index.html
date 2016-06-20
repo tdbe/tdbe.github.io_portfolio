@@ -1,0 +1,235 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<meta name="author" content="Tudor" />
+		<meta name="keywords" content="Command Buffer, Custom Lighting, Decals, PCG, C#, CG, Shader, Unity 5.0, VFX"/>
+		<meta name="description" content="2015-2016 (Graphics) programming showcase."/> 
+		<meta name="robots" content="all"/>
+		<title>Graphics Programming Medley</title>
+		
+		<base target="_parent" /> 
+		
+		<link rel="stylesheet" href="../../css/style.css" type="text/css" title="all purpose css" charset="utf-8">
+		<link rel="stylesheet" href="./css/style.css" type="text/css" title="all purpose css" charset="utf-8">
+		<link rel="stylesheet" href="../../css/navigationStyle.css" type="text/css" title="navigation" charset="utf-8">	
+		<link rel="Shortcut Icon" type="image/x-icon" href="./favicon.ico"/>	
+		
+		<script src="https://code.jquery.com/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/easytabs.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/Window.Size.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/mainDef.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script type="text/javascript" charset="utf-8">
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		  ga('create', 'UA-55237302-1', 'auto');
+		  ga('send', 'pageview');
+		</script>
+	</head>
+
+
+	<body id="zen" class="projZen" >
+			<div id="projContainer">
+					
+					<div id="topBar">
+						<a class="backBtn" href="../../">
+							<div class="backBg"></div>
+							<span>Back</span>
+						</a>
+					</div>
+					<div class="toptitle" id="toptitle">
+						<img class="soloImg" src="./images/titleBg.jpg" style="width:100%;"/>
+						<div class="shadBott sLeft shadLeft"></div>
+						<div class="shadBott sRight shadRight"></div> 
+						
+						<div id="projHeaderRoot">
+							<div id="projHeaderPivot">
+								<div class="projHeader1">Graphics Programming Medley</div>
+								<div class="projHeader2">Work Reel, GPU Related</div>
+								<div class="projHeader3">2015 - 2016</div>
+						</div>
+						</div>
+					</div>
+					<div id="toptitleBg">
+						<span id="loading"><div  class="loader"></div><div  class="loader loader2"style=""></div><div  class="loader loader3"style=""></div></span>  
+					</div>
+					
+					<div id="mainColumnProj" style="">   
+					
+						<div class="article highlight projPadding">  
+																
+								<p><span id="symbolCnt"><span id="symbol"></span></span><span class="parStart">|</span>Showcasing work I've done on a few city planning design validation projects made with Unity 5.x in a platform I helped develop.
+						
+								</p>
+								
+								
+						</div>
+						
+					
+						<div class="colunaBox projPadding" >
+							<div class="colunas centreColuna">
+							<span class="colunaLine">Custom</span>
+							<br/>
+							<span class="colunaLine">Deferred</span>
+							<br/>
+							<span class="colunaLine" style="-moz-transform:scale(1.2,1); -o-transform:scale(1.2,1); -ms-transform:scale(1.2,1); 	-webkit-transform:scale(1.2,1); transform:scale(1.2,1);">Lighting</span>
+							<br/>
+							<span class="colunaLine" style="">System</span>
+							</div>
+						</div>
+						
+
+						
+						<br/><div class="spacer" style="margin-bottom: -16px;"></div><br/>
+						
+		
+						<div class="imageRegion">
+							<div class="imgContainer">
+								<!--img class="soloImg" src=""/-->
+								<video controls autoplay loop class="leftImg">
+									<source src="./images/gloss.webm" type="video/webm">
+									Your browser does not support the video tag.
+								</video>
+								<video controls autoplay loop class="rightImg">
+									<source src="./images/glossDebug.webm" type="video/webm">
+									Your browser does not support the video tag.
+								</video>
+	
+							</div> 
+						</div>
+						<div class="article highlight" style="margin-top: -1em;">  
+						<p>Smooth LODs: unity light -> distance-faded simplified Blinn-Phong light -> simple distance/angle decal light.
+						</br>
+						</br>
+						Supports ~1500 lights @90FPS on HTC Vive on a GTX 980 (incluing scene geometry) as opposed to <40 of Unity's deferred lights.</p>
+						</div>
+
+						
+						<div class="imageRegion">
+							<div class="imgContainer">
+								<!--img class="soloImg" src=""/-->
+								<video controls autoplay loop class="leftImg">
+									<source src="./images/textured.webm" type="video/webm">
+									Your browser does not support the video tag.
+								</video>
+								<video controls autoplay loop class="rightImg">
+									<source src="./images/glossHeatmap.webm" type="video/webm">
+									Your browser does not support the video tag.
+								</video>
+	
+							</div> 
+						</div>
+						<div class="article highlight" style="margin-top: -1em; width: 86%;">  
+						<p>Textured, map projection version.
+						<span style="float:right;">
+						Light Accumulation Heatmap version.</span></p>
+						</div>
+
+						
+						<div class="imageRegion">
+							<div class="imgContainer">
+								<!--img class="soloImg" src=""/-->
+								<video controls autoplay loop class="leftImg">
+									<source src="./images/iesCookie.webm" type="video/webm">
+									Your browser does not support the video tag.
+								</video>
+								<video controls autoplay loop class="rightImg">
+									<source src="./images/decal.webm" type="video/webm">
+									Your browser does not support the video tag.
+								</video>
+	
+							</div> 
+						</div>
+						<div class="article highlight" style="margin-top: -1em; width: 86%;">  
+						<p>Light IES photometric data to Unity cubemaps.
+						<span style="float:right;">
+						Custom deferred decals from map data.</span></p><br/>
+						</div>
+						
+						
+						<div class="colunaBox projPadding" >
+							<div class="colunas centreColuna">
+							<span class="colunaLine">Command Buffer +</span>
+							<br/>
+							<span class="colunaLine">Frame Debugger =</span>
+							<br/>
+							<span class="colunaLine" style=" margin-top:0.05em; font-family: Arial;">^_^</span>
+			
+							</div>
+			
+						</div>
+						
+						<br/><div class="spacer"></div><br/>	
+						
+	
+						<div class="imageRegion">
+							<div class="imgContainer">
+								<!--img class="soloImg" src=""/-->
+								<video controls autoplay loop class="leftImg">
+									<source src="./images/meshCutting.webm" type="video/webm">
+									Your browser does not support the video tag.
+								</video>
+								<video controls autoplay loop class="rightImg">
+									<source src="./images/holeDecal.webm" type="video/webm">
+									Your browser does not support the video tag.
+								</video>
+	
+							</div> 
+						</div>
+						<div class="article highlight" style="margin-top: -1em; width: 86%;">  
+						<p>Convex mesh splitting.
+						<span style="float:right;">
+						Various GBuffer utility-decal shenanigans.</span></p><br/>
+						</div>
+						
+						<br/><div class="spacer"></div><br/>	
+						<br/><div class="spacer"></div><br/>
+						
+						<div class="imageRegion">
+							<div class="imgContainer">
+								<!--img class="soloImg" src=""/-->
+								<video controls autoplay loop class="leftImg">
+									<source src="./images/terrainModding.webm" type="video/webm">
+									Your browser does not support the video tag.
+								</video>
+								<video controls autoplay loop class="rightImg">
+									<source src="./images/nightSky.webm" type="video/webm">
+									Your browser does not support the video tag.
+								</video>
+	
+							</div> 
+						</div>
+						<div class="article highlight" style="margin-top: -1em; width: 86%;">  
+						<p>Terrain heightmap displacement + stencil masking + planar dirt.
+						<span style="float:right;">
+						Sky shader: custom night sky + ground.</span></p><br/>
+						</div>
+						
+						
+						<div class="article highlight projPadding">  
+																
+								<p>
+								Other work would include user scene modification, cloud save system, asset streaming, IK character controller: 3rd person, first person, various free cams. Product not yet released though.
+								</p>
+								</br>
+								
+						</div>
+						
+						<br/><div class="spacer" style="margin-bottom: -16px;"></div><br/>
+						
+
+					</div>
+					
+				
+				
+				
+			</div>
+			<div id="bottomBar">
+				<a class="backBtn" href="../../" style="height: 32px; ">
+					<div class="backBg" style="margin-top: 10px;"></div>
+					<span style="padding-top: 10px;">Back</span>
+				</a>
+			</div>
+</body>
+</html>
