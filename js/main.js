@@ -158,7 +158,7 @@ var debounce = function (func, threshold, execAsap)
 	};
 }
 
-var extraHeight = 200;//1.005;
+var extraHeight = 100;//1.005;
 function resizeIframe(obj){
     //obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
 	obj.style.height = obj.contentWindow.window.size.h + 'px';
