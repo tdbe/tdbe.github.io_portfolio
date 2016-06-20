@@ -31,13 +31,28 @@ function stopLoadInterval() {
     clearInterval(myVar);
 }
 
+var isNotAtBottom = true;
+$(window).scroll(function() {
+   if(isNotAtBottom && $(window).scrollTop() + $(window).height() == $(document).height()) {
+      resizeIframe2();
+	  setTimeout(resizeIframe2, 2000);
+	  isNotAtBottom = false;
+   }
+   else{
+	   isNotAtBottom = true;
+   }
+});
+
+//myVar = setInterval(function(){resizeIframe2()}, 1250);
 function onDomContentLoad(){
 
 	//alert("onDomContentLoaded"); 
 	ifr = document.getElementById("icontent");
 	ifr.contentWindow.scaleGallery();
 	setTimeout(resizeIframe2, timeoot);  
+
 	myVar = setInterval(function(){resizeIframe2()}, 1250);
+
 	//resizeIframe(ifr);
 	
 	//swap();  //not here
@@ -151,6 +166,7 @@ function resizeIframe(obj){
 var once = true;
 
 function resizeIframe2() {
+	
 	var $icontObj = $("#icontent");
 	//icontObj.contentWindow.document.getElementById('projContainer').scrollHeight
 	var newHeight = $icontObj.contents().find('body').find("div").height() + extraHeight;
@@ -164,7 +180,7 @@ function resizeIframe2() {
 	
 	
 	////$(cp).position().left
-	if(once == true){
+	//if(once == true){
 		//var cp = document.getElementById("centerPanel");
 		//var w = document.getElementById("zen");
 		//$icontObj.style.width = w.style.width + "px";
@@ -173,8 +189,8 @@ function resizeIframe2() {
 		//$icontObj.css("margin-left", -$("#centerPanel").offset().left+ "px");
 		$icontObj.css("margin-left", -$("#centerPanel").offset().left+$(window).scrollLeft()+ "px");
 		
-		once = false;
-	}
+		//once = false;
+	//}
 	
 	////alert($icontObj.style.marginLeft);
 		////alert();
