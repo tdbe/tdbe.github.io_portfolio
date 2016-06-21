@@ -190,10 +190,12 @@ function resizeIframe2() {
 		//var cp = document.getElementById("centerPanel");
 		//var w = document.getElementById("zen");
 		//$icontObj.style.width = w.style.width + "px";
-		$icontObj.width($(window).width()+1 + "px");// + "px"; 
+	$icontObj.width($(window).width()+1 + "px");// + "px"; 
 		
 		//$icontObj.css("margin-left", -$("#centerPanel").offset().left+ "px");
-		$icontObj.css("margin-left", -$("#centerPanel").offset().left+$(window).scrollLeft()+ "px");
+	$icontObj.css("margin-left", -$("#centerPanel").offset().left
+	//+$(window).scrollLeft()
+	+ "px");
 		
 		//once = false;
 	//}
