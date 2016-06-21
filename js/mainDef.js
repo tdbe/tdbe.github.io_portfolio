@@ -114,10 +114,12 @@ bindReady();
     }
 }
 
+setInterval(scaleGallery(), 1000);
 function scaleGallery(){
 	//max-width: 880px; ---> 1em
 	//min-width: 604px; ---> 0.68636363
 	//TODO: fetch these values from CSS on Start()
+	
 	
 	//var w_size = window.size();
 	
@@ -129,12 +131,29 @@ function scaleGallery(){
 	//alert(w.offsetWidth);
 	if(d != null){
 		if(w.offsetWidth < maxWidth){//883//880
-			var val  = w.offsetWidth/maxWidth2; 
+			var val  = (w.offsetWidth/maxWidth2); 
 
-			d.style.fontSize = +val.toFixed(2)+ "em"; 
+			//d.style.fontSize = val.toFixed(2)+ "em"; 
+			var num =  val.toFixed(2);
+			var val = "scale("+ num+","+ (1-(1-num)/2)+")";
+			d.style.webkitTransform = val;
+			d.style.MozTransform = val;
+			d.style.msTransform = val;
+			d.style.OTransform = val;
+			d.style.transform = val;
+			//d.style.fontSize = "0.1em";
+
+			//console.log("tick "+val.toFixed(2));
 		}
 		else{
-			d.style.fontSize = "1em"; 
+			//d.style.fontSize = "1em"; 
+			var val = "scale("+ 1 +","+ 1 +")";
+			d.style.webkitTransform = val;
+			d.style.MozTransform = val;
+			d.style.msTransform = val;
+			d.style.OTransform = val;
+			d.style.transform = val;
+			//console.log("tick 1em");
 		}
 	}
 	//alert("Wa: "+w_size.width/800 );

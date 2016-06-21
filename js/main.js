@@ -43,10 +43,12 @@ $(window).scroll(function() {
    }
 });
 */
+setInterval(function(){resizeIframe2()}, 1250);//either vids or things blocked by adblockers make the page load forever. Can't know for sure (for now) when to stop resizing the page to fit the content.
+/*
 $(document).ready(function() {
 	myVar = setInterval(function(){resizeIframe2()}, 1250);
 });
-
+*/
 //myVar = setInterval(function(){resizeIframe2()}, 1250);
 function onDomContentLoad(){
 
@@ -170,7 +172,7 @@ function resizeIframe(obj){
 var once = true;
 
 function resizeIframe2() {
-	console.log("tick");
+	//console.log("tick");
 	var $icontObj = $("#icontent");
 	//icontObj.contentWindow.document.getElementById('projContainer').scrollHeight
 	var newHeight = $icontObj.contents().find('body').find("div").height() + extraHeight;
