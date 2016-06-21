@@ -193,9 +193,13 @@ function resizeIframe2() {
 	$icontObj.width($(window).width()+1 + "px");// + "px"; 
 		
 		//$icontObj.css("margin-left", -$("#centerPanel").offset().left+ "px");
-	$icontObj.css("margin-left", -$("#centerPanel").offset().left
-	//+$(window).scrollLeft()
+	$icontObj.css("margin-left", 
+	-$("#centerPanel").offset().left
+	+
+	$(window).scrollLeft()
 	+ "px");
+		
+	$("#ttlCnt").html("margin-left: -offset().left: "+$("#centerPanel").offset().left+" + scrollLeft(): "+$(window).scrollLeft()+" px");
 		
 		//once = false;
 	//}
