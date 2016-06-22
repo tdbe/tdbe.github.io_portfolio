@@ -174,11 +174,13 @@ var once = true;
 function resizeIframe2() {
 	//console.log("tick");
 	var $icontObj = $("#icontent");
+	var $icontObjParent = $("#centerPanel");
 	//icontObj.contentWindow.document.getElementById('projContainer').scrollHeight
 	var newHeight = $icontObj.contents().find('body').find("div").height() + extraHeight;
 	if(newHeight<900){//figure something proper out
 		newHeight = 900;
 	}
+    //$icontObj.height(newHeight + "px");// + 'px';
     $icontObj.height(newHeight + "px");// + 'px';
 		//$icontObj.style.height = $icontObj.contentWindow.window.size.h + 'px'; 
 		//var w = window.parent.document.getElementById("centerPanel");
@@ -186,7 +188,7 @@ function resizeIframe2() {
 
 	//$('#footer').style.css("top",hewHeight);
 	 /*$('#footer').css('top', newHeight -829);*/
-	 $('#footer').css('top', newHeight );
+	 $('#footer').css('top', $("#centerPanel").height() );
 	//$("#footer").offset({top: 100})
 	
 	////$(cp).position().left
@@ -194,8 +196,11 @@ function resizeIframe2() {
 		//var cp = document.getElementById("centerPanel");
 		//var w = document.getElementById("zen");
 		//$icontObj.style.width = w.style.width + "px";
-	$icontObj.width($(window).width() + "px");// + "px"; 
-		
+	//$icontObj.width($(window).width() + "px");// + "px"; 
+	$icontObjParent.width($(window).width() + "px");// + "px"; 
+	//$icontObj.css('left', -Math.round($("#ttlCnt").offset().left));
+	$icontObjParent.css('left', Math.round($("#ttlCnt").offset().left));
+	 
 		//$icontObj.css("margin-left", -$("#centerPanel").offset().left+ "px");
 	//var val = $("#centerPanel").offset().left;
 	//if(val > 420)
