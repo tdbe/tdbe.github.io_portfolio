@@ -61,7 +61,7 @@
 								<p><span id="symbolCnt"><span id="symbol"></span></span><span class="parStart">|</span>This 2-man project was about researching ways of simulating believable cave environments at interactive rates using voxels on the GPU.</p><br/>
 								
 								<p>It lasted 6 months and involved PCG research, application development, and user testing.</p> 
-								<p>Our generation pipeline processes GPU voxel volumes with a set of DirectX 11 Compute Shaders. The modelling solution can be thought of as guided intersecting procedural 3D brush strokes of morphing shapes (warped distance fields), on a solid voxel volume.
+								<p>Our generation pipeline processes GPU voxel grids with a set of DirectX 11 Compute Shaders. The modelling solution can be thought of as procedurally guided self-intersecting 3D brush strokes of warped distance fields, on a solid voxel volume.
 								<br/>
 								<br/>
 								</p>
@@ -71,7 +71,7 @@
 						</div>
 						
 						
-						<p id="galInfo" class="highlight2 projPadding"><span class="parStart">|</span>Cave results rendered with my HLSL procedural solid texturing shaders:</p>
+						<p id="galInfo" class="highlight2 projPadding"><span class="parStart">|</span>Cave results:</p>
 						<div class="imageRegion">
 							<div class="imgContainer">
 								<!--img class="soloImg" src=""/-->
@@ -95,11 +95,11 @@
 							<span class="colunaLine" style="-moz-transform:scale(1.4032,1); -o-transform:scale(1.4032,1); -ms-transform:scale(1.4032,1); 	-webkit-transform:scale(1.4032,1); transform:scale(1.4032,1); margin-left: 25px;">System</span>
 							</div>
 							<div class="colunas rightColuna">
-							<span class="colunaLine">Worldspace</span>
+							<span class="colunaLine">HLSL</span>
 							<br/>
-							<span class="colunaLine">Curl Noise</span>
+							<span class="colunaLine">Direct</span>
 							<br/>
-							<span class="colunaLine" style="-moz-transform:scale(0.768,1); -o-transform:scale(0.768,1); -ms-transform:scale(0.768,1); 	-webkit-transform:scale(0.768,1); transform:scale(0.768,1); margin-right: -20px;">Solid Texturing</span>
+							<span class="colunaLine" style=" margin-right: 10px;">Compute</span>
 							</div>
 						</div>
 						
@@ -111,38 +111,50 @@
 
 						</div>
 						
-						<div class="imageRegion">
-								<!--img class="soloImg" src=""/-->
-								<a href="./images/lSystem.png" rel="nofollow" target="_blank" class="acro"><acronym class="acro" title="open in new tab"><img class="soloImg" src="./images/lSystem.png" style="width:100%;"/></acronym></a>
-						</div>
+						
 						<div class="article highlight projPadding" style="margin-top: -2em;">  
-							<p>1 - A controllable <span class="bgHighlight">L-system</span> which generates a set of <span class="bgHighlight">structural points</span>. [partner's focus] 
+							<p><b>1 - </b>A controllable <span class="bgHighlight">L-system</span> which generates a set of <span class="bgHighlight">structural points</span>.  
 							<br/>
-							It emulates the expanded cracks and passages which form cave structures in nature. <br/><br/>
+							It emulates the expanded cracks and passages which form cave structures in nature. 
+							</p>
+							<P>
 							We evolved it and tried to apply a "human fitness function".</p>
 						</div>
+						
+						<div class="imageRegion" >
+								<!--img class="soloImg" src=""/-->
+								<a href="./images/lSystem.png" rel="nofollow" target="_blank" class="acro"><acronym class="acro" title="open in new tab"><img class="soloImg" src="./images/lSystem.png" style="width:100%; margin-top: -20px;"/></acronym></a>
+						</div>
+						
 						<div class="spacer" style="margin-top: -1em;"></div><br/>
+						
+						
+						<div class="article highlight projPadding" style="margin-top: -2em;">  
+							<p><b>2 - </b>A detailing component where we use an array of <span class="bgHighlight">distance fields</span> and warp their sampling with layers of <span class="bgHighlight">noise</span> (<span class="bgHighlight">Voronoi</span>, <span class="bgHighlight">Simplex</span>, <span class="bgHighlight">Curl</span>). 
+							</p>
+							<p>
+							The voxel volumes is carved along structural points by this perturbed <span class="bgHighlight">energy field</span>. </p>
+						</div>
 						
 						<div class="imageRegion">
 								<!--img class="soloImg" src=""/-->
-								<a href="./images/metaRange.png" rel="nofollow" target="_blank" class="acro"><acronym class="acro" title="open in new tab"><img class="soloImg" src="./images/metaRange.png" style="width:100%;"/></acronym></a>
+								<a href="./images/metaRange.png" rel="nofollow" target="_blank" class="acro"><acronym class="acro" title="open in new tab"><img class="soloImg" src="./images/metaRange.png" style="width:100%;margin-top: -20px;"/></acronym></a>
 						</div>
-						<div class="article highlight projPadding" style="margin-top: -2em;">  
-							<p>2 - A detailing component where I use an array of <span class="bgHighlight">metaball</span>s and <span class="bgHighlight">noise</span> (<span class="bgHighlight">Voronoi</span>, <span class="bgHighlight">Simplex</span>, <span class="bgHighlight">Curl</span>). [my focus]<br/><br/>
-							I carve the voxel volumes along specific structural points (applying additive-noise <span class="bgHighlight">energy field perturbation</span> to the values of the volume). </p>
-						</div>
+						
+						
 						<div class="spacer"  style="margin-top: -1em;"></div><br/>
 
 						
+						
+						<div class="article highlight projPadding" style="margin-top: -2em;">  
+							<p><b>3 - </b>A component for isosurface extraction and for shading. <br/><br/>
+								We calculated fast <span class="bgHighlight">smooth mesh normals</span>, made HLSL procedural <span class="bgHighlight">solid texturing</span> shaders with per-pixel (Forward) Lambert lighting, bump mapping, <span class="bgHighlight">Curled Simplex noise</span>, procedural details (e.g. mineral sparkles) etc.</p>
+						</div>
+						
 						<div class="imageRegion">
 								<!--img class="soloImg" src=""/-->
-								<a href="./images/small-texture2.jpg" rel="nofollow" target="_blank" class="acro"><acronym class="acro" title="open in new tab"><img class="soloImg" src="./images/small-texture2.jpg" style="width:100%;"/></acronym></a>
+								<a href="./images/small-texture2.jpg" rel="nofollow" target="_blank" class="acro"><acronym class="acro" title="open in new tab"><img class="soloImg" src="./images/small-texture2.jpg" style="width:100%;margin-top: -20px;"/></acronym></a>
 						</div>
-						<div class="article highlight projPadding" style="margin-top: -2em;">  
-							<p>3 - A component for isosurface extraction and for shading. [my focus]<br/><br/>
-								I calculated fast <span class="bgHighlight">smooth mesh normals</span>, made procedural materials with a pixel-lit forward Lambert shader with <span class="bgHighlight">triplanar projection</span>, bump mapping, <span class="bgHighlight">Curled Simplex noise</span>, <span class="bgHighlight">solid texturing</span>, procedural details etc.</p>
-						</div>
-					
 
 						
 
@@ -155,20 +167,20 @@
 						
 						<div class="colunaBox projPadding" >
 							<div class="colunas leftColuna">
-							<span class="colunaLine">HLSL</span>
+							<span class="colunaLine">Worldspace</span>
 							<br/>
-							<span class="colunaLine">Direct</span>
+							<span class="colunaLine">Curl Noise</span>
 							<br/>
-							<span class="colunaLine" style="-moz-transform:scale(1.38,1); -o-transform:scale(1.38,1); -ms-transform:scale(1.38,1); 	-webkit-transform:scale(1.38,1); transform:scale(1.38,1); margin-left: 23px;">Compute</span>
+							<span class="colunaLine" style="margin-left: 0px;">Solid Texturing</span>
 							</div>
 							<div class="colunas rightColuna" >
 							<!--span class="colunaLine">Meta</span-->
 							
-							<span class="colunaLine" style="-moz-transform:scale(1.2,1); -o-transform:scale(1.2,1); -ms-transform:scale(1.2,1); 	-webkit-transform:scale(1.2,1); transform:scale(1.2,1); margin-right: 7px;">Distance</span>
+							<span class="colunaLine" style="-moz-transform:scale(1.2,1); -o-transform:scale(1.2,1); -ms-transform:scale(1.2,1); 	-webkit-transform:scale(1.2,1); transform:scale(1.2,1); margin-right: 15px;">Distance</span>
 							<br/>
-							<span class="colunaLine" style="-moz-transform:scale(1.2,1); -o-transform:scale(1.2,1); -ms-transform:scale(1.2,1); 	-webkit-transform:scale(1.2,1); transform:scale(1.2,1); margin-right: 7px;">Field</span>
+							<span class="colunaLine" style="-moz-transform:scale(1.2,1); -o-transform:scale(1.2,1); -ms-transform:scale(1.2,1); 	-webkit-transform:scale(1.2,1); transform:scale(1.2,1); margin-right: 8px;">Field</span>
 							<br/>
-							<span class="colunaLine" style="-moz-transform:scale(0.85,1); -o-transform:scale(0.85,1); -ms-transform:scale(0.85,1); 	-webkit-transform:scale(0.85,1); transform:scale(0.85,1); margin-right: -8px;">Perturbation</span>
+							<span class="colunaLine" style=" margin-right: 9px;">Perturbation</span>
 							</div>
 						</div>
 						
@@ -182,7 +194,7 @@
 							
 							
 
-						<p><span class="parStart">|</span>The key is the interesting emergent behaviour from when the two main modules interact (structuring and detailing), when both the l-system and the distance fields intersect with themselves in semi-controlled ways.
+						<p><span class="parStart">|</span>The key is the interesting emergent behaviour from when the two main modules (structuring and detailing) interact: when both the l-system and the distance fields intersect with themselves. 
 						</div>
 						<br/><br/><br/>
 						<p class="galInfo highlight2 projPadding"><span class="parStart">|</span>Below you can see a simple example of the procedural "carving":</p>
@@ -200,10 +212,8 @@
 								<a href="./images/results.jpg" rel="nofollow" target="_blank" class="acro"><acronym class="acro" title="open in new tab"><img class="soloImg" src="./images/results.jpg" style="width:100%;"/></acronym></a>
 						</div>
 						
-						
-						<br/>
-						<br/>
-						
+						<br/><div class="spacer"></div><br/>	
+						<br/><div class="spacer"></div><br/>
 						<!--p  class="galInfo highlight2 projPadding"><span class="parStart">|</span> aaaaaaaaaaaaaaaaaaaaaaaaaaa:</p-->
 						<div class="imageRegion">
 							<div class="imgContainer">
@@ -218,20 +228,18 @@
 							</div> 
 						</div>
 						
-						<br/><div class="spacer" style="margin-bottom: -16px;"></div><br/>
+						<div class="spacer" style="margin-bottom: -16px;"></div>
 						<div class="article highlight projPadding">  
 						
 						<p><span class="parStart">|</span>Paper presented at <a href="http://julian.togelius.com/Mark2015Procedural.pdf" rel="nofollow" target="_blank">Foundations of Digital Games 2015</a>.</p> 
 						<br/>
-						<p><span class="parStart">|</span>This was proof-of-concept student work in Unity Free, not a finished product.
+						<p><span class="parStart">|</span>This was proof-of-concept student work in early versions of Unity 4.x (free). 
 						<br/>
-						<br/>
-						But
 						<!--a href="./surveyBuild/alpha.html" rel="nofollow" target="_blank">[Here's a test webBuild]</a-->
-						<a href="https://8a0cc810b07c35c1ff17d2c503f3ad5c93cbf771.googledrive.com/host/0B50afmg1TY-eSHBtNmtYYVdxOG8/alpha.html" rel="nofollow" target="_blank">here's a test Web Build</a>.<br/>
-						<br/>And also, here's the entire source with the Unity project on Bitbucket: <a href="https://bitbucket.org/tdbe/pcgcave_sandbox_1" rel="nofollow" target="_blank">https://bitbucket.org/tdbe/pcgc...</a>
+						<a href="https://8a0cc810b07c35c1ff17d2c503f3ad5c93cbf771.googledrive.com/host/0B50afmg1TY-eSHBtNmtYYVdxOG8/alpha.html" rel="nofollow" target="_blank">Here's a test Web Build</a>.<br/>
+						<br/>And also, here's the source with the Unity project on Bitbucket: <a href="https://bitbucket.org/tdbe/pcgcave_sandbox_1" rel="nofollow" target="_blank">https://bitbucket.org/tdbe/pcgc...</a>
 						
-						<br/></p><br/><br/>
+						<br/></p><br/>
 						</div>
 						
 						
