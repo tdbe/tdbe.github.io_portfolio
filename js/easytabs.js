@@ -7,21 +7,34 @@
 	$.fn.easyTabs=function(option)
 	{
 		var param=jQuery.extend({fadeSpeed:"fast",defaultContent:1,activeClass:'active'},option);
+		
+		
 		$(this).each(function()
 		{
 			var thisId="#"+this.id;
+			var defaultTab;
 			if(param.defaultContent==''){param.defaultContent=1;}
 			if(typeof param.defaultContent=="number"){
-				var defaultTab=$(thisId+" .tabs li:eq("+(param.defaultContent-1)+") a").attr('href').slice(1);
+				defaultTab=$(thisId+" .tabs li:eq("+(param.defaultContent-1)+") a").attr('href').slice(1);
+				
 			}
-			else{var defaultTab=param.defaultContent;}
+			else{defaultTab=param.defaultContent;}
 				
 			$(thisId+" .tabs li a").each(function()
 			{
 				var tabToHide=$(this).attr('href').slice(1);
-				$("#"+tabToHide).addClass('easytabs-tab-content');
-				//$("#"+tabToHide+"L").addClass('easytabs-tab-content');//0
+
+				if(tabToHide.length < 10)
+				{
+					$("#"+tabToHide).addClass('easytabs-tab-content');
+					//$("#"+tabToHide+"L").addClass('easytabs-tab-content');//0
+				}
+				
+				
 			});
+			
+			
+			
 			hideAll();
 			changeContent(defaultTab);
 			
@@ -34,10 +47,12 @@
 							
 			function changeContent(tabId)
 			{
-				if($("#" + tabId).length == 0) {
+				if($("#" + tabId).length == 0) 
+				{
 				  return;
 				}
 				
+		
 				hideAll();
 				
 				$(thisId+" .tabs li").removeClass(param.activeClass);
