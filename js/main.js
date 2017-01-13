@@ -114,7 +114,7 @@ function calcStripeCSS(parentID, sign)
 		  'position' : 'absolute',
 		  'left' : '50%',
 		  'top' : '-50%',
-		  'width' : '1.2%',
+		  'width' : '0.9%',
 		  'z-index' : 100+(si > 3 && si < 10 ? si-50 : si),
 		  '-webkit-transform' : transformVal,
 		  '-moz-transform'    : transformVal,
