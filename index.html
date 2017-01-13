@@ -67,11 +67,9 @@
 <!--body id="zen" onload="doCenter(window.center({width:1,height:1}))" style="
 background: #e5ede2; #d7dfd4;"    style="background: rgb(255,251,237);"-->
 <body id="zen" class="zen" style="pointer-events: none;" onload="onMainLoaded()"> 
-<h1 id="hh1">Tudor's portfolio website. Software, games, pcg, voxel, shaders, vfx, design, technical art.</h1>
+<h1 id="hh1">Tudor's portfolio website. Software, games, pcg, voxel, VR, virtual reality, shaders, vfx, design, technical art.</h1>
 
-<div id="container">	
-	
-
+<div id="container" >	
 	
 	<div id="hcloud" >	
 		Graphics programming and technical art work reel. deferred rendering, gbuffer, pbr, custom lighting, deferred deacals, vr, virtual reality, mesh processing.
@@ -102,7 +100,7 @@ background: #e5ede2; #d7dfd4;"    style="background: rgb(255,251,237);"-->
 		NGJ15: SoundBound. A 2-player rhythm arcade bullethell fighting game prototype made from scratch in 41h at Nordic Game Jam.
 	</div>
 
-	
+	<div id = "enableGPU"> </div>
 	
 				
     <div id="mainContent"  >
@@ -201,13 +199,14 @@ background: #e5ede2; #d7dfd4;"    style="background: rgb(255,251,237);"-->
 
 						<div class="article highlight" >
 							
-							<div id="Welcome">Welcome.</div>
+							<div id="Welcome">Welcome</div>
 							
 							<div id="openingWrapper">
-								<span id="openingL"><p><span id="symbolCntMain"><span id="symbolMain"></span></span><span class="parStart"></span>I'm Tudor and I like developing interactive escapism.
+								<span id="openingL"><p><span id="symbolCntMain"><span id="symbolMain"></span></span><span class="parStart"></span>I'm Tudor and I enjoy developing interactive escapism.
 								</p>
 								<p>
 								<span class="parStart"></span>With degrees in <span class="BoldFont bgHighlightImportant">Computer Science</span>, <span class="BoldFont bgHighlightImportant">Industrial Design</span>, and <span class="BoldFont bgHighlightImportant">Game Technology</span>, I am a very technical yet creative programmer.
+				
 								</p>
 								<p>
 								I work with and research <span class="bgHighlight">Gameplay</span>, <span class="bgHighlight">Procedural Content</span>, <span class="bgHighlight">Virtual Reality</span>, <span class="bgHighlight">Tools</span>, <span class="bgHighlight">VFX</span>, and am a <span class="bgHighlight">GPGPU</span> enthusiast. <span class="bgHighlight">Data Oriented Design</span> vs <span class="bgHighlight">OOP</span>.</p></span>
@@ -278,7 +277,7 @@ background: #e5ede2; #d7dfd4;"    style="background: rgb(255,251,237);"-->
 						<div class="cvText highlight3">
 							LFG
 							<br/>
-							<!--span class="parStart">|</span-->I search for passionate likeminded or complementary people, regardles of titles. Relocation is possible.
+							<!--span class="parStart">|</span--> I search for passionate likeminded or complementary people, rather than titles. Relocation is possible.
 
 							<br/>
 							<br/>
@@ -425,7 +424,7 @@ background: #e5ede2; #d7dfd4;"    style="background: rgb(255,251,237);"-->
 									Presented at <a href="http://www.foundationsofdigitalgames.org/" rel="nofollow" target="_blank">Foundations of Digital Games 2015</a>.
 									<br/>
 									<div class="listBlockEG" >
-										Voxels, Compute, L-system Structuring, Distance Fields, Additive Noise. 
+										Voxels, Compute, Grammar System Structure, Distance Fields, Additive Noise. 
 									</div>
 									<br/>
 									</div>
@@ -697,11 +696,11 @@ background: #e5ede2; #d7dfd4;"    style="background: rgb(255,251,237);"-->
 	<span id="brushesContainer">
 		<span id="brushes">
 
-				<span class="brush cornerTR shadSide3"></span>
+					<!--span class="brush cornerTR shadSide3"></span-->
 			<!--span class="brush brushTR"></span>
 			<span class="brush brushTL"></span>
 			<span class="brush brushBR"></span-->
-				<span class="brush cornerBL shadSide3"></span>
+					<!--span class="brush cornerBL shadSide3"></span-->
 				<!--span class="brush cornerBL2 "></span-->
 			<!--span class="brush brushBL"></span-->
 			
@@ -747,133 +746,77 @@ background: #e5ede2; #d7dfd4;"    style="background: rgb(255,251,237);"-->
 		<!--div id="dynamicBg" >
 		</div-->
 		<div id="dynamicBgCnt" >
-			<div id="bgGradCont" >
+			<div id="bgWhite"></div>
 			
-				<div class="bgGrad_all bgGrad_00 bggra_x3   flipV "></div>
-	
-				<div class="bgGrad_all bgGrad_01   flipV shadSide2" style="width:5%;"></div>
-				
-				<div class="bgGrad_all bgGrad_02   flipV shadSide2" style="opacity: 0.85; 
-				-ms-transform:translate(0px, -100px);
-				-moz-transform:translate(0px, -100px);
-				-o-transform:translate(0px, -100px);
-				-webkit-transform:translate(0px, -100px);
-				transform:translate(0px, -100px);
-				"></div>
-				<div class="bgGrad_all bgGrad_031   flipV shadSide2" style="opacity: 0.58;"></div>
-				<div class="bgGrad_all bgGrad_04  shadSide1 " style="width:5%;"></div>
-				<div class="bgGrad_all bgGrad_05   " ></div>
-				<div class="bgGrad_all bgGrad_06   " style="box-shadow: -20px -550px 20px white;"></div>
+			<div id="bgGradCont">
+			
+				<div class="bgGrad_all bgGrad_01 bggra_x3 shadSide1" style="width:5%;"></div>
+				<div class="bgGrad_all bgGrad_02 shadSide2" style="
+					"></div>
+				<div class="bgGrad_all bgGrad_03 shadSide2" style=""></div>
+				<div class="bgGrad_all bgGrad_032   " style="width:5%;"></div>
+				<div class="bgGrad_all bgGrad_05  " ></div>
 
-				<div class="bgGrad_all bgGrad_06   " style=""></div>
-				<div class="bgGrad_all bgGrad_05mf   " ></div>
+				<div class="bgGrad_all bgGrad_06  " style=""></div>
+				<div class="bgGrad_all bgGrad_06  " style=""></div>
+				<div class="bgGrad_all bgGrad_05  " ></div>
+				<div class="bgGrad_all bgGrad_05  " style="
+					width: 10%;
+					"></div>
+				<div class="bgGrad_all bgGrad_04 shadSide100 " ></div>
+				<div class="bgGrad_all bgGrad_032 shadSide1 " ></div>
+				<div class="bgGrad_all bgGrad_02 shadSide4 " style="width:3%;"></div>
+				<div class="bgGrad_all bgGrad_01 shadSide4 " style="width:3%;"></div>
+				<div class="bgGrad_all bgGrad_02 shadSide4 " style="width:3%;"></div>
 				
-				<!--div class="bgGrad_all bgGrad_05 bgGrad_05ms   "></div-->
-				
-				<div class="bgGrad_all bgGrad_05   " style="
-				-ms-transform: translate(0px,0px) scale(1.3,1.038); 
-				-moz-transform: translate(0px,0px) scale(1.3,1.038); 
-				-o-transform: translate(0px,0px) scale(1.3,1.038); 
-				-webkit-transform: translate(0px,0px) scale(1.3,1.038); 
-				transform: translate(0px,0px) scale(1.3,1.038); 
-				width: 10%;
-				"></div>
 
-				<div class="bgGrad_all bgGrad_03 shadSide1" ></div>
-				
-				
-				<div class="bgGrad_all bgGrad_02 shadSide4" style="width:3%;"></div>
-				<!--div class="bgGrad_all bggra_x3 hide"></div-->
+				<!--div class="bgGrad_all bgGrad_00 bggra_x3 "style=""></div-->
 
-				<!--div class="bgGrad_all bgGrad_00   " style="transform: translate(-90px,0px) scale(4.8,1); opacity: 0.80; filter: alpha(opacity = 80);"></div-->
 
 			</div>
 			<div id="bgGradContMirror" >
-				<div class="bgGrad_all bgGrad_00 bggra_x3   flipV mvD1"></div>
-				<div class="bgGrad_all bgGrad_02   flipV shadSide2 mvD1"></div>
-				<div class="bgGrad_all bgGrad_03   flipV shadSide2 mvD1" style="
-					top: -160px;
-				"></div>
+				<div class="bgGrad_all bgGrad_01 bggra_x3 shadSide1"></div>
+				<div class="bgGrad_all bgGrad_02  shadSide2 "></div>
+				<div class="bgGrad_all bgGrad_03  shadSide2 " style=""></div>
 				
-				<div class="bgGrad_all bgGrad_05p    shadSide2" style="
+				<div class="bgGrad_all bgGrad_032 " style="
 				width: 4%;
-				-ms-transform: translate(0px, 350px) scale(1,1.2);
-				-moz-transform: translate(0px, 350px) scale(1,1.2);
-				-o-transform: translate(0px, 350px) scale(1,1.2);
-				-webkit-transform: translate(0px, 350px) scale(1,1.2);
-				/*transform: translate(0px, 350px) scale(1,1.2);*/
-				transform: translate(0px, -350px) scale(1,-1.2);
+				
 				"></div>
 				
-				<div class="bgGrad_all bgGrad_04L " style="
-				-ms-transform: translate(0px, 140px) scale(1,1.2); 
-				-moz-transform: translate(0px, 140px) scale(1,1.2); 
-				-o-transform: translate(0px, 140px) scale(1,1.2); 
-				-webkit-transform: translate(0px, 140px) scale(1,1.2); 
-				transform: translate(0px, 140px) scale(1,1.2); 
+				<div class="bgGrad_all bgGrad_04 " style="
+				
 				"></div>
 				
 				<div class="bgGrad_all bgGrad_05   " style="
-				-ms-transform: translate(100px, 140px) scale(2.2,1.2);
-				-moz-transform: translate(100px, 140px) scale(2.2,1.2);
-				-o-transform: translate(100px, 140px) scale(2.2,1.2);
-				-webkit-transform: translate(100px, 140px) scale(2.2,1.2);
-				transform: translate(100px, 140px) scale(2.2,1.2);
-				width: 12%;
+				
+				width: 9.5%;
 				"></div>
 				
 				<div class="bgGrad_all bgGrad_06    " style="
-				-ms-transform: scale(1.6, 1) translate(0px, 200px); 
-				-moz-transform: scale(1.6, 1) translate(0px, 200px); 
-				-o-transform: scale(1.6, 1) translate(0px, 200px); 
-				-webkit-transform: scale(1.6, 1) translate(0px, 200px); 
-				transform: scale(1.6, 1) translate(0px, 200px); 
 				
-				-ms-box-shadow: 0px -30px 10px rgba(255,255,255,.75); 
-				-moz-box-shadow: 0px -30px 10px rgba(255,255,255,.75); 
-				-o-box-shadow: 0px -30px 10px rgba(255,255,255,.75); 
-				-webkit-box-shadow: 0px -30px 10px rgba(255,255,255,.75); 
-				box-shadow: 0px -30px 10px rgba(255,255,255,.75);
 				width: 8.5%;
 				"></div>
 				
-				<div class="bgGrad_all bgGrad_06   " style="opacity: 0.85; 
-				-ms-transform:translate(0px, 200px) scale(1,1.2);
-				-moz-transform:translate(0px, 200px) scale(1,1.2);
-				-o-transform:translate(0px, 200px) scale(1,1.2);
-				-webkit-transform:translate(0px, 200px) scale(1,1.2);
-				transform:translate(0px, 200px) scale(1,1.2);
+				<div class="bgGrad_all bgGrad_06   " style="
 				"></div>
 				
-				<div class="bgGrad_all bgGrad_05f   " style="opacity: 0.85; 
-				-ms-transform:translate(0, 200px) scale(1,1.2);
-				-moz-transform:translate(0, 200px) scale(1,1.2);
-				-o-transform:translate(0, 200px) scale(1,1.2);
-				-webkit-transform:translate(0, 200px) scale(1,1.2);
-				transform:translate(0, 200px) scale(1,1.2);
+				<div class="bgGrad_all bgGrad_05   " style="
 				"></div>
 				
-				<div class="bgGrad_all bgGrad_04f   " style="opacity: 0.85; 
-				-ms-transform:translate(0px, 230px) scale(1,1.2); 
-				-moz-transform:translate(0px, 230px) scale(1,1.2); 
-				-o-transform:translate(0px, 230px) scale(1,1.2); 
-				-webkit-transform:translate(0px, 230px) scale(1,1.2); 
-				transform:translate(0px, 230px) scale(1,1.2); 
+				<div class="bgGrad_all bgGrad_04  shadSide100 " style="
 				width: 7%;">
 					
 				</div>
 			
-				<div class="bgGrad_all bgGrad_032 shadSide2" style="
-				-ms-transform: scale(1,-1.1); 
-				-moz-transform: scale(1,-1.1); 
-				-o-transform: scale(1,-1.1); 
-				-webkit-transform: scale(1,-1.1); 
-				transform: scale(1,-1.1); 
-				">
+				<div class="bgGrad_all bgGrad_032 shadSide1" style="">
 				</div>
-				<div class="bgGrad_all bgGrad_02   flipV shadSide2"></div>
-				<div class="bgGrad_all bgGrad_01   flipV shadSide2"></div>
-				<div class="bgGrad_all bgGrad_00 bggra_x3   flipV"></div>
+				<div class="bgGrad_all bgGrad_02    shadSide4" style=""></div>
+				<div class="bgGrad_all bgGrad_01    shadSide4" style=""></div>
+				<div class="bgGrad_all bgGrad_02    shadSide4" style=""></div>
+				
+
+				<!--div class="bgGrad_all bgGrad_00 bggra_x3 "></div-->
 
 			</div>
 			
@@ -931,23 +874,11 @@ background: #e5ede2; #d7dfd4;"    style="background: rgb(255,251,237);"-->
 				transform: scale(0.72,1) translate(141px, 60px);
 				"></div>
 				
-				
-				<!--div class="bgGrad_all bggra_x4 hide"></div-->
-				
-				
-				<!--
-				<div class="bgGrad_all hide   " style="width: 16%;"></div>
-				
-				
-				-->
-				
+
 				
 				<div class="bgGrad_all hide   " style="width: 3.75%;"></div>
 				
-				
-				
-				<!--div class="bgGrad_all bgGrad_00  " style="transform: scale(1, 1.2);"></div-->
-				
+			
 				
 			</div>
 			
@@ -972,7 +903,8 @@ background: #e5ede2; #d7dfd4;"    style="background: rgb(255,251,237);"-->
 			</div>
 		</div>
 	
-		<div id="fadeToFog"></div>
+		
+		<!--div id="fadeToFog"></div-->
 	</div>
 	
 	

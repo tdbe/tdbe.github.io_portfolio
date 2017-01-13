@@ -1,5 +1,138 @@
 //window.size();
 
+function backgroundSetup()
+{
+
+	
+	calcStripeCSS("bgGradCont", -1);
+	calcStripeCSS("bgGradContMirror", -1);
+	
+	var transformVal = "scale(-1,1)";
+	$("#bgGradCont").css({
+		'z-index' : '999',
+		'-webkit-transform' : transformVal,
+		'-moz-transform'    : transformVal,
+		'-ms-transform'     : transformVal,
+		'-o-transform'      : transformVal,
+		'transform'         : transformVal
+	});
+}
+
+function calcStripeCSS(parentID, sign)
+{
+	
+	var div = $('#'+parentID);
+	var count = div.children().length;
+	var i = count+1 -1;
+	
+	div.children().each(function () 
+	{
+		var tra1;
+		var tra2;
+		var tra3;
+		var rot1;
+		var rot2;
+
+		i--;
+		if( i < 1 )
+			i -=1;
+		
+		/*
+		tra1 = {x:-400*sign + i*30*sign,
+					y:800};
+		rot1 = (i+1)*8*sign;
+		tra2 = {x:i*-20*sign,
+					y:30+i*70};
+		rot2 = -43*(1+1/i*0.55)*sign;
+		tra3 = {x:100,
+					y:0};
+		*/	
+
+		/*
+		//classic wide corners
+		tra1 = {x:-600*sign + i*30*sign,
+					y:500};
+		rot1 = (i+1)*8*sign;
+		tra2 = {x:i*10*sign,
+					y:30+i*50};
+		rot2 = -43*(1+1/i*0.55)*sign;
+		tra3 = {x:190,
+					y:-100};
+		*/
+		
+		var bprT = {x:0, y:0, z:1, w:0, u:0};
+		if(i<1){
+			//bprT.x = 50*Math.abs(i);
+			//bprT.y = 50*Math.abs(i);
+			
+		}
+		else if(i<=3){
+			bprT.x = 12;//50*Math.abs(i);
+			//bprT.y = 50;//*Math.abs(i);
+			bprT.w = 80;
+			bprT.z = 1.2;
+		}
+		else if(i>9){
+			bprT.z = 1.1 - 0.005*(i-9);
+			bprT.x = 0;
+			bprT.y = -50 - 5*(i-9);
+			bprT.u = -150;
+		}
+
+		
+		if(i==1){
+			bprT.z = 1.45;
+		}
+		else
+		if(i==-1){
+			bprT.x = 75;
+			bprT.y = 0;
+			bprT.z = 0.25;
+			bprT.w = 80;
+		}
+		
+		var si = i;
+		i = Math.abs(i);
+		
+		tra1 = {x:-600*sign + i*30*sign + bprT.x + bprT.x, y:500 + bprT.y + bprT.w};
+		rot1 = (i+1)*8*sign*bprT.z;
+		tra2 = {x:i*10*sign,
+					y:30+i*60};//60
+		rot2 = -43*(1+1/i*0.5085)*sign;
+		tra3 = {x:90,
+				y:-100+bprT.u};
+		
+		var transformVal = 
+			'translate('+tra1.x+'px,'+tra1.y+'px)' + 
+			'rotate(' + rot1 + 'deg) '+
+			'translate('+tra2.x+'px,'+tra2.y+'px) ' +
+			'rotate('+rot2+'deg) ' +
+			'translate('+tra3.x+'px,'+tra3.y+'px) '
+			;
+		
+		$(this).css({
+		  'position' : 'absolute',
+		  'left' : '50%',
+		  'top' : '-50%',
+		  'width' : '1.2%',
+		  'z-index' : 100+(si > 3 && si < 10 ? si-50 : si),
+		  '-webkit-transform' : transformVal,
+		  '-moz-transform'    : transformVal,
+		  '-ms-transform'     : transformVal,
+		  '-o-transform'      : transformVal,
+		  'transform'         : transformVal
+		 
+		});
+	
+	});
+	
+	/*
+	var list = div;
+	var listItems = list.children();
+	list.append(listItems.get().reverse());
+	*/
+}
+
 function getUrlParameter(sParam)
 {
     var sPageURL = window.location.search.substring(1);
@@ -43,7 +176,7 @@ $(window).scroll(function() {
    }
 });
 */
-setInterval(function(){resizeIframe2()}, 1250);//either vids or things blocked by adblockers make the page load forever. Can't know for sure (for now) when to stop resizing the page to fit the content.
+
 /*
 $(document).ready(function() {
 	myVar = setInterval(function(){resizeIframe2()}, 1250);
@@ -66,7 +199,8 @@ function onDomContentLoad(){
 
 
 //window.onload = 
-function onMainLoaded(){ 
+function onMainLoaded()
+{ 
 	
 
 	//var ifr = document.getElementById("icontent");
@@ -135,7 +269,11 @@ function onMainLoaded(){
 
 	$("#projects").append(ifr+a+me); 
 	swap();
-	resizeIframe2();
+	//resizeIframe2();
+	
+	setInterval(function(){resizeIframe2()}, 1250);//either vids or things blocked by adblockers make the page load forever. Can't know for sure (for now) when to stop resizing the page to fit the content.
+	
+	backgroundSetup();
 };
 
 
