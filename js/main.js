@@ -60,7 +60,7 @@ function calcStripeCSS(parentID, sign)
 					y:-100};
 		*/
 		
-		var bprT = {x:0, y:0, z:1, w:0, u:0};
+		var bprT = {x:0, y:0, z:1, w:0, u:0, s:0};
 		if(i<1){
 			//bprT.x = 50*Math.abs(i);
 			//bprT.y = 50*Math.abs(i);
@@ -81,14 +81,19 @@ function calcStripeCSS(parentID, sign)
 
 		
 		if(i==1){
+			bprT.x = 35;
 			bprT.z = 1.45;
 		}
 		else
 		if(i==-1){
-			bprT.x = 75;
+			bprT.x = 95;
 			bprT.y = 0;
 			bprT.z = 0.25;
 			bprT.w = 80;
+		}
+		else if(i==3){
+			bprT.x = 65;
+			bprT.s = 1;
 		}
 		
 		var si = i;
@@ -98,23 +103,32 @@ function calcStripeCSS(parentID, sign)
 		rot1 = (i+1)*8*sign*bprT.z;
 		tra2 = {x:i*10*sign,
 					y:30+i*60};//60
-		rot2 = -43*(1+1/i*0.5085)*sign;
+		rot2 = -43*(1+1/i*0.75085)*sign;
 		tra3 = {x:90,
 				y:-100+bprT.u};
 		
 		var transformVal = 
+			
 			'translate('+tra1.x+'px,'+tra1.y+'px)' + 
 			'rotate(' + rot1 + 'deg) '+
 			'translate('+tra2.x+'px,'+tra2.y+'px) ' +
 			'rotate('+rot2+'deg) ' +
 			'translate('+tra3.x+'px,'+tra3.y+'px) '
+			+' scale('+(1+bprT.s)+',1.3) ' 
 			;
 		
 		$(this).css({
 		  'position' : 'absolute',
 		  'left' : '50%',
 		  'top' : '-50%',
-		  'width' : '0.9%',
+
+		  //'width' : Math.random()*3+0.9+'%',
+		  'width' : '8%',
+		  //'width' : '5%',
+		  //'width' : '2%',
+		  //'width' : '0.9%',
+		  //'width' : '1.9%',
+		  //'width' : 16-i+'%',
 		  'z-index' : 100+(si > 3 && si < 10 ? si-50 : si),
 		  '-webkit-transform' : transformVal,
 		  '-moz-transform'    : transformVal,
