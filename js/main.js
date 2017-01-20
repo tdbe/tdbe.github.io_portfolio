@@ -92,8 +92,10 @@ function calcStripeCSS(parentID, sign)
 			bprT.w = 80;
 		}
 		else if(i==3){
-			bprT.x = 62;
+			bprT.x = 52;
 			bprT.s = 1;
+			bprT.z = 1.2;
+			
 		}
 		
 		var si = i;
