@@ -71,6 +71,7 @@ function calcStripeCSS(parentID, sign)
 			//bprT.y = 50;//*Math.abs(i);
 			bprT.w = 80;
 			bprT.z = 1.2;
+			
 		}
 		else if(i>9){
 			bprT.z = 1.1 - 0.005*(i-9);
@@ -94,7 +95,12 @@ function calcStripeCSS(parentID, sign)
 		else if(i==3){
 			bprT.x = 52;
 			bprT.s = 1;
-			bprT.z = 1.2;
+
+		}
+		
+		if(i<=1){
+			
+			bprT.z += 0.3;
 			
 		}
 		
