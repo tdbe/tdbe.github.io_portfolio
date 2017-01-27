@@ -101,7 +101,7 @@ function calcStripeCSS(parentID, sign)
 		if(i<=1){
 			
 			bprT.z += 0.3;
-			
+			bprT.y -=20;
 		}
 		
 		var si = i;
