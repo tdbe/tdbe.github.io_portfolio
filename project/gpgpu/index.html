@@ -133,7 +133,7 @@
 						<div class="article highlight projPadding" style="margin-top: -2em;">  
 							<p><b>1 - </b>A controllable <span class="bgHighlight">L-system</span> which generates a set of <span class="bgHighlight">structural points</span>.  
 							<br/>
-							It emulates the expanded cracks and passages which form cave structures in nature. 
+							It emulates the expanded cracks, slopes, and passages which form cave structures in nature. 
 							</p>
 							<P>
 							We evolved it and tried to apply a "human fitness function".</p>
@@ -151,7 +151,12 @@
 							<p><b>2 - </b>A detailing component where we use an array of <span class="bgHighlight">distance fields</span> and warp their sampling with layers of <span class="bgHighlight">noise</span> (<span class="bgHighlight">Voronoi</span>, <span class="bgHighlight">Simplex</span>, <span class="bgHighlight">Curl</span>). 
 							</p>
 							<p>
-							The voxel volumes is carved along structural points by this perturbed <span class="bgHighlight">energy field</span>. </p>
+							The voxel volume is carved along select structural points by this perturbed distance field. 
+							<br/>
+							<span class="bgHighlight">Cellular Automata</span> stalactites and other voxel filtering and cavern edits are also made at this stage.</p>
+							
+							<br/><br/>
+							<p class="galInfo highlight2 projPadding"><span class="parStart">|</span>A string of cave chambers seen from the outside (backfaces):</p>
 						</div>
 						
 						<div class="imageRegion">
@@ -165,7 +170,7 @@
 						
 						
 						<div class="article highlight projPadding" style="margin-top: -2em;">  
-							<p><b>3 - </b>A component for isosurface extraction and for shading. <br/><br/>
+							<p><b>3 - </b>A component for isosurface extraction (Marching Cubes) and for shading. <br/><br/>
 								We calculated fast <span class="bgHighlight">smooth mesh normals</span>, made HLSL procedural <span class="bgHighlight">solid texturing</span> shaders with per-pixel (Forward) Lambert lighting, bump mapping, <span class="bgHighlight">Curled Simplex noise</span>, procedural details (e.g. mineral glitter) etc.</p>
 						</div>
 						
@@ -205,8 +210,10 @@
 						
 						<div class="article highlight projPadding " style="width: 100%; margin-bottom: -4.5em;">  
 						</div>
-	
-				
+
+
+
+
 						
 						<div class="article highlight projPadding ">  
 							
@@ -214,7 +221,7 @@
 
 						<p><span class="parStart">|</span>The key is the interesting emergent behaviour from when the two main modules (structuring and detailing) interact: when both the l-system and the distance fields intersect with themselves. 
 						</div>
-						<br/><br/><br/>
+						<br/><br/>
 						<p class="galInfo highlight2 projPadding"><span class="parStart">|</span>Below you can see a simple example of the procedural "carving":</p>
 						<div class="imageRegion">
 								<!--img class="soloImg" src=""/-->
@@ -251,10 +258,10 @@
 						
 						<p><span class="parStart">|</span><a href="http://julian.togelius.com/Mark2015Procedural.pdf" rel="nofollow" target="_blank">Paper presented at Foundations of Digital Games 2015</a>.</p> 
 						<br/>
-						<p><span class="parStart">|</span>This was proof-of-concept student work in early versions of Unity 4.x (free). 
+						<p><span class="parStart">|</span>Here is a proof-of-concept implemented in early free versions of Unity 4.x: 
 						
 						<!--a href="./surveyBuild/alpha.html" rel="nofollow" target="_blank">[Here's a test webBuild]</a-->
-						<a href="./surveyBuild/alpha.html" rel="nofollow" target="_blank">Here's a test Web Build</a>.<br/>
+						<a href="./surveyBuild/alpha.html" rel="nofollow" target="_blank">Test Web Build</a>.<br/>
 						<br/>
 						Read more about the techniques in the <a href="http://pcgbook.com/" rel="nofollow" target="_blank">PCGBook</a> by Julian Togelius who co-supervised the project.
 						<!--br/>Here's the source with the Unity project on Bitbucket: <a href="https://bitbucket.org/tdbe/pcgcave_sandbox_1" rel="nofollow" target="_blank">https://bitbucket.org/tdbe/pcgc...</a-->
