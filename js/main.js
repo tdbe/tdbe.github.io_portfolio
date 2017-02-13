@@ -61,12 +61,14 @@ function calcStripeCSS(parentID, sign)
 		*/
 		
 		var bprT = {x:0, y:0, z:1, w:0, u:0, s:0};
+				
+
 		if(i<1){
 			//bprT.x = 50*Math.abs(i);
 			//bprT.y = 50*Math.abs(i);
 			
 		}
-		else if(i<=3){
+		if(i<=3){
 			bprT.x = 12;//50*Math.abs(i);
 			//bprT.y = 50;//*Math.abs(i);
 			bprT.w = 80;
@@ -104,10 +106,26 @@ function calcStripeCSS(parentID, sign)
 			bprT.y -=20;
 		}
 		
+		if(i==13){//if(i<1){
+			//bprT.x = 50*Math.abs(i);
+			//bprT.y = 50*Math.abs(i);
+			bprT.x += 30;
+			bprT.y += -40;
+			//bprT.z = 1.05;
+		}
+		
+		if(i>=9 && i<=12){
+			var a = 1+(5-(13-i))*0.5;
+			bprT.x += 10*a;
+			bprT.y += -10*a;
+			//bprT.z += 1.05;
+		}
+		
+		
 		var si = i;
 		i = Math.abs(i);
 		
-		tra1 = {x:-600*sign + i*30*sign + bprT.x + bprT.x, y:500 + bprT.y + bprT.w};
+		tra1 = {x:-670*sign + i*30*sign + bprT.x + bprT.x, y:500 + bprT.y + bprT.w};
 		rot1 = (i+1)*8*sign*bprT.z;
 		tra2 = {x:i*10*sign,
 					y:30+i*60};//60
