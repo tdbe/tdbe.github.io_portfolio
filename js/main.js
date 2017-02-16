@@ -109,9 +109,19 @@ function calcStripeCSS(parentID, sign)
 		if(i==13){//if(i<1){
 			//bprT.x = 50*Math.abs(i);
 			//bprT.y = 50*Math.abs(i);
-			bprT.x += 30;
-			bprT.y += -40;
+			bprT.x += 40;
+			bprT.y += -70;
 			//bprT.z = 1.05;
+		}
+		else
+		if(i ==12){
+			bprT.x += 60;
+			bprT.y += -10;
+		}
+		else
+		if(i ==11){
+			bprT.x += 40;
+			bprT.y += 6;
 		}
 		
 		if(i>=9 && i<=12){
