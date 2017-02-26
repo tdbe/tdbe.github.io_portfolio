@@ -50,14 +50,16 @@ function load2(){
 	//alert("123");
 	window.parent.onDomContentLoad();
 	window.parent.stopLoadInterval();
+	
 }
 
-bindReady();
+//bindReady();
  function bindReady(){//handler){
 
 	
-	$(window).load(load2);
-	
+	//$(window).load(load2);
+	window.onload = load2;
+
 	var called = false
 
 	function ready() { 

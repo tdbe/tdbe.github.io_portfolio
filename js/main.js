@@ -2,7 +2,10 @@
 
 function backgroundSetup()
 {
-
+	if(jQuery.browser.mobile)
+	{
+		return;
+	}
 	
 	calcStripeCSS("bgGradCont", -1);
 	calcStripeCSS("bgGradContMirror", -1);
@@ -15,6 +18,11 @@ function backgroundSetup()
 		'-ms-transform'     : transformVal,
 		'-o-transform'      : transformVal,
 		'transform'         : transformVal
+	});
+	
+	//$('#dynamicBgCnt').css({
+	$('#Background').css({
+		'display':'inline'
 	});
 }
 
@@ -91,7 +99,7 @@ function calcStripeCSS(parentID, sign)
 		if(i==-1){
 			bprT.x = 95;
 			bprT.y = 0;
-			bprT.z = 0.25;
+			bprT.z = 0.35;
 			bprT.w = 80;
 		}
 		else if(i==3){
@@ -110,13 +118,19 @@ function calcStripeCSS(parentID, sign)
 			//bprT.x = 50*Math.abs(i);
 			//bprT.y = 50*Math.abs(i);
 			bprT.x += 40;
-			bprT.y += -70;
-			//bprT.z = 1.05;
+			bprT.y += -50;
+			//bprT.x += 310;
+			//bprT.y += 80;
+			
+			bprT.z = 1.07;
 		}
 		else
 		if(i ==12){
-			bprT.x += 60;
-			bprT.y += -10;
+			//bprT.x += 60;
+			//bprT.y += -10;
+			bprT.x += 255;
+			bprT.y += 170;
+			bprT.z = 1.07;
 		}
 		else
 		if(i ==11){
@@ -133,6 +147,7 @@ function calcStripeCSS(parentID, sign)
 		
 		
 		var si = i;
+		si = (si <= 3? -45+i : (si > 3 && si < 10? si-50 : si));
 		i = Math.abs(i);
 		
 		tra1 = {x:-670*sign + i*30*sign + bprT.x + bprT.x, y:500 + bprT.y + bprT.w};
@@ -165,7 +180,7 @@ function calcStripeCSS(parentID, sign)
 		  //'width' : '0.9%',
 		  //'width' : '1.9%',
 		  //'width' : 16-i+'%',
-		  'z-index' : 100+(si > 3 && si < 10 ? si-50 : si),
+		  'z-index' : 100+si,
 		  '-webkit-transform' : transformVal,
 		  '-moz-transform'    : transformVal,
 		  '-ms-transform'     : transformVal,

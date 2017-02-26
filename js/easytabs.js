@@ -135,7 +135,8 @@ function resetHover(elem)
 				hideAll();
 				
 				//$(thisId+" .tabs li"+"L").removeClass(param.activeClass);//0
-				var compId = thisId+" .tabs li a[href=#"+tabId+"]";
+				//var compId = thisId+" .tabs li a[href=#"+tabId+"]";
+				var compId = thisId+' .tabs li div a[href="#'+tabId+'"]';
 				//var liId = thisId+" .tabs #"+tabId;
 				var liId = "#"+$(compId).closest('li').attr('id');
 

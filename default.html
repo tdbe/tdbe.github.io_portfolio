@@ -33,16 +33,17 @@
 	
 	
 	<!--script src="http://code.jquery.com/jquery-1.4.4.min.js" type="text/javascript" charset="utf-8"/-->
-	<script src="https://code.jquery.com/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="./js/easytabs.js" type="text/javascript" charset="utf-8"></script>
 	<script src="./js/Window.Size.js" type="text/javascript" charset="utf-8"></script>
 	<script src="./js/mainDef.js" type="text/javascript" charset="utf-8"></script>
 
-	<!--script type="text/javascript" charset="utf-8">
+	<script type="text/javascript" charset="utf-8">
 		$(document).ready(function() {
-			$('#container').easyTabs({defaultContent:1});
+			//$('#container').easyTabs({defaultContent:1});
+			bindReady();
 		});
-	</script-->
+	</script>
 
 
 
@@ -75,11 +76,12 @@
 							<div id="openingWrapper">
 								<span id="openingL"><p><span id="symbolCntMain"><span id="symbolMain"></span></span><span class="parStart"></span>I'm Tudor and I enjoy developing interactive escapism.
 								</p>
-								<p>
+								<p class="lp">
 								<span class="parStart"></span>I have degrees in <span class=" bgHighlightImportant">Game Technology</span>, <span class=" bgHighlightImportant">Computer Science</span>, and <span class=" bgHighlightImportant">Industrial Design</span>, a programmer with a feel for the creative.
 			
 								</p>
-								<p>
+							
+								<p class="lp">
 								I work with and research <span class="bgHighlight">Gameplay</span>, <span class="bgHighlight">Procedural Content</span>, <span class="bgHighlight">Virtual Reality</span>, <span class="bgHighlight">Tools</span>, <span class="bgHighlight">VFX</span>, and am a <span class="bgHighlight">GPGPU</span> enthusiast. <span class="bgHighlight">Data Oriented Design</span> vs <span class="bgHighlight">OOP</span>.
 								<br/>
 								
@@ -88,9 +90,10 @@
 								<span id="openingR">
 								<!--p><span class="parStart"></span>Low level tech with high level wisdom.</p-->
 								
-								<p><span class="parStart"></span>Let's make cool things together! I aim for leveraging emerging affordances, fun interaction, synergizing with the artistic perspective, and know about the <a href="https://en.wikipedia.org/wiki/Dunning–Kruger_effect" rel="nofollow" target="_blank">Dunning–Kruger effect</a>.</p>
+								<p class="lp"><span class="parStart"></span>Let's make cool things together! I aim for leveraging emerging affordances, fun interaction, synergizing with the artistic perspective, and know about the <a href="https://en.wikipedia.org/wiki/Dunning–Kruger_effect" rel="nofollow" target="_blank">Dunning–Kruger effect</a>.
+								</p>
 								
-								<p><span class="parStart"></span>I agree with the <a href="http://www.valvesoftware.com/company/Valve_Handbook_LowRes.pdf" rel="nofollow" target="_blank">Valve Handbook</a> advice for devs to be interested in a few different parts of the spectrum. It helps bring about new tractable solutions, optimization, and good team mojo.
+								<p class="lp"><span class="parStart"></span>I agree with the <a href="http://www.valvesoftware.com/company/Valve_Handbook_LowRes.pdf" rel="nofollow" target="_blank">Valve Handbook</a> advice for devs to be interested in a few different parts of the spectrum. It helps bring about new tractable solutions, optimization, and good team mojo.
 								</p></span>
 							</div>
 				
@@ -179,12 +182,28 @@
 							250 600,
 							
 							812 490
+							
+							">
+							</polygon>
+						  </clipPath>
+						  
+						  <clipPath id="clipPolygon14b" clipPathUnits="userSpaceOnUse">
+							<polygon points="
+							
+							845 474, 
+							1455 474,
+							1455 0,
+							250 0,
+							250 330,
+							
+							680 511
 							">
 							</polygon>
 						  </clipPath>
 						  
 						  <clipPath id="clipPolygon23" clipPathUnits="userSpaceOnUse">
 							<polygon points="
+							
 							1400 0,
 							1400 456,
 							
@@ -193,6 +212,7 @@
 							
 							130 350,
 							130 0
+							
 							">
 							</polygon>
 						  </clipPath>
