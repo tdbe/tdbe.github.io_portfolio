@@ -2,10 +2,18 @@
 
 function backgroundSetup()
 {
+	
+	//$('#dynamicBgCnt').css({
+	$('#Background').css({
+		'display':'inline'
+	});
+	
+
 	if(jQuery.browser.mobile)
 	{
 		return;
 	}
+	
 	
 	calcStripeCSS("bgGradCont", -1);
 	calcStripeCSS("bgGradContMirror", -1);
@@ -20,8 +28,11 @@ function backgroundSetup()
 		'transform'         : transformVal
 	});
 	
-	//$('#dynamicBgCnt').css({
-	$('#Background').css({
+	
+	$('#bgGradCont').css({
+		'display':'inline'
+	});
+	$('#bgGradContMirror').css({
 		'display':'inline'
 	});
 }

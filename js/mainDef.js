@@ -58,7 +58,10 @@ function load2(){
 
 	
 	//$(window).load(load2);
-	window.onload = load2;
+	window.onload = function(e){
+		onLoaded();
+		load2();
+	};
 
 	var called = false
 
@@ -180,12 +183,12 @@ function makeActive(elem){
 }
 
 //$(document).ready(function(){ 
-window.onload =
+//window.onload =
 function onLoaded(){
-	
-	//window.parent.swapB(); 
+
+	//window.parent.swapB();
 	$('#toptitleBg').remove();
-	
+
 	scaleGallery();
 
 	$('.gridItem').mousedown(function(event) {
