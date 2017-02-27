@@ -2,6 +2,7 @@
 
 function backgroundSetup()
 {
+
 	
 	//$('#dynamicBgCnt').css({
 	$('#Background').css({
@@ -9,7 +10,7 @@ function backgroundSetup()
 	});
 	
 
-	if(jQuery.browser.mobile)
+	if(jQuery.browser.mobile || $(window).width() < 700)
 	{
 		return;
 	}
