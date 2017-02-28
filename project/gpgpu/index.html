@@ -61,7 +61,7 @@
 								<p><span id="symbolCnt"><span id="symbol"></span></span><span class="parStart">|</span>A 2-man thesis about researching ways of simulating believable cave environments at interactive rates on the GPU.</p><br/>
 								
 								<p>It lasted 6 months and involved PCG research, application development, and user testing.</p> 
-								<p>Our generation pipeline processes GPU voxel grids with a set of DirectX 11 Compute Shaders. The modelling solution can be thought of as procedurally guided self-intersecting 3D brush strokes of warped distance fields, on a solid voxel volume.
+								<p>Our generation pipeline processes GPU voxel grids with a set of DirectX 11 Compute Shaders. The modelling solution can be thought of as procedurally guided self-intersecting 3D brush strokes of warped distance fields (metaballs), on a solid voxel volume.
 								<br/>
 								<br/>
 								</p>
@@ -148,10 +148,10 @@
 						
 						
 						<div class="article highlight projPadding" style="margin-top: -2em;">  
-							<p><b>2 - </b>A detailing component where we use an array of <span class="bgHighlight">distance fields</span> and warp their sampling with layers of <span class="bgHighlight">noise</span> (<span class="bgHighlight">Voronoi</span>, <span class="bgHighlight">Simplex</span>, <span class="bgHighlight">Curl</span>). 
+							<p><b>2 - </b>A detailing component where we use an array of <span class="bgHighlight">metaballs / distance fields</span> and warp their sampling with layers of <span class="bgHighlight">noise</span> (<span class="bgHighlight">Voronoi</span>, <span class="bgHighlight">Simplex</span>, <span class="bgHighlight">Curl</span>). 
 							</p>
 							<p>
-							The voxel volume is carved along select structural points by this perturbed distance field. 
+							The voxel volume is carved along select structural points by this perturbed meta field. 
 							<br/>
 							<span class="bgHighlight">Cellular Automata</span> stalactites and other voxel filtering and cavern edits are also made at this stage.</p>
 							
