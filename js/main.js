@@ -1,10 +1,8 @@
 //window.size();
 
-function backgroundSetup()
+function initSetup()
 {
-
 	
-	//$('#dynamicBgCnt').css({
 	$('#Background').css({
 		'display':'inline'
 	});
@@ -16,6 +14,21 @@ function backgroundSetup()
 	}
 	
 	
+	$('#bgGradCont').css({
+		'display':'inline'
+	});
+	$('#bgGradContMirror').css({
+		'display':'inline'
+	});
+	
+	setTimeout(backgroundSetup, 350);
+	
+
+}
+
+function backgroundSetup()
+{
+
 	calcStripeCSS("bgGradCont", -1);
 	calcStripeCSS("bgGradContMirror", -1);
 	
@@ -29,13 +42,13 @@ function backgroundSetup()
 		'transform'         : transformVal
 	});
 	
-	
-	$('#bgGradCont').css({
-		'display':'inline'
+	$('#bgGradCont3rd').css({
+		'display':'inline-block'
 	});
-	$('#bgGradContMirror').css({
-		'display':'inline'
+	$('#bgGradCont4th').css({
+		'display':'inline-block'
 	});
+
 }
 
 function calcStripeCSS(parentID, sign)
@@ -350,7 +363,7 @@ function onMainLoaded()
 	
 	setInterval(function(){resizeIframe2()}, 1250);//either vids or things blocked by adblockers make the page load forever. Can't know for sure (for now) when to stop resizing the page to fit the content.
 	
-	backgroundSetup();
+	initSetup();
 };
 
 
