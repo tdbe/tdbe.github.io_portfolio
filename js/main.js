@@ -21,8 +21,8 @@ function initSetup()
 		'display':'inline'
 	});
 	
-	var time = loading ? 350 : 150;
-	setTimeout(loadingSetup, 350);
+	//var time = loading ? 350 : 150;
+	setTimeout(loadingSetup, 150);
 	
 
 }
