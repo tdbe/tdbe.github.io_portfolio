@@ -1,5 +1,5 @@
 //window.size();
-
+var loading = true;
 function initSetup()
 {
 	
@@ -21,12 +21,13 @@ function initSetup()
 		'display':'inline'
 	});
 	
-	setTimeout(backgroundSetup, 350);
+	var time = loading ? 350 : 150;
+	setTimeout(loadingSetup, 350);
 	
 
 }
 
-function backgroundSetup()
+function loadingSetup()
 {
 
 	calcStripeCSS("bgGradCont", -1);
@@ -49,6 +50,7 @@ function backgroundSetup()
 		'display':'inline-block'
 	});
 
+	loading = false;
 }
 
 function calcStripeCSS(parentID, sign)
