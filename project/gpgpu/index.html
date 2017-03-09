@@ -5,6 +5,7 @@
 		<meta name="description" content="MSc. Thesis Project about real-time Procedural Modelling of Cave Systems on the GPU."/> 
 		<meta name="robots" content="all"/>
 		<title>GPGPU Underground Canyons</title>
+		<title>GPGPU Underground Canyons</title>
 		
 		<base target="_parent" /> 
 		
@@ -61,7 +62,7 @@
 								<p><span id="symbolCnt"><span id="symbol"></span></span><span class="parStart">|</span>A 2-man thesis about researching ways of simulating believable cave environments at interactive rates on the GPU.</p><br/>
 								
 								<p>It lasted 6 months and involved PCG research, application development, and user testing.</p> 
-								<p>Our generation pipeline processes GPU voxel grids with a set of DirectX 11 Compute Shaders. The modelling solution can be thought of as procedurally guided self-intersecting 3D brush strokes of warped distance fields (metaballs), on a solid voxel volume.
+								<p>Our generation pipeline processes GPU voxel grids with a set of DirectX 11 Compute Shaders. The modelling solution can be thought of as procedurally guided self-intersecting 3D brush strokes of warped density fields (metaballs), on a solid voxel tile.
 								<br/>
 								<br/>
 								</p>
@@ -148,7 +149,7 @@
 						
 						
 						<div class="article highlight projPadding" style="margin-top: -2em;">  
-							<p><b>2 - </b>A detailing component where we use an array of <span class="bgHighlight">metaballs / distance fields</span> and warp their sampling with layers of <span class="bgHighlight">noise</span> (<span class="bgHighlight">Voronoi</span>, <span class="bgHighlight">Simplex</span>, <span class="bgHighlight">Curl</span>). 
+							<p><b>2 - </b>A detailing component where we use an array of <span class="bgHighlight">metaballs / density fields</span> and warp their sampling with layers of <span class="bgHighlight">noise</span> (<span class="bgHighlight">Voronoi</span>, <span class="bgHighlight">Simplex</span>, <span class="bgHighlight">Curl</span>). 
 							</p>
 							<p>
 							The voxel volume is carved along select structural points by this perturbed meta field. 
@@ -199,7 +200,7 @@
 							<div class="colunas rightColuna" >
 							<!--span class="colunaLine">Meta</span-->
 							
-							<span class="colunaLine" style="-moz-transform:scale(1.2,1); -o-transform:scale(1.2,1); -ms-transform:scale(1.2,1); 	-webkit-transform:scale(1.2,1); transform:scale(1.2,1); margin-right: 15px;">Distance</span>
+							<span class="colunaLine" style="-moz-transform:scale(1.2,1); -o-transform:scale(1.2,1); -ms-transform:scale(1.2,1); 	-webkit-transform:scale(1.2,1); transform:scale(1.2,1); margin-right: 15px;">Density</span>
 							<br/>
 							<span class="colunaLine" style="-moz-transform:scale(1.2,1); -o-transform:scale(1.2,1); -ms-transform:scale(1.2,1); 	-webkit-transform:scale(1.2,1); transform:scale(1.2,1); margin-right: 8px;">Field</span>
 							<br/>
@@ -219,7 +220,7 @@
 							
 							
 
-						<p><span class="parStart">|</span>The key is the interesting emergent behaviour from when the two main modules (structuring and detailing) interact: when both the l-system and the distance fields intersect with themselves. 
+						<p><span class="parStart">|</span>The key is the interesting emergent behaviour from when the two main modules (structuring and detailing) interact: when both the l-system and the density fields intersect with themselves. 
 						</div>
 						<br/><br/>
 						<p class="galInfo highlight2 projPadding"><span class="parStart">|</span>Below you can see a simple example of the procedural "carving":</p>
