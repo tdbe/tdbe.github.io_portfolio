@@ -12,7 +12,7 @@ function initSetup()
 	{
 		return;
 	}
-	
+
 	
 	$('#bgGradCont').css({
 		'display':'inline'
