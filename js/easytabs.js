@@ -179,8 +179,17 @@ function resetHover(elem)
 			
 			$(thisId+" .tabs li").click(function()
 			{
+				
 				var tabId=$(this).find('a').attr('href').slice(1);
-				changeContent(tabId, 0);
+				var project = getUrlParameter("project");
+				if(project && project.length > 0 && tabId == 'projects')
+				{
+					window.location.href = "./";
+				}
+				else
+				{
+					changeContent(tabId, 0);
+				}
 				return false;
 			});
 			
