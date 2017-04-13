@@ -22,8 +22,6 @@ function resetHover(elem)
 				lastTabIdClicked = elem.attr('id');
 				elem.removeClass("active");
 				elem.addClass("activeF");
-				
-		
 			}
 		}, 
 		delay);
@@ -178,24 +176,11 @@ function resetHover(elem)
 					//$(thisId+" #"+tabId+"L").show();//0
 					}
 			}
-	
+			
 			$(thisId+" .tabs li").click(function()
 			{
-				
 				var tabId=$(this).find('a').attr('href').slice(1);
-				var project = getUrlParameter("project");
-				if(project && project.length > 0 
-					&& tabId == 'projects'
-					//&& window.location.hash == "#projects"
-					&& ($(this).hasClass("activeF") == true || $(this).hasClass("active") == true )
-					)
-				{
-					window.location.href = "./";
-				}
-				else
-				{
-					changeContent(tabId, 0);
-				}
+				changeContent(tabId, 0);
 				return false;
 			});
 			
@@ -208,4 +193,3 @@ function resetHover(elem)
 		});
 	}
 })(jQuery);
-
