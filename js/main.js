@@ -390,7 +390,7 @@ var debounce = function (func, threshold, execAsap)
 	};
 }
 
-var extraHeight = 88;//1.005;
+var extraHeight = 157;//88;//88;//1.005;
 function resizeIframe(obj){
     //obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
 	obj.style.height = obj.contentWindow.window.size.h + 'px';
@@ -405,8 +405,13 @@ function resizeIframe2() {
 	//console.log("tick");
 	var $icontObj = $("#icontent");
 	var $icontObjParent = $("#centerPanel");
-
-	var newHeight = $icontObj.contents().find('body').find("div").height() + extraHeight;
+	var padbtm = 0;
+	
+	if(!getUrlParameter("project"))
+		padbtm = parseInt($icontObj.parent().attr('padbtm'));
+	
+	
+	var newHeight = $icontObj.contents().find('body').find("div").height() + extraHeight + padbtm;
 	if(newHeight<900){//do something proper
 		newHeight = 900;
 	}
