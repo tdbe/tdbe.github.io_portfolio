@@ -22,8 +22,8 @@ function initSetup()
 	});
 	
 	//var time = loading ? 350 : 150;
-	setTimeout(loadingSetup, 150);
-	
+	//setTimeout(loadingSetup, 150);
+	loadingSetup();
 
 }
 
