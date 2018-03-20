@@ -4,8 +4,8 @@
 
 
 
-var maxWidth = 1064;//1024;//920;
-var maxWidth2 = 1064;//920;
+var maxWidth = 1300;//1064;//1024;//920;
+var maxWidth2 = 1300;//1064;//920;
 
 
 
@@ -139,8 +139,12 @@ function scaleGallery(){
 			var val  = (w.offsetWidth/maxWidth2); 
 
 			//d.style.fontSize = val.toFixed(2)+ "em"; 
-			var num =  val.toFixed(2);
-			var val = "scale("+ num+","+ (1-(1-num)/2)+")";
+			var num = val.toFixed(2);
+			var snap = " translate(-80px, 0px)";
+			if(w.offsetWidth < maxWidth-110)
+				snap = " translate(-30px, 0px)";
+
+			var val = "scale("+ num+","+ (1-(1-num)/2)+")"+snap;
 			d.style.webkitTransform = val;
 			d.style.MozTransform = val;
 			d.style.msTransform = val;
@@ -152,7 +156,7 @@ function scaleGallery(){
 		}
 		else{
 			//d.style.fontSize = "1em"; 
-			var val = "scale("+ 1 +","+ 1 +")";
+			var val = "scale("+ 1 +","+ 1 +") translate(-80px, 0px)";
 			d.style.webkitTransform = val;
 			d.style.MozTransform = val;
 			d.style.msTransform = val;
