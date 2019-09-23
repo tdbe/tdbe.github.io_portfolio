@@ -1,0 +1,13 @@
+{
+"companyName": "StealthEnergyCompany",
+"productName": "StealthEnergyProject_01",
+"dataUrl": "003 - web.data.unityweb",
+"wasmCodeUrl": "003 - web.wasm.code.unityweb",
+"wasmFrameworkUrl": "003 - web.wasm.framework.unityweb",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 2.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Light",
+"backgroundColor": "#FFFFFF",
+"cacheControl": {"default": "must-revalidate"}
+}
