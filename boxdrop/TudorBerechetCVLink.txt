@@ -1,4 +1,4 @@
-I have probably sent you this text because your system could not support uploading a 2.5MB PDF.
+I have probably sent you this text because your system could not support uploading a ~2.2MB PDF.
 
 Less cumbersomly, you can just see my CV within my portfolio website itself: 
 http://www.deferredreality.com/#resume
@@ -7,7 +7,8 @@ Or if you prefer to deal with PDFs, here's a direct link:
 http://www.deferredreality.com/boxdrop/TudorBerechetCVSection.pdf
 
 
-Have a magical day.
+Have a magical day,
+-Tudor
 
                    .##@@&&&&&@@##.
                 ,##@&::%&&&&%%::&@##.
