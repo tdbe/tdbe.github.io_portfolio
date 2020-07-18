@@ -185,6 +185,17 @@ function calcStripeCSS(parentID, sign)
 		tra3 = {x:90,
 				y:-100+bprT.u};
 		
+		var scaleY = 1.3;
+		if(i==3)
+			scaleY = 1.4;
+		if(i==2)
+			scaleY = 1.385;
+		if(i==1)
+			scaleY = 1.5;
+		if(i<1)
+			scaleY = 3;
+		
+		
 		var transformVal = 
 			
 			'translate('+tra1.x+'px,'+tra1.y+'px)' + 
@@ -192,7 +203,7 @@ function calcStripeCSS(parentID, sign)
 			'translate('+tra2.x+'px,'+tra2.y+'px) ' +
 			'rotate('+rot2+'deg) ' +
 			'translate('+tra3.x+'px,'+tra3.y+'px) '
-			+' scale('+(1+bprT.s)+',1.3) ' 
+			+' scale('+(1+bprT.s)+','+scaleY+') ' 
 			;
 		
 		$(this).css({
