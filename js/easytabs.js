@@ -177,6 +177,9 @@ function resetHover(elem)
 					$(thisId+" #"+tabId).show();
 					//$(thisId+" #"+tabId+"L").show();//0
 					}
+					
+				//window.scrollTo(x-coord, y-coord);	
+				$(window).scrollTop(0);
 			}
 	
 			$(thisId+" .tabs li").click(function()
