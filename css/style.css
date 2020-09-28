@@ -10,9 +10,9 @@ transition:all .25s ease;-moz-transition:all .25s ease;-webkit-transition:all .2
 
 #lcdBlock{width:50%;height:127%;margin-left:25%;margin-top:-30px;background:-moz-radial-gradient(at 50% 50.5%,ellipse cover,rgb(234,199,192)6%,hsl(310, 56%, 85%)25.5%,hsl(105,74%,81%)36%,hsl(55,100%,84%) 37%,rgb(133,255,167)41%,hsl(166,78%,70%)52%,rgb(171,196,253)61%,hsl(134,100%,88%)62%,rgb(125,255,208)68%);background:-webkit-radial-gradient(center,cover,rgb(234,199,192)6%,hsl(310, 56%, 85%)25.5%,hsl(105,74%,81%)36%,hsl(55,100%,84%) 37%,rgb(133,255,167)41%,hsl(166,78%,70%)52%,rgb(171,196,253)61%,hsl(134,100%,88%)62%,rgb(125,255,208)68%);background:radial-gradient(at 50% 50.5%,rgb(234,199,192)6%,hsl(310, 56%, 85%)25.5%,hsl(105,74%,81%)36%,hsl(55,100%,84%) 37%,rgb(133,255,167)41%,hsl(166,78%,70%)52%,rgb(171,196,253)61%,hsl(134,100%,88%)62%,rgb(125,255,208)68%);background-repeat:no-repeat;background-size:initial;/*background-position-y:93px;*/
 	background-position-y: 63px;
-    background-position-x: 520px;
+    background-position-x: 623px;
     background-repeat-x: repeat;
-    background-size: 87%;
+    background-size: 84.5%;
     width: 40%;
     height: 150%;
 -webkit-transition:all .4s ease;-moz-transition:all .4s ease;-o-transition:all .4s ease;transition:all .4s ease}
