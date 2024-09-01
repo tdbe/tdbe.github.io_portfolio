@@ -119,6 +119,8 @@ function load2(){
     }
 }
 
+const lerp = (a, b, amount) => (1 - amount) * a + amount * b;
+
 setInterval(scaleGallery(), 1000);
 function scaleGallery(){
 	//max-width: 880px; ---> 1em
@@ -135,14 +137,14 @@ function scaleGallery(){
 	var d = document.getElementById("content-to-scale");
 	//alert(w.offsetWidth);
 	if(d != null){
+		var lerpsub = 80 * Math.pow(Math.min(Math.max(0,(w.offsetWidth)/maxWidth),1),8);
 		if(w.offsetWidth < maxWidth){//883//880
 			var val  = (w.offsetWidth/maxWidth2); 
 
 			//d.style.fontSize = val.toFixed(2)+ "em"; 
 			var num = val.toFixed(2);
-			var snap = " translate(-80px, 0px)";
-			if(w.offsetWidth < maxWidth-110)
-				snap = " translate(-30px, 0px)";
+			var snap = " translate(-"+lerpsub+"px, 0px)";
+			//if(w.offsetWidth < maxWidth-110) snap = " translate(-30px, 0px)";
 
 			var val = "scale("+ num+","+ (1-(1-num)/2)+")"+snap;
 			d.style.webkitTransform = val;
@@ -156,7 +158,7 @@ function scaleGallery(){
 		}
 		else{
 			//d.style.fontSize = "1em"; 
-			var val = "scale("+ 1 +","+ 1 +") translate(-80px, 0px)";
+			var val = "scale("+ 1 +","+ 1 +") translate(-"+lerpsub+"px, 0px)";
 			d.style.webkitTransform = val;
 			d.style.MozTransform = val;
 			d.style.msTransform = val;
