@@ -197,50 +197,64 @@ function onLoaded(){
 
 	scaleGallery();
 
-	$('.gridItem').mousedown(function(event) {
-	
-		switch (event.which) {
-			case 1:
-				
-				$(this).removeAttr("href");
-				//alert('Left Mouse button pressed.');
-				break;
-			case 2:
-				$(this).attr('href', $(this).attr('alt'));
-				//alert('Middle Mouse button pressed.');
-				break;
-			case 3:
-				//$(event.target).attr('href', $(event.target).attr("alt"));
-				$(this).attr('href', $(this).attr('alt'));
+	if(jQuery.browser.mobile != true) {
+		$('.gridItem').mousedown(function(event) {
+		
+			switch (event.which) {
+				case 1:
+					
+					$(this).removeAttr("href");
+					//alert('Left Mouse button pressed.');
+					break;
+				case 2:
+					$(this).attr('href', $(this).attr('alt'));
+					//alert('Middle Mouse button pressed.');
+					break;
+				case 3:
+					//$(event.target).attr('href', $(event.target).attr("alt"));
+					$(this).attr('href', $(this).attr('alt'));
 
-				//alert('Right Mouse button pressed.');
-				break;
-			default:
-				//alert('You have a strange Mouse!');
-		}   
-	});
-	
+					//alert('Right Mouse button pressed.');
+					break;
+				default:
+					//alert('You have a strange Mouse!');
+			}   
+		});
+		
 		$('.gridItem').mouseup(function(event) {
-	
-		switch (event.which) {
-			case 1:
-				$(this).attr('class', "gridItemActive");
-				var where = $(this).attr('alt');
-				setTimeout(function() 
-									{
-										window.parent.location.href = where;
-									}, 320);
-				break;
-			case 2:
-				//alert('Middle Mouse button pressed.');
-				break;
-			case 3:
-				//alert('Right Mouse button pressed.');
-				break;
-			default:
-				//alert('You have a strange Mouse!');
-		}
-	});
+		
+			switch (event.which) {
+				case 1:
+					$(this).attr('class', "gridItemActive");
+					var where = $(this).attr('alt');
+					setTimeout(function() 
+										{
+											window.parent.location.href = where;
+										}, 320);
+					break;
+				case 2:
+					//alert('Middle Mouse button pressed.');
+					break;
+				case 3:
+					//alert('Right Mouse button pressed.');
+					break;
+				default:
+					//alert('You have a strange Mouse!');
+			}
+		});
+	}
+	else{
+		/*
+		$('.gridItem').each(function(i, obj) {
+			var href = $(obj).attr('href');
+			if(!href)
+				$(obj).attr('href', $(obj).attr('alt'));
+		});	*/	
+		$('.gridItem').mousedown(function(event) {
+		
+			window.parent.location.href = $(this).attr('alt');
+		});
+	}
 	
 };
 //);
