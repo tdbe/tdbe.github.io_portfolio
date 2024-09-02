@@ -197,64 +197,69 @@ function onLoaded(){
 
 	scaleGallery();
 
-	if(jQuery.browser.mobile != true) {
-		$('.gridItem').mousedown(function(event) {
-		
-			switch (event.which) {
-				case 1:
-					
-					$(this).removeAttr("href");
-					//alert('Left Mouse button pressed.');
-					break;
-				case 2:
-					$(this).attr('href', $(this).attr('alt'));
-					//alert('Middle Mouse button pressed.');
-					break;
-				case 3:
-					//$(event.target).attr('href', $(event.target).attr("alt"));
-					$(this).attr('href', $(this).attr('alt'));
+	function downFunction(event, target) {
+		switch (event.which) {
+			case 1:
+				
+				target.removeAttr("href");
+				//alert('Left Mouse button pressed.');
+				break;
+			case 2:
+				target.attr('href', target.attr('alt'));
+				//alert('Middle Mouse button pressed.');
+				break;
+			case 3:
+				//$(event.target).attr('href', $(event.target).attr("alt"));
+				target.attr('href', target.attr('alt'));
 
-					//alert('Right Mouse button pressed.');
-					break;
-				default:
-					//alert('You have a strange Mouse!');
-			}   
-		});
-		
-		$('.gridItem').mouseup(function(event) {
-		
-			switch (event.which) {
-				case 1:
-					$(this).attr('class', "gridItemActive");
-					var where = $(this).attr('alt');
-					setTimeout(function() 
-										{
-											window.parent.location.href = where;
-										}, 320);
-					break;
-				case 2:
-					//alert('Middle Mouse button pressed.');
-					break;
-				case 3:
-					//alert('Right Mouse button pressed.');
-					break;
-				default:
-					//alert('You have a strange Mouse!');
-			}
-		});
-	}
-	else{
+				//alert('Right Mouse button pressed.');
+				break;
+			default:
+				//alert('You have a strange Mouse!');
+		}
 		/*
-		$('.gridItem').each(function(i, obj) {
-			var href = $(obj).attr('href');
-			if(!href)
-				$(obj).attr('href', $(obj).attr('alt'));
-		});	*/	
-		$('.gridItem').mousedown(function(event) {
-		
-			window.parent.location.href = $(this).attr('alt');
-		});
+		for(var key in event) {
+			console.log('key: ' + key + '\n' + 'value: ' + event[key]);
+		}*/
 	}
+	
+	//if(jQuery.browser.mobile == true)
+	function upFunction(event, target) {
+		switch (event.which) {
+			case 1:
+				target.attr('class', "gridItemActive");
+				var where = target.attr('alt');
+				setTimeout(function() 
+									{
+										target.attr('class', "gridItem");
+										window.parent.location.href = where;
+									}, 320);
+				break;
+			case 2:
+				//alert('Middle Mouse button pressed.');
+				break;
+			case 3:
+				//alert('Right Mouse button pressed.');
+				break;
+			default:
+				//alert('You have a strange Mouse!');
+		}
+	}
+	
+	$('.gridItem').mousedown(function(event){
+	  downFunction(event, $(this));
+	});
+	$('.gridItem').on('touchstart', function(event){
+	  downFunction(event, $(this));
+	});
+	
+	$('.gridItem').mouseup(function(event){
+	  upFunction(event, $(this));
+	});
+	$('.gridItem').on('touchend', function(event){
+	  upFunction(event, $(this));
+	});
+	
 	
 };
 //);
