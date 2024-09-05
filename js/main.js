@@ -292,6 +292,7 @@ function onDomContentLoad(){
 	ifr = document.getElementById("icontent");
 	ifr.contentWindow.scaleGallery();
 	setTimeout(resizeIframe2, timeoot);  
+	setTimeout(resizeIframe2, timeoot*6);  
 
 	//myVar = setInterval(function(){resizeIframe2()}, 1250);
 

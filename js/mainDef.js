@@ -231,7 +231,7 @@ function onLoaded(){
 				var where = target.attr('alt');
 				setTimeout(function() 
 									{
-										target.attr('class', "gridItem");
+										setTimeout(function(){target.attr('class', "gridItem");}, 2000);  
 										window.parent.location.href = where;
 									}, 320);
 				break;
