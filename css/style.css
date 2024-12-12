@@ -52,6 +52,19 @@ transition:all .25s ease;-moz-transition:all .25s ease;-webkit-transition:all .2
 	background-size: auto 100%;
 	
 }
+.bluesky{
+	width:28px;
+	display:block;
+	height:24px;
+	margin-top: -4px;
+    margin-bottom: -5px;
+	margin-right:-9px;
+	background: url("../images/bluesky.png");
+	background-repeat: no-repeat;
+	
+	background-size: auto 100%;
+	
+}
 
 .deviantart{
 	width:28px;
@@ -107,6 +120,19 @@ transition:all .25s ease;-moz-transition:all .25s ease;-webkit-transition:all .2
     margin-bottom: -5px;
 	margin-right:-9px;*/
 	background: url("../images/itchio-textless-black-hover.png");
+	background-repeat: no-repeat;
+	/*background-position-x: right;*/
+	background-size: auto 100%;
+	transform : scale(1.1,1.1);
+}
+
+.bluesky:hover{
+	/*width:40px;
+	height:24px;
+	margin-top: -4px;
+    margin-bottom: -5px;
+	margin-right:-9px;*/
+	background: url("../images/bluesky-hover.png");
 	background-repeat: no-repeat;
 	/*background-position-x: right;*/
 	background-size: auto 100%;
