@@ -1,13 +1,67 @@
 //window.size();
 
 
+function isElementInViewport (el, docRect, ifrRect, windowInnerWidth, windowInnerHeight) {
 
+    // Special bonus for those using jQuery
+    if (typeof jQuery === "function" && el instanceof jQuery) {
+        el = el[0];
+    }
 
+    var rect = el.getBoundingClientRect();
+	/*
+	console.log("window.innerWidth: "+window.innerWidth+"; vs windowInnerWidth: "+windowInnerWidth);
+	console.log("ifrRect.left: "+ifrRect.left);
+	console.log("ifrRect.top: "+ifrRect.top);
+	console.log("ifrRect.right: "+ifrRect.right);
+	console.log("ifrRect.bottom: "+ifrRect.bottom);
+	console.log("docRect.left: "+docRect.left);
+	console.log("docRect.top: "+docRect.top);
+	console.log("docRect.right: "+docRect.right);
+	console.log("docRect.bottom: "+docRect.bottom);
+	*/
+	var heightOffset = el.offsetHeight*0.5;
+	var widthOffset = el.offsetWidth*0.5;
+	
+	var top = heightOffset + rect.top + docRect.top + Math.abs(Math.abs(docRect.top) - Math.abs(ifrRect.top));
+	var left = widthOffset + rect.left + docRect.left + Math.abs(Math.abs(docRect.left) - Math.abs(ifrRect.left));
+	var bottom = - heightOffset + rect.bottom + docRect.top + Math.abs(Math.abs(docRect.top) - Math.abs(ifrRect.top));
+	var right = - widthOffset + rect.right + docRect.left + Math.abs(Math.abs(docRect.left) - Math.abs(ifrRect.left));
+	
+	//console.log("top >=0: "+top);
+	//console.log("left >=0: "+left);
+	//console.log("right: "+right+" <= windowInnerWidth: "+windowInnerWidth);
+	//console.log("bottom: "+bottom+" <= windowInnerHeight: "+windowInnerHeight);
+	
+    return (
+        top >= 0 &&
+        left >= 0 &&
+        //rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && /* or $(window).height() */
+        bottom <= windowInnerHeight &&
+        //rect.right <= (window.innerWidth || document.documentElement.clientWidth) /* or $(window).width() */
+        right <= windowInnerWidth 
+    );
+}
+
+var allVideos = document.getElementsByTagName("video"), fraction = 0.9;
+function setVideoPlayability(docRect, ifrRect, windowInnerWidth, windowInnerHeight) 
+{
+	for(var i = 0; i < allVideos.length; i++) 
+	{
+		var video = allVideos[i];
+		if(isElementInViewport(allVideos[i], docRect, ifrRect, windowInnerWidth, windowInnerHeight)){
+			//console.log("PLAY VIDEO "+i+" +++++++++++++\n");
+			video.play();
+		}
+		else{
+			//console.log("PAUSED VIDEO "+i+" -------------\n");
+			video.pause();
+		}
+	}
+}
 
 var maxWidth = 1300;//1064;//1024;//920;
 var maxWidth2 = 1300;//1064;//920;
-
-
 
 var debounce = function (func, threshold, execAsap) 
 {
@@ -30,20 +84,21 @@ var debounce = function (func, threshold, execAsap)
 	};
 }
 
-
-//window.onload = scaleGallery();
 /*
+//window.onload = scaleGallery();
 window.onresize = debounce(function (e) {
-	flag = true;
+	//flag = true;
 	//var point = window.center({width:1,height:1});
 	//doCenter(point);
-	scaleGallery();
+	//scaleGallery();
 	
-	
-// do something here, but only once after mouse cursor stops 
+	setVideoPlayability();
 }, 50, false);
- */
 
+window.onscroll = debounce(function (e) {	
+	setVideoPlayability();
+}, 50, false);
+*/
 // http://javascript.info/tutorial/onload-ondomcontentloaded 
 
 function load2(){ 

@@ -464,27 +464,30 @@ window.onresize = debounce(function (e) {
 // do something here, but only once after mouse cursor stops 
 }, 50, false);
 
-
-var mousewheelevt;
+makeWheelEvent();
 function makeWheelEvent(){
 	/*
+	var mousewheelevt;
 	mousewheelevt=(/Firefox/i.test(navigator.userAgent))? "DOMMouseScroll" : "mousewheel";
 	
 	if (document.attachEvent) //if IE (and Opera depending on user setting)
-		document.attachEvent("on"+mousewheelevt, function(e){scrollTest(e)})
+		document.attachEvent("on"+mousewheelevt, function(e){onScrollEvent(e)})
 	else if (document.addEventListener) //WC3 browsers 
-		document.addEventListener(mousewheelevt, function(e){scrollTest(e)}, false)
-	
-	document.onkeydown = checkKey;
+		document.addEventListener(mousewheelevt, function(e){onScrollEvent(e)}, false)
 	*/
-	window.onscroll = scrollTest; 
+	document.onkeydown = debounce(function (e) {	
+		checkKey(e);
+	}, 50, false);	
+	window.onscroll = debounce(function (e) {	
+		onScrollEvent(e);
+	}, 50, false);	
 }
 
 function checkKey(e) {
     e = e || window.event;
     if (e.keyCode == '38' || e.keyCode == '40') {
         // up arrow   // down arrow
-		scrollTest(e); 
+		onScrollEvent(e); 
     }
 }
 
@@ -500,11 +503,15 @@ document.getScroll= function(){
 	 }
 }
 
+function onScrollEvent(e){
+	var ifr = document.getElementById("icontent");
+	var ifrRect = ifr.getBoundingClientRect();
+	var docRect = document.body.getBoundingClientRect();
+	ifr.contentWindow.setVideoPlayability(docRect, ifrRect, window.innerWidth, window.innerHeight);
+}
 
 var ifr;// = document.getElementById("icontent"); 
-function scrollTest(e){
-}
-function scrollTestRemoved(e){
+function onScrollEventRemoved(e){
 	//If you'd like to check for ANY PART of the element, use (true)
 	//alert($('#webplayer').visible());
 		
