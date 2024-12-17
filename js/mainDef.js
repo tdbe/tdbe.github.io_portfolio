@@ -201,7 +201,8 @@ function scaleGallery(){
 			var snap = " translate(-"+lerpsub+"px, 0px)";
 			//if(w.offsetWidth < maxWidth-110) snap = " translate(-30px, 0px)";
 
-			var val = "scale("+ num+","+ (1-(1-num)/2)+")"+snap;
+			//var val = "scale("+ num+","+ (1-(1-num)/2)+")"+snap;
+			var val = "scale("+ num+","+ num+")"+snap;
 			d.style.webkitTransform = val;
 			d.style.MozTransform = val;
 			d.style.msTransform = val;

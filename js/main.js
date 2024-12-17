@@ -8,7 +8,7 @@ function initSetup()
 	});
 	
 
-	if(jQuery.browser.mobile == true || $(window).width() < 700)
+	if(isMobile() == true)// || $(window).width() < 700)
 	{
 		return;
 	}
