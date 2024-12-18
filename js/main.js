@@ -8,7 +8,7 @@ function initSetup()
 	});
 	
 
-	if(isMobile() == true)// || $(window).width() < 700)
+	if(isMobile() == true || $(window).width() / $(window).height() > 1.77 )
 	{
 		return;
 	}

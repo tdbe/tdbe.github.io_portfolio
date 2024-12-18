@@ -20,8 +20,8 @@ function isMobile() {
     else if (localStorage.mobile) // mobile storage
         isMobile = true;
 		
-	if(window.navigator.maxTouchPoints > 1)
-		isMobile = true;
+	//if(window.navigator.maxTouchPoints > 1)
+	//	isMobile = true;
 
     // alternative
     var mobile = ['iphone','ipad','android','blackberry','nokia','opera mini','windows mobile','windows phone','iemobile']; 

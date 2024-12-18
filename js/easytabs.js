@@ -3,7 +3,8 @@ var lastTabIdClicked = ' ';
 function resetHover(elem)
 {
 
-    var delay = 1200;
+    //var delay = 1200;
+    var delay = 400;
 	//var elem = $(el.parentNode.parentNode);
 	
 	

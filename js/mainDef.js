@@ -340,3 +340,10 @@ function scrollTest(e){
 
 }
 */
+function onThumbVideoCanPlay(event){
+	var caller = event.target || event.srcElement;
+	var parent = caller.parentElement;
+	var videocurtain = parent.querySelector('.videocurtain');
+	videocurtain.remove();
+	caller.oncanplay = null;
+}
