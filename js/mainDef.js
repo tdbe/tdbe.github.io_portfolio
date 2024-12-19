@@ -352,6 +352,7 @@ function onThumbVideoCanPlay(event){
 	var caller = event.target || event.srcElement;
 	var parent = caller.parentElement;
 	var videocurtain = parent.querySelector('.videocurtain');
-	videocurtain.remove();
+	if(videocurtain != undefined)
+		videocurtain.remove();
 	caller.oncanplay = null;
 }
