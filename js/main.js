@@ -261,12 +261,13 @@ function swapB(){
 	$('#loading').remove(); 
 }
 
-/*
-var myVar;
+
+var resizeInterval;
 function stopLoadInterval() {
-    clearInterval(myVar);
+	//~~~[//console.log("stopLoadInterval (main)");
+    clearInterval(resizeInterval);
 }
-*/
+
 /*
 var isNotAtBottom = true;
 $(window).scroll(function() {
@@ -283,10 +284,10 @@ $(window).scroll(function() {
 
 /*
 $(document).ready(function() {
-	myVar = setInterval(function(){resizeGallery()}, 1250);
+	resizeInterval = setInterval(function(){resizeGallery()}, 1250);
 });
 */
-//myVar = setInterval(function(){resizeGallery()}, 1250);
+//resizeInterval = setInterval(function(){resizeGallery()}, 1250);
 function onDomContentLoad(){
 
 	//alert("onDomContentLoaded"); 
@@ -295,7 +296,7 @@ function onDomContentLoad(){
 	setTimeout(resizeGallery, timeoot);  
 	setTimeout(resizeGallery, timeoot*6);  
 
-	//myVar = setInterval(function(){resizeGallery()}, 1250);
+	//resizeInterval = setInterval(function(){resizeGallery()}, 1250);
 
 	//resizeIframe(ifr);
 	
@@ -371,7 +372,7 @@ function onMainLoaded()
 	swap();
 	//resizeGallery();
 	
-	setInterval(function(){resizeIframe()}, 1250);//either vids or things blocked by adblockers make the page load forever. Can't know for sure (for now) when to stop resizing the page to fit the content.
+	//resizeInterval = setInterval(function(){resizeIframe()}, 1250);//either vids or things blocked by adblockers make the page load forever. Can't know for sure (for now) when to stop resizing the page to fit the content.
 	
 	initSetup();
 };
@@ -429,26 +430,26 @@ function resizeIframe(){
 
 	$icontObjParent.width($(window).width() + "px");// + "px"; 
 	//$icontObj.css('left', -Math.round($("#ttlCnt").offset().left));
-	var val = Math.round($("#ttlCnt").offset().left - $(window).scrollLeft()) ;
 
-	if($icontObj.offset().left < - 584){
+	if($icontObj.offset().left != undefined && $icontObj.offset().left < - 584)
+	{
+		var val = Math.round($("#ttlCnt").offset().left - $(window).scrollLeft()) ;
 		$icontObj.css('left', val);
-
-
-	}
-	else{
-
 	}
 	
 	//console.log($icontObj.offset().left);
+	//~~~[//console.log("ran resizeIframe (main)");
 }
 
 function resizeGallery() {
 	
 	var ifr = document.getElementById("icontent");
-	ifr.contentWindow.scaleGallery();
-	
-	resizeIframe();
+	if(ifr != undefined){
+		//~~~[//console.log("resizeGallery (main) -> scaleGallery");
+		ifr.contentWindow.scaleGallery();
+		//~~~[//console.log("resizeGallery (main) -> resizeIframe");
+		resizeIframe();
+	}
 }
 
 var timeoot = 250;

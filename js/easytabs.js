@@ -257,6 +257,8 @@ function resetHover(elem)
 				changeContent(window.location.hash.slice(1));
 			});*/
 			
+			setTimeout(resizeGallery, timeoot);  
+			resizeInterval = setInterval(function(){resizeIframe()}, 1250);
 		});
 	}
 })(jQuery);

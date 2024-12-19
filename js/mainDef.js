@@ -1,5 +1,6 @@
 //window.size();
 
+var mainDefScaleGallery = setInterval(scaleGallery(), 1000);
 
 function isElementInViewport (el, docRect, ifrRect, windowInnerWidth, windowInnerHeight) {
 
@@ -102,18 +103,20 @@ window.onscroll = debounce(function (e) {
 // http://javascript.info/tutorial/onload-ondomcontentloaded 
 
 function load2(){ 
-	//alert("123");
+	//~~~[//console.log("stopping intervals (mainDef), stopLoadInterval");
 	window.parent.onDomContentLoad();
 	window.parent.stopLoadInterval();
-	
+	clearInterval(mainDefScaleGallery);
+	//~~~[//console.log("stopped intervals (mainDef)");
 }
 
-//bindReady();
+bindReady();
  function bindReady(){//handler){
 
 	
 	//$(window).load(load2);
 	window.onload = function(e){
+		//~~~[//console.log("onload (mainDef)");
 		onLoaded();
 		load2();
 	};
@@ -121,6 +124,7 @@ function load2(){
 	var called = false
 
 	function ready() { 
+		console.log("ready (mainDef)");
 		if (called) return;
 		called = true;
 		//handler()
@@ -176,7 +180,7 @@ function load2(){
 
 const lerp = (a, b, amount) => (1 - amount) * a + amount * b;
 
-setInterval(scaleGallery(), 1000);
+
 function scaleGallery(){
 	//max-width: 880px; ---> 1em
 	//min-width: 604px; ---> 0.68636363
@@ -224,6 +228,7 @@ function scaleGallery(){
 		}
 	}
 	//alert("Wa: "+w_size.width/800 );
+	//~~~[//console.log("ran ScaleGallery (mainDef)");
 }
 
 
