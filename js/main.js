@@ -261,17 +261,18 @@ function swapB(){
 	$('#loading').remove(); 
 }
 
+/*
 var myVar;
-
 function stopLoadInterval() {
     clearInterval(myVar);
 }
+*/
 /*
 var isNotAtBottom = true;
 $(window).scroll(function() {
    if(isNotAtBottom && $(window).scrollTop() + $(window).height() == $(document).height()) {
-      resizeIframe2();
-	  setTimeout(resizeIframe2, 2000);
+      resizeGallery();
+	  setTimeout(resizeGallery, 2000);
 	  isNotAtBottom = false;
    }
    else{
@@ -282,19 +283,19 @@ $(window).scroll(function() {
 
 /*
 $(document).ready(function() {
-	myVar = setInterval(function(){resizeIframe2()}, 1250);
+	myVar = setInterval(function(){resizeGallery()}, 1250);
 });
 */
-//myVar = setInterval(function(){resizeIframe2()}, 1250);
+//myVar = setInterval(function(){resizeGallery()}, 1250);
 function onDomContentLoad(){
 
 	//alert("onDomContentLoaded"); 
 	ifr = document.getElementById("icontent");
 	ifr.contentWindow.scaleGallery();
-	setTimeout(resizeIframe2, timeoot);  
-	setTimeout(resizeIframe2, timeoot*6);  
+	setTimeout(resizeGallery, timeoot);  
+	setTimeout(resizeGallery, timeoot*6);  
 
-	//myVar = setInterval(function(){resizeIframe2()}, 1250);
+	//myVar = setInterval(function(){resizeGallery()}, 1250);
 
 	//resizeIframe(ifr);
 	
@@ -305,8 +306,6 @@ function onDomContentLoad(){
 //window.onload = 
 function onMainLoaded()
 { 
-	
-
 	//var ifr = document.getElementById("icontent");
 	var project = getUrlParameter("project");
 	
@@ -314,8 +313,6 @@ function onMainLoaded()
 	var a = ""; 
 	//onload='resizeIframe(this); swap();'
 	var me = "'  id='icontent' scrolling='no'  frameborder='0' allowTransparency='true' seamless></iframe>"; 
-	
-	
 	
 	//$("#icontent").css("overflow", "visible");
 	/*
@@ -357,7 +354,6 @@ function onMainLoaded()
 			$(intro).css("visibility", "visible");
 			$(intro).css("position", "relative");
 			//alert('default');
-		
 	}
 	*/
 	if(project != null){
@@ -373,9 +369,9 @@ function onMainLoaded()
 
 	$("#projects").append(ifr+a+me); 
 	swap();
-	//resizeIframe2();
+	//resizeGallery();
 	
-	setInterval(function(){resizeIframe2()}, 1250);//either vids or things blocked by adblockers make the page load forever. Can't know for sure (for now) when to stop resizing the page to fit the content.
+	setInterval(function(){resizeIframe()}, 1250);//either vids or things blocked by adblockers make the page load forever. Can't know for sure (for now) when to stop resizing the page to fit the content.
 	
 	initSetup();
 };
@@ -403,17 +399,15 @@ var debounce = function (func, threshold, execAsap)
 }
 
 var extraHeight = 157;//88;//88;//1.005;
-function resizeIframe(obj){
+function resizeIframe(){
+	/*
     //obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
 	obj.style.height = obj.contentWindow.window.size.h + 'px';
 	//var w = window.parent.document.getElementById("centerPanel");
 	var w = document.getElementById("centerPanel");
-	obj.style.width = w.style.width + "px";  
-}
-
-var once = true;
-
-function resizeIframe2() {
+	obj.style.width = w.style.width + "px"; 
+	*/
+	
 	//console.log("tick");
 	var $icontObj = $("#icontent");
 	var $icontObjParent = $("#centerPanel");
@@ -449,20 +443,52 @@ function resizeIframe2() {
 	//console.log($icontObj.offset().left);
 }
 
+function resizeGallery() {
+	
+	var ifr = document.getElementById("icontent");
+	ifr.contentWindow.scaleGallery();
+	
+	resizeIframe();
+}
+
 var timeoot = 250;
+// on screen orientation change
+window.addEventListener("DOMContentLoaded", () => {
+  /*
+  const displayOrientation = () => {
+    const screenOrientation = screen.orientation.type;
+	if (screenOrientation === "landscape-primary") {
+      console.log("That looks good.");
+    } else if (screenOrientation === "landscape-secondary") {
+      console.log("Mmmh... the screen is upside down!");
+    } else if (screenOrientation === "portrait-secondary" || screenOrientation === "portrait-primary") {
+      console.log("Mmmh... you should rotate your device to landscape");
+    } else if (screenOrientation === undefined) {
+      console.log("The orientation API isn't supported in this browser :(");
+    }	
+  };
+  */
+
+  if (screen && screen.orientation !== null) {
+    try {
+      window.screen.orientation.onchange = debounce(function (e) {
+			setTimeout(resizeGallery, timeoot);  
+		}, 100, false);
+    }
+    catch (e) { output.innerHTML = e.message; }
+  }
+});
 window.onresize = debounce(function (e) {
-	flag = true;
+	//flag = true;
 	//var point = window.center({width:1,height:1});
 	//doCenter(point);
 	//scaleGallery(); 
-	var ifr = document.getElementById("icontent");
-
-	ifr.contentWindow.scaleGallery();
-	setTimeout(resizeIframe2, timeoot);  
+	setTimeout(resizeGallery, timeoot);  
+	setTimeout(resizeGallery, timeoot*4);  
 	//resizeIframe(ifr);   
 	
 // do something here, but only once after mouse cursor stops 
-}, 50, false);
+}, 100, false);
 
 makeWheelEvent();
 function makeWheelEvent(){

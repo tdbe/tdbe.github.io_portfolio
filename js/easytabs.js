@@ -2,32 +2,46 @@
 var lastTabIdClicked = ' ';
 function resetHover(elem)
 {
-
-    //var delay = 1200;
-    var delay = 400;
+	var delayF = 1200;
+	var delayFMid = 400;
 	//var elem = $(el.parentNode.parentNode);
-	
-	
-	if(elem.hasClass("activeF") == false)
+
+	if(elem.hasClass("activeFMid") == false)
 	{
-		
 		setTimeout(function() 
 		{
 			if(
-			elem.hasClass("active") == true &&
-			elem.hasClass("activeF") == false &&
-			elem.attr('id') != lastTabIdClicked
-			
-			)
+				elem.hasClass("activeFMid") == false &&
+				elem.attr('id') != lastTabIdClicked
+				)
 			{
 				lastTabIdClicked = elem.attr('id');
-				elem.removeClass("active");
-				elem.addClass("activeF");
-				
-		
+				elem.addClass("activeFMid");
 			}
 		}, 
-		delay);
+		delayFMid);
+	}	
+	
+	if(elem.hasClass("activeF") == false)
+	{
+		setTimeout(function() 
+		{			
+			if(
+				elem.hasClass("active") == true &&
+				elem.hasClass("activeF") == false 
+				)
+			{			
+				//lastTabIdClicked = elem.attr('id');
+				elem.removeClass("active");
+				if(elem.hasClass("activeFMid") == true)
+					elem.removeClass("activeFMid");
+				if(elem.hasClass("activeFMidOut") == true)
+					elem.removeClass("activeFMidOut");
+				elem.addClass("activeF");
+				
+			}
+		}, 
+		delayF);
 	}
 	
 
@@ -44,8 +58,10 @@ function resetHover(elem)
 			{
 				fadeSpeed:"fast",
 				defaultContent:option.defaultContent,
-				activeClass:'active',
-				activeClass2:'activeF'
+				actClass_active:'active',
+				actClass_activeF:'activeF',
+				actClass_activeFMid:'activeFMid',
+				actClass_activeFMidOut:'activeFMidOut'
 			}
 		);
 		
@@ -137,12 +153,29 @@ function resetHover(elem)
 				
 				hideAll();
 				
-				//$(thisId+" .tabs li"+"L").removeClass(param.activeClass);//0
+				//$(thisId+" .tabs li"+"L").removeClass(param.actClass_active);//0
 				//var compId = thisId+" .tabs li a[href=#"+tabId+"]";
 				var compId = thisId+' .tabs li div a[href="#'+tabId+'"]';
 				//var liId = thisId+" .tabs #"+tabId;
 				var liId = "#"+$(compId).closest('li').attr('id');
-
+				
+				$(liId).parent().children().each(function()
+				{
+					var $this = $(this);
+					//alert($this.attr('id') + "; " + $this.attr('class'));
+					
+					if($this.hasClass(param.actClass_activeF) == true && 
+						$this.hasClass(param.actClass_activeFMidOut) == false)
+					{
+						$this.addClass(param.actClass_activeFMidOut);
+						setTimeout(function() 
+						{
+							$this.removeClass(param.actClass_activeFMidOut);
+						}, 
+						800);
+					}
+				});
+				
 				resetHover($(liId));
 				
 				//console.log($(liId).parent().attr('id'));
@@ -150,23 +183,38 @@ function resetHover(elem)
 
 				if(
 					//$(liId).attr('id') != lastTabIdClicked
-					$(liId).hasClass(param.activeClass) == false &&
-					$(liId).hasClass(param.activeClass2) == false 
+					$(liId).hasClass(param.actClass_active) == false &&
+					$(liId).hasClass(param.actClass_activeF) == false 
 				)
 				{
 					$(liId).parent().children().each(function()
 					{
-
-						$(this).removeClass(param.activeClass + " " +param.activeClass2);
+						var $this = $(this);
+						//$this.removeClass(param.actClass_active + " " +param.actClass_activeF);
+						if($this.hasClass(param.actClass_activeF))
+						{
+							$this.removeClass(param.actClass_active);
+							$this.removeClass(param.actClass_activeF);
+							$this.removeClass(param.actClass_activeFMid);
+							
+						}
+						else
+						{
+							$this.removeClass(param.actClass_active);
+							$this.removeClass(param.actClass_activeF);
+							$this.removeClass(param.actClass_activeFMid);
+							$this.removeClass(param.actClass_activeFMidOut);
+						}
 					});
 					
-					
-					$(compId).closest('li').addClass(param.activeClass);
-					$(compId).closest('li').removeClass(param.activeClass2);
+					var $compId = $(compId);
+					$compId.closest('li').addClass(param.actClass_active);
+					$compId.closest('li').removeClass(param.actClass_activeF);
+					$compId.closest('li').removeClass(param.actClass_activeFMid);
+					$compId.closest('li').removeClass(param.actClass_activeFMidOut);
 				}
-
 				
-				//$(thisId+" .tabs li a[href=#"+tabId+"L"+"]").closest('li').addClass(param.activeClass);//0
+				//$(thisId+" .tabs li a[href=#"+tabId+"L"+"]").closest('li').addClass(param.actClass_active);//0
 				if(param.fadeSpeed!="none")
 				{
 					//$('#centerPanel').toggleClass('centerPanelBG1');
