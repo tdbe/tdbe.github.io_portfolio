@@ -1,5 +1,6 @@
 //window.size();
 
+clearInterval(mainDefScaleGallery);
 var mainDefScaleGallery = setInterval(scaleGallery(), 1000);
 
 function isElementInViewport (el, docRect, ifrRect, windowInnerWidth, windowInnerHeight) {
@@ -103,11 +104,13 @@ window.onscroll = debounce(function (e) {
 // http://javascript.info/tutorial/onload-ondomcontentloaded 
 
 function load2(){ 
+	setTimeout(function(){
 	//~~~[//console.log("stopping intervals (mainDef), stopLoadInterval");
 	window.parent.onDomContentLoad();
 	window.parent.stopLoadInterval();
 	clearInterval(mainDefScaleGallery);
 	//~~~[//console.log("stopped intervals (mainDef)");
+	}, 30000);
 }
 
 bindReady();
@@ -124,7 +127,7 @@ bindReady();
 	var called = false
 
 	function ready() { 
-		console.log("ready (mainDef)");
+		//~~~[//console.log("ready (mainDef)");
 		if (called) return;
 		called = true;
 		//handler()

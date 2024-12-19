@@ -258,6 +258,7 @@ function resetHover(elem)
 			});*/
 			
 			setTimeout(resizeGallery, timeoot);  
+			clearInterval(resizeInterval);
 			resizeInterval = setInterval(function(){resizeIframe()}, 1250);
 		});
 	}
