@@ -46,7 +46,7 @@ transition:all .25s ease;-moz-transition:all .25s ease;-webkit-transition:all .2
 	}.gradientNameBgName{margin-top:16px!important;letter-spacing:.075em}
 	.gradientNameBgPort{
 		width:100%;position:absolute;
-		margin-top:40px!important;
+		margin-top:34px!important;
 		font-size: calc(min(1.5vw + 16px, 30px));
 		-webkit-transform:scale(1,.85)!important;-moz-transform:scale(1,.85)!important;-ms-transform:scale(1,.85)!important;-o-transform:scale(1,.85)!important;transform:scale(1,.85)!important
 	}.whiteTextBg{display:inline-block;overflow:visible;height:82px;padding:18px;padding-left:20px;padding-top:0;padding-bottom:0;margin-top:-8px}#nameBG{position:absolute;top:-2px;left:-48px;display:block;width:578px;height:187px;overflow:hidden;background:url(../images/nameBg_16c.png);background-repeat:no-repeat;background-size:528px 201px;pointer-events:none;z-index:-10}.gradNameMask{width:206px;height:12px;position:absolute;z-index:103;left:0;top:83px;margin-top:-5px;background:#eadcdc;background:-moz-linear-gradient(-45deg,#eadcdc 0%,#dbddf0 100%);background:-webkit-linear-gradient(-45deg,#eadcdc 0%,#dbddf0 100%);background:linear-gradient(135deg,#eadcdc 0%,#dbddf0 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#eadcdc',endColorstr='#dbddf0',GradientType=1)}.gradientNameBg0{height:80px}.gradientNameBg1{margin-bottom:-1px}#navigationContainer{width:100%;height:600px;overflow-x:hidden;position:absolute;margin-top:-40px}
