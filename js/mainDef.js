@@ -131,7 +131,7 @@ bindReady();
 		if (called) return;
 		called = true;
 		//handler()
-	
+		onLoaded();
 		//window.parent.onDomContentLoad()
 		load2();
 	}
@@ -257,9 +257,6 @@ function makeActive(elem){
 function onLoaded(){
 
 	//window.parent.swapB();
-	$('#toptitleBg').remove();
-
-	scaleGallery();
 
 	function downFunction(event, target) {
 		switch (event.which) {
@@ -324,7 +321,9 @@ function onLoaded(){
 	  upFunction(event, $(this));
 	});
 	
-	
+	$('#toptitleBg').remove();
+
+	scaleGallery();
 };
 //);
 /*

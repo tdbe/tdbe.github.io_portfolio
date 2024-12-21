@@ -292,7 +292,8 @@ function onDomContentLoad(){
 
 	//alert("onDomContentLoaded"); 
 	ifr = document.getElementById("icontent");
-	ifr.contentWindow.scaleGallery();
+	if(ifr.contentWindow != undefined && typeof(ifr.contentWindow.scaleGallery) == "function")
+		ifr.contentWindow.scaleGallery();
 	setTimeout(resizeGallery, timeoot);  
 	setTimeout(resizeGallery, timeoot*6);  
 
@@ -446,7 +447,8 @@ function resizeGallery() {
 	var ifr = document.getElementById("icontent");
 	if(ifr != undefined){
 		//~~~[//console.log("resizeGallery (main) -> scaleGallery");
-		ifr.contentWindow.scaleGallery();
+		if(ifr.contentWindow != undefined && typeof(ifr.contentWindow.scaleGallery) == "function")
+			ifr.contentWindow.scaleGallery();
 		//~~~[//console.log("resizeGallery (main) -> resizeIframe");
 		resizeIframe();
 	}
@@ -532,9 +534,12 @@ document.getScroll= function(){
 
 function onScrollEvent(e){
 	var ifr = document.getElementById("icontent");
-	var ifrRect = ifr.getBoundingClientRect();
-	var docRect = document.body.getBoundingClientRect();
-	ifr.contentWindow.setVideoPlayability(docRect, ifrRect, window.innerWidth, window.innerHeight);
+	if(ifrRect != null){
+		var ifrRect = ifr.getBoundingClientRect();
+		var docRect = document.body.getBoundingClientRect();
+		if(ifr.contentWindow != undefined)
+			ifr.contentWindow.setVideoPlayability(docRect, ifrRect, window.innerWidth, window.innerHeight);
+	}
 }
 
 var ifr;// = document.getElementById("icontent"); 
