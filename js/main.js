@@ -452,6 +452,8 @@ function resizeGallery() {
 		//~~~[//console.log("resizeGallery (main) -> resizeIframe");
 		resizeIframe();
 	}
+	else
+		console.log("ifr is null???");	
 }
 
 var timeoot = 250;
@@ -521,25 +523,29 @@ function checkKey(e) {
 }
 
 document.getScroll= function(){
-	 if(window.pageYOffset!= undefined){
-	  return [pageXOffset, pageYOffset];
-	 }
-	 else{
-	  var sx, sy, d= document, r= d.documentElement, b= d.body;
-	  sx= r.scrollLeft || b.scrollLeft || 0;
-	  sy= r.scrollTop || b.scrollTop || 0;
-	  return [sx, sy];
-	 }
+	if(window.pageYOffset!= undefined){
+		return [pageXOffset, pageYOffset];
+	}
+	else{
+		var sx, sy, d= document, r= d.documentElement, b= d.body;
+		sx= r.scrollLeft || b.scrollLeft || 0;
+		sy= r.scrollTop || b.scrollTop || 0;
+		return [sx, sy];
+	}
 }
 
 function onScrollEvent(e){
 	var ifr = document.getElementById("icontent");
-	if(ifrRect != null){
+	if(ifr != null){
 		var ifrRect = ifr.getBoundingClientRect();
 		var docRect = document.body.getBoundingClientRect();
-		if(ifr.contentWindow != undefined)
+		if(ifr.contentWindow != null)
 			ifr.contentWindow.setVideoPlayability(docRect, ifrRect, window.innerWidth, window.innerHeight);
+		else
+			console.log("ifr.contentWindow is null???");
 	}
+	else
+		console.log("ifr is null???");
 }
 
 var ifr;// = document.getElementById("icontent"); 
@@ -548,11 +554,12 @@ function onScrollEventRemoved(e){
 	//alert($('#webplayer').visible());
 		
 	//alert(document.getScroll()[1]); 
-	if(ifr == null || ifr == undefined )
+	if(ifr == null || ifr == undefined ){
 		ifr = document.getElementById("icontent");
-
-	if(ifr == null || ifr == undefined )
 		return;
+	}
+	else
+		console.log("ifr is null???");		
 	
 	//if(window.scrollHeight - window.scrollTop === window.clientHeight)
 	/*

@@ -1,7 +1,9 @@
 //window.size();
 
-clearInterval(mainDefScaleGallery);
-var mainDefScaleGallery = setInterval(scaleGallery(), 1000);
+var mainDefScaleGallery = null;
+var allVideos = null;
+const lerp = (a, b, amount) => (1 - amount) * a + amount * b;
+bindReady();
 
 function isElementInViewport (el, docRect, ifrRect, windowInnerWidth, windowInnerHeight) {
 
@@ -45,9 +47,11 @@ function isElementInViewport (el, docRect, ifrRect, windowInnerWidth, windowInne
     );
 }
 
-var allVideos = document.getElementsByTagName("video"), fraction = 0.9;
 function setVideoPlayability(docRect, ifrRect, windowInnerWidth, windowInnerHeight) 
 {
+	if(allVideos == null)
+		allVideos = document.getElementsByTagName("video"), fraction = 0.9;
+	
 	for(var i = 0; i < allVideos.length; i++) 
 	{
 		var video = allVideos[i];
@@ -113,7 +117,6 @@ function load2(){
 	}, 30000);
 }
 
-bindReady();
  function bindReady(){//handler){
 
 	
@@ -180,9 +183,6 @@ bindReady();
 		}
     }
 }
-
-const lerp = (a, b, amount) => (1 - amount) * a + amount * b;
-
 
 function scaleGallery(){
 	//max-width: 880px; ---> 1em
@@ -255,8 +255,11 @@ function makeActive(elem){
 //$(document).ready(function(){ 
 //window.onload =
 function onLoaded(){
-
 	//window.parent.swapB();
+	
+	clearInterval(mainDefScaleGallery);
+	mainDefScaleGallery = setInterval(scaleGallery(), 1000);
+	allVideos = document.getElementsByTagName("video"), fraction = 0.9;
 
 	function downFunction(event, target) {
 		switch (event.which) {
