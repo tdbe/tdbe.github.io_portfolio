@@ -539,10 +539,13 @@ function onScrollEvent(e){
 	if(ifr != null){
 		var ifrRect = ifr.getBoundingClientRect();
 		var docRect = document.body.getBoundingClientRect();
-		if(ifr.contentWindow != null)
-			ifr.contentWindow.setVideoPlayability(docRect, ifrRect, window.innerWidth, window.innerHeight);
-		else
-			console.log("ifr.contentWindow is null???");
+		if(ifr.contentWindow != null){
+			if (typeof ifr.contentWindow.setVideoPlayability !== 'undefined' && typeof ifr.contentWindow.setVideoPlayability === 'function'){
+				ifr.contentWindow.setVideoPlayability(docRect, ifrRect, window.innerWidth, window.innerHeight);
+			}
+		}
+		//else
+		//	console.log("ifr.contentWindow is null???");
 	}
 	else
 		console.log("ifr is null???");

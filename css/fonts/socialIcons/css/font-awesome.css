@@ -6,8 +6,7 @@
  * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
-  src: url('../fonts/fontawesome-webfont.eot?v=4.5.0');
-  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.5.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.5.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.5.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.5.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.5.0#fontawesomeregular') format('svg');
+  src: url('../fonts/fontawesome-webfont.woff2?v=6.7.2') format('woff2'), url('../fonts/fontawesome-webfont.ttf?v=6.7.2') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,6 +23,9 @@
   font-size: 1.33333333em;
   line-height: 0.75em;
   vertical-align: -15%;
+}
+.fa-cx {
+  font-size: 1.6em;
 }
 .fa-2x {
   font-size: 2em;
@@ -557,6 +559,23 @@
 .fa-twitter-square:before {
   content: "\f081";
 }
+
+.fa-square-bluesky:before {
+  content: "\e6a3"; 
+}
+
+.fa-deviantart:before {
+  content: "\f1bd"; 
+}
+
+.fa-discord:before {
+  content: "\f392"; 
+}
+
+.fa-itch-io:before {
+  content: "\f83a"; 
+}
+
 .fa-facebook-square:before {
   content: "\f082";
 }
