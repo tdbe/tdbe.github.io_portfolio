@@ -10,6 +10,12 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'FontAwesomeRegular';
+  src: url('../fonts/fa-regular-400.woff2?v=6.7.2') format('woff2'), url('../fonts/fa-regular-400.ttf?v=6.7.2') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 .fa {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
@@ -192,7 +198,8 @@
   content: "\f002";
 }
 .fa-envelope-o:before {
-  content: "\f003";
+  font-family: 'FontAwesomeRegular';
+  content: "\f0e0";
 }
 .fa-heart:before {
   content: "\f004";
@@ -428,6 +435,7 @@
   content: "\f053";
 }
 .fa-chevron-right:before {
+  font-family: 'FontAwesomeRegular';
   content: "\f054";
 }
 .fa-plus-circle:before {
@@ -818,6 +826,7 @@
   content: "\f0de";
 }
 .fa-envelope:before {
+  font-family: 'FontAwesomeRegular';
   content: "\f0e0";
 }
 .fa-linkedin:before {
@@ -928,6 +937,7 @@
   content: "\f104";
 }
 .fa-angle-right:before {
+  font-family: 'FontAwesomeRegular';
   content: "\f105";
 }
 .fa-angle-up:before {
@@ -1361,6 +1371,7 @@
   content: "\f198";
 }
 .fa-envelope-square:before {
+  font-family: 'FontAwesomeRegular';
   content: "\f199";
 }
 .fa-wordpress:before {
