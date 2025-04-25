@@ -295,10 +295,26 @@
 							<span class="shadBott sLeft shadLeft"></span>
 							<span class="shadBott sRight shadRight"></span> 
 						</div> 
-						<br/>
+						
 					
 						<div class="article highlight projPadding lastParagraph" >  
-								<p></p> 
+							<p>
+							A decade later, I'd do it smarter 🙃: 
+							<br/>
+							- The gpu <span class="bgHighlight">generation</span> processes would run on volume data buffers and operation layers, streaming back &amp; fourth the final stage as sparse &amp; packed csg/formulas to storage. (storing voxels/volumes not worth it)
+							<br/>
+							- The <span class="bgHighlight">surface extraction</span> processes would generate &amp; store many gpu-only temporary small mesh blots, as-needed, and throw them away on an edit or lod change. (you can save to storage depending on your case, but either way triangle surfaces are cheap to generate, hold &amp; render on modern gpus)
+							<br/>
+							<br/>
+							This way you can both dynamically (re)generate infinitely smooth LODs, and also dynamically sculpt/alter/dig sections of terrain via gameplay, in nice cache coherent &amp; sparse ways and without cpu dependence. 
+							<br/>
+							<br/>
+							The <span class="bgHighlight">collision</span>: I'd ideally access the engine's own gpu physics to add my voxel data from the gpu compute side. Otherwise just download voxels as convex collision chunks/tiles and feed them via the cpu/storage side.
+							<br/>
+							<br/>
+							Oh and tile and thread everything as much as possible. The old system did everything one "cube section" at a time, with pre-ECS Unity and mesh/collision handling (e.g. download meshes off the gpu and feed to unity single threaded). But at least the compute volume was easily splitable into n different-sized cubes/volumes in n directions etc.
+							<br/>
+							</p> 
 
 						</div>
 					</div>
