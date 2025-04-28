@@ -122,6 +122,9 @@ function load2(){
 	
 	//$(window).load(load2);
 	window.onload = function(e){
+		const inIframe = window.self !== window.top;
+		if(!inIframe)
+			history.back();
 		//~~~[//console.log("onload (mainDef)");
 		onLoaded();
 		load2();
