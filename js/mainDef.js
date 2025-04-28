@@ -117,14 +117,36 @@ function load2(){
 	}, 30000);
 }
 
- function bindReady(){//handler){
+function getStringBetween(str, start, end) {
+  var startIndex = str.indexOf(start);
+  if (startIndex === -1) return ''; // Start string not found
+  startIndex += start.length;
+
+  const endIndex = str.indexOf(end, startIndex);
+  if (endIndex === -1) return ''; // End string not found
+
+  return str.substring(startIndex, endIndex);
+}
+
+function bindReady(){//handler){
 
 	
 	//$(window).load(load2);
 	window.onload = function(e){
 		const inIframe = window.self !== window.top;
-		if(!inIframe)
-			history.back();
+		if(!inIframe){
+			//history.back();
+			const url = window.location.href;
+			if(url.includes("/project/")){
+				console.log("Redirecting from: "+url);
+				const proj = getStringBetween(url, "/project/", "/index")
+				console.log("To: " + window.location.origin + "/?project="+proj);
+				if(proj != null && proj != ""){
+					window.location.replace(url.substring(0, url.indexOf("/project")) + "/?project="+proj);
+				}
+				
+			}
+		}
 		//~~~[//console.log("onload (mainDef)");
 		onLoaded();
 		load2();
