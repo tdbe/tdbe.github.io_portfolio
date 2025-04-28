@@ -36,14 +36,14 @@ function isElementInViewport (el, docRect, ifrRect, windowInnerWidth, windowInne
 	//console.log("left >=0: "+left);
 	//console.log("right: "+right+" <= windowInnerWidth: "+windowInnerWidth);
 	//console.log("bottom: "+bottom+" <= windowInnerHeight: "+windowInnerHeight);
-	
+
     return (
         top >= 0 &&
         left >= 0 &&
         //rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && /* or $(window).height() */
         bottom <= windowInnerHeight &&
         //rect.right <= (window.innerWidth || document.documentElement.clientWidth) /* or $(window).width() */
-        right <= windowInnerWidth 
+        right <= windowInnerWidth
     );
 }
 
@@ -125,9 +125,13 @@ function load2(){
 		//~~~[//console.log("onload (mainDef)");
 		onLoaded();
 		load2();
+		
+		//const el = document.querySelector('.giscus_widget_proj').shadowRoot.querySelector('iframe');
+		//const elInner = el.contentDocument.querySelector('div');
+		//el.removeAttribute("scrolling");
 	};
 
-	var called = false
+	var called = false;
 
 	function ready() { 
 		//~~~[//console.log("ready (mainDef)");

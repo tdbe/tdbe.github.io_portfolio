@@ -459,29 +459,29 @@ function resizeGallery() {
 var timeoot = 250;
 // on screen orientation change
 window.addEventListener("DOMContentLoaded", () => {
-  /*
-  const displayOrientation = () => {
-    const screenOrientation = screen.orientation.type;
+	/*
+	const displayOrientation = () => {
+	const screenOrientation = screen.orientation.type;
 	if (screenOrientation === "landscape-primary") {
-      console.log("That looks good.");
-    } else if (screenOrientation === "landscape-secondary") {
-      console.log("Mmmh... the screen is upside down!");
-    } else if (screenOrientation === "portrait-secondary" || screenOrientation === "portrait-primary") {
-      console.log("Mmmh... you should rotate your device to landscape");
-    } else if (screenOrientation === undefined) {
-      console.log("The orientation API isn't supported in this browser :(");
-    }	
-  };
-  */
+	  console.log("That looks good.");
+	} else if (screenOrientation === "landscape-secondary") {
+	  console.log("Mmmh... the screen is upside down!");
+	} else if (screenOrientation === "portrait-secondary" || screenOrientation === "portrait-primary") {
+	  console.log("Mmmh... you should rotate your device to landscape");
+	} else if (screenOrientation === undefined) {
+	  console.log("The orientation API isn't supported in this browser :(");
+	}	
+	};
+	*/
 
-  if (screen && screen.orientation !== null) {
-    try {
-      window.screen.orientation.onchange = debounce(function (e) {
+	if (screen && screen.orientation !== null) {
+	try {
+	  window.screen.orientation.onchange = debounce(function (e) {
 			setTimeout(resizeGallery, timeoot);  
 		}, 100, false);
-    }
-    catch (e) { output.innerHTML = e.message; }
-  }
+	}
+	catch (e) { output.innerHTML = e.message; }
+	}
 });
 window.onresize = debounce(function (e) {
 	//flag = true;
