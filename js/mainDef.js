@@ -26,6 +26,7 @@ function isElementInViewport (el, docRect, ifrRect, windowInnerWidth, windowInne
 	*/
 	var heightOffset = el.offsetHeight*0.5;
 	var widthOffset = el.offsetWidth*0.5;
+	windowInnerHeight -= el.offsetHeight*0.33;
 	
 	var top = heightOffset + rect.top + docRect.top + Math.abs(Math.abs(docRect.top) - Math.abs(ifrRect.top));
 	var left = widthOffset + rect.left + docRect.left + Math.abs(Math.abs(docRect.left) - Math.abs(ifrRect.left));
