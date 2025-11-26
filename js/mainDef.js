@@ -387,4 +387,5 @@ function onThumbVideoCanPlay(event){
 	if(videocurtain != undefined)
 		videocurtain.remove();
 	caller.oncanplay = null;
+	caller.play();
 }
