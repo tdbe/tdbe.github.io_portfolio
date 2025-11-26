@@ -50,6 +50,9 @@ function isElementInViewport (el, docRect, ifrRect, windowInnerWidth, windowInne
 
 function setVideoPlayability(docRect, ifrRect, windowInnerWidth, windowInnerHeight) 
 {
+	if(isMobile() == true)
+		return;
+	
 	if(allVideos == null)
 		allVideos = document.getElementsByTagName("video"), fraction = 0.9;
 	
@@ -290,6 +293,13 @@ function onLoaded(){
 	clearInterval(mainDefScaleGallery);
 	mainDefScaleGallery = setInterval(scaleGallery(), 1000);
 	allVideos = document.getElementsByTagName("video"), fraction = 0.9;
+	
+	if(isMobile() == false){
+		for(var i = 0; i < allVideos.length; i++) 
+		{
+			allVideos[i].setAttribute('preload', 'auto');
+		}
+	}
 
 	function downFunction(event, target) {
 		switch (event.which) {
@@ -387,5 +397,4 @@ function onThumbVideoCanPlay(event){
 	if(videocurtain != undefined)
 		videocurtain.remove();
 	caller.oncanplay = null;
-	caller.play();
 }
