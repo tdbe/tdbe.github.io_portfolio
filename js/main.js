@@ -432,7 +432,7 @@ function resizeIframe(){
 	$icontObjParent.width($(window).width() + "px");// + "px"; 
 	//$icontObj.css('left', -Math.round($("#ttlCnt").offset().left));
 
-	if($icontObj.offset().left != undefined && $icontObj.offset().left < - 584)
+	if($icontObj != undefined && $icontObj.offset() != undefined && $icontObj.offset().left != undefined && $icontObj.offset().left < - 584)
 	{
 		var val = Math.round($("#ttlCnt").offset().left - $(window).scrollLeft()) ;
 		$icontObj.css('left', val);
